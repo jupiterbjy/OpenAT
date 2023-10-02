@@ -57,7 +57,7 @@
 |4|![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/c87bd145-0982-422c-a337-030e9ffb08d6)||
 |5|![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/de06fee0-cefe-4b59-9b9d-e61f2c4cef90)||
 |6|![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/0718d3ed-a780-4a9a-9773-dc9fe48d36ff)||
-|7| Unknown ||
+|7|![image](https://github.com/jupiterbjy/OpenAT/assets/45421813/9384ce73-bfbd-4bca-b563-5820e72a0b0c)||
 |8|![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/baccff0f-4160-4e85-8566-ea0b4b4b5a6b)||
 |9?|![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/43b905a6-4505-41b2-9a48-9f80994e2e1d)|todo: 파란 개틀링 찾기|
 
