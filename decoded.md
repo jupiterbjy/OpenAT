@@ -76,6 +76,7 @@
 | T | ? |
 | C | ? |
 | L | ? |
+| HKB | 특수전차(앞에 어떤 숫자가 붙던지 상관없이 HKB가 나오면 무조건 이 전차가 나옴) | ![2HKBDD](https://github.com/jupiterbjy/OpenAT/assets/45421813/1335abc2-cd91-4142-ad29-2a5dace6f832)|
 
 ### bosses
 | combined code | image | note |
