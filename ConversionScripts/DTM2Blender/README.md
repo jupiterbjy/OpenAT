@@ -1,16 +1,15 @@
 ## Armada Tanks *.dtm model converter
 
-### How to use
+![](https://github.com/jupiterbjy/OpenAT/assets/26041217/2e914124-23a1-4112-a319-423baa08870a)
 
-Yup. This does that. How to use is like this:
+For converting *Armada Tanks's* seemingly private model format `*.dtm` into blender object.  
+
+### How to use
 
 1. Gather all `*.dtm` files in *Armada Tanks* into single directory
 2. Drag-drop that directory onto [dtm_2_json.py](dtm_2_json.py)
 3. Script will recursively parse `*.dtm` into a dictionary, then cherry-pick, rearranges data & export as `*.json` in new directory
 4. Open up blender, load script [json_2_blender.py](json_2_blender.py), set script's `PATH` to point [dtm_2_json.py](dtm_2_json.py) generated directory.
-5. Profit!!
-
-![](https://github.com/jupiterbjy/OpenAT/assets/26041217/2e914124-23a1-4112-a319-423baa08870a)
 
 ### Behind story
 
@@ -31,4 +30,3 @@ After long search and trials, about 4 hours or so, I managed to make it happen. 
 Big thanks to almost-10-year-old answer and it's linked source for giving insight to scripted UV mapping!
 - [Blender StackExchange Answer](https://blender.stackexchange.com/a/10444/126787)
 - [Linked source(Warning: ol' HTTP site!)](http://web.purplefrog.com/~thoth/blender/python-cookbook/barber-pole.html)
-
