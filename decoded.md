@@ -8,7 +8,9 @@
 
 ---
 
-## Game Objectives (gametype)
+## Game Objectives
+
+aka gametypes
 
 | code | image | description kor | eng | note |
 |-|-|-|-|-|
