@@ -13,11 +13,13 @@ An Open source Godot recreation project of Armada Tanks, a great arcade game by:
 
 ### [ConversionScripts](ConversionScripts)
 Resulting scripts of Reverse-Engineering attempts on *Armada Tanks*'s (seemingly) own format.
-Currently, can reliably convert   
 
 - [ImageFontSplitter](ConversionScripts/ImageFontSplitter): Initially used script for splitting each letters from font image, no longer needed.
 - [DF2FNT](ConversionScripts/DF2FNT): Currently used script for converting `*.df` font format into AngelCode's BMFont format 
 - [DTM2Blender](ConversionScripts/DTM2Blender): DTM model reconstruction script
 
 
-### [FromScr]
+### [Model](Model)
+Collection of models.
+
+- [FromScratch](Model/FromScratch): Old models made from scratch(Some with in-game textures) before completing DTM2Blender script.
