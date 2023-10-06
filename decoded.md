@@ -59,23 +59,22 @@
 |6|![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/0718d3ed-a780-4a9a-9773-dc9fe48d36ff)||
 |7|![image](https://github.com/jupiterbjy/OpenAT/assets/45421813/9384ce73-bfbd-4bca-b563-5820e72a0b0c)||
 |8|![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/baccff0f-4160-4e85-8566-ea0b4b4b5a6b)||
-|9?|![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/43b905a6-4505-41b2-9a48-9f80994e2e1d)|todo: 파란 개틀링 찾기|
+|9|![image](https://github.com/jupiterbjy/OpenAT/assets/45421813/951034cd-aa1d-4ab7-ba6f-26f4391a9aa5)||
+
 
 ### attributes
 | code | description | image |
 |-|-|-|
-| S | 빨간색 |![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/55ccef79-f540-459f-8d04-166ee15be7f9)|
-| ? | 하늘색 |![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/9a721677-338f-4647-84fb-11931330b2bd)|
+| B, S | 빨간색 |![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/55ccef79-f540-459f-8d04-166ee15be7f9)|
+| L | 하늘색 |![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/9a721677-338f-4647-84fb-11931330b2bd)|
 | K | 검정색 |![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/a52f2a3f-b2f7-49d1-ad59-6daac0ac8165)|
 | I | 투명 |![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/954373b5-9886-417c-b7be-2505a4205656)|
 | ? | 아이템? |![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/ba46278c-b3a8-4024-888c-507a7cd1295a)|
-| P | 다음 전차 스폰 1초 지연? |
+| P | 5초간 다음 적 탱크 소환 안됨 |
 | H | ? |
-| B | ? |
-| D | ? |
+| D | 30초간 다음 적 탱크 소환 안됨 |
 | T | ? |
 | C | ? |
-| L | ? |
 | HKB | 특수전차(앞에 어떤 숫자가 붙던지 상관없이 HKB가 나오면 무조건 이 전차가 나옴) | ![2HKBDD](https://github.com/jupiterbjy/OpenAT/assets/45421813/1335abc2-cd91-4142-ad29-2a5dace6f832)|
 
 ### bosses
