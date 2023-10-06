@@ -1,4 +1,14 @@
-## game objectives (gametype)
+## TOC
+
+1. [Game Objectives](Game-Objectives)
+2. [Game Objects](Game-Objects)
+3. [Event Objects](Event-Objects)
+4. [Map Areas](Map-Areas)
+5. [Map Notations](Map-Notations)
+
+---
+
+## Game Objectives (gametype)
 
 | code | image | description kor | eng | note |
 |-|-|-|-|-|
@@ -9,9 +19,8 @@
 
 ---
 
-## game objects
+## Game Objects
 
-### items
 | code | image | description |
 |-|-|-|
 | C |![00](https://github.com/jupiterbjy/OpenAT/assets/26041217/a388e1e9-e9e2-42ff-b623-613dbde57bfd)|! lock enemies|
@@ -19,21 +28,27 @@
 | M |![02](https://github.com/jupiterbjy/OpenAT/assets/26041217/7b7b5bb6-c68d-4a3a-ad37-299d42d01c01)|Recovers tank hit points|
 | L |![03](https://github.com/jupiterbjy/OpenAT/assets/26041217/812235bb-e13b-431d-8142-f6cf980cc778)|! construct stone walls around base|
 | Z |![04](https://github.com/jupiterbjy/OpenAT/assets/26041217/0cbfb3ea-b594-49f2-aa5a-5b29e7772be4)|! lock enemy weapons|
-| R |![05](https://github.com/jupiterbjy/OpenAT/assets/26041217/8d888a4a-0fd9-48b2-b781-1bc292006c94)|! Faster firing rate (does not work with max upgrade)|
+| R |![05](https://github.com/jupiterbjy/OpenAT/assets/26041217/8d888a4a-0fd9-48b2-b781-1bc292006c94)| Temporarily improves shooting speed (does not work with max upgrade)|
 | B |![08](https://github.com/jupiterbjy/OpenAT/assets/26041217/50748447-b60e-4925-b096-f6d3daad0b2e)|! damage all enemies on screen|
 | I |![0](https://github.com/jupiterbjy/OpenAT/assets/26041217/5a034a77-d393-4985-9c56-f747bef81a8c)|! setup mines|
-| X |![1](https://github.com/jupiterbjy/OpenAT/assets/26041217/53bcdf23-6693-4330-8b72-218a57393906)|Regenerate hit points over time|
+| X |![1](https://github.com/jupiterbjy/OpenAT/assets/26041217/53bcdf23-6693-4330-8b72-218a57393906)| Regenerate hit points over time |
+| Y |![](https://github.com/jupiterbjy/OpenAT/assets/26041217/105c0c6c-3683-4c03-b822-827ec3fb450f)| Recovers enemy hit points |
 
-- R : 총탄(일시적으로 장전 속도 증가)
-- M : 메디킷(체력 회복)
-- C : 시계(적 움직임 정지)
-- B : 폭탄(적 전체 데미지)
-- S : 방패(일시적 적 공격 무효화)
+---
 
-### event objects
+## Event Objects
+
+(Ordered by encounter during progression)
+
 | code | image | description |
 |-|-|-|
-| Y |![2](https://github.com/jupiterbjy/OpenAT/assets/26041217/105c0c6c-3683-4c03-b822-827ec3fb450f)|! heal enmeies|
+| 1 |![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/93b18098-a959-42c1-8b7b-144045bd2f47)| Bunker |
+| 3 |![](https://github.com/jupiterbjy/OpenAT/assets/26041217/ca5ac4f3-92c4-47b9-8438-422a7ff820bf)| Box |
+| 5 |![](https://github.com/jupiterbjy/OpenAT/assets/26041217/9eb70ec8-d86d-40e1-b58f-0ce179a1c962)| Reflector Angle 0 |
+| 6 |![](https://github.com/jupiterbjy/OpenAT/assets/26041217/6f8e1e4d-d208-4c11-8dbd-7bf8d5df892a)| Reflector Angle 1 |
+| 8 |![](https://github.com/jupiterbjy/OpenAT/assets/26041217/832acff0-37a3-488c-965d-e4cd1d608cea)| Heal Tower |
+| 4 |![](https://github.com/jupiterbjy/OpenAT/assets/26041217/61dfdf89-d933-41d7-b785-bbf2ae26d4f4)| Turret |
+| 7 |![](https://github.com/jupiterbjy/OpenAT/assets/26041217/9cff691b-6dc2-4a4d-8084-b19a278e5528)| Explosive |
 
 ---
 
@@ -76,10 +91,67 @@
 | T | ? |
 | C | ? |
 | DDD | 2분간 다음 적 탱크 소환 안됨 |
-| HKB | 특수전차(앞에 어떤 숫자가 붙던지 상관없이 HKB가 나오면 무조건 이 전차가 나옴) | ![2HKBDD](https://github.com/jupiterbjy/OpenAT/assets/45421813/1335abc2-cd91-4142-ad29-2a5dace6f832)|
+| HKB (2HKB?) | 특수전차(앞에 어떤 숫자가 붙던지 상관없이 HKB가 나오면 무조건 이 전차가 나옴) | ![2HKBDD](https://github.com/jupiterbjy/OpenAT/assets/45421813/1335abc2-cd91-4142-ad29-2a5dace6f832)|
+| HLB (2HLB?) | EGYPT m5 에서 등장 |![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/60c3bb59-806d-48e9-96d6-395bae908592)|
 
-### bosses
-| combined code | image | note |
-|-|-|-|
-|2HLBD|![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/60c3bb59-806d-48e9-96d6-395bae908592)|EGYPT m5 에서 등장|
-|2HKBDD?|![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/9b498a50-7f9d-4226-8a18-141c34ccf708)|todo: 이미지가 코드와 동일한 차량인지 확인|
+---
+
+## Map Areas
+
+| Dirname | Stage No |
+| - | - |
+| RUIN | 1 |
+| SAND | 2 |
+| RAIN | 3 |
+| SNOW | 4 |
+| EGYPT | 5 |
+| ICE | 6 |
+| FIRE | 7 |
+| TUND | 8 |
+| CAST | 9 |
+| DUNG | 10 |
+| GROT | 11 |
+| FARO | 12 |
+| END | 13 |
+
+---
+
+## Map Notations
+
+- NOTE: Sometimes & Sign Spawn walls, sometimes not - this is core reason we're creating new notations.
+
+### Note regarding & sign
+
+Here's things (probably) sure about & sign:
+- Instructs enemy tanks to shoot at it when in-sight or next to it, whether it's empty or not.
+- This is part of how enemy attacks base or shoot mirrors - it's probably not programmed into AI logic, but just shooting at this sign
+
+But we're not sure why it sometimes spawn walls and sometimes not. I can't find any details seems to be specifying this behavior.
+
+| Map | Map notation | Actual |
+| - | - | - |
+|CAST/m4|![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/08704d01-59b8-45e4-b112-4caed68a2a6f)|![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/c43f8790-2f25-422b-8613-27956c07654a)|
+|RUIN/m4|![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/ce51f49c-1518-4d7c-a91d-7b39d45d49be)|![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/27c84155-b076-46e2-98fc-0b6b45362ecd)|
+
+
+### Brick walls
+
+- Contains 4 texture groups: C / R / W / Y and each has 0~3 textures for damaged effect
+
+| char | char(enemy target) | image | description |
+| - | - | - | - |
+| # | & |![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/e02dfd1d-2eb1-41a0-97e1-a49e37e18b3b)| Full health brick wall |
+| 4 | 5 |![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/fe5ce410-3284-425f-92d1-c57da450481e)| Health 3 Wall |
+| 2? | 7 |![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/24e1ca2c-b88f-41ff-9258-389619da3eac)| Health 2 Wall |
+| 0? | 9 |![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/6fdd4f59-e31f-42db-b7f7-f45bba2036a9)| Health 1 Wall |
+
+
+### Stone walls
+
+- Contains 2 textures: TerrWall_G_O / Terr_01 - Seems like there's more dummy textures that might also is a stone wall.
+
+
+| char | image | description |
+| - | - | - |
+| % | ![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/14335471-2a5c-48e1-8a32-3c6b02521b6f) | Stone Wall |
+
