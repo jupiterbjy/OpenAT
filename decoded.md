@@ -118,7 +118,7 @@ aka gametypes
 
 ---
 
-## Map Notations
+## Wall Notations
 
 - NOTE: Sometimes & Sign Spawn walls, sometimes not - this is core reason we're creating new notations.
 
@@ -152,8 +152,36 @@ But we're not sure why it sometimes spawn walls and sometimes not. I can't find 
 
 - Contains 2 textures: TerrWall_G_O / Terr_01 - Seems like there's more dummy textures that might also is a stone wall.
 
-
 | char | image | description |
 | - | - | - |
 | % | ![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/14335471-2a5c-48e1-8a32-3c6b02521b6f) | Stone Wall |
 
+## Terrain Notation
+
+There's bunch of unknown stuffs here.
+
+![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/14f06b88-429f-4560-94ee-cba3c1c34ba3)
+
+### Terr
+
+| head | description |
+| - | - |
+
+| Tail | description |
+| - | - |
+| N | Default rotation / Bottom-Right corner |
+| N1 | Bottom-Left corner |
+| N2 | Top-Left corner |
+| N12 | Top-Right corner |
+
+### Terr2
+
+| head | description |
+| - | - |
+
+| Tail | description |
+| - | - |
+| N15 |  |
+| N1234 |  |
+| N134 |  |
+| N235 |  |
