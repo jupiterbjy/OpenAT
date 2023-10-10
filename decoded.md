@@ -1,4 +1,4 @@
-![3](https://github.com/jupiterbjy/OpenAT/assets/45421813/041c51e8-ade2-4eb6-abb8-7a8b11f8ff69)![M](https://github.com/jupiterbjy/OpenAT/assets/45421813/8a13de63-a7fa-4efc-bd67-86f631e43c94)## TOC
+## TOC
 
 1. [Game Objectives](Game-Objectives)
 2. [Game Objects](Game-Objects)
