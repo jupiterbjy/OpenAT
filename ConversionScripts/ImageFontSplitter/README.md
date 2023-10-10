@@ -1,6 +1,6 @@
 ## Image Font Splitter
 
-![](https://github.com/jupiterbjy/OpenAT/assets/26041217/c3d3bf37-5d1f-45a4-be59-23f861ad3dd3)
+![Image Font Splitter](https://github.com/jupiterbjy/OpenAT/assets/45421813/a8c388c1-f92d-4ceb-9728-8af6754c79e5)
 
 Simple script and hand-drawn mask layer for slicing each letter into individual images.
 
