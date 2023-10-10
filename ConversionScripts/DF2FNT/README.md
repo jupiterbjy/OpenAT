@@ -2,7 +2,7 @@
 
 Fonts used in-game is like this:
 
-![](https://github.com/jupiterbjy/OpenAT/assets/26041217/de60ab2d-9263-45d3-938f-9b30cb65afb8)
+![1Fonts used in-game is like this](https://github.com/jupiterbjy/OpenAT/assets/45421813/2d86e0db-44c8-4bdc-8fc9-f8c952d25876)
 
 
 And some font type I never managed to search online about:
