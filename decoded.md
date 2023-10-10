@@ -67,8 +67,7 @@ aka gametypes
 
 | code | image | note |
 |-|-|-|
-|0|![0](https://github.com/jupiterbjy/OpenAT/assets/45421813/65894c31-59a1-4b7f-9678-6bcafbe616e2)
-|Random upgrade & weapon, not sure about weapon's chance - seen a lot of flamethrower and not a single pluse cannon.|
+|0|![0](https://github.com/jupiterbjy/OpenAT/assets/45421813/65894c31-59a1-4b7f-9678-6bcafbe616e2)|Random upgrade & weapon, not sure about weapon's chance - seen a lot of flamethrower and not a single pluse cannon.|
 |1|![1](https://github.com/jupiterbjy/OpenAT/assets/45421813/87a13735-3753-4137-8cf9-e078517c63e4)||
 |2|![2](https://github.com/jupiterbjy/OpenAT/assets/45421813/8a1c9219-a9f8-4095-9fd1-5549a36d408c)||
 |3|![3](https://github.com/jupiterbjy/OpenAT/assets/45421813/1870fb17-5b7a-4932-9101-3b7812c08972)||
