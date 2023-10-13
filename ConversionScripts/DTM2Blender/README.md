@@ -1,6 +1,6 @@
 ## Armada Tanks *.dtm model converter
 
-![](https://github.com/jupiterbjy/OpenAT/assets/26041217/2e914124-23a1-4112-a319-423baa08870a)
+![1Armada Tanks  dtm model converter](https://github.com/jupiterbjy/OpenAT/assets/45421813/d7bd0bb2-48dc-4d40-a1d0-2d15dee6dc4d)
 
 For converting *Armada Tanks's* seemingly private model format `*.dtm` into blender object.  
 
@@ -20,7 +20,7 @@ There's no information what `*.dtm` file is. I assume this is in-house format us
 
 Initially I went on rebuilding models from scratch, but it took way long time(about ~100hrs right now) and produced too little:
 
-![](https://github.com/jupiterbjy/OpenAT/assets/26041217/34d6e8bb-c79e-4ac9-971d-1370f68140fa)
+![2Initially I went on rebuilding models from scratch, but it took way long time(about ~100hrs right now) and produced too little](https://github.com/jupiterbjy/OpenAT/assets/45421813/89926229-243a-4984-b49e-3d5c95f0b2f0)
 
 So, after getting mentally overloaded and physically exhausted, I looked back on idea of some kinda of reverse-engineering the DTM file.
 

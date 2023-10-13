@@ -14,10 +14,10 @@ aka gametypes
 
 | code | image | description kor | eng | note |
 |-|-|-|-|-|
-| B |![objective_destroy](https://github.com/jupiterbjy/OpenAT/assets/26041217/941b2cc2-c107-48de-9526-3c184c845d46)| 모든 적 파괴 | Destroy all enemies | |
-| F |![objective_defend](https://github.com/jupiterbjy/OpenAT/assets/26041217/0c17115e-9a86-4e78-8619-18a0e95bbe91)| 기지 방어 | Defend your base | |
-| H |![objective_box](https://github.com/jupiterbjy/OpenAT/assets/26041217/267bed54-3126-4786-942e-aaacc493cc45)| 모든 상자 줍기 | Pick up all boxes | 실제론 안주워도 클리어 지장 없음. 미구현? |
-| T |![objective_bunker](https://github.com/jupiterbjy/OpenAT/assets/26041217/b3bc46f8-b2a8-48cc-be2c-a966c72c26c4)| 모든 벙커 파괴 | Destroy all bunkers | |
+| B |![B](https://github.com/jupiterbjy/OpenAT/assets/45421813/513d4ec3-4d07-4582-853d-bc61c5f5d86b)| 모든 적 파괴 | Destroy all enemies | |
+| F |![F](https://github.com/jupiterbjy/OpenAT/assets/45421813/870d1cec-3143-4881-9868-a19bea3c9a24)| 기지 방어 | Defend your base | |
+| H |![H](https://github.com/jupiterbjy/OpenAT/assets/45421813/7d27022c-c8c4-4dbd-8654-f55b5fc38985)| 모든 상자 줍기 | Pick up all boxes | 실제론 안주워도 클리어 지장 없음. 미구현? |
+| T |![T](https://github.com/jupiterbjy/OpenAT/assets/45421813/8dbbc73f-2042-4552-adbd-718ecaf5c726)| 모든 벙커 파괴 | Destroy all bunkers | |
 
 ---
 
@@ -25,16 +25,16 @@ aka gametypes
 
 | code | image | description |
 |-|-|-|
-| C |![00](https://github.com/jupiterbjy/OpenAT/assets/26041217/a388e1e9-e9e2-42ff-b623-613dbde57bfd)|! lock enemies|
-| S |![01](https://github.com/jupiterbjy/OpenAT/assets/26041217/78c193eb-e4b9-41ff-a931-fbdfe02c1da1)|! invincibility|
-| M |![02](https://github.com/jupiterbjy/OpenAT/assets/26041217/7b7b5bb6-c68d-4a3a-ad37-299d42d01c01)|Recovers tank hit points|
-| L |![03](https://github.com/jupiterbjy/OpenAT/assets/26041217/812235bb-e13b-431d-8142-f6cf980cc778)|! construct stone walls around base|
-| Z |![04](https://github.com/jupiterbjy/OpenAT/assets/26041217/0cbfb3ea-b594-49f2-aa5a-5b29e7772be4)|! lock enemy weapons|
-| R |![05](https://github.com/jupiterbjy/OpenAT/assets/26041217/8d888a4a-0fd9-48b2-b781-1bc292006c94)| Temporarily improves shooting speed (does not work with max upgrade)|
-| B |![08](https://github.com/jupiterbjy/OpenAT/assets/26041217/50748447-b60e-4925-b096-f6d3daad0b2e)|! damage all enemies on screen|
-| I |![0](https://github.com/jupiterbjy/OpenAT/assets/26041217/5a034a77-d393-4985-9c56-f747bef81a8c)|! setup mines|
-| X |![1](https://github.com/jupiterbjy/OpenAT/assets/26041217/53bcdf23-6693-4330-8b72-218a57393906)| Regenerate hit points over time |
-| Y |![](https://github.com/jupiterbjy/OpenAT/assets/26041217/105c0c6c-3683-4c03-b822-827ec3fb450f)| Recovers enemy hit points |
+| C |![C](https://github.com/jupiterbjy/OpenAT/assets/45421813/6e792a72-85b0-4076-bebe-432f1cc010f1)|! lock enemies|
+| S |![S](https://github.com/jupiterbjy/OpenAT/assets/45421813/02deccf2-cd0e-4978-a3f0-412e564b09ff)|! invincibility|
+| M |![M](https://github.com/jupiterbjy/OpenAT/assets/45421813/93088393-b98d-4d54-b025-22ba78e8769f)|Recovers tank hit points|
+| L |![L](https://github.com/jupiterbjy/OpenAT/assets/45421813/272936d8-18d7-4a2e-b29c-20c780ddcf44)|! construct stone walls around base|
+| Z |![Z](https://github.com/jupiterbjy/OpenAT/assets/45421813/106aaaa3-3c21-4193-8b11-3bcda32c2387)|! lock enemy weapons|
+| R |![R](https://github.com/jupiterbjy/OpenAT/assets/45421813/da6bcd91-8e47-4fc6-a761-69828fe84ee3)| Temporarily improves shooting speed (does not work with max upgrade)|
+| B |![B](https://github.com/jupiterbjy/OpenAT/assets/45421813/97b6bb11-b89a-47a4-b7d9-d8b6aee9a1f4)|! damage all enemies on screen|
+| I |![I](https://github.com/jupiterbjy/OpenAT/assets/45421813/2c854d87-479d-46bf-a567-fd75c4d7efd9)|! setup mines|
+| X |![X](https://github.com/jupiterbjy/OpenAT/assets/45421813/2a885c67-1203-4ee1-864a-c55c16a9f6d4)| Regenerate hit points over time |
+| Y |![Y](https://github.com/jupiterbjy/OpenAT/assets/45421813/78e90725-1a16-4af9-a255-ded8e45b3525)| Recovers enemy hit points |
 
 ---
 
@@ -44,13 +44,13 @@ aka gametypes
 
 | code | image | description |
 |-|-|-|
-| 1 |![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/93b18098-a959-42c1-8b7b-144045bd2f47)| Bunker |
-| 3 |![](https://github.com/jupiterbjy/OpenAT/assets/26041217/ca5ac4f3-92c4-47b9-8438-422a7ff820bf)| Box |
-| 5 |![](https://github.com/jupiterbjy/OpenAT/assets/26041217/9eb70ec8-d86d-40e1-b58f-0ce179a1c962)| Reflector Angle 0 |
-| 6 |![](https://github.com/jupiterbjy/OpenAT/assets/26041217/6f8e1e4d-d208-4c11-8dbd-7bf8d5df892a)| Reflector Angle 1 |
-| 8 |![](https://github.com/jupiterbjy/OpenAT/assets/26041217/832acff0-37a3-488c-965d-e4cd1d608cea)| Heal Tower |
-| 4 |![](https://github.com/jupiterbjy/OpenAT/assets/26041217/61dfdf89-d933-41d7-b785-bbf2ae26d4f4)| Turret |
-| 7 |![](https://github.com/jupiterbjy/OpenAT/assets/26041217/9cff691b-6dc2-4a4d-8084-b19a278e5528)| Explosive |
+| 1 |![1](https://github.com/jupiterbjy/OpenAT/assets/45421813/0fc38aa6-1e0c-49c4-8663-084b0270b76e)| Bunker |
+| 3 |![3](https://github.com/jupiterbjy/OpenAT/assets/45421813/9520ee8e-bb93-479a-936a-88f33e8979ee)| Box |
+| 4 |![4](https://github.com/jupiterbjy/OpenAT/assets/45421813/6658eccf-7c71-4bf3-95ba-2580f23b89be)| Turret |
+| 5 |![5](https://github.com/jupiterbjy/OpenAT/assets/45421813/ac906f2c-f491-4524-949a-df574406e86b)| Reflector Angle 0 |
+| 6 |![6](https://github.com/jupiterbjy/OpenAT/assets/45421813/9f9448e6-350a-46d9-bf67-b6b1f9f66e03)| Reflector Angle 1 |
+| 7 |![7](https://github.com/jupiterbjy/OpenAT/assets/45421813/23c2423f-3c99-452b-a34b-a9fd875c6126)| Explosive |
+| 8 |![8](https://github.com/jupiterbjy/OpenAT/assets/45421813/20e0b7e5-ea23-4932-af6c-8e15c4a2e8d6)| Heal Tower |
 
 ---
 
@@ -67,34 +67,33 @@ aka gametypes
 
 | code | image | note |
 |-|-|-|
-|0|![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/bbfbc334-6509-4d8b-8653-4bb51d007313)|Random upgrade & weapon, not sure about weapon's chance - seen a lot of flamethrower and not a single pluse cannon.|
-|1|![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/b81eb933-d13c-4e09-828a-303e1cbd73c5)||
-|2|![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/c657e2c0-ad1e-482a-a514-2740baffcffe)||
-|3|![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/66b4a990-1cae-4884-b83d-42848daff297)||
-|4|![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/c87bd145-0982-422c-a337-030e9ffb08d6)||
-|5|![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/de06fee0-cefe-4b59-9b9d-e61f2c4cef90)||
-|6|![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/0718d3ed-a780-4a9a-9773-dc9fe48d36ff)||
-|7|![image](https://github.com/jupiterbjy/OpenAT/assets/45421813/9384ce73-bfbd-4bca-b563-5820e72a0b0c)||
-|8|![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/baccff0f-4160-4e85-8566-ea0b4b4b5a6b)||
-|9|![image](https://github.com/jupiterbjy/OpenAT/assets/45421813/951034cd-aa1d-4ab7-ba6f-26f4391a9aa5)||
-
+|0|![0](https://github.com/jupiterbjy/OpenAT/assets/45421813/65894c31-59a1-4b7f-9678-6bcafbe616e2)|Random upgrade & weapon, not sure about weapon's chance - seen a lot of flamethrower and not a single pluse cannon.|
+|1|![1](https://github.com/jupiterbjy/OpenAT/assets/45421813/87a13735-3753-4137-8cf9-e078517c63e4)||
+|2|![2](https://github.com/jupiterbjy/OpenAT/assets/45421813/8a1c9219-a9f8-4095-9fd1-5549a36d408c)||
+|3|![3](https://github.com/jupiterbjy/OpenAT/assets/45421813/1870fb17-5b7a-4932-9101-3b7812c08972)||
+|4|![4](https://github.com/jupiterbjy/OpenAT/assets/45421813/7937a46e-c465-4ef9-b4d4-03dbfca90874)||
+|5|![5](https://github.com/jupiterbjy/OpenAT/assets/45421813/86a583ed-5ae8-40be-8d14-d012527599fb)||
+|6|![6](https://github.com/jupiterbjy/OpenAT/assets/45421813/34c952c4-86bc-47ea-b76d-59dc5fbfd863)||
+|7|![7](https://github.com/jupiterbjy/OpenAT/assets/45421813/03d551c2-a491-4e1c-aa4e-d5272c36ffb9)||
+|8|![8](https://github.com/jupiterbjy/OpenAT/assets/45421813/135cd1cd-3a82-49be-a98a-8a9b51d93758)||
+|9|![9](https://github.com/jupiterbjy/OpenAT/assets/45421813/07779d3b-cfe9-4258-a831-39afcc2c31e0)||
 
 ### attributes
 | code | description | image |
 |-|-|-|
-| B, S | 빨간색 |![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/55ccef79-f540-459f-8d04-166ee15be7f9)|
-| L | 하늘색 |![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/9a721677-338f-4647-84fb-11931330b2bd)|
-| K | 검정색 |![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/a52f2a3f-b2f7-49d1-ad59-6daac0ac8165)|
-| I | 투명 |![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/954373b5-9886-417c-b7be-2505a4205656)|
-| ? | 아이템? |![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/ba46278c-b3a8-4024-888c-507a7cd1295a)|
+| B, S | 빨간색 |![B, S](https://github.com/jupiterbjy/OpenAT/assets/45421813/9fe1739e-ab7b-4022-94a4-193e36833497)|
+| L | 하늘색 |![L](https://github.com/jupiterbjy/OpenAT/assets/45421813/0d07b150-6d34-4fb1-ad5b-6f675b108ab3)|
+| K | 검정색 |![K](https://github.com/jupiterbjy/OpenAT/assets/45421813/17308f7d-59e4-41c6-9853-d1a0942c7e6e)|
+| I | 투명 |![I](https://github.com/jupiterbjy/OpenAT/assets/45421813/3af3344f-556e-44b3-8a95-75cb4814a71f)|
+| ? | 아이템? |![물음표](https://github.com/jupiterbjy/OpenAT/assets/45421813/2dd95927-4e0d-4ca1-874a-2a932481365a)|
 | P | 5초간 다음 적 탱크 소환 안됨 |
 | H | ? |
 | D | 30초간 다음 적 탱크 소환 안됨 |
 | T | ? |
 | C | ? |
 | DDD | 2분간 다음 적 탱크 소환 안됨 |
-| HKB (2HKB?) | 특수전차(앞에 어떤 숫자가 붙던지 상관없이 HKB가 나오면 무조건 이 전차가 나옴) | ![2HKBDD](https://github.com/jupiterbjy/OpenAT/assets/45421813/1335abc2-cd91-4142-ad29-2a5dace6f832)|
-| HLB (2HLB?) | EGYPT m5 에서 등장 |![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/60c3bb59-806d-48e9-96d6-395bae908592)|
+| HKB (2HKB?) | 특수전차(앞에 어떤 숫자가 붙던지 상관없이 HKB가 나오면 무조건 이 전차가 나옴) |![HKB](https://github.com/jupiterbjy/OpenAT/assets/45421813/e1da3596-a607-475c-a681-069ae002cfc6)|
+| HLB (2HLB?) | EGYPT m5 에서 등장 |![HLB](https://github.com/jupiterbjy/OpenAT/assets/45421813/d86a7840-97a1-4273-b800-2c002d2e169f)|
 
 ---
 
@@ -118,7 +117,7 @@ aka gametypes
 
 ---
 
-## Map Notations
+## Wall Notations
 
 - NOTE: Sometimes & Sign Spawn walls, sometimes not - this is core reason we're creating new notations.
 
@@ -132,9 +131,8 @@ But we're not sure why it sometimes spawn walls and sometimes not. I can't find 
 
 | Map | Map notation | Actual |
 | - | - | - |
-|CAST/m4|![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/08704d01-59b8-45e4-b112-4caed68a2a6f)|![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/c43f8790-2f25-422b-8613-27956c07654a)|
-|RUIN/m4|![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/ce51f49c-1518-4d7c-a91d-7b39d45d49be)|![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/27c84155-b076-46e2-98fc-0b6b45362ecd)|
-
+|CAST/m4|![CASTm4 Map notation](https://github.com/jupiterbjy/OpenAT/assets/45421813/4fc428e3-027a-49b1-b471-9ef69d7f76c3)|![CASTm4 Actual](https://github.com/jupiterbjy/OpenAT/assets/45421813/caad79f8-a305-4c5e-a6fa-8fc33e3ee642)|
+|RUIN/m4|![RUINm4 Map notation](https://github.com/jupiterbjy/OpenAT/assets/45421813/39ad9d51-06eb-4cdc-b495-3a4245520e90)|![RUINm4 Actual](https://github.com/jupiterbjy/OpenAT/assets/45421813/749d13bc-2f08-424a-9b68-930be50dbda1)|
 
 ### Brick walls
 
@@ -142,18 +140,45 @@ But we're not sure why it sometimes spawn walls and sometimes not. I can't find 
 
 | char | char(enemy target) | image | description |
 | - | - | - | - |
-| # | & |![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/e02dfd1d-2eb1-41a0-97e1-a49e37e18b3b)| Full health brick wall |
-| 4 | 5 |![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/fe5ce410-3284-425f-92d1-c57da450481e)| Health 3 Wall |
-| 2? | 7 |![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/24e1ca2c-b88f-41ff-9258-389619da3eac)| Health 2 Wall |
-| 0? | 9 |![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/6fdd4f59-e31f-42db-b7f7-f45bba2036a9)| Health 1 Wall |
-
+| # | & |![Brick walls # image](https://github.com/jupiterbjy/OpenAT/assets/45421813/b5db0908-622a-4e84-acab-9b7e0410ffab)| Full health brick wall |
+| 4 | 5 |![Brick walls 4 image](https://github.com/jupiterbjy/OpenAT/assets/45421813/fb42a0ba-7f6b-4bc6-be9d-605cfd1705a4)| Health 3 Wall |
+| 2? | 7 |![Brick walls 2 image](https://github.com/jupiterbjy/OpenAT/assets/45421813/23b5b447-c530-40b6-8dc7-d20c93aad017)| Health 2 Wall |
+| 0? | 9 |![Brick walls 0 image](https://github.com/jupiterbjy/OpenAT/assets/45421813/ea8615e9-2be7-4109-a605-361af4d8332a)| Health 1 Wall |
 
 ### Stone walls
 
 - Contains 2 textures: TerrWall_G_O / Terr_01 - Seems like there's more dummy textures that might also is a stone wall.
 
-
 | char | image | description |
 | - | - | - |
-| % | ![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/14335471-2a5c-48e1-8a32-3c6b02521b6f) | Stone Wall |
+| % |![Stone walls % image](https://github.com/jupiterbjy/OpenAT/assets/45421813/af138505-a547-4f4a-8b8f-3e1bb239a504)| Stone Wall |
 
+## Terrain Notation
+
+There's bunch of unknown stuffs here.
+
+![Terrain Notation](https://github.com/jupiterbjy/OpenAT/assets/45421813/dbdff2ff-ed22-4747-bcaa-f86cea20ab37)
+
+### Terr
+
+| head | description |
+| - | - |
+
+| Tail | description |
+| - | - |
+| N | Default rotation / Bottom-Right corner |
+| N1 | Bottom-Left corner |
+| N2 | Top-Left corner |
+| N12 | Top-Right corner |
+
+### Terr2
+
+| head | description |
+| - | - |
+
+| Tail | description |
+| - | - |
+| N15 |  |
+| N1234 |  |
+| N134 |  |
+| N235 |  |

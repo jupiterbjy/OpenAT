@@ -9,6 +9,10 @@ An Open source Godot recreation project of Armada Tanks, a great arcade game by:
 - Yaroslav Yanovsky: Producer
 - Message(??): Music Composition, Sound Design 
 
+Currently this is barren land because we couldn't solve the hard-dependency to Armada Tanks game resources, thus potentially violating the copyright. Everythign is in below-alpha state so far.
+
+Until this graduation project is complete in somewhat safe way, we'll try to create all-in-one script to convert and move required dependencies to godot project resources, if possible. (Honestly not sure if it's possible at this moment)
+
 ## Repo Structure
 
 ### [ConversionScripts](ConversionScripts)
