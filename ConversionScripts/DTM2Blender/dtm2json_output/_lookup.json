@@ -1,0 +1,1435 @@
+{
+  "TERR0": {
+    "idx": 0,
+    "file": [
+      "Terr_0.dtm"
+    ]
+  },
+  "TERR1": {
+    "idx": 1,
+    "file": [
+      "Terr_1.dtm"
+    ]
+  },
+  "TERR2": {
+    "idx": 2,
+    "file": [
+      "Terr_2.dtm"
+    ]
+  },
+  "TERR3": {
+    "idx": 3,
+    "file": [
+      "Terr_3.dtm"
+    ]
+  },
+  "TERR4": {
+    "idx": 4,
+    "file": [
+      "Terr_4.dtm"
+    ]
+  },
+  "TERR5": {
+    "idx": 5,
+    "file": [
+      "Terr_5.dtm"
+    ]
+  },
+  "TERR6": {
+    "idx": 6,
+    "file": [
+      "Terr_6.dtm"
+    ]
+  },
+  "TERR7": {
+    "idx": 7,
+    "file": [
+      "Terr_7.dtm"
+    ]
+  },
+  "TERR8": {
+    "idx": 8,
+    "file": [
+      "Terr_8.dtm"
+    ]
+  },
+  "TERR9": {
+    "idx": 9,
+    "file": [
+      "Terr_9.dtm"
+    ]
+  },
+  "TERR10": {
+    "idx": 10,
+    "file": [
+      "Terr_10.dtm"
+    ]
+  },
+  "BULLET1": {
+    "idx": 11,
+    "file": [
+      "Bullet_1.dtm"
+    ]
+  },
+  "TERR_ZERO": {
+    "idx": 12,
+    "file": [
+      "Terr_Zero.dtm"
+    ]
+  },
+  "TERR_ZERO2": {
+    "idx": 13,
+    "file": [
+      "Terr_Zero.dtm"
+    ]
+  },
+  "OBJMINA": {
+    "idx": 14,
+    "file": [
+      "Mina.dtm"
+    ]
+  },
+  "MINA": {
+    "idx": 15,
+    "file": [
+      "Item_Mina.dtm"
+    ]
+  },
+  "BUCKET": {
+    "idx": 16,
+    "file": [
+      "Item_Bucket.dtm"
+    ]
+  },
+  "TANKBUCKET": {
+    "idx": 17,
+    "file": [
+      "Bucket.dtm"
+    ]
+  },
+  "ITEMEFFECT": {
+    "idx": 18,
+    "file": [
+      "Item_Effect.dtm"
+    ]
+  },
+  "TANKEXPL": {
+    "idx": 19,
+    "file": [
+      "Tank_Expl.dtm"
+    ]
+  },
+  "TERR42": {
+    "idx": 20,
+    "file": [
+      "Terr_42.dtm"
+    ]
+  },
+  "TERR43": {
+    "idx": 21,
+    "file": [
+      "Terr_43.dtm"
+    ]
+  },
+  "TERR55": {
+    "idx": 22,
+    "file": [
+      "Terr_55.dtm"
+    ]
+  },
+  "AIRBOMB": {
+    "idx": 23,
+    "file": [
+      "item_airBomb.dtm"
+    ]
+  },
+  "OBJAIRBOMB": {
+    "idx": 24,
+    "file": [
+      "AirBomb.dtm"
+    ]
+  },
+  "SCKEY": {
+    "idx": 25,
+    "file": [
+      "item_key.dtm"
+    ]
+  },
+  "TERR51": {
+    "idx": 26,
+    "file": [
+      "Terr_51.dtm"
+    ]
+  },
+  "SCNUT": {
+    "idx": 27,
+    "file": [
+      "item_nut.dtm"
+    ]
+  },
+  "BULLET": {
+    "idx": 28,
+    "file": [
+      "bullet.dtm"
+    ]
+  },
+  "FLAG": {
+    "idx": 29,
+    "file": [
+      "flag.dtm"
+    ]
+  },
+  "CRASH": {
+    "idx": 30,
+    "file": [
+      "WallCrash.dtm"
+    ]
+  },
+  "TERR11": {
+    "idx": 31,
+    "file": [
+      "Terr_11.dtm"
+    ]
+  },
+  "TANKEASY": {
+    "idx": 32,
+    "file": [
+      "Tank_Easy.dtm"
+    ]
+  },
+  "TANKNORMAL": {
+    "idx": 33,
+    "file": [
+      "Tank_Normal.dtm"
+    ]
+  },
+  "TANKHARD": {
+    "idx": 34,
+    "file": [
+      "Tank_Hard.dtm"
+    ]
+  },
+  "TANKNUCLEAN": {
+    "idx": 35,
+    "file": [
+      "Tank_Nuc.dtm"
+    ]
+  },
+  "TANKPLAYER": {
+    "idx": 36,
+    "file": [
+      "Tank_Player.dtm"
+    ]
+  },
+  "TERR27": {
+    "idx": 37,
+    "file": [
+      "Terr_27.dtm"
+    ]
+  },
+  "TERR28": {
+    "idx": 38,
+    "file": [
+      "Terr_28.dtm"
+    ]
+  },
+  "TERR30": {
+    "idx": 39,
+    "file": [
+      "Terr_30.dtm"
+    ]
+  },
+  "TERR31": {
+    "idx": 40,
+    "file": [
+      "Terr_31.dtm"
+    ]
+  },
+  "TERR32": {
+    "idx": 41,
+    "file": [
+      "Terr_32.dtm"
+    ]
+  },
+  "TERR29": {
+    "idx": 42,
+    "file": [
+      "Terr_29.dtm"
+    ]
+  },
+  "SCOREEFFECT": {
+    "idx": 43,
+    "file": [
+      "Item_ScEffect.dtm"
+    ]
+  },
+  "EFFLIGHT": {
+    "idx": 44,
+    "file": [
+      "effect_light.dtm"
+    ]
+  },
+  "EFFBOMB": {
+    "idx": 45,
+    "file": [
+      "effect_bomb.dtm"
+    ]
+  },
+  "PARA": {
+    "idx": 46,
+    "file": [
+      "item_para.dtm"
+    ]
+  },
+  "TERR52": {
+    "idx": 47,
+    "file": [
+      "Terr_52.dtm"
+    ]
+  },
+  "TERR62": {
+    "idx": 48,
+    "file": [
+      "terr_62.dtm"
+    ]
+  },
+  "TERR49": {
+    "idx": 49,
+    "file": [
+      "terr_49.dtm"
+    ]
+  },
+  "TERR21": {
+    "idx": 50,
+    "file": [
+      "Terr_21.dtm"
+    ]
+  },
+  "TERR33": {
+    "idx": 51,
+    "file": [
+      "Terr_33.dtm"
+    ]
+  },
+  "BULLET2": {
+    "idx": 52,
+    "file": [
+      "Bullet_2.dtm"
+    ]
+  },
+  "FIELD": {
+    "idx": 53,
+    "file": [
+      "Field.dtm"
+    ]
+  },
+  "TERR44": {
+    "idx": 54,
+    "file": [
+      "Terr_44.dtm"
+    ]
+  },
+  "BOMB": {
+    "idx": 55,
+    "file": [
+      "item_bomb.dtm"
+    ]
+  },
+  "BOX": {
+    "idx": 56,
+    "file": [
+      "item_box.dtm"
+    ]
+  },
+  "SHIELD": {
+    "idx": 57,
+    "file": [
+      "item_shield.dtm"
+    ]
+  },
+  "EXPLIGHT": {
+    "idx": 58,
+    "file": [
+      "Exp_Light.dtm"
+    ]
+  },
+  "TERR12": {
+    "idx": 59,
+    "file": [
+      "Terr_12.dtm"
+    ]
+  },
+  "TERR13": {
+    "idx": 60,
+    "file": [
+      "Terr_13.dtm"
+    ]
+  },
+  "TERR14": {
+    "idx": 61,
+    "file": [
+      "Terr_14.dtm"
+    ]
+  },
+  "TERR15": {
+    "idx": 62,
+    "file": [
+      "Terr_15.dtm"
+    ]
+  },
+  "CLOCK": {
+    "idx": 63,
+    "file": [
+      "item_clock.dtm"
+    ]
+  },
+  "LOPATA": {
+    "idx": 64,
+    "file": [
+      "item_lopata.dtm"
+    ]
+  },
+  "METKA": {
+    "idx": 65,
+    "file": [
+      "Metka.dtm"
+    ]
+  },
+  "EXPWALL": {
+    "idx": 66,
+    "file": [
+      "Exp_Wall.dtm"
+    ]
+  },
+  "SNOW": {
+    "idx": 67,
+    "file": [
+      "Snow.dtm"
+    ]
+  },
+  "STAR": {
+    "idx": 68,
+    "file": [
+      "Item_Star.dtm"
+    ]
+  },
+  "TERR36": {
+    "idx": 69,
+    "file": [
+      "terr_36.dtm"
+    ]
+  },
+  "RAIN": {
+    "idx": 70,
+    "file": [
+      "Rain.dtm"
+    ]
+  },
+  "BOSS1": {
+    "idx": 71,
+    "file": [
+      "Boss1.dtm"
+    ]
+  },
+  "BOSS2": {
+    "idx": 72,
+    "file": [
+      "Boss2.dtm"
+    ]
+  },
+  "TERR94": {
+    "idx": 73,
+    "file": [
+      "terr_94.dtm"
+    ]
+  },
+  "EVDZOTA": {
+    "idx": 74,
+    "file": [
+      "Event_Dzot_A.dtm"
+    ]
+  },
+  "METKABLUE": {
+    "idx": 75,
+    "file": [
+      "MetkaBlue.dtm"
+    ]
+  },
+  "TANKPB": {
+    "idx": 76,
+    "file": [
+      "TankP_B.dtm"
+    ]
+  },
+  "TANKPH": {
+    "idx": 77,
+    "file": [
+      "TankP_H.dtm"
+    ]
+  },
+  "BULLETFIRE": {
+    "idx": 78,
+    "file": [
+      "Bullet_Fire.dtm"
+    ]
+  },
+  "TANKRAKET": {
+    "idx": 79,
+    "file": [
+      "Tank_Raket.dtm"
+    ]
+  },
+  "LOGO": {
+    "idx": 80,
+    "file": [
+      "Logo.dtm"
+    ]
+  },
+  "TERR16": {
+    "idx": 81,
+    "file": [
+      "Terr_16.dtm"
+    ]
+  },
+  "TERR17": {
+    "idx": 82,
+    "file": [
+      "Terr_17.dtm"
+    ]
+  },
+  "TERR18": {
+    "idx": 83,
+    "file": [
+      "Terr_18.dtm"
+    ]
+  },
+  "FLAGDEST": {
+    "idx": 84,
+    "file": [
+      "flagDest.dtm"
+    ]
+  },
+  "LEVELI": {
+    "idx": 85,
+    "file": [
+      "Level_I.dtm"
+    ]
+  },
+  "LEVELII": {
+    "idx": 86,
+    "file": [
+      "Level_II.dtm"
+    ]
+  },
+  "LEVELIII": {
+    "idx": 87,
+    "file": [
+      "Level_III.dtm"
+    ]
+  },
+  "TERR22": {
+    "idx": 88,
+    "file": [
+      "terr_22.dtm"
+    ]
+  },
+  "MEDIC": {
+    "idx": 89,
+    "file": [
+      "item_Medic.dtm"
+    ]
+  },
+  "PART0": {
+    "idx": 90,
+    "file": [
+      "parts_B.dtm",
+      "0"
+    ]
+  },
+  "PART1": {
+    "idx": 91,
+    "file": [
+      "parts_B.dtm",
+      "0"
+    ]
+  },
+  "TERR23": {
+    "idx": 92,
+    "file": [
+      "terr_23.dtm"
+    ]
+  },
+  "TERR25": {
+    "idx": 93,
+    "file": [
+      "terr_25.dtm"
+    ]
+  },
+  "TERR24": {
+    "idx": 94,
+    "file": [
+      "terr_24.dtm"
+    ]
+  },
+  "TERR26": {
+    "idx": 95,
+    "file": [
+      "terr_26.dtm"
+    ]
+  },
+  "TERR34": {
+    "idx": 96,
+    "file": [
+      "terr_34.dtm"
+    ]
+  },
+  "TERR35": {
+    "idx": 97,
+    "file": [
+      "terr_35.dtm"
+    ]
+  },
+  "TERR37": {
+    "idx": 98,
+    "file": [
+      "terr_37.dtm"
+    ]
+  },
+  "TERR20": {
+    "idx": 99,
+    "file": [
+      "terr_20.dtm"
+    ]
+  },
+  "TERR19": {
+    "idx": 100,
+    "file": [
+      "terr_19.dtm"
+    ]
+  },
+  "TERR38": {
+    "idx": 101,
+    "file": [
+      "terr_38.dtm"
+    ]
+  },
+  "BACKGR": {
+    "idx": 102,
+    "file": [
+      "BackGr.dtm"
+    ]
+  },
+  "TERR45": {
+    "idx": 103,
+    "file": [
+      "terr_45.dtm"
+    ]
+  },
+  "TERR46": {
+    "idx": 104,
+    "file": [
+      "terr_46.dtm"
+    ]
+  },
+  "TERR47": {
+    "idx": 105,
+    "file": [
+      "terr_47.dtm"
+    ]
+  },
+  "TERR48": {
+    "idx": 106,
+    "file": [
+      "terr_48.dtm"
+    ]
+  },
+  "EDITBOX": {
+    "idx": 107,
+    "file": [
+      "EditBox.dtm"
+    ]
+  },
+  "ZAMOK": {
+    "idx": 108,
+    "file": [
+      "item_zamok.dtm"
+    ]
+  },
+  "AMMO": {
+    "idx": 109,
+    "file": [
+      "item_ammo.dtm"
+    ]
+  },
+  "TERR50": {
+    "idx": 110,
+    "file": [
+      "terr_50.dtm"
+    ]
+  },
+  "TERR56": {
+    "idx": 111,
+    "file": [
+      "terr_56.dtm"
+    ]
+  },
+  "TERR57": {
+    "idx": 112,
+    "file": [
+      "terr_57.dtm"
+    ]
+  },
+  "TERR58": {
+    "idx": 113,
+    "file": [
+      "terr_58.dtm"
+    ]
+  },
+  "TANKDEFENCE": {
+    "idx": 114,
+    "file": [
+      "Defence.dtm"
+    ]
+  },
+  "DEFENCE": {
+    "idx": 115,
+    "file": [
+      "Item_Defence.dtm"
+    ]
+  },
+  "ABATIS": {
+    "idx": 116,
+    "file": [
+      "Abatis.dtm"
+    ]
+  },
+  "TERR41": {
+    "idx": 117,
+    "file": [
+      "terr_41.dtm"
+    ]
+  },
+  "TERR63": {
+    "idx": 118,
+    "file": [
+      "terr_63.dtm"
+    ]
+  },
+  "TERR59": {
+    "idx": 119,
+    "file": [
+      "terr_59.dtm"
+    ]
+  },
+  "TERR54": {
+    "idx": 120,
+    "file": [
+      "Terr_54.dtm"
+    ]
+  },
+  "TERR53": {
+    "idx": 121,
+    "file": [
+      "Terr_53.dtm"
+    ]
+  },
+  "TERR61": {
+    "idx": 122,
+    "file": [
+      "Terr_61.dtm"
+    ]
+  },
+  "TERR64": {
+    "idx": 123,
+    "file": [
+      "Terr_64.dtm"
+    ]
+  },
+  "TERR65": {
+    "idx": 124,
+    "file": [
+      "Terr_65.dtm"
+    ]
+  },
+  "TERR66": {
+    "idx": 125,
+    "file": [
+      "Terr_66.dtm"
+    ]
+  },
+  "TERR67": {
+    "idx": 126,
+    "file": [
+      "Terr_67.dtm"
+    ]
+  },
+  "TERR68": {
+    "idx": 127,
+    "file": [
+      "Terr_68.dtm"
+    ]
+  },
+  "TERR69": {
+    "idx": 128,
+    "file": [
+      "Terr_69.dtm"
+    ]
+  },
+  "TERR70": {
+    "idx": 129,
+    "file": [
+      "Terr_70.dtm"
+    ]
+  },
+  "TERR71": {
+    "idx": 130,
+    "file": [
+      "Terr_71.dtm"
+    ]
+  },
+  "TERR76": {
+    "idx": 131,
+    "file": [
+      "terr_76.dtm"
+    ]
+  },
+  "TERR77": {
+    "idx": 132,
+    "file": [
+      "terr_77.dtm"
+    ]
+  },
+  "TERR78": {
+    "idx": 133,
+    "file": [
+      "terr_78.dtm"
+    ]
+  },
+  "TERR79": {
+    "idx": 134,
+    "file": [
+      "terr_79.dtm"
+    ]
+  },
+  "FLYSHIP": {
+    "idx": 135,
+    "file": [
+      "FlyShip.dtm"
+    ]
+  },
+  "TERR75": {
+    "idx": 136,
+    "file": [
+      "terr_75.dtm"
+    ]
+  },
+  "EVMIRROR": {
+    "idx": 137,
+    "file": [
+      "EventObj_Mirror.dtm"
+    ]
+  },
+  "EVPD": {
+    "idx": 138,
+    "file": [
+      "Event_P_Down.dtm"
+    ]
+  },
+  "EVPU": {
+    "idx": 139,
+    "file": [
+      "Event_P_Up.dtm"
+    ]
+  },
+  "EVDZOT": {
+    "idx": 140,
+    "file": [
+      "Event_Dzot.dtm"
+    ]
+  },
+  "EVBOMB": {
+    "idx": 141,
+    "file": [
+      "Event_Bomb.dtm"
+    ]
+  },
+  "EVHOST": {
+    "idx": 142,
+    "file": [
+      "Event_Host.dtm"
+    ]
+  },
+  "TERR90": {
+    "idx": 143,
+    "file": [
+      "terr_90.dtm"
+    ]
+  },
+  "TERR91": {
+    "idx": 144,
+    "file": [
+      "terr_91.dtm"
+    ]
+  },
+  "TERR92": {
+    "idx": 145,
+    "file": [
+      "terr_92.dtm"
+    ]
+  },
+  "TERR93": {
+    "idx": 146,
+    "file": [
+      "terr_93.dtm"
+    ]
+  },
+  "EVDZOTD": {
+    "idx": 147,
+    "file": [
+      "Event_Dzot_D.dtm"
+    ]
+  },
+  "BULLET3": {
+    "idx": 148,
+    "file": [
+      "Bullet_Electro.dtm",
+      "Bullet_3.dtm"
+    ]
+  },
+  "ELECTRO": {
+    "idx": 149,
+    "file": [
+      "item_Electro.dtm"
+    ]
+  },
+  "TERR81": {
+    "idx": 150,
+    "file": [
+      "Terr_81.dtm"
+    ]
+  },
+  "TERR82": {
+    "idx": 151,
+    "file": [
+      "Terr_82.dtm"
+    ]
+  },
+  "TERR83": {
+    "idx": 152,
+    "file": [
+      "Terr_83.dtm"
+    ]
+  },
+  "EVREEC": {
+    "idx": 153,
+    "file": [
+      "Event_Rec.dtm"
+    ]
+  },
+  "BOXLIGHT": {
+    "idx": 154,
+    "file": [
+      "effect_boxlgt.dtm"
+    ]
+  },
+  "ARMGUN": {
+    "idx": 155,
+    "file": [
+      "Head_Gun.dtm"
+    ]
+  },
+  "ARMKULEMET": {
+    "idx": 156,
+    "file": [
+      "Head_RotateGun.dtm"
+    ]
+  },
+  "ARMRAKET": {
+    "idx": 157,
+    "file": [
+      "Head_Raket.dtm"
+    ]
+  },
+  "ARMELECTRO": {
+    "idx": 158,
+    "file": [
+      "Head_Electro.dtm"
+    ]
+  },
+  "ARMFIRE": {
+    "idx": 159,
+    "file": [
+      "Head_Fire.dtm"
+    ]
+  },
+  "ADDARMOR": {
+    "idx": 160,
+    "file": [
+      "Add_ARMOR.dtm"
+    ]
+  },
+  "ADDARMORII": {
+    "idx": 161,
+    "file": [
+      "Add_ARMOR_II.dtm"
+    ]
+  },
+  "ADDARMORIII": {
+    "idx": 162,
+    "file": [
+      "Add_ARMOR_III.dtm"
+    ]
+  },
+  "ADDSPB": {
+    "idx": 163,
+    "file": [
+      "Add_SP_B.dtm"
+    ]
+  },
+  "ADDSPBII": {
+    "idx": 164,
+    "file": [
+      "Add_SP_B_II.dtm"
+    ]
+  },
+  "ADDSPBIII": {
+    "idx": 165,
+    "file": [
+      "Add_SP_B_III.dtm"
+    ]
+  },
+  "BULLETRAKETA": {
+    "idx": 166,
+    "file": [
+      "Bullet_Raketa.dtm"
+    ]
+  },
+  "BULLETSHOCK": {
+    "idx": 167,
+    "file": [
+      "Bullet_Shock.dtm"
+    ]
+  },
+  "BULLETSHSC": {
+    "idx": 168,
+    "file": [
+      "Bullet_Shock_Sc.dtm"
+    ]
+  },
+  "ADDSPF": {
+    "idx": 169,
+    "file": [
+      "Add_SP_F.dtm"
+    ]
+  },
+  "ADDSPFII": {
+    "idx": 170,
+    "file": [
+      "Add_SP_F_II.dtm"
+    ]
+  },
+  "ADDSPFIII": {
+    "idx": 171,
+    "file": [
+      "Add_SP_F_III.dtm"
+    ]
+  },
+  "ADDSPM": {
+    "idx": 172,
+    "file": [
+      "Add_SP_M.dtm"
+    ]
+  },
+  "ADDSPMII": {
+    "idx": 173,
+    "file": [
+      "Add_SP_M_II.dtm"
+    ]
+  },
+  "ADDSPMIII": {
+    "idx": 174,
+    "file": [
+      "Add_SP_M_III.dtm"
+    ]
+  },
+  "ADDUN": {
+    "idx": 176,
+    "file": [
+      "Add_UN.dtm"
+    ]
+  },
+  "ADDUNII": {
+    "idx": 177,
+    "file": [
+      "Add_UN_II.dtm"
+    ]
+  },
+  "ADDUNIII": {
+    "idx": 178,
+    "file": [
+      "Add_UN_III.dtm"
+    ]
+  },
+  "ARMSHOCK": {
+    "idx": 179,
+    "file": [
+      "Head_Shock.dtm"
+    ]
+  },
+  "EVNUCTANK": {
+    "idx": 180,
+    "file": [
+      "EventObj_NucTank.dtm"
+    ]
+  },
+  "MSEGY": {
+    "idx": 181,
+    "file": [
+      "MapShow_Egypt.dtm"
+    ]
+  },
+  "MSFOR": {
+    "idx": 182,
+    "file": [
+      "MapShow_Forest.dtm"
+    ]
+  },
+  "MSFORP": {
+    "idx": 183,
+    "file": [
+      "MapShow_ForestP.dtm"
+    ]
+  },
+  "MSICE": {
+    "idx": 184,
+    "file": [
+      "ms_ice.dtm",
+      "MapShow_Ice.dtm"
+    ]
+  },
+  "SKY": {
+    "idx": 185,
+    "file": [
+      "Sky.dtm"
+    ]
+  },
+  "TANKBRON": {
+    "idx": 186,
+    "file": [
+      "Tank_Bron.dtm"
+    ]
+  },
+  "TANKELECTRO": {
+    "idx": 187,
+    "file": [
+      "Tank_Electro.dtm"
+    ]
+  },
+  "TL90": {
+    "idx": 188,
+    "file": [
+      "TankLive_90.dtm"
+    ]
+  },
+  "TL70": {
+    "idx": 189,
+    "file": [
+      "TankLive_70.dtm"
+    ]
+  },
+  "TL50": {
+    "idx": 190,
+    "file": [
+      "TankLive_50.dtm"
+    ]
+  },
+  "TL30": {
+    "idx": 191,
+    "file": [
+      "TankLive_30.dtm"
+    ]
+  },
+  "TL10": {
+    "idx": 192,
+    "file": [
+      "TankLive_10.dtm"
+    ]
+  },
+  "MSTREE": {
+    "idx": 193,
+    "file": [
+      "ms_tree.dtm",
+      "MapShow_3D_Tree1.dtm"
+    ]
+  },
+  "MSTUND": {
+    "idx": 194,
+    "file": [
+      "ms_Tund.dtm",
+      "MapShow_3D_Tree2.dtm"
+    ]
+  },
+  "MSEGYPT": {
+    "idx": 195,
+    "file": [
+      "ms_egypt.dtm",
+      "MapShow_3D_Tree3.dtm"
+    ]
+  },
+  "MSFOREST": {
+    "idx": 196,
+    "file": [
+      "ms_forest.dtm",
+      "MapShow_3D_Forest.dtm"
+    ]
+  },
+  "MSSNOW": {
+    "idx": 199,
+    "file": [
+      "ms_ice.dtm",
+      "MapShow_3D_Back.dtm"
+    ]
+  },
+  "MSWATER": {
+    "idx": 198,
+    "file": [
+      "ms_water.dtm",
+      "MapShow_3D_Water.dtm"
+    ]
+  },
+  "MSSKY": {
+    "idx": 200,
+    "file": [
+      "ms_sky.dtm",
+      "MapShow_3D_Sky.dtm"
+    ]
+  },
+  "LINE": {
+    "idx": 201,
+    "file": [
+      "Line.dtm"
+    ]
+  },
+  "BLMPSH": {
+    "idx": 202,
+    "file": [
+      "Bullet_MapShow.dtm"
+    ]
+  },
+  "BIGCRASH": {
+    "idx": 203,
+    "file": [
+      "Crash.dtm"
+    ]
+  },
+  "TERR95": {
+    "idx": 204,
+    "file": [
+      "Terr_95.dtm"
+    ]
+  },
+  "TANKFIRE": {
+    "idx": 205,
+    "file": [
+      "Tank_Fire.dtm"
+    ]
+  },
+  "TANKROTGUN": {
+    "idx": 206,
+    "file": [
+      "Tank_RotGun.dtm"
+    ]
+  },
+  "ADDARMORIIII": {
+    "idx": 207,
+    "file": [
+      "Add_ARMOR_IIII.dtm"
+    ]
+  },
+  "ADDSPBIIII": {
+    "idx": 208,
+    "file": [
+      "Add_SP_B_IIII.dtm"
+    ]
+  },
+  "ADDSPFIIII": {
+    "idx": 209,
+    "file": [
+      "Add_SP_F_IIII.dtm"
+    ]
+  },
+  "ADDSPMIIII": {
+    "idx": 210,
+    "file": [
+      "Add_SP_M_IIII.dtm"
+    ]
+  },
+  "FLAGI": {
+    "idx": 211,
+    "file": [
+      "Flag_I.dtm"
+    ]
+  },
+  "FLAGII": {
+    "idx": 212,
+    "file": [
+      "Flag_II.dtm"
+    ]
+  },
+  "FLAGIII": {
+    "idx": 213,
+    "file": [
+      "Flag_III.dtm"
+    ]
+  },
+  "ADDUNIIII": {
+    "idx": 214,
+    "file": [
+      "Add_UN_IIII.dtm"
+    ]
+  },
+  "TERR85": {
+    "idx": 215,
+    "file": [
+      "Terr_85.dtm"
+    ]
+  },
+  "TERR86": {
+    "idx": 216,
+    "file": [
+      "Terr_86.dtm"
+    ]
+  },
+  "TERR87": {
+    "idx": 217,
+    "file": [
+      "Terr_87.dtm"
+    ]
+  },
+  "TERR88": {
+    "idx": 218,
+    "file": [
+      "Terr_88.dtm"
+    ]
+  },
+  "TERR84": {
+    "idx": 220,
+    "file": [
+      "Terr_84.dtm"
+    ]
+  },
+  "TERR100": {
+    "idx": 221,
+    "file": [
+      "Terr_100.dtm"
+    ]
+  },
+  "TERR101": {
+    "idx": 222,
+    "file": [
+      "Terr_101.dtm"
+    ]
+  },
+  "TERR102": {
+    "idx": 223,
+    "file": [
+      "Terr_102.dtm"
+    ]
+  },
+  "TERR103": {
+    "idx": 224,
+    "file": [
+      "Terr_103.dtm"
+    ]
+  },
+  "TERR74": {
+    "idx": 225,
+    "file": [
+      "Terr_74.dtm"
+    ]
+  },
+  "ITEMLIGHT": {
+    "idx": 226,
+    "file": [
+      "ItemLight.dtm"
+    ]
+  },
+  "TERR106": {
+    "idx": 227,
+    "file": [
+      "Terr_106.dtm"
+    ]
+  },
+  "TERR107": {
+    "idx": 228,
+    "file": [
+      "Terr_107.dtm"
+    ]
+  },
+  "TERR108": {
+    "idx": 229,
+    "file": [
+      "Terr_108.dtm"
+    ]
+  },
+  "TERR109": {
+    "idx": 230,
+    "file": [
+      "Terr_109.dtm"
+    ]
+  },
+  "TERR110": {
+    "idx": 231,
+    "file": [
+      "Terr_110.dtm"
+    ]
+  },
+  "TERR98": {
+    "idx": 232,
+    "file": [
+      "Terr_98.dtm"
+    ]
+  },
+  "TERR99": {
+    "idx": 233,
+    "file": [
+      "Terr_99.dtm"
+    ]
+  },
+  "TERR104": {
+    "idx": 234,
+    "file": [
+      "Terr_104.dtm"
+    ]
+  },
+  "TERR105": {
+    "idx": 235,
+    "file": [
+      "Terr_105.dtm"
+    ]
+  },
+  "TERR96": {
+    "idx": 236,
+    "file": [
+      "Terr_96.dtm"
+    ]
+  },
+  "TERR97": {
+    "idx": 237,
+    "file": [
+      "Terr_97.dtm"
+    ]
+  },
+  "EVSHIP": {
+    "idx": 238,
+    "file": [
+      "Event_Ship.dtm"
+    ]
+  },
+  "BOSS3": {
+    "idx": 239,
+    "file": [
+      "Tank_DarkBoss.dtm"
+    ]
+  }
+}
