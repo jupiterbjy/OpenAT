@@ -182,3 +182,18 @@ There's bunch of unknown stuffs here.
 | N1234 |  |
 | N134 |  |
 | N235 |  |
+
+---
+
+## Bullet types
+
+| name | texture | usage |
+| - | - | - |
+| Bullet_1 | Bullet.JPG | Cannon, Gattling | 
+| Bullet_2 | ? | ? |
+| Bullet_Electro | Light.JPG | Lighting |
+| Bullet_Fire | Fire.JPG | FlameThrower |
+| Bullet_MapShow | ? | Probably bullet used in main menu 3D Scene |
+| Bullet_Raketa | ? | Rocket launcher |
+| Bullet_Shock | Bullet.JPG | Shockwave cannon |
+| Bullet_Shock_Sc | Bullet.JPG | Secondary projectile from Shockwave cannon |
