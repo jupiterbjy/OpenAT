@@ -192,7 +192,7 @@ def process_model_scr(scr_path: pathlib.Path) -> Tuple[dict, dict]:
 
     # entry for use as model idx lookup table in godot
     model_entries = {
-        name: {"idx": idx, "file": dtm} for idx, name, _, dtm in parsed
+        name: {"idx": idx, "file": dtm, "scale": scale} for idx, name, scale, dtm in parsed
     }
 
     # entry for scaling lookup table in blender
@@ -257,6 +257,7 @@ if __name__ == '__main__':
         # if game is installed in default location, use that data
         if DEFAULT_PATH.exists():
             print(f"Using Default installation at '{DEFAULT_PATH.as_posix()}'")
+            _args.base_t_dir = DEFAULT_PATH
         else:
             # we can't proceed, show usage instead
             _parser.print_usage()
