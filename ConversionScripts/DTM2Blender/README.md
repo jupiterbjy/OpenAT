@@ -26,14 +26,47 @@ Then:
 After this, converted `*.glb` files will be sitting at subdir with same name as blender file.
 
 
+## Internals
+
+Search for clue was complicated - but result is simple and (somewhat) clear.
+
+First, parses `model.scr` so we have complete list of which model is used in what name internally, and scale it uses.
+
+Next, parses each `*.dtm` file - it contains mainly *Tvertex TFace Vertex Face* with metadata, where each Vertex has multiple frames.
+Frame 0 being the idle pose, (if any) Frame 1 and onwards are positions for each vertex for use in Vertex Animation.
+
+combined with `model.scr`'s scale data for each `*.dtm` file - this information is stored into corresponding named `*.json` files,
+with `_lookup.json` for use in godot for translating internal model name & setting correct scale for each model, and `_files.txt` for letting blender side script know which files to look.
+
+On Blender side script, it'll setup some logging & enable `MDD Exporter` addon in blender(it's not default-on)
+
+Then, it will read `_files.txt` and read written file line by line.
+For each line it'll create mesh from frame 0, create BMesh(BlenderMesh) for UV mapping. However, model contains UVW mapping but
+Blender don't support 3rd Axis, so we drop W axis. (it's not empty btw)
+
+After that, we create Object out of this mesh. If there's any frame after frame 0 - we setup vertex animation and bake current mesh as frame 1,
+then start adding more frames from coordinates. 
+
+Unfortunately, blender & GLTF exporter can't output raw vertex animations, so we need to use *NewTek*'s MDD format.
+We now export obj with *MDD Exporter*, delete all keyframes for each vertex, import *MDD* again.
+
+Then all keyframes are imported as ShapeKey in blender, with additional useless keys at start and end.
+This keys mess up animation playback, so we select each unneeded keys and removes it. Trust me - it took very long to figure this out, you can't search this anywhere.
+
+Then, it's finally all set - we export this by `custom_batch_export` script and each will be saved as `.glb` formats, immediately usable in godot.
+
+
 ## Big Thanks (Because they deserve)
 
 Big thanks to almost-10-year-old answer & it's linked source for giving insight to scripted UV mapping!
 - [Blender StackExchange Answer](https://blender.stackexchange.com/a/10444/126787)
-- [Linked source(Warning: ol' HTTP site!)](http://web.purplefrog.com/~thoth/blender/python-cookbook/barber-pole.html)
+- [Linked source(Warning: ol' HTTP site)](http://web.purplefrog.com/~thoth/blender/python-cookbook/barber-pole.html)
 
-Also, big thanks to another answer on basics of keyframing vertex in script!
+Also for the basics of keyframing vertex in script,
 - [Blender StackExchange Answer](https://blender.stackexchange.com/a/283060/126787)
+
+Final one for MDD Export-Import trick for vertex animations
+- [MDD Trick](https://github.com/mrdoob/three.js/issues/18809#issuecomment-594629778)
 
 
 ## Behind story
