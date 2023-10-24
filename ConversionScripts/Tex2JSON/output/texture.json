@@ -1,0 +1,440 @@
+{
+  "TERR": {
+    "idx": 0,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Terr_Forest_Pac.jpg"
+  },
+  "TERR2": {
+    "idx": 2,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Terr_Sand_Pac_Obj.jpg"
+  },
+  "TANKENEMY": {
+    "idx": 4,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Tank_Enemy512.jpg"
+  },
+  "WALLBRICK": {
+    "idx": 5,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Terr_05.jpg"
+  },
+  "WALLSTONE": {
+    "idx": 6,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Terr_01.jpg"
+  },
+  "WALLBRDM": {
+    "idx": 7,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Terr_01.jpg"
+  },
+  "FIRE": {
+    "idx": 8,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Fire.jpg"
+  },
+  "TANKENEMYRED": {
+    "idx": 9,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Tank_Enemy512_red.jpg"
+  },
+  "TANKENEMYDARK": {
+    "idx": 10,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Tank_Enemy512_DARK.jpg"
+  },
+  "EXPLOSION": {
+    "idx": 11,
+    "alpha": true,
+    "blend_add": false,
+    "file": "Explosion-256.png"
+  },
+  "TRACK": {
+    "idx": 12,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Track.bmp"
+  },
+  "SCRPART": {
+    "idx": 13,
+    "alpha": true,
+    "blend_add": false,
+    "file": "ScreenPart.png"
+  },
+  "TANKENEMYBLUE": {
+    "idx": 14,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Tank_Enemy512_Blue.jpg"
+  },
+  "TANKPL1": {
+    "idx": 16,
+    "alpha": true,
+    "blend_add": false,
+    "file": "T_NPlayer.jpg"
+  },
+  "TANKPL2": {
+    "idx": 17,
+    "alpha": false,
+    "blend_add": false,
+    "file": "T_NPlayer2.jpg"
+  },
+  "EFFECTS": {
+    "idx": 18,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Effects.jpg"
+  },
+  "ITEMS": {
+    "idx": 19,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Items.jpg"
+  },
+  "ITEMLIGHT": {
+    "idx": 20,
+    "alpha": false,
+    "blend_add": false,
+    "file": "ItemLight.jpg"
+  },
+  "FLAG": {
+    "idx": 22,
+    "alpha": false,
+    "blend_add": false,
+    "file": "flag.jpg"
+  },
+  "SNOW": {
+    "idx": 23,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Snow.jpg"
+  },
+  "RAIN": {
+    "idx": 24,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Rain.jpg"
+  },
+  "WINADV": {
+    "idx": 26,
+    "alpha": true,
+    "blend_add": false,
+    "file": "WinAdv.png"
+  },
+  "SAND": {
+    "idx": 28,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Sand.jpg"
+  },
+  "FACE": {
+    "idx": 30,
+    "alpha": true,
+    "blend_add": false,
+    "file": "Face_trans.png"
+  },
+  "FACESHARP": {
+    "idx": 31,
+    "alpha": false,
+    "blend_add": false,
+    "file": "FaceSharp.jpg"
+  },
+  "LOGO": {
+    "idx": 32,
+    "alpha": true,
+    "blend_add": false,
+    "file": "logo3a.png"
+  },
+  "CMAP": {
+    "idx": 37,
+    "alpha": true,
+    "blend_add": false,
+    "file": "CMap.jpg"
+  },
+  "MAPPIC": {
+    "idx": 38,
+    "alpha": true,
+    "blend_add": false,
+    "file": "MapPic.jpg"
+  },
+  "MAPPIC_A": {
+    "idx": 39,
+    "alpha": true,
+    "blend_add": false,
+    "file": "MapPic_A.jpg"
+  },
+  "BOX": {
+    "idx": 41,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Box.jpg"
+  },
+  "TANKENEMYINV": {
+    "idx": 42,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Tank_Enemy512_INV.jpg"
+  },
+  "ITEMSSC": {
+    "idx": 45,
+    "alpha": false,
+    "blend_add": false,
+    "file": "ItemsSc.jpg"
+  },
+  "ITEMTANK": {
+    "idx": 46,
+    "alpha": false,
+    "blend_add": false,
+    "file": "itemtank.jpg"
+  },
+  "FLYSHIP": {
+    "idx": 51,
+    "alpha": false,
+    "blend_add": false,
+    "file": "FlyShip.jpg"
+  },
+  "INFOPAN": {
+    "idx": 52,
+    "alpha": true,
+    "blend_add": false,
+    "file": "InfoPanel.png"
+  },
+  "PANELIGHT": {
+    "idx": 53,
+    "alpha": true,
+    "blend_add": false,
+    "file": "PaneLight.png"
+  },
+  "EVOBJECT": {
+    "idx": 54,
+    "alpha": false,
+    "blend_add": false,
+    "file": "EventObject.jpg"
+  },
+  "BOSS": {
+    "idx": 55,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Boss.jpg"
+  },
+  "MENUADDON": {
+    "idx": 56,
+    "alpha": true,
+    "blend_add": false,
+    "file": "menuAddon.png"
+  },
+  "FLASH": {
+    "idx": 57,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Flash.jpg"
+  },
+  "PL2HEAD": {
+    "idx": 58,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Tank_Head_Green_p2.jpg"
+  },
+  "PLHEAD": {
+    "idx": 59,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Tank_Head_Green.jpg"
+  },
+  "WALLB0": {
+    "idx": 60,
+    "alpha": false,
+    "blend_add": false,
+    "file": "TerrWall_R_0.jpg"
+  },
+  "WALLB1": {
+    "idx": 61,
+    "alpha": false,
+    "blend_add": false,
+    "file": "TerrWall_R_1.jpg"
+  },
+  "WALLB2": {
+    "idx": 62,
+    "alpha": false,
+    "blend_add": false,
+    "file": "TerrWall_R_2.jpg"
+  },
+  "WALLB3": {
+    "idx": 63,
+    "alpha": false,
+    "blend_add": false,
+    "file": "TerrWall_R_3.jpg"
+  },
+  "BULLET": {
+    "idx": 64,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Bullet.jpg"
+  },
+  "BLIGHT": {
+    "idx": 68,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Light.jpg"
+  },
+  "SHOP": {
+    "idx": 71,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Shop.jpg"
+  },
+  "MSICE": {
+    "idx": 73,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Terr_Ice.jpg"
+  },
+  "BUTTON": {
+    "idx": 74,
+    "alpha": true,
+    "blend_add": false,
+    "file": "Button.png"
+  },
+  "MSTUND": {
+    "idx": 75,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Terr_Tundra.jpg"
+  },
+  "MSEGYPT": {
+    "idx": 76,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Terr_Egypt_Obj.jpg"
+  },
+  "MSFOREST": {
+    "idx": 77,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Terr_Forest_Pac_Obj.jpg"
+  },
+  "MSSKY": {
+    "idx": 78,
+    "alpha": false,
+    "blend_add": false,
+    "file": "sky.jpg"
+  },
+  "MAPPREV": {
+    "idx": 79,
+    "alpha": false,
+    "blend_add": false,
+    "file": "MapPrev.jpg"
+  },
+  "FLAG123": {
+    "idx": 80,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Flag_123.jpg"
+  },
+  "MAPPREVS": {
+    "idx": 83,
+    "alpha": false,
+    "blend_add": false,
+    "file": "MapPrevS.jpg"
+  },
+  "MSSNOW": {
+    "idx": 84,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Terr_Snow.jpg"
+  },
+  "MAPPREVT": {
+    "idx": 86,
+    "alpha": false,
+    "blend_add": false,
+    "file": "MapPrevT.jpg"
+  },
+  "LOGOENKORD": {
+    "idx": 87,
+    "alpha": false,
+    "blend_add": false,
+    "file": "logo_enkord.png"
+  },
+  "LOGOLIST": {
+    "idx": 88,
+    "alpha": true,
+    "blend_add": false,
+    "file": "logo_enkord.png"
+  },
+  "LASTWIN": {
+    "idx": 89,
+    "alpha": false,
+    "blend_add": false,
+    "file": "WinScreen.JPG"
+  },
+  "FONTFD": {
+    "idx": 90,
+    "alpha": true,
+    "blend_add": false,
+    "file": "FontAdv_FD.png"
+  },
+  "FONTFDB": {
+    "idx": 91,
+    "alpha": true,
+    "blend_add": false,
+    "file": "FontAdv_FD_B.png"
+  },
+  "FONTFD224": {
+    "idx": 92,
+    "alpha": true,
+    "blend_add": false,
+    "file": "FontAdv_FD_224.png"
+  },
+  "FONTFD224B": {
+    "idx": 93,
+    "alpha": true,
+    "blend_add": false,
+    "file": "FontAdv_FD_224_B.png"
+  },
+  "FONTFD224R": {
+    "idx": 94,
+    "alpha": true,
+    "blend_add": false,
+    "file": "FontAdv_FD_224_R.png"
+  },
+  "FONTFDR": {
+    "idx": 95,
+    "alpha": true,
+    "blend_add": false,
+    "file": "FontAdv_FD_R.png"
+  },
+  "FONTFD224Y": {
+    "idx": 96,
+    "alpha": true,
+    "blend_add": false,
+    "file": "FontAdv_FD_224_Y.png"
+  },
+  "FONTFD128": {
+    "idx": 97,
+    "alpha": true,
+    "blend_add": false,
+    "file": "FontAdv_FD_128.png"
+  },
+  "BUTTONLIGHT": {
+    "idx": 98,
+    "alpha": true,
+    "blend_add": false,
+    "file": "Button_Light.jpg"
+  },
+  "MAPT": {
+    "idx": 105,
+    "alpha": false,
+    "blend_add": false,
+    "file": "_Map_T.jpg"
+  }
+}

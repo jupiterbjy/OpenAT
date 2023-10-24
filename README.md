@@ -20,10 +20,10 @@ Resulting scripts of Reverse-Engineering attempts on *Armada Tanks*'s (seemingly
 
 - [ImageFontSplitter](ConversionScripts/ImageFontSplitter): Initially used script for splitting each letters from font image, no longer needed.
 - [DF2FNT](ConversionScripts/DF2FNT): Currently used script for converting `*.df` font format into AngelCode's BMFont format 
-- [DTM2Blender](ConversionScripts/DTM2Blender): DTM model reconstruction script
-
+- [DTM2Blender](ConversionScripts/DTM2Blender): DTM model reconstruction script. Reconstructs vertex animations into `.mdd` format & few more trickery to allow GLTF exporter export it's mesh, UV and vertex animations. 
+- [Tex2JSON](ConversionScripts/Tex2JSON): Convert `texture*.scr` scripts to `*.json` for use in godot. 
 
 ### [Model](Model)
-Collection of models.
+Collection of old models.
 
 - [FromScratch](Model/FromScratch): Old models made from scratch(Some with in-game textures) before completing DTM2Blender script.
