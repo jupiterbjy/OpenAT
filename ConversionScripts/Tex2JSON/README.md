@@ -77,5 +77,8 @@ Here's one of incomplete PPT's slide explaining about my understanding on these 
 With this in mind, what script does is simple. If a texture entry calls ColorOperation Modulate -
 then script checks if this texture sets `SrcBlend_SRCALPHA` on source blending method, which indicates source has alpha channel.
 
-If that's the case, will set `alpha=True` in dictionary. If not, it remains `False`.
-However, if texture sets `SrcBlend_SRCCOLOR` it's black background image that need to be transparent
+If that's the case, will set `alpha=True` in dictionary. This will be used to set *Transparency* to *Alpha* in Godot Material. 
+However, if texture sets `SrcBlend_SRCCOLOR` it's non-transparent that need to be, so we set `blend_add=True`.
+This will be used to set *Blend Mode* to *Add* in Godot Material.
+
+After this we export dictionary as json, simple! Godot-side scripts will use these as texture lookup table when generating material for each textures.
