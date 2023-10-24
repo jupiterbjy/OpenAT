@@ -161,8 +161,12 @@ def parse_single(iterator: Iterator[str]) -> Tuple[int, str, Sequence, Sequence]
     # LoadFileDTM "BaseT\\Model\\Event_Dzot_D.dtm"
     # LoadFileDTM "BaseT\\Model\\Bullet_Electro.dtm" Bullet_3.dtm
     _, *dtm = _find_line(iterator, "LoadFile")
+
+    # strip " - only first parameter has it, not in second DTM
     dtm[0] = dtm[0].strip("\"")
-    dtm = [p.split("\\\\")[-1] for p in dtm]
+
+    # strip out path, only leave file name. Later will be used on godot
+    dtm = [p.split("\\\\")[-1].removesuffix(".dtm") for p in dtm]
 
     # Flexible Vertex Format mode Tex_1?
     # sdSetFVF T1
@@ -221,10 +225,11 @@ def main(args):
         if file.suffix != ".dtm":
             continue
 
-        # process & add scale info
+        # process & add scale info using file stem as key
         output = process_dtm(file)
+
         try:
-            output["scale"] = scale_lookup[file.name]
+            output["scale"] = scale_lookup[file.stem]
         except KeyError:
             # this model is dummy data!
             print(f"! Ignoring dummy data {file.name}")
