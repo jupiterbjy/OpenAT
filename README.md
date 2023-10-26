@@ -15,6 +15,11 @@ Until this graduation project is complete in somewhat safe way, we'll try to cre
 
 ## Repo Structure
 
+### [Decoded](Decoded)
+Contains few Markdown documents describing findings & few helper scripts for reverse-engineering. 
+
+- [decoded.md](Decoded/decoded.md) Documentation of reverse-engineered information about the game's map file notations.
+
 ### [ConversionScripts](ConversionScripts)
 Resulting scripts of Reverse-Engineering attempts on *Armada Tanks*'s (seemingly) own format.
 
