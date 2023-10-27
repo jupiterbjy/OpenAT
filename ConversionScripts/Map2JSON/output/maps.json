@@ -1,0 +1,693 @@
+{
+  "dummy": [
+    "10 21",
+    "23 24",
+    "21 17",
+    "21 9",
+    "30 16",
+    "27 7",
+    "9 8 ",
+    "14 9 "
+  ],
+  "areas": [
+    {
+      "marker": [
+        284,
+        597
+      ],
+      "name": "\u040b\u0404\u0430\u00a0\u0401\u00ad\u00a0 \u0452\u0433\u0401\u00ad",
+      "texture": "MAPPREV",
+      "level": [
+        {
+          "dummy": [
+            "100",
+            "270",
+            "100"
+          ],
+          "name": "01 - \u00ad\u00a0\u0437\u00a0\u00ab\u00ae",
+          "file": "RUIN/m1.json"
+        },
+        {
+          "dummy": [
+            "150",
+            "330",
+            "100"
+          ],
+          "name": "02 - \u0430\u00a0\u00a7\u045e\u00a0\u00ab\u0401\u00ad\u043b",
+          "file": "RUIN/m2.json"
+        },
+        {
+          "dummy": [
+            "200",
+            "360",
+            "100"
+          ],
+          "name": "03 - \u0436\u0490\u00ad\u0432\u0430",
+          "file": "RUIN/m3.json"
+        },
+        {
+          "dummy": [
+            "150",
+            "330",
+            "100"
+          ],
+          "name": "04 - \u0430\u00a0\u00a7\u045e\u00a0\u00ab\u0401\u00ad\u043b",
+          "file": "RUIN/m4.json"
+        },
+        {
+          "dummy": [
+            "200",
+            "360",
+            "100"
+          ],
+          "name": "05 - \u0436\u0490\u00ad\u0432\u0430",
+          "file": "RUIN/m5.json"
+        }
+      ]
+    },
+    {
+      "marker": [
+        628,
+        612
+      ],
+      "name": "\u0409\u0430\u00a0\u0431\u00ad\u043b\u0490 \u040f\u0490\u0431\u0404\u0401",
+      "texture": "MAPPREV",
+      "level": [
+        {
+          "dummy": [
+            "250",
+            "270",
+            "120"
+          ],
+          "name": "01 - \u00ad\u00a0\u0437\u00a0\u00ab\u00ae",
+          "file": "SAND/m1.json"
+        },
+        {
+          "dummy": [
+            "250",
+            "300",
+            "120"
+          ],
+          "name": "02 - \u00a4\u00a7\u00ae\u0432\u043b",
+          "file": "SAND/m2.json"
+        },
+        {
+          "dummy": [
+            "250",
+            "330",
+            "120"
+          ],
+          "name": "03 - \u0407\u00ab\u0433\u0432\u00ae\u00ad\u0401\u0433\u00ac",
+          "file": "SAND/m3.json"
+        },
+        {
+          "dummy": [
+            "250",
+            "360",
+            "120"
+          ],
+          "name": "04 - \u00ab\u00a0\u040e\u0401\u0430\u0401\u00ad\u0432",
+          "file": "SAND/m4.json"
+        },
+        {
+          "dummy": [
+            "250",
+            "390",
+            "120"
+          ],
+          "name": "05 - \u0404\u00ae\u00ad\u0490\u0436",
+          "file": "SAND/m5.json"
+        }
+      ]
+    },
+    {
+      "marker": [
+        615,
+        505
+      ],
+      "name": "\u201e\u00ae\u00a6\u00a4\u00ab\u0401\u045e\u043b\u00a9 \u2039\u0490\u0431",
+      "texture": "MAPPREV",
+      "level": [
+        {
+          "dummy": [
+            "350",
+            "330",
+            "140"
+          ],
+          "name": "01 - \u00ae\u0431\u00a0\u00a4\u00a0",
+          "file": "RAIN/m1.json"
+        },
+        {
+          "dummy": [
+            "350",
+            "330",
+            "140"
+          ],
+          "name": "02 - \u00ae\u0431\u00a0\u00a4\u00a0",
+          "file": "RAIN/m2.json"
+        },
+        {
+          "dummy": [
+            "350",
+            "330",
+            "140"
+          ],
+          "name": "03 - \u00ae\u0431\u00a0\u00a4\u00a0",
+          "file": "RAIN/m3.json"
+        },
+        {
+          "dummy": [
+            "350",
+            "330",
+            "140"
+          ],
+          "name": "04 - \u00ae\u0431\u00a0\u00a4\u00a0",
+          "file": "RAIN/m4.json"
+        },
+        {
+          "dummy": [
+            "350",
+            "330",
+            "140"
+          ],
+          "name": "05 - \u00ae\u0431\u00a0\u00a4\u00a0",
+          "file": "RAIN/m5.json"
+        }
+      ]
+    },
+    {
+      "marker": [
+        850,
+        400
+      ],
+      "name": "\u2018\u00ad\u0490\u0408\u00a0",
+      "texture": "MAPPREV",
+      "level": [
+        {
+          "dummy": [
+            "100",
+            "270",
+            "160"
+          ],
+          "name": "01 - \u00ad\u00a0\u0437\u00a0\u00ab\u00ae",
+          "file": "SNOW/m1.json"
+        },
+        {
+          "dummy": [
+            "150",
+            "330",
+            "160"
+          ],
+          "name": "02 - \u0430\u00a0\u00a7\u045e\u00a0\u00ab\u0401\u00ad\u043b",
+          "file": "SNOW/m2.json"
+        },
+        {
+          "dummy": [
+            "200",
+            "360",
+            "160"
+          ],
+          "name": "03 - \u0436\u0490\u00ad\u0432\u0430",
+          "file": "SNOW/m3.json"
+        },
+        {
+          "dummy": [
+            "150",
+            "330",
+            "160"
+          ],
+          "name": "04 - \u0430\u00a0\u00a7\u045e\u00a0\u00ab\u0401\u00ad\u043b",
+          "file": "SNOW/m4.json"
+        },
+        {
+          "dummy": [
+            "200",
+            "360",
+            "160"
+          ],
+          "name": "05 - \u0436\u0490\u00ad\u0432\u0430",
+          "file": "SNOW/m5.json"
+        }
+      ]
+    },
+    {
+      "marker": [
+        800,
+        550
+      ],
+      "name": "\u040f\u0433\u0431\u0432\u043b\u00ad\u043f",
+      "texture": "MAPPREV",
+      "level": [
+        {
+          "dummy": [
+            "250",
+            "270",
+            "180"
+          ],
+          "name": "01 - \u00ad\u00a0\u0437\u00a0\u00ab\u00ae",
+          "file": "EGYPT/m1.json"
+        },
+        {
+          "dummy": [
+            "250",
+            "300",
+            "180"
+          ],
+          "name": "02 - \u00a4\u00a7\u00ae\u0432\u043b",
+          "file": "EGYPT/m2.json"
+        },
+        {
+          "dummy": [
+            "250",
+            "330",
+            "180"
+          ],
+          "name": "03 - \u0407\u00ab\u0433\u0432\u00ae\u00ad\u0401\u0433\u00ac",
+          "file": "EGYPT/m3.json"
+        },
+        {
+          "dummy": [
+            "250",
+            "360",
+            "180"
+          ],
+          "name": "04 - \u00ab\u00a0\u040e\u0401\u0430\u0401\u00ad\u0432",
+          "file": "EGYPT/m4.json"
+        },
+        {
+          "dummy": [
+            "250",
+            "390",
+            "180"
+          ],
+          "name": "05 - \u0404\u00ae\u00ad\u0490\u0436",
+          "file": "EGYPT/m5.json"
+        }
+      ]
+    },
+    {
+      "marker": [
+        917,
+        306
+      ],
+      "name": "\u2039\u0490\u00a4\u043f\u00ad\u00ae\u0490 \u0407\u00ab\u00a0\u0432\u00ae",
+      "texture": "MAPPREVS",
+      "level": [
+        {
+          "dummy": [
+            "350",
+            "330",
+            "180"
+          ],
+          "name": "01 - \u00ae\u0431\u00a0\u00a4\u00a0",
+          "file": "ICE/m1.json"
+        },
+        {
+          "dummy": [
+            "350",
+            "330",
+            "180"
+          ],
+          "name": "02 - \u00ae\u0431\u00a0\u00a4\u00a0",
+          "file": "ICE/m2.json"
+        },
+        {
+          "dummy": [
+            "350",
+            "330",
+            "180"
+          ],
+          "name": "03 - \u00ae\u0431\u00a0\u00a4\u00a0",
+          "file": "ICE/m3.json"
+        },
+        {
+          "dummy": [
+            "350",
+            "330",
+            "180"
+          ],
+          "name": "04 - \u00ae\u0431\u00a0\u00a4\u00a0",
+          "file": "ICE/m4.json"
+        },
+        {
+          "dummy": [
+            "350",
+            "330",
+            "180"
+          ],
+          "name": "05 - \u00ae\u0431\u00a0\u00a4\u00a0",
+          "file": "ICE/m5.json"
+        }
+      ]
+    },
+    {
+      "marker": [
+        370,
+        292
+      ],
+      "name": "\u00ae\u0408\u00ad\u0490\u00ad\u043b\u0490 \u0408\u00ae\u0430\u043b",
+      "texture": "MAPPREVS",
+      "level": [
+        {
+          "dummy": [
+            "350",
+            "330",
+            "180"
+          ],
+          "name": "01 - \u00ae\u0431\u00a0\u00a4\u00a0",
+          "file": "FIRE/m1.json"
+        },
+        {
+          "dummy": [
+            "350",
+            "330",
+            "180"
+          ],
+          "name": "02 - \u00ae\u0431\u00a0\u00a4\u00a0",
+          "file": "FIRE/m2.json"
+        },
+        {
+          "dummy": [
+            "350",
+            "330",
+            "180"
+          ],
+          "name": "03 - \u00ae\u0431\u00a0\u00a4\u00a0",
+          "file": "FIRE/m3.json"
+        },
+        {
+          "dummy": [
+            "350",
+            "330",
+            "180"
+          ],
+          "name": "04 - \u00ae\u0431\u00a0\u00a4\u00a0",
+          "file": "FIRE/m4.json"
+        },
+        {
+          "dummy": [
+            "350",
+            "330",
+            "180"
+          ],
+          "name": "05 - \u00ae\u0431\u00a0\u00a4\u00a0",
+          "file": "FIRE/m5.json"
+        }
+      ]
+    },
+    {
+      "marker": [
+        557,
+        330
+      ],
+      "name": "\u00ae\u0408\u00ad\u0490\u00ad\u043b\u0490 \u0408\u00ae\u0430\u043b",
+      "texture": "MAPPREVS",
+      "level": [
+        {
+          "dummy": [
+            "100",
+            "270",
+            "200"
+          ],
+          "name": "01 - \u00ae\u0408\u00ad\u0490\u00ad\u043b\u0490 \u0408\u00ae\u0430\u043b",
+          "file": "TUND/m1.json"
+        },
+        {
+          "dummy": [
+            "100",
+            "270",
+            "200"
+          ],
+          "name": "02 - \u00ae\u0408\u00ad\u0490\u00ad\u043b\u0490 \u0408\u00ae\u0430\u043b",
+          "file": "TUND/m2.json"
+        },
+        {
+          "dummy": [
+            "100",
+            "270",
+            "200"
+          ],
+          "name": "03 - \u00ae\u0408\u00ad\u0490\u00ad\u043b\u0490 \u0408\u00ae\u0430\u043b",
+          "file": "TUND/m3.json"
+        },
+        {
+          "dummy": [
+            "100",
+            "270",
+            "200"
+          ],
+          "name": "04 - \u00ae\u0408\u00ad\u0490\u00ad\u043b\u0490 \u0408\u00ae\u0430\u043b",
+          "file": "TUND/m4.json"
+        },
+        {
+          "dummy": [
+            "100",
+            "270",
+            "200"
+          ],
+          "name": "05 - \u00ae\u0408\u00ad\u0490\u00ad\u043b\u0490 \u0408\u00ae\u0430\u043b",
+          "file": "TUND/m5.json"
+        }
+      ]
+    },
+    {
+      "marker": [
+        644,
+        403
+      ],
+      "name": "\u00ae\u0408\u00ad\u0490\u00ad\u043b\u0490 \u0408\u00ae\u0430\u043b",
+      "texture": "MAPPREVS",
+      "level": [
+        {
+          "dummy": [
+            "100",
+            "270",
+            "200"
+          ],
+          "name": "01 - \u00ae\u0408\u00ad\u0490\u00ad\u043b\u0490 \u0408\u00ae\u0430\u043b",
+          "file": "CAST/m1.json"
+        },
+        {
+          "dummy": [
+            "100",
+            "270",
+            "200"
+          ],
+          "name": "02 - \u00ae\u0408\u00ad\u0490\u00ad\u043b\u0490 \u0408\u00ae\u0430\u043b",
+          "file": "CAST/m2.json"
+        },
+        {
+          "dummy": [
+            "100",
+            "270",
+            "200"
+          ],
+          "name": "03 - \u00ae\u0408\u00ad\u0490\u00ad\u043b\u0490 \u0408\u00ae\u0430\u043b",
+          "file": "CAST/m3.json"
+        },
+        {
+          "dummy": [
+            "100",
+            "270",
+            "200"
+          ],
+          "name": "04 - \u00ae\u0408\u00ad\u0490\u00ad\u043b\u0490 \u0408\u00ae\u0430\u043b",
+          "file": "CAST/m4.json"
+        },
+        {
+          "dummy": [
+            "100",
+            "270",
+            "200"
+          ],
+          "name": "05 - \u00ae\u0408\u00ad\u0490\u00ad\u043b\u0490 \u0408\u00ae\u0430\u043b",
+          "file": "CAST/m5.json"
+        }
+      ]
+    },
+    {
+      "marker": [
+        67,
+        381
+      ],
+      "name": "\u00ae\u0408\u00ad\u0490\u00ad\u043b\u0490 \u0408\u00ae\u0430\u043b",
+      "texture": "MAPPREVS",
+      "level": [
+        {
+          "dummy": [
+            "100",
+            "270",
+            "200"
+          ],
+          "name": "01 - \u00ae\u0408\u00ad\u0490\u00ad\u043b\u0490 \u0408\u00ae\u0430\u043b",
+          "file": "DUNG/m1.json"
+        },
+        {
+          "dummy": [
+            "100",
+            "270",
+            "200"
+          ],
+          "name": "02 - \u00ae\u0408\u00ad\u0490\u00ad\u043b\u0490 \u0408\u00ae\u0430\u043b",
+          "file": "DUNG/m2.json"
+        },
+        {
+          "dummy": [
+            "100",
+            "270",
+            "200"
+          ],
+          "name": "03 - \u00ae\u0408\u00ad\u0490\u00ad\u043b\u0490 \u0408\u00ae\u0430\u043b",
+          "file": "DUNG/m3.json"
+        },
+        {
+          "dummy": [
+            "100",
+            "270",
+            "200"
+          ],
+          "name": "04 - \u00ae\u0408\u00ad\u0490\u00ad\u043b\u0490 \u0408\u00ae\u0430\u043b",
+          "file": "DUNG/m4.json"
+        },
+        {
+          "dummy": [
+            "100",
+            "270",
+            "200"
+          ],
+          "name": "05 - \u00ae\u0408\u00ad\u0490\u00ad\u043b\u0490 \u0408\u00ae\u0430\u043b",
+          "file": "DUNG/m5.json"
+        }
+      ]
+    },
+    {
+      "marker": [
+        208,
+        258
+      ],
+      "name": "\u00ae\u0408\u00ad\u0490\u00ad\u043b\u0490 \u0408\u00ae\u0430\u043b",
+      "texture": "MAPPREVT",
+      "level": [
+        {
+          "dummy": [
+            "100",
+            "270",
+            "200"
+          ],
+          "name": "e12m1",
+          "file": "GROT/m1.json"
+        },
+        {
+          "dummy": [
+            "100",
+            "270",
+            "200"
+          ],
+          "name": "e12m2",
+          "file": "GROT/m2.json"
+        },
+        {
+          "dummy": [
+            "100",
+            "270",
+            "200"
+          ],
+          "name": "e12m3",
+          "file": "GROT/m3.json"
+        },
+        {
+          "dummy": [
+            "100",
+            "270",
+            "200"
+          ],
+          "name": "e12m4",
+          "file": "GROT/m4.json"
+        },
+        {
+          "dummy": [
+            "100",
+            "270",
+            "200"
+          ],
+          "name": "e12m5",
+          "file": "GROT/m5.json"
+        }
+      ]
+    },
+    {
+      "marker": [
+        919,
+        594
+      ],
+      "name": "\u00ae\u0408\u00ad\u0490\u00ad\u043b\u0490 \u0408\u00ae\u0430\u043b",
+      "texture": "MAPPREVT",
+      "level": [
+        {
+          "dummy": [
+            "200",
+            "270",
+            "200"
+          ],
+          "name": "episode 12 map 1",
+          "file": "FARO/m1.json"
+        },
+        {
+          "dummy": [
+            "200",
+            "270",
+            "200"
+          ],
+          "name": "e12m2",
+          "file": "FARO/m2.json"
+        },
+        {
+          "dummy": [
+            "200",
+            "270",
+            "200"
+          ],
+          "name": "e12m3",
+          "file": "FARO/m3.json"
+        },
+        {
+          "dummy": [
+            "200",
+            "270",
+            "200"
+          ],
+          "name": "e12m4",
+          "file": "FARO/m4.json"
+        },
+        {
+          "dummy": [
+            "200",
+            "270",
+            "200"
+          ],
+          "name": "e12m5",
+          "file": "FARO/m5.json"
+        }
+      ]
+    },
+    {
+      "marker": [
+        400,
+        420
+      ],
+      "name": "R_-_-\u00ab_ _R\u00a0\u00ab",
+      "texture": "MAPPREVT",
+      "level": [
+        {
+          "dummy": [
+            "300",
+            "270",
+            "300"
+          ],
+          "name": "e13m1",
+          "file": "END/m1.json"
+        }
+      ]
+    }
+  ]
+}
