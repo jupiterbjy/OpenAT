@@ -1,6 +1,6 @@
 {
   "cost": 200,
-  "game_type": "",
+  "game_type": "BFH",
   "texture_override": "texture-ice",
   "weather": "SNOW",
   "next_map": "m5.map",

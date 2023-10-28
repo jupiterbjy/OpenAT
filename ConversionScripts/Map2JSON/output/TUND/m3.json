@@ -1,6 +1,6 @@
 {
   "cost": 200,
-  "game_type": "",
+  "game_type": "BH",
   "texture_override": "texture-tund",
   "weather": "NONE",
   "next_map": "m4.map",

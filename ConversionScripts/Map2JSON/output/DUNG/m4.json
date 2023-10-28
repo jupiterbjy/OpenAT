@@ -1,6 +1,6 @@
 {
   "cost": 200,
-  "game_type": "",
+  "game_type": "B",
   "texture_override": "texture-dung",
   "weather": "NONE",
   "next_map": "m5.map",

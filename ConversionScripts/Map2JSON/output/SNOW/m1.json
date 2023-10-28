@@ -1,6 +1,6 @@
 {
   "cost": 160,
-  "game_type": "",
+  "game_type": "BH",
   "texture_override": "texture-snow",
   "weather": "SNOW",
   "next_map": "m2.map",

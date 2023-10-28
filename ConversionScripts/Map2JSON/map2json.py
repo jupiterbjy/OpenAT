@@ -46,7 +46,7 @@ def find_prefix(line_iter: Iterator[str], search_tgt: str, return_line=False, st
         if search_tgt in line:
             # we'll drop any secondary parameter, mostly it's dummy data
             # (i.e. RUIN/m1.map gametype BF HT only takes BF)
-            return line if return_line else line.split(" ")[1]
+            return line if return_line else line.split()[1]
 
     raise StopIteration
 

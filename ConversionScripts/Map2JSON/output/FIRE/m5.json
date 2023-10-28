@@ -1,6 +1,6 @@
 {
   "cost": 200,
-  "game_type": "",
+  "game_type": "BFHT",
   "texture_override": "texture-fire",
   "weather": "NONE",
   "next_map": "",

@@ -1,6 +1,6 @@
 {
   "cost": 200,
-  "game_type": "",
+  "game_type": "BT",
   "texture_override": "texture-grot",
   "weather": "NONE",
   "next_map": "m4.map",

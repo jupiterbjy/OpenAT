@@ -1,6 +1,6 @@
 {
   "cost": 120,
-  "game_type": "",
+  "game_type": "BT",
   "texture_override": "texture-sand",
   "weather": "NONE",
   "next_map": "m3.map",

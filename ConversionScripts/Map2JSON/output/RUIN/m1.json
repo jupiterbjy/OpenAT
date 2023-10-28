@@ -1,6 +1,6 @@
 {
   "cost": 100,
-  "game_type": "",
+  "game_type": "BF",
   "texture_override": "texture-forest",
   "weather": "NONE",
   "next_map": "m2.map",
