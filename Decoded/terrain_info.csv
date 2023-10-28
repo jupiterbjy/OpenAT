@@ -2,7 +2,7 @@ terr_0,F,,
 terr_1,F,,
 terr_2,F,,
 terr_3,F,,
-terr_4,F,[0 0],3X3
+terr_4,F,,3X3
 terr_5,T,,1X4
 terr_6,T,,
 terr_7,T,,
@@ -46,7 +46,7 @@ terr_46,T,,
 terr_47,T,,
 terr_48,T,,
 terr_49,F,,
-terr_50,F,[1 0],1X1
+terr_50,T,,1X1
 terr_51,T,,
 terr_52,T,,
 terr_53,T,,
@@ -57,7 +57,7 @@ terr_57,T,,2X2
 terr_58,T,,
 terr_59,T,,
 terr_61,T,,
-terr_62,F,[0 0],1X5
+terr_62,F,,1X5
 terr_63,F,[-1 -1] [-1 0] [0 -1] [0 0],2X2
 terr_64,T,,
 terr_65,T,,
