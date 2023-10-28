@@ -25,13 +25,16 @@ respawn {
 
 ## ID
 
-| id | type                 |
-|----|----------------------|
-| 0  | Initial Player spawn |
-| 1  |                      |
-| 2  |                      |
-| 3  |                      |
-| 4  |                      |
-| 5  |                      |
-| 6  |                      |
-| 7  |                      |
+Those maps with 3 gate will have either two of 4~7 assigned to same tile.
+
+| id | type         |
+|----|--------------|
+| 0  | Player spawn |
+| 1  | Dummy        |
+| 2  | Dummy        |
+| 3  | Dummy        |
+| 4  | Spawn Gate 1 |
+| 5  | Spawn Gate 2 |
+| 6  | Spawn Gate 3 |
+| 7  | Spawn Gate 4 |
+
