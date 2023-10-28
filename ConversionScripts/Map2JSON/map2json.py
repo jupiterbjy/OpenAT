@@ -110,15 +110,15 @@ def _parse_respawn(line_iter: Iterator[str]) -> List[Tuple[int, int, int]]:
     ]
 
 
-def _parse_terr_type(line_iter: Iterator[str]) -> List[Tuple[int, int, int]]:
+def _parse_terr_type(line_iter: Iterator[str]) -> Dict[str, List[str]]:
     """Parse terrain types"""
 
     # type 0 TERR0 NWF
 
-    return [
-        (int(idx), model, args)
+    return {
+        idx: [model, args]
         for idx, model, args in _block_gen(line_iter, "terrtype", "endterr")
-    ]
+    }
 
 
 def _parse_wall(line_iter: Iterator[str]) -> List[str]:
