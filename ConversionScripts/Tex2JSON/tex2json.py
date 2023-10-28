@@ -55,7 +55,7 @@ def _parse_single(line_iter: Iterator[str]) -> Tuple[str, dict]:
         match line.strip().split(" "):
             case ["SrcBlend_SRCALPHA"]:
                 alpha = True
-            case ["ScrBlend_SCRCOLOR"]:
+            case ["SrcBlend_SRCCOLOR"]:
                 blend_add = True
             case ["LoadFile", *param]:
                 # Only take first filename, strip quotes and leave name olny

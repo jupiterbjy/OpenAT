@@ -38,7 +38,7 @@
   "FIRE": {
     "idx": 8,
     "alpha": false,
-    "blend_add": false,
+    "blend_add": true,
     "file": "Fire.jpg"
   },
   "TANKENEMYRED": {
@@ -62,7 +62,7 @@
   "TRACK": {
     "idx": 12,
     "alpha": false,
-    "blend_add": false,
+    "blend_add": true,
     "file": "Track.bmp"
   },
   "SCRPART": {
@@ -92,7 +92,7 @@
   "EFFECTS": {
     "idx": 18,
     "alpha": false,
-    "blend_add": false,
+    "blend_add": true,
     "file": "Effects.jpg"
   },
   "ITEMS": {
@@ -104,7 +104,7 @@
   "ITEMLIGHT": {
     "idx": 20,
     "alpha": false,
-    "blend_add": false,
+    "blend_add": true,
     "file": "ItemLight.jpg"
   },
   "FLAG": {
@@ -116,13 +116,13 @@
   "SNOW": {
     "idx": 23,
     "alpha": false,
-    "blend_add": false,
+    "blend_add": true,
     "file": "Snow.jpg"
   },
   "RAIN": {
     "idx": 24,
     "alpha": false,
-    "blend_add": false,
+    "blend_add": true,
     "file": "Rain.jpg"
   },
   "WINADV": {
@@ -134,7 +134,7 @@
   "SAND": {
     "idx": 28,
     "alpha": false,
-    "blend_add": false,
+    "blend_add": true,
     "file": "Sand.jpg"
   },
   "FACE": {
@@ -146,7 +146,7 @@
   "FACESHARP": {
     "idx": 31,
     "alpha": false,
-    "blend_add": false,
+    "blend_add": true,
     "file": "FaceSharp.jpg"
   },
   "LOGO": {
@@ -176,13 +176,13 @@
   "BOX": {
     "idx": 41,
     "alpha": false,
-    "blend_add": false,
+    "blend_add": true,
     "file": "Box.jpg"
   },
   "TANKENEMYINV": {
     "idx": 42,
     "alpha": false,
-    "blend_add": false,
+    "blend_add": true,
     "file": "Tank_Enemy512_INV.jpg"
   },
   "ITEMSSC": {
@@ -236,7 +236,7 @@
   "FLASH": {
     "idx": 57,
     "alpha": false,
-    "blend_add": false,
+    "blend_add": true,
     "file": "Flash.jpg"
   },
   "PL2HEAD": {
@@ -278,13 +278,13 @@
   "BULLET": {
     "idx": 64,
     "alpha": false,
-    "blend_add": false,
+    "blend_add": true,
     "file": "Bullet.jpg"
   },
   "BLIGHT": {
     "idx": 68,
     "alpha": false,
-    "blend_add": false,
+    "blend_add": true,
     "file": "Light.jpg"
   },
   "SHOP": {
@@ -428,7 +428,7 @@
   "BUTTONLIGHT": {
     "idx": 98,
     "alpha": true,
-    "blend_add": false,
+    "blend_add": true,
     "file": "Button_Light.jpg"
   },
   "MAPT": {
