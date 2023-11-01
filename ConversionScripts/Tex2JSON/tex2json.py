@@ -18,6 +18,22 @@ OUTPUT = ROOT / "output"
 OUTPUT.mkdir(exist_ok=True)
 
 
+# devs mixed the lower & upper case randomly, which result in unplayable situation
+# in case-sensitive systems. We need to correct it.
+JPEG_FILE_NAME_FIXES = {
+    "sky.jpg": "Sky.JPG",
+    "Terr_Egypt_Obj.jpg": "Terr_Egypt_Obj.JPG",
+    "Terr_Forest_Pac_Obj.jpg": "Terr_Forest_Pac_Obj.JPG",
+    "Terr_Ice.jpg": "Terr_Ice.JPG",
+    "Terr_Snow.jpg": "Terr_Snow.JPG",
+    "Terr_Tundra.jpg": "Terr_Tundra.JPG",
+}
+
+
+def _fix_filename(name: str) -> str:
+    return JPEG_FILE_NAME_FIXES[name] if name in JPEG_FILE_NAME_FIXES else name
+
+
 def _safe_read(p: pathlib.Path) -> str:
     """First try to read in system default, then try UTF8"""
 
@@ -58,12 +74,12 @@ def _parse_single(line_iter: Iterator[str]) -> Tuple[str, dict]:
             case ["SrcBlend_SRCCOLOR"]:
                 blend_add = True
             case ["LoadFile", *param]:
-                # Only take first filename, strip quotes and leave name olny
+                # Only take first filename, strip quotes and leave name only
                 file_name = param[0].strip("\"").split("\\\\")[-1]
             case ["}"]:
                 break
 
-    return name, {"idx": idx, "alpha": alpha, "blend_add": blend_add, "file": file_name}
+    return name, {"idx": idx, "alpha": alpha, "blend_add": blend_add, "file": _fix_filename(file_name)}
 
 
 def parse_gen(line_iter: Iterator[str]) -> Generator[None, Tuple[int, str, dict], None]:

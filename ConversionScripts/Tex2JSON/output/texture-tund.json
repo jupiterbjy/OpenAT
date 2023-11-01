@@ -3,13 +3,13 @@
     "idx": 0,
     "alpha": false,
     "blend_add": false,
-    "file": "Terr_Tundra.jpg"
+    "file": "Terr_Tundra.JPG"
   },
   "TERR2": {
     "idx": 2,
     "alpha": false,
     "blend_add": false,
-    "file": "Terr_Tundra.jpg"
+    "file": "Terr_Tundra.JPG"
   },
   "WALLSTONE": {
     "idx": 6,

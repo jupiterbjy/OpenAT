@@ -297,7 +297,7 @@
     "idx": 73,
     "alpha": false,
     "blend_add": false,
-    "file": "Terr_Ice.jpg"
+    "file": "Terr_Ice.JPG"
   },
   "BUTTON": {
     "idx": 74,
@@ -309,25 +309,25 @@
     "idx": 75,
     "alpha": false,
     "blend_add": false,
-    "file": "Terr_Tundra.jpg"
+    "file": "Terr_Tundra.JPG"
   },
   "MSEGYPT": {
     "idx": 76,
     "alpha": false,
     "blend_add": false,
-    "file": "Terr_Egypt_Obj.jpg"
+    "file": "Terr_Egypt_Obj.JPG"
   },
   "MSFOREST": {
     "idx": 77,
     "alpha": false,
     "blend_add": false,
-    "file": "Terr_Forest_Pac_Obj.jpg"
+    "file": "Terr_Forest_Pac_Obj.JPG"
   },
   "MSSKY": {
     "idx": 78,
     "alpha": false,
     "blend_add": false,
-    "file": "sky.jpg"
+    "file": "Sky.JPG"
   },
   "MAPPREV": {
     "idx": 79,
@@ -351,7 +351,7 @@
     "idx": 84,
     "alpha": false,
     "blend_add": false,
-    "file": "Terr_Snow.jpg"
+    "file": "Terr_Snow.JPG"
   },
   "MAPPREVT": {
     "idx": 86,
