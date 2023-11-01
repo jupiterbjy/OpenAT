@@ -1776,15 +1776,13 @@
     ]
   },
   "MSSNOW": {
-    "idx": 199,
+    "idx": 197,
     "file": [
-      "ms_ice",
-      "MapShow_3D_Back"
+      "ms_snow",
+      "MapShow_3D_Snow"
     ],
     "scale": [
-      0.05,
-      0.6,
-      "BACK"
+      0.05
     ]
   },
   "MSWATER": {

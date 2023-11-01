@@ -25,6 +25,10 @@ OUTPUT_LOOKUP = OUTPUT / "_lookup.json"
 DEFAULT_PATH = pathlib.Path(r"C:\Program Files (x86)\Armada Tanks\BaseT")
 
 
+class DummyData(Exception):
+    pass
+
+
 def count_indent(line: str):
     combo = 0
     for char in line:
@@ -120,6 +124,9 @@ def _regularize_scale_gen(scale_strings):
 
     # i.e. cases are  0.05 / 0.05 0.6 / 0.05 0.6 BACK(???)
 
+    # there is TWO "MSSNOW" in model.scr, one with wrong model and 'BACK' in scale.
+    # so we need to drop anything with "BACK" written on it.
+
     # mostly more than 1 are dummy model that doesn't exist
     # but this one exists: model 203 "BIGCRASH" {ScaleModel 0.029 0.025,  ... }
 
@@ -129,7 +136,7 @@ def _regularize_scale_gen(scale_strings):
         try:
             yield float(val)
         except ValueError:
-            yield val
+            raise DummyData()
 
 
 def _find_line(iterator: Iterator[str], search_tgt: str):
@@ -182,6 +189,9 @@ def parse_scr_gen(scr_path: pathlib.Path):
     while True:
         try:
             yield parse_single(line_iter)
+        except DummyData:
+            print("Ignoring dummy data")
+
         except StopIteration:
             return
 
