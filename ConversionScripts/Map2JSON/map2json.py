@@ -13,7 +13,7 @@ ROOT = pathlib.Path(__file__).parent
 DEFAULT_PATH = pathlib.Path(r"C:\Program Files (x86)\Armada Tanks\BaseT")
 
 WRITE_ENCODING = "utf8"
-READ_ENCODINGS = ["windows 1251", "OEM 866"]
+READ_ENCODINGS = ["windows 1251", "CP866"]
 
 OUTPUT = ROOT / "output"
 OUTPUT.mkdir(exist_ok=True)
@@ -25,13 +25,12 @@ def _safe_read(path: pathlib.Path, encoding=None) -> str:
 
     except UnicodeDecodeError:
         # SAND/m5.map has letter ‘ in file, which requires windows-1251
+        # maps.txt require OEM 866, but won't get error from windows 1251 so-
+        # that might count as 'special case'
 
-        for encoding in READ_ENCODINGS:
-            try:
-                print("Trying", encoding)
-                return path.read_text(encoding)
-            except UnicodeDecodeError:
-                continue
+        encoding = READ_ENCODINGS[1] if path.name == "maps.txt" else READ_ENCODINGS[0]
+        print(f"Using encoding {encoding} for {path.as_posix()}")
+        return path.read_text(encoding)
 
 
 def find_prefix(line_iter: Iterator[str], search_tgt: str, return_line=False, strip=True) -> str:
