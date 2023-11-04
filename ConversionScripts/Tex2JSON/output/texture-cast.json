@@ -3,7 +3,7 @@
     "idx": 0,
     "alpha": false,
     "blend_add": false,
-    "file": "Terr_Forest_Pac.jpg"
+    "file": "Terr_Forest_Pac.JPG"
   },
   "TERR2": {
     "idx": 2,
@@ -15,30 +15,30 @@
     "idx": 6,
     "alpha": false,
     "blend_add": false,
-    "file": "TerrWall_G_0.jpg"
+    "file": "TerrWall_G_0.JPG"
   },
   "WALLB0": {
     "idx": 60,
     "alpha": false,
     "blend_add": false,
-    "file": "TerrWall_C_0.jpg"
+    "file": "TerrWall_C_0.JPG"
   },
   "WALLB1": {
     "idx": 61,
     "alpha": false,
     "blend_add": false,
-    "file": "TerrWall_C_1.jpg"
+    "file": "TerrWall_C_1.JPG"
   },
   "WALLB2": {
     "idx": 62,
     "alpha": false,
     "blend_add": false,
-    "file": "TerrWall_C_2.jpg"
+    "file": "TerrWall_C_2.JPG"
   },
   "WALLB3": {
     "idx": 63,
     "alpha": false,
     "blend_add": false,
-    "file": "TerrWall_C_3.jpg"
+    "file": "TerrWall_C_3.JPG"
   }
 }

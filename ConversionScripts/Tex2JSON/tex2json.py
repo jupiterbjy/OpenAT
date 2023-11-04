@@ -4,7 +4,7 @@ JSON format, allowing runtime generation of corresponding materials
 """
 
 from argparse import ArgumentParser
-from typing import Iterator, Tuple, Generator
+from typing import Iterator, Tuple, Generator, Dict
 import pathlib
 import json
 
@@ -18,20 +18,39 @@ OUTPUT = ROOT / "output"
 OUTPUT.mkdir(exist_ok=True)
 
 
-# devs mixed the lower & upper case randomly, which result in unplayable situation
-# in case-sensitive systems. We need to correct it.
-JPEG_FILE_NAME_FIXES = {
-    "sky.jpg": "Sky.JPG",
-    "Terr_Egypt_Obj.jpg": "Terr_Egypt_Obj.JPG",
-    "Terr_Forest_Pac_Obj.jpg": "Terr_Forest_Pac_Obj.JPG",
-    "Terr_Ice.jpg": "Terr_Ice.JPG",
-    "Terr_Snow.jpg": "Terr_Snow.JPG",
-    "Terr_Tundra.jpg": "Terr_Tundra.JPG",
-}
+class DummyData(Exception):
+    pass
 
 
-def _fix_filename(name: str) -> str:
-    return JPEG_FILE_NAME_FIXES[name] if name in JPEG_FILE_NAME_FIXES else name
+class FileNameTranslator:
+    """
+    Stores actual image's file name.
+
+    Dev mixed the lower & upper case randomly, which result in unplayable situation
+    in case-sensitive systems. We need to correct it.
+    """
+
+    translation_dict: Dict[str, str] = {}
+
+    @classmethod
+    def populate(cls, game_path: pathlib.Path):
+        """Search for image files and populate translation dict with lowercase names."""
+
+        whitelist = {".jpg", ".png", ".bmp"}
+
+        for img_path in (game_path / "Texture").iterdir():
+
+            if img_path.is_dir() or img_path.suffix.lower() not in whitelist:
+                continue
+
+            cls.translation_dict[img_path.name.lower()] = img_path.name
+
+    @classmethod
+    def translate(cls, file_name: str) -> str:
+        try:
+            return cls.translation_dict[file_name.lower()]
+        except KeyError as err:
+            raise DummyData() from err
 
 
 def _safe_read(p: pathlib.Path) -> str:
@@ -79,18 +98,24 @@ def _parse_single(line_iter: Iterator[str]) -> Tuple[str, dict]:
             case ["}"]:
                 break
 
-    return name, {"idx": idx, "alpha": alpha, "blend_add": blend_add, "file": _fix_filename(file_name)}
+    return name, {"idx": idx, "alpha": alpha, "blend_add": blend_add, "file": FileNameTranslator.translate(file_name)}
 
 
 def parse_gen(line_iter: Iterator[str]) -> Generator[None, Tuple[int, str, dict], None]:
     while True:
         try:
             yield _parse_single(line_iter)
+
+        except DummyData:
+            print("Skipping dummy data")
+
         except StopIteration:
             return
 
 
 def main(args):
+    FileNameTranslator.populate(args.base_t_dir)
+
     script_root = args.base_t_dir / "Script"
 
     base = script_root / "texture.scr"

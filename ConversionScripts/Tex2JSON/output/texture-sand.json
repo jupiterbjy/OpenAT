@@ -3,42 +3,42 @@
     "idx": 0,
     "alpha": false,
     "blend_add": false,
-    "file": "Terr_Sand_Pac.jpg"
+    "file": "Terr_Sand_Pac.JPG"
   },
   "TERR2": {
     "idx": 2,
     "alpha": false,
     "blend_add": false,
-    "file": "Terr_Sand_Pac_Obj.jpg"
+    "file": "Terr_Sand_Pac_Obj.JPG"
   },
   "WALLSTONE": {
     "idx": 6,
     "alpha": false,
     "blend_add": false,
-    "file": "Terr_01.jpg"
+    "file": "Terr_01.JPG"
   },
   "WALLB0": {
     "idx": 60,
     "alpha": false,
     "blend_add": false,
-    "file": "TerrWall_Y_0.jpg"
+    "file": "TerrWall_Y_0.JPG"
   },
   "WALLB1": {
     "idx": 61,
     "alpha": false,
     "blend_add": false,
-    "file": "TerrWall_Y_1.jpg"
+    "file": "TerrWall_Y_1.JPG"
   },
   "WALLB2": {
     "idx": 62,
     "alpha": false,
     "blend_add": false,
-    "file": "TerrWall_Y_2.jpg"
+    "file": "TerrWall_Y_2.JPG"
   },
   "WALLB3": {
     "idx": 63,
     "alpha": false,
     "blend_add": false,
-    "file": "TerrWall_Y_3.jpg"
+    "file": "TerrWall_Y_3.JPG"
   }
 }

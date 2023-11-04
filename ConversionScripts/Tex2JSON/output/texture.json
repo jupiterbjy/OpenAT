@@ -3,43 +3,37 @@
     "idx": 0,
     "alpha": false,
     "blend_add": false,
-    "file": "Terr_Forest_Pac.jpg"
+    "file": "Terr_Forest_Pac.JPG"
   },
   "TERR2": {
     "idx": 2,
     "alpha": false,
     "blend_add": false,
-    "file": "Terr_Sand_Pac_Obj.jpg"
+    "file": "Terr_Sand_Pac_Obj.JPG"
   },
   "TANKENEMY": {
     "idx": 4,
     "alpha": false,
     "blend_add": false,
-    "file": "Tank_Enemy512.jpg"
-  },
-  "WALLBRICK": {
-    "idx": 5,
-    "alpha": false,
-    "blend_add": false,
-    "file": "Terr_05.jpg"
+    "file": "Tank_Enemy512.JPG"
   },
   "WALLSTONE": {
     "idx": 6,
     "alpha": false,
     "blend_add": false,
-    "file": "Terr_01.jpg"
+    "file": "Terr_01.JPG"
   },
   "WALLBRDM": {
     "idx": 7,
     "alpha": false,
     "blend_add": false,
-    "file": "Terr_01.jpg"
+    "file": "Terr_01.JPG"
   },
   "FIRE": {
     "idx": 8,
     "alpha": false,
     "blend_add": true,
-    "file": "Fire.jpg"
+    "file": "Fire.JPG"
   },
   "TANKENEMYRED": {
     "idx": 9,
@@ -81,49 +75,43 @@
     "idx": 16,
     "alpha": true,
     "blend_add": false,
-    "file": "T_NPlayer.jpg"
+    "file": "T_NPlayer.JPG"
   },
   "TANKPL2": {
     "idx": 17,
     "alpha": false,
     "blend_add": false,
-    "file": "T_NPlayer2.jpg"
+    "file": "T_NPlayer2.JPG"
   },
   "EFFECTS": {
     "idx": 18,
     "alpha": false,
     "blend_add": true,
-    "file": "Effects.jpg"
+    "file": "Effects.JPG"
   },
   "ITEMS": {
     "idx": 19,
     "alpha": false,
     "blend_add": false,
-    "file": "Items.jpg"
+    "file": "Items.JPG"
   },
   "ITEMLIGHT": {
     "idx": 20,
     "alpha": false,
     "blend_add": true,
-    "file": "ItemLight.jpg"
-  },
-  "FLAG": {
-    "idx": 22,
-    "alpha": false,
-    "blend_add": false,
-    "file": "flag.jpg"
+    "file": "ItemLight.JPG"
   },
   "SNOW": {
     "idx": 23,
     "alpha": false,
     "blend_add": true,
-    "file": "Snow.jpg"
+    "file": "Snow.JPG"
   },
   "RAIN": {
     "idx": 24,
     "alpha": false,
     "blend_add": true,
-    "file": "Rain.jpg"
+    "file": "Rain.JPG"
   },
   "WINADV": {
     "idx": 26,
@@ -135,7 +123,7 @@
     "idx": 28,
     "alpha": false,
     "blend_add": true,
-    "file": "Sand.jpg"
+    "file": "Sand.JPG"
   },
   "FACE": {
     "idx": 30,
@@ -147,7 +135,7 @@
     "idx": 31,
     "alpha": false,
     "blend_add": true,
-    "file": "FaceSharp.jpg"
+    "file": "FaceSharp.JPG"
   },
   "LOGO": {
     "idx": 32,
@@ -155,29 +143,11 @@
     "blend_add": false,
     "file": "logo3a.png"
   },
-  "CMAP": {
-    "idx": 37,
-    "alpha": true,
-    "blend_add": false,
-    "file": "CMap.jpg"
-  },
-  "MAPPIC": {
-    "idx": 38,
-    "alpha": true,
-    "blend_add": false,
-    "file": "MapPic.jpg"
-  },
-  "MAPPIC_A": {
-    "idx": 39,
-    "alpha": true,
-    "blend_add": false,
-    "file": "MapPic_A.jpg"
-  },
   "BOX": {
     "idx": 41,
     "alpha": false,
     "blend_add": true,
-    "file": "Box.jpg"
+    "file": "Box.JPG"
   },
   "TANKENEMYINV": {
     "idx": 42,
@@ -189,19 +159,13 @@
     "idx": 45,
     "alpha": false,
     "blend_add": false,
-    "file": "ItemsSc.jpg"
-  },
-  "ITEMTANK": {
-    "idx": 46,
-    "alpha": false,
-    "blend_add": false,
-    "file": "itemtank.jpg"
+    "file": "ItemsSc.JPG"
   },
   "FLYSHIP": {
     "idx": 51,
     "alpha": false,
     "blend_add": false,
-    "file": "FlyShip.jpg"
+    "file": "FlyShip.JPG"
   },
   "INFOPAN": {
     "idx": 52,
@@ -209,23 +173,17 @@
     "blend_add": false,
     "file": "InfoPanel.png"
   },
-  "PANELIGHT": {
-    "idx": 53,
-    "alpha": true,
-    "blend_add": false,
-    "file": "PaneLight.png"
-  },
   "EVOBJECT": {
     "idx": 54,
     "alpha": false,
     "blend_add": false,
-    "file": "EventObject.jpg"
+    "file": "EventObject.JPG"
   },
   "BOSS": {
     "idx": 55,
     "alpha": false,
     "blend_add": false,
-    "file": "Boss.jpg"
+    "file": "Boss.JPG"
   },
   "MENUADDON": {
     "idx": 56,
@@ -237,61 +195,61 @@
     "idx": 57,
     "alpha": false,
     "blend_add": true,
-    "file": "Flash.jpg"
+    "file": "Flash.JPG"
   },
   "PL2HEAD": {
     "idx": 58,
     "alpha": false,
     "blend_add": false,
-    "file": "Tank_Head_Green_p2.jpg"
+    "file": "Tank_Head_Green_p2.JPG"
   },
   "PLHEAD": {
     "idx": 59,
     "alpha": false,
     "blend_add": false,
-    "file": "Tank_Head_Green.jpg"
+    "file": "Tank_Head_Green.JPG"
   },
   "WALLB0": {
     "idx": 60,
     "alpha": false,
     "blend_add": false,
-    "file": "TerrWall_R_0.jpg"
+    "file": "TerrWall_R_0.JPG"
   },
   "WALLB1": {
     "idx": 61,
     "alpha": false,
     "blend_add": false,
-    "file": "TerrWall_R_1.jpg"
+    "file": "TerrWall_R_1.JPG"
   },
   "WALLB2": {
     "idx": 62,
     "alpha": false,
     "blend_add": false,
-    "file": "TerrWall_R_2.jpg"
+    "file": "TerrWall_R_2.JPG"
   },
   "WALLB3": {
     "idx": 63,
     "alpha": false,
     "blend_add": false,
-    "file": "TerrWall_R_3.jpg"
+    "file": "TerrWall_R_3.JPG"
   },
   "BULLET": {
     "idx": 64,
     "alpha": false,
     "blend_add": true,
-    "file": "Bullet.jpg"
+    "file": "Bullet.JPG"
   },
   "BLIGHT": {
     "idx": 68,
     "alpha": false,
     "blend_add": true,
-    "file": "Light.jpg"
+    "file": "Light.JPG"
   },
   "SHOP": {
     "idx": 71,
     "alpha": false,
     "blend_add": false,
-    "file": "Shop.jpg"
+    "file": "Shop.JPG"
   },
   "MSICE": {
     "idx": 73,
@@ -339,13 +297,13 @@
     "idx": 80,
     "alpha": false,
     "blend_add": false,
-    "file": "Flag_123.jpg"
+    "file": "Flag_123.JPG"
   },
   "MAPPREVS": {
     "idx": 83,
     "alpha": false,
     "blend_add": false,
-    "file": "MapPrevS.jpg"
+    "file": "MapPrevS.JPG"
   },
   "MSSNOW": {
     "idx": 84,
@@ -357,7 +315,7 @@
     "idx": 86,
     "alpha": false,
     "blend_add": false,
-    "file": "MapPrevT.jpg"
+    "file": "MapPrevT.JPG"
   },
   "LOGOENKORD": {
     "idx": 87,
@@ -375,7 +333,7 @@
     "idx": 89,
     "alpha": false,
     "blend_add": false,
-    "file": "WinScreen.JPG"
+    "file": "WinScreen.jpg"
   },
   "FONTFD": {
     "idx": 90,
@@ -435,6 +393,6 @@
     "idx": 105,
     "alpha": false,
     "blend_add": false,
-    "file": "_Map_T.jpg"
+    "file": "_Map_T.JPG"
   }
 }
