@@ -18,6 +18,13 @@ OUTPUT = ROOT / "output"
 OUTPUT.mkdir(exist_ok=True)
 
 
+# Devs set SRCBLEND_SRCALPHA on JPG file(?) - which creates undefiend behaviors in godot engine.
+# workaround for this exception case
+JPG_ALPHA_BLACKLIST = {
+    "TANKPL1"
+}
+
+
 class DummyData(Exception):
     pass
 
@@ -89,7 +96,7 @@ def _parse_single(line_iter: Iterator[str]) -> Tuple[str, dict]:
     for line in line_iter:
         match line.strip().split(" "):
             case ["SrcBlend_SRCALPHA"]:
-                alpha = True
+                alpha = False if name in JPG_ALPHA_BLACKLIST else True
             case ["SrcBlend_SRCCOLOR"]:
                 blend_add = True
             case ["LoadFile", *param]:

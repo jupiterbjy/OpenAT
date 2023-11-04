@@ -73,7 +73,7 @@
   },
   "TANKPL1": {
     "idx": 16,
-    "alpha": true,
+    "alpha": false,
     "blend_add": false,
     "file": "T_NPlayer.JPG"
   },
