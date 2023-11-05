@@ -13,7 +13,7 @@ PATTERN = re.compile(r"\[(\S* \S*)]")
 
 def parse_area(line: str) -> list:
     if not line:
-        return [0, 0]
+        return [[0, 0]]
 
     return [
         list(map(int, part.split())) for part in PATTERN.findall(line)
