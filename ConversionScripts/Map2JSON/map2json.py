@@ -3,7 +3,7 @@ Script for (mostly) converting Armada Tanks' *.map stage definition format
 
 TODO: change hard-coded map select positions to use BaseT/Map/maps.txt
 """
-import itertools
+
 import pathlib
 import json
 import functools
