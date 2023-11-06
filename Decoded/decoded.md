@@ -81,7 +81,8 @@ aka gametypes
 ### attributes
 | code | description | image |
 |-|-|-|
-| B, S | 빨간색 |![B, S](https://github.com/jupiterbjy/OpenAT/assets/45421813/9fe1739e-ab7b-4022-94a4-193e36833497)|
+| B | 스킨만 빨간색(겉모습만 빨간색) |![B, S](https://github.com/jupiterbjy/OpenAT/assets/45421813/9fe1739e-ab7b-4022-94a4-193e36833497)|
+| S | 진짜 빨간색(체력바 증가) |![B, S](https://github.com/jupiterbjy/OpenAT/assets/45421813/9fe1739e-ab7b-4022-94a4-193e36833497)|
 | L | 하늘색 |![L](https://github.com/jupiterbjy/OpenAT/assets/45421813/0d07b150-6d34-4fb1-ad5b-6f675b108ab3)|
 | K | 검정색 |![K](https://github.com/jupiterbjy/OpenAT/assets/45421813/17308f7d-59e4-41c6-9853-d1a0942c7e6e)|
 | I | 투명 |![I](https://github.com/jupiterbjy/OpenAT/assets/45421813/3af3344f-556e-44b3-8a95-75cb4814a71f)|
@@ -92,8 +93,8 @@ aka gametypes
 | T | ? |
 | C | ? |
 | DDD | 2분간 다음 적 탱크 소환 안됨 |
-| HKB (2HKB?) | 특수전차(앞에 어떤 숫자가 붙던지 상관없이 HKB가 나오면 무조건 이 전차가 나옴) |![HKB](https://github.com/jupiterbjy/OpenAT/assets/45421813/e1da3596-a607-475c-a681-069ae002cfc6)|
-| HLB (2HLB?) | EGYPT m5 에서 등장 |![HLB](https://github.com/jupiterbjy/OpenAT/assets/45421813/d86a7840-97a1-4273-b800-2c002d2e169f)|
+| KB (2HKB?) | 특수전차(앞에 어떤 숫자가 붙던지 상관없이 KB가 나오면 무조건 이 전차가 나옴) |![HKB](https://github.com/jupiterbjy/OpenAT/assets/45421813/e1da3596-a607-475c-a681-069ae002cfc6)|
+| LB (2HLB?) | EGYPT m5 에서 등장(앞에 어떤 숫자가 붙던지 상관없이 KB가 나오면 무조건 이 전차가 나옴) |![HLB](https://github.com/jupiterbjy/OpenAT/assets/45421813/d86a7840-97a1-4273-b800-2c002d2e169f)|
 
 ---
 
