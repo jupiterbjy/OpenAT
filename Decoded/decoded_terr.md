@@ -55,6 +55,18 @@ Memo:
 - N34, N1234 is used with `terrtype` 35
 - N235 is used with `terrtype` 256 which doesn't exist. Possibly alias for null.
 
+terr1:기본적인 기틀 원형 중심
+terr2: 장식물 중심
+
+terr2에서 장식물이 탱크를 막는 장식물로 이용될 때는 terr1의 31번이 그 역할을 함(terr_31이 충돌 판정이 있음)
+(그리고 모델링에도 영향을 주지 않음)
+
+terr2에서 256은 빈칸(terr1의 모델링을 그대로 따라감)
+terr2의 값이 달라질 경우 그 모델링 값을 우선시 해서 따라감
+
+모든 충돌판정은 장판(바닥 타일), 벽 중 일부, 스폰 터널에서만 나옴
+terr1에서 로딩된 모델링 중 자체적으로 충돌판정을 가진 것도 있고,
+모델링이랑 충돌판정이 별개로 들어가는 것이 있음. 
 
 ## Unknown Args Output from RUIN/m1 in godot implementation
 
