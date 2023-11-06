@@ -53,7 +53,7 @@ terr2 {
 
 Memo: 
 - N15, N125, N25 is used with `terrtype` 0
-- N34, N1234 is used with `terrtype` 35
+- N34, N134, N234, N1234 is used with `terrtype` 35
 - N235 is used with `terrtype` 256 which doesn't exist. Possibly alias for null.
 
 terr1:기본적인 기틀 원형 중심
