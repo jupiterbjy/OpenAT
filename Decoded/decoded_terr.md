@@ -35,19 +35,20 @@ terr2 {
 
 ![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/be8102b9-2268-4a09-9418-01baf3f90c56)
 
-| code  | effect                        |
-|-------|-------------------------------|
-| N     | Default - Bottom Right corner |
-| N1    | Clockwise 90                  |
-| N2    | Clockwise 180                 |
-| N12   | Clockwise 270                 |
-| N15   | Unknown                       |
-| N25   | Unknown                       |
-| N34   | Unknown                       |
-| N125  | Unknown                       |
-| N134  | Unknown                       |
-| N235  | Unknown                       |
-| N1234 | Unknown                       |
+| code  | effect                        | Image |
+|-------|-------------------------------|-------|
+| N     | Default - Bottom Right corner ||
+| N1    | Clockwise 90                  ||
+| N2    | Clockwise 180                 ||
+| N12   | Clockwise 270                 ||
+| N15   | Unknown                       ||
+| N25   | Unknown                       ||
+| N34   | z축으로 1칸상승                |![terr_35_N34](https://github.com/jupiterbjy/OpenAT/assets/45421813/76ac4bfa-9655-4f77-a620-a916402d9077)|
+| N125  | Unknown                       ||
+| N134  | Clockwise 90 + z축으로 1칸상승 |![terr_35_N134](https://github.com/jupiterbjy/OpenAT/assets/45421813/4025ca0d-bb39-4b92-92e2-6f4a59d26e87)|
+| N234  | Clockwise 180 + z축으로 1칸상승|![terr_35_N234](https://github.com/jupiterbjy/OpenAT/assets/45421813/deae19dd-c7fb-492e-b0c6-c77e800373d5)|
+| N235  | terr_256에만 붙음              ||
+| N1234 | Clockwise 270 + z축으로 1칸상승|![terr_35_N1234](https://github.com/jupiterbjy/OpenAT/assets/45421813/4aff9592-ea34-43c1-b0f2-9fbc170ae618)|
 
 
 Memo: 
