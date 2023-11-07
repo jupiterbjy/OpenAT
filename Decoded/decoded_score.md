@@ -1,3 +1,32 @@
+
+## Game Objects
+
+빨간 별 1개째 획득시 10점, 2개째 획득시 20점, 3개째 획득시 30점, 4개이상 획득시 40점
+
+빨간 별 1개 획득시 모든(탱크 부술때 내지는 아이템 획득시 전부) 점수 2배
+
+빨간 별 2개 획득시 모든 점수 3배
+
+빨간 별 3개 획득시 모든 점수 4배(3개이상 빨간 별 획득시 최대 획득점수 배율은 4배로 고정)
+
+| code | image                                                                                           | default point     |
+|------|-------------------------------------------------------------------------------------------------|-------------------|
+| C    | ![C](https://github.com/jupiterbjy/OpenAT/assets/45421813/6e792a72-85b0-4076-bebe-432f1cc010f1) | 10 |
+| S    | ![S](https://github.com/jupiterbjy/OpenAT/assets/45421813/02deccf2-cd0e-4978-a3f0-412e564b09ff) | 10 |
+| M    | ![M](https://github.com/jupiterbjy/OpenAT/assets/45421813/93088393-b98d-4d54-b025-22ba78e8769f) | 10 |
+| L    | ![L](https://github.com/jupiterbjy/OpenAT/assets/45421813/272936d8-18d7-4a2e-b29c-20c780ddcf44) | 10 |
+| Z    | ![Z](https://github.com/jupiterbjy/OpenAT/assets/45421813/106aaaa3-3c21-4193-8b11-3bcda32c2387) | 30 |
+| R    | ![R](https://github.com/jupiterbjy/OpenAT/assets/45421813/da6bcd91-8e47-4fc6-a761-69828fe84ee3) | 20 |
+| B    | ![B](https://github.com/jupiterbjy/OpenAT/assets/45421813/97b6bb11-b89a-47a4-b7d9-d8b6aee9a1f4) | 10 |
+| I    | ![I](https://github.com/jupiterbjy/OpenAT/assets/45421813/2c854d87-479d-46bf-a567-fd75c4d7efd9) | 10 |
+| X    | ![X](https://github.com/jupiterbjy/OpenAT/assets/45421813/2a885c67-1203-4ee1-864a-c55c16a9f6d4) | 10(first), 20(second), 30(third), 40(fourth~) |
+| Y    | ![Y](https://github.com/jupiterbjy/OpenAT/assets/45421813/78e90725-1a16-4af9-a255-ded8e45b3525) | 10 |
+| None | ![](https://github.com/jupiterbjy/OpenAT/assets/45421813/c1842f4d-f739-4ba9-984f-6c5da012053b)  | 25 |
+
+
+---
+
+
 ## Tank
 
 S(빨간색) : 2배
@@ -35,26 +64,5 @@ K(검정색) : 4배
 | 4    | ![4](https://github.com/jupiterbjy/OpenAT/assets/45421813/6658eccf-7c71-4bf3-95ba-2580f23b89be) | 10 |
 | 7    | ![7](https://github.com/jupiterbjy/OpenAT/assets/45421813/23c2423f-3c99-452b-a34b-a9fd875c6126) | 0  |
 | 8    | ![8](https://github.com/jupiterbjy/OpenAT/assets/45421813/20e0b7e5-ea23-4932-af6c-8e15c4a2e8d6) | 10 |
-
----
-
-## Game Objects
-
-붉은 별 1개째 : 10점, 2개째 : 20점, 3개 : 30점
-
-1개당 얻는 점수가 10점씩 올라감
-
-| code | image                                                                                           | default point     |
-|------|-------------------------------------------------------------------------------------------------|-------------------|
-| C    | ![C](https://github.com/jupiterbjy/OpenAT/assets/45421813/6e792a72-85b0-4076-bebe-432f1cc010f1) | 10 |
-| S    | ![S](https://github.com/jupiterbjy/OpenAT/assets/45421813/02deccf2-cd0e-4978-a3f0-412e564b09ff) | 10 |
-| M    | ![M](https://github.com/jupiterbjy/OpenAT/assets/45421813/93088393-b98d-4d54-b025-22ba78e8769f) | 10 |
-| L    | ![L](https://github.com/jupiterbjy/OpenAT/assets/45421813/272936d8-18d7-4a2e-b29c-20c780ddcf44) | 10 |
-| Z    | ![Z](https://github.com/jupiterbjy/OpenAT/assets/45421813/106aaaa3-3c21-4193-8b11-3bcda32c2387) | 30 |
-| R    | ![R](https://github.com/jupiterbjy/OpenAT/assets/45421813/da6bcd91-8e47-4fc6-a761-69828fe84ee3) | 20 |
-| B    | ![B](https://github.com/jupiterbjy/OpenAT/assets/45421813/97b6bb11-b89a-47a4-b7d9-d8b6aee9a1f4) | 10 |
-| I    | ![I](https://github.com/jupiterbjy/OpenAT/assets/45421813/2c854d87-479d-46bf-a567-fd75c4d7efd9) | 10 |
-| X    | ![X](https://github.com/jupiterbjy/OpenAT/assets/45421813/2a885c67-1203-4ee1-864a-c55c16a9f6d4) | 10, 20, 30 |
-| Y    | ![Y](https://github.com/jupiterbjy/OpenAT/assets/45421813/78e90725-1a16-4af9-a255-ded8e45b3525) | 10 |
 
 ---
