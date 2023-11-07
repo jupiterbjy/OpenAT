@@ -35,6 +35,8 @@ terr2 {
 
 ![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/be8102b9-2268-4a09-9418-01baf3f90c56)
 
+![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/17322b7d-7fe4-442f-9536-80ddf583938f)
+
 These codes stack, so N12 is N1 then N2, thus being 270-degree rotation.
 
 | N code | effect             |
@@ -42,6 +44,6 @@ These codes stack, so N12 is N1 then N2, thus being 270-degree rotation.
 | (None) | Default            |
 | 1      | Clockwise +90 deg  |
 | 2      | Clockwise +180 deg |
-| 3      | Vert. Pos. +?      |
-| 4      | Vert. Pos. +?      |
-| 5      | Vert. Pos. +?      |
+| 3      | Vert. Pos. +0.33   |
+| 4      | Vert. Pos. +0.66   |
+| 5      | Vert. Pos. +1.33   |
