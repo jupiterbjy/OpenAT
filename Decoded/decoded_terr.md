@@ -47,3 +47,9 @@ These codes stack, so N12 is N1 then N2, thus being 270-degree rotation.
 | 3      | Vert. Pos. +0.33   |
 | 4      | Vert. Pos. +0.66   |
 | 5      | Vert. Pos. +1.33   |
+
+## Random image
+
+Some (not so) fancy looking image explaining how decoding process went like!
+
+![Terrain Notation](https://github.com/jupiterbjy/OpenAT/assets/45421813/dbdff2ff-ed22-4747-bcaa-f86cea20ab37)

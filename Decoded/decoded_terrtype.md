@@ -24,8 +24,8 @@ terrtype {
 
 Higher priority overrides lower priority
 
-| Char | Priority | Possible Alias | Effect                                    |
-|------|----------|----------------|-------------------------------------------|
-| N    | Lowest   | Normal?        | No effect, can drive over, can shoot thru |
-| W    | Mid      | Water?         | Can't drive over, can shoot thru          |
-| F    | Highest  | BulletProof?   | Can't drive over, can't shoot thru        |
+| Char | Priority | Effect                                    |
+|------|----------|-------------------------------------------|
+| N    | Lowest   | No effect, can drive over, can shoot thru |
+| W    | Mid      | Can't drive over, can shoot thru          |
+| F    | Highest  | Can't drive over, can't shoot thru        |
