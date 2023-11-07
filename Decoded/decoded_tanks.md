@@ -64,3 +64,4 @@ tank [tank count]
 | C            | ?           |                                                                                                |
 | KB           | Boss        | ![](https://github.com/jupiterbjy/OpenAT/assets/45421813/e1da3596-a607-475c-a681-069ae002cfc6) |
 | LB           | Boss        | ![](https://github.com/jupiterbjy/OpenAT/assets/45421813/d86a7840-97a1-4273-b800-2c002d2e169f) |
+| SB           | Boss        | ![](https://github.com/jupiterbjy/OpenAT/assets/45421813/eea5c4da-afea-40b5-b1d9-e38f1755a586) |
