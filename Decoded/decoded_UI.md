@@ -17,6 +17,24 @@ Help 2 X M 의 경우
 ![1-2 2](https://github.com/jupiterbjy/OpenAT/assets/45421813/6a094e83-45f2-49a5-8dec-be9ca355a326)
 
 
+## Header Section
+
+```text
+txt [텍스트 순서] [인물]
+...
+```
+## 인물 code
+
+개인 설치경로\Armada Tanks\game data\BaseT\Message 폴더 내의 모든 txt파일의 경우 게임 켜질때만 로딩됨
+
+| code | image                                                                                                      | note |
+|------|------------------------------------------------------------------------------------------------------------|------|
+| 0    | ![Face_trans_0](https://github.com/jupiterbjy/OpenAT/assets/45421813/4a56b845-355e-499e-b7af-e0631571a877) |      |
+| 1    | ![Face_trans_1](https://github.com/jupiterbjy/OpenAT/assets/45421813/f2320563-4db6-41fa-8c17-3e2c385a3791) |      |
+| 2    | ![Face_trans_2](https://github.com/jupiterbjy/OpenAT/assets/45421813/7dd06209-a793-4073-8b51-93f94fc14a2a) |      |
+| 3    | ![Face_trans_3](https://github.com/jupiterbjy/OpenAT/assets/45421813/c4f28de0-a79a-4e46-958b-68e78ef9e126) | 로딩 시 UI화면 깨짐 |
+
+
 ## Game Objects
 
 Help Code, items code는 아래 표 code를 그대로 사용함
