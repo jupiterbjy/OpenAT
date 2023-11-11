@@ -45,14 +45,14 @@ Originally made for [OpenArmada](https://youtu.be/y9SxrjWGQ5Y?si=N4GB5dVoKe6rwVI
 
 Separated every individual parts to allow modularization.  
 
+![](tank_sample/images/tank_parts.png)
+
 After seeing Godot's built-in ***POWERFUL*** (Add 10x stronger emphasis here) outline mesh generation feature,
 created a Simple headless Godot application wrapped with python called
 [GLTFOutlineCreator](https://github.com/jupiterbjy/GLTFOutlineCreator).
 
 With this tool, I ditched [old scale-based outline script](tank_sample/batch_export_w_invert_outline_mesh.py) and
 created proper outline mesh for these as test.
-
-INSERT_PARALLEL_MERGED_IMG_HERE
 
 ![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/171db34a-04d3-4103-87da-2607b28f27d7)
 
