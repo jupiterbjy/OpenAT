@@ -54,13 +54,34 @@ aka gametypes
 
 ## Bullet types
 
-| name            | texture    | usage                                      |
-|-----------------|------------|--------------------------------------------|
-| Bullet_1        | Bullet.JPG | Cannon, Gattling                           | 
-| Bullet_2        | ?          | ?                                          |
-| Bullet_Electro  | Light.JPG  | Lighting                                   |
-| Bullet_Fire     | Fire.JPG   | FlameThrower                               |
-| Bullet_MapShow  | ?          | Probably bullet used in main menu 3D Scene |
-| Bullet_Raketa   | ?          | Rocket launcher                            |
-| Bullet_Shock    | Bullet.JPG | Shockwave cannon                           |
-| Bullet_Shock_Sc | Bullet.JPG | Secondary projectile from Shockwave cannon |
+| name            | Model.scr Entry  | texture             | usage                                      |
+|-----------------|------------------|---------------------|--------------------------------------------|
+| Bullet_1        | 11 BULLET1       | Bullet.JPG          | Cannon, Gatling                            | 
+| Bullet_2        | 52 BULLET2       | Fire.JPG?           | Possibly a red bullet, usage unknown       |
+| Bullet_Electro  | 148 BULLET3      | ?                   | Seemingly unused                           |
+| ?               | ?                | Light.JPG           | Actual lighting with variable length       |
+| Bullet_Fire     | 78 BULLETFIRE    | Fire.JPG            | FlameThrower                               |
+| Bullet_MapShow  | 202 BLMPSH       | ?                   | Bullet used in main menu 3D Scene, no uv   |
+| Bullet_Raketa   | 166 BULLETRAKETA | Tank_Head_Green.JPG | Rocket launcher                            |
+| Bullet_Shock    | 167 BULLETSHOCK  | Bullet.JPG          | Shockwave cannon                           |
+| Bullet_Shock_Sc | 168 BULLETSHSC   | Bullet.JPG          | Secondary projectile from Shockwave cannon |
+| bullet          | 28 BULLET        | ?                   | Dummy file? no matching image              |
+
+
+| code | model                    | name         | damage | damage(1up) | damage(2up) | damage(3up) |
+|------|--------------------------|--------------|--------|-------------|-------------|-------------|
+| 0    | BULLET1                  | Cannon       |        |             |             |             |
+| 1    | BULLET1                  | Minigun      |        |             |             |             |
+| 2    | BULLETRAKETA             | Rocket       |        |             |             |             |
+| 3    | ?                        | Lighting     |        |             |             |             |
+| 4    | BULLETFIRE               | Flamethrower |        |             |             |             |
+| 5    | BULLETSHOCK + BULLETSHSC | Shock Gun    |        |             |             |             |
+
+
+| Upgrade          | model | no effect | effect(1up) | effect(2up) | effect(3up) |
+|------------------|-------|-----------|-------------|-------------|-------------|
+| Armor            |       |           |             |             |             |
+| Movement speed   |       |           |             |             |             |
+| Reload time      |       |           |             |             |             |
+| Projectile Speed |       |           |             |             |             |
+| Damage           |       |           |             |             |             |
