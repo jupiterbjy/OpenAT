@@ -6,6 +6,16 @@ looks like.
 
 Order is inverse of creation time.
 
+
+# lighting_bullet
+
+For implementing Lightning weapon effect, because in 'modern' game engines we can't create mesh and edit UV in runtime!
+
+Following is actual in-game implementation with this countless models, last 3 being extension and not modeled.
+
+![](https://github.com/jupiterbjy/OpenAT/assets/26041217/9a7deb72-d8a8-4632-8f87-d160e8ea843e)
+
+
 # tracks
 
 Reconstructed models for use in godot. Material will be created with ADD blend mode on runtime, so black bg is fine.
