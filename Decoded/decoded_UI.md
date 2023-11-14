@@ -1,19 +1,42 @@
 
-- Help의 경우엔 뒤에 숫자가 0,1,2,3만 들어올 수 있고, 4 이상이 들어올경우 무조건 깨진다.
 
-- 뒤에 붙에있는 수 만큼 맨 처음 화면에서 코드에 해당하는 아이템을 설명한다.
+## Structure
 
-- Help에서 나오는 아이템 외에도 필드에 다른 아이템이 나올 때도 있다.
+```text
+items XM
 
-- 모든 맵 파일에서 message는 message F 코드만 존재한다.
+help 2 X M  
+
+message F
+```
+
+- In the case of Help, only the following numbers are 0, 1, 2, and 3
+
+- If the following number is more than 4, it will break the game
+
+- Describe the item corresponding to the code on the first screen as many as the number of postscripts. (Ignore any additional item codes that appear later)
+
+- In addition to the items that come out of Help, there are times when there are other items in the field
+
+- All map files, Message Only have following code F
 
 
-1-2 (RUIN -2) 에서
-Help 3 X M S 일때
+
+
+In Map RUIN-2 (1-2)
+
+
+
+
+Case 1: Help 3 X M S 
+
 
 ![1-2](https://github.com/jupiterbjy/OpenAT/assets/45421813/47fc86b7-ae07-4e1d-97d4-60041044fdce)
 
-Help 2 X M 의 경우
+
+Case 2: Help 2 X M 
+
+
 ![1-2 2](https://github.com/jupiterbjy/OpenAT/assets/45421813/6a094e83-45f2-49a5-8dec-be9ca355a326)
 
 
