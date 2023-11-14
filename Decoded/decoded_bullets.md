@@ -29,12 +29,13 @@
 
 # Bullet wall damage
 
-| code | wall damage  | splash shape |
-|------|--------------|--------------------|
-| 0    | 2            | ![](https://github.com/jupiterbjy/OpenAT/assets/26041217/4139d481-abf8-4cc0-ae7d-a83c2dd91b40) |
-| 1    | 1            | ![](https://github.com/jupiterbjy/OpenAT/assets/26041217/4fd7997f-6ec2-47ad-a08f-a7e040703cba) |
-| 2    | 2 (1 splash) | ![](https://github.com/jupiterbjy/OpenAT/assets/26041217/263ed871-2ea9-4b8d-9ff5-a93e0101d02d) |
-| 3    | 4 (2 splash) | ![](https://github.com/jupiterbjy/OpenAT/assets/26041217/35e7c0bf-4e63-4ac7-8ad2-0163941396c7) |
-| 4    | 1 (1 splash) | ![](https://github.com/jupiterbjy/OpenAT/assets/26041217/5708f38a-5ad7-4aaf-ab15-666b472596d2) |
-| 5    | 1 (1 splash) | ![](https://github.com/jupiterbjy/OpenAT/assets/26041217/5708f38a-5ad7-4aaf-ab15-666b472596d2) |
-| 6    | 1            | ![](https://github.com/jupiterbjy/OpenAT/assets/26041217/4fd7997f-6ec2-47ad-a08f-a7e040703cba) |
+| Namse               | wall damage  | splash shape                                                                                   |
+|---------------------|--------------|------------------------------------------------------------------------------------------------|
+| Cannon              | 2            | ![](https://github.com/jupiterbjy/OpenAT/assets/26041217/4139d481-abf8-4cc0-ae7d-a83c2dd91b40) |
+| Minigun             | 1            | ![](https://github.com/jupiterbjy/OpenAT/assets/26041217/4fd7997f-6ec2-47ad-a08f-a7e040703cba) |
+| Rocket              | 2 (1 splash) | ![](https://github.com/jupiterbjy/OpenAT/assets/26041217/5882d4f8-fac5-43db-ad65-1d64752e200a) |
+| Lightning           | 4 (2 splash) | ![](https://github.com/jupiterbjy/OpenAT/assets/26041217/35e7c0bf-4e63-4ac7-8ad2-0163941396c7) |
+| Flamethrower        | 1 (1 splash) | ![](https://github.com/jupiterbjy/OpenAT/assets/26041217/5708f38a-5ad7-4aaf-ab15-666b472596d2) |
+| Shock Gun           | 1 (1 splash) | ![](https://github.com/jupiterbjy/OpenAT/assets/26041217/5708f38a-5ad7-4aaf-ab15-666b472596d2) |
+| Shock Gun secondary | 1            | ![](https://github.com/jupiterbjy/OpenAT/assets/26041217/4fd7997f-6ec2-47ad-a08f-a7e040703cba) |
+
