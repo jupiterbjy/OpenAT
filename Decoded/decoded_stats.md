@@ -19,7 +19,7 @@
 | 0    | BULLET1                  | Cannon       | 20     | 24          | 28          | 32          | 34           |
 | 1    | BULLET1                  | Minigun      | 15     | 18          | 21          | 24          | 25           |
 | 2    | BULLETRAKETA             | Rocket       | 8      | 9           | 11          | 12          | 13           |
-| 3    | ?                        | Lighting     | 11     | 13          | 15          | 17          | 18           |
+| 3    | ?                        | Lightning    | 11     | 13          | 15          | 17          | 18           |
 | 4    | BULLETFIRE               | Flamethrower | 9      | 10          | 12          | 14          | 15           |
 | 5    | BULLETSHOCK + BULLETSHSC | Shock Gun    | 15     | 18          | 21          | 24          | 25           |
 
@@ -29,7 +29,7 @@
 | 0    | BULLET1                  | Cannon       | 0.75s       | 0.65s            | 0.59s            | 0.5s             | 0.43s             |
 | 1    | BULLET1                  | Minigun      | 0.25s       | 0.21s            | 0.18s            | 0.15s            | 0.12s             |
 | 2    | BULLETRAKETA             | Rocket       | 0.56s       | 0.5s             | 0.43s            | 0.37s            | 0.31s             |
-| 3    | ?                        | Lighting     | 1.25s       | 1.12s            | 1.0s             | 0.87s            | 0.75s             |
+| 3    | ?                        | Lightning    | 1.25s       | 1.12s            | 1.0s             | 0.87s            | 0.75s             |
 | 4    | BULLETFIRE               | Flamethrower | 0.12s       | 0.09s            | 0.09s            | 0.06s            | 0.06s             |
 | 5    | BULLETSHOCK + BULLETSHSC | Shock Gun    | 0.56s       | 0.5s             | 0.43s            | 0.37s            | 0.31s             |
 
