@@ -26,7 +26,7 @@ Resulting scripts of reverse-engineering efforts on *Armada Tanks*'s seemingly o
 - [DTM2Blender](ConversionScripts/DTM2Blender): DTM model reconstruction & model definition reconstruction script. Uses black magic trickery to allow Blender's GLTF exporter export mesh, UV and vertex animations properly.
 - [Tex2JSON](ConversionScripts/Tex2JSON): `texture*.scr` texture definition scripts reconstruction script. Also translates DX8 Blending specifiers.  
 
-### [Model](Scratch)
+### [CustomResources](CustomResources)
 Collection of hand-crafted models.
 
 - [CustomResources/Images](CustomResources/Images): Images made from scratch in paint.net or with blender. Refer README.md for details.
