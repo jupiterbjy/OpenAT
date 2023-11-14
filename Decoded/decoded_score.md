@@ -22,7 +22,7 @@ If player have 3 or More red stars, get points 4x.
 | R    | ![R](https://github.com/jupiterbjy/OpenAT/assets/45421813/da6bcd91-8e47-4fc6-a761-69828fe84ee3) | 20 |
 | B    | ![B](https://github.com/jupiterbjy/OpenAT/assets/45421813/97b6bb11-b89a-47a4-b7d9-d8b6aee9a1f4) | 10 |
 | I    | ![I](https://github.com/jupiterbjy/OpenAT/assets/45421813/2c854d87-479d-46bf-a567-fd75c4d7efd9) | 10 |
-| X    | ![X](https://github.com/jupiterbjy/OpenAT/assets/45421813/2a885c67-1203-4ee1-864a-c55c16a9f6d4) | 10(first), 20(second), 30(third), 40(fourth~) |
+| X    | ![X](https://github.com/jupiterbjy/OpenAT/assets/45421813/2a885c67-1203-4ee1-864a-c55c16a9f6d4) | 10 |
 | Y    | ![Y](https://github.com/jupiterbjy/OpenAT/assets/45421813/78e90725-1a16-4af9-a255-ded8e45b3525) | 10 |
 | None | ![](https://github.com/jupiterbjy/OpenAT/assets/45421813/c1842f4d-f739-4ba9-984f-6c5da012053b)  | 25 |
 
