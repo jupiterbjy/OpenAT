@@ -1,17 +1,17 @@
 ## Bullet types
 
-| name            | Model.scr Entry  | texture             | usage                                      |
-|-----------------|------------------|---------------------|--------------------------------------------|
-| Bullet_1        | 11 BULLET1       | Bullet.JPG          | Cannon, Gatling                            | 
-| Bullet_2        | 52 BULLET2       | Fire.JPG?           | Possibly a red bullet, usage unknown       |
-| Bullet_Electro  | 148 BULLET3      | ?                   | Seemingly unused                           |
-| ?               | ?                | Light.JPG           | Actual lighting with variable length       |
-| Bullet_Fire     | 78 BULLETFIRE    | Fire.JPG            | FlameThrower                               |
-| Bullet_MapShow  | 202 BLMPSH       | ?                   | Bullet used in main menu 3D Scene, no uv   |
-| Bullet_Raketa   | 166 BULLETRAKETA | Tank_Head_Green.JPG | Rocket launcher                            |
-| Bullet_Shock    | 167 BULLETSHOCK  | Bullet.JPG          | Shockwave cannon                           |
-| Bullet_Shock_Sc | 168 BULLETSHSC   | Bullet.JPG          | Secondary projectile from Shockwave cannon |
-| bullet          | 28 BULLET        | ?                   | Dummy file? no matching image              |
+| name            | Model.scr Entry  | texture             | texture entry | usage                                      |
+|-----------------|------------------|---------------------|---------------|--------------------------------------------|
+| Bullet_1        | 11 BULLET1       | Bullet.JPG          | 64 BULLET     | Cannon, Gatling                            | 
+| Bullet_2        | 52 BULLET2       | Fire.JPG?           | 8 FIRE        | Possibly a red bullet, usage unknown       |
+| Bullet_Electro  | 148 BULLET3      | ?                   | ?             | Model unused                               |
+| ?               | ?                | Light.JPG           | 68 BLIGHT     | Actual lighting with variable length       |
+| Bullet_Fire     | 78 BULLETFIRE    | Fire.JPG            | 8 FIRE        | FlameThrower                               |
+| Bullet_MapShow  | 202 BLMPSH       | ?                   | ?             | Bullet used in main menu 3D Scene, no uv   |
+| Bullet_Raketa   | 166 BULLETRAKETA | Tank_Head_Green.JPG | 59 PLHEAD     | Rocket launcher                            |
+| Bullet_Shock    | 167 BULLETSHOCK  | Bullet.JPG          | 64 BULLET     | Shockwave cannon                           |
+| Bullet_Shock_Sc | 168 BULLETSHSC   | Bullet.JPG          | 64 BULLET     | Secondary projectile from Shockwave cannon |
+| bullet          | 28 BULLET        | ?                   | ?             | Dummy file? no matching image              |
 
 
 | code | model                    | name         | damage | damage(1up) | damage(2up) | damage(3up) | damage(FULL) |
