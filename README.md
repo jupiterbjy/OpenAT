@@ -68,7 +68,7 @@ Then dependencies can be supplied by users manually, albeit it might require use
 # Ramble: A Bit of history
 
 
-## Version 0:  
+## Version 0: Open Armada
 
 Version 1 was made before OpenAT - Back then it was called *Open Armada*.
 That project was made as a homework-ish Unity project for Computer Graphics lecture in Hong-Ik University.
@@ -85,7 +85,7 @@ Those models used there were Just-In-Time(quite literally) model for use in impe
 
 Quality therefore, was quite miserable.
 
-## Version 2
+## Version 1: OpenAT
 
 After failing our original Graduation project, we started working on Armada Tanks again, but from scratch.
 
