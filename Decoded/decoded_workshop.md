@@ -1,3 +1,32 @@
+
+
+
+# Weapon Icons
+
+| Weapon           | Models    |
+|------------------|-----------|                                     
+| Cannon           |![Cannon](https://github.com/jupiterbjy/OpenAT/assets/45421813/f5652f1e-d645-48a9-9f9c-4461e9c5d36a)
+| Minigun          |![Minigun](https://github.com/jupiterbjy/OpenAT/assets/45421813/7762dd7a-b0f4-42a3-8e8e-eb6161166444)|
+| Rocket           |![Rocket](https://github.com/jupiterbjy/OpenAT/assets/45421813/39b7f608-3c1c-42b4-944f-2c6b9691e227)|
+| Lightning        |![Lightning](https://github.com/jupiterbjy/OpenAT/assets/45421813/b4443054-fcfa-4514-a297-3d62fbb625c4)|
+| Flamethrower     |![Flamethrower](https://github.com/jupiterbjy/OpenAT/assets/45421813/0b20c05d-b731-4fe7-820b-a53709a3539e)|
+| Shock Gun        |![Shock Gun](https://github.com/jupiterbjy/OpenAT/assets/45421813/174b2b72-bdea-4e69-8058-42c0a5fa4a54)|
+
+
+
+# Weapon Prices
+
+| Weapon           | cost      |
+|------------------|-----------|                                     
+| Cannon           | 100       |
+| Minigun          | 100       |
+| Rocket           | 400       |
+| Lightning        | 500       |
+| Flamethrower     | 600       |
+| Shock Gun        | 700       |
+
+
+
 # Upgrade Icons
 
 Models has 4 variants, i.e. *ADDARMOR ADDARMORII ~ IIII*
