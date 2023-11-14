@@ -1,4 +1,4 @@
-![](Model/FromScratch/logo.png)
+![](/CustomResources/Images/logo/logo.png)
 
 (Logo is incomplete, might see a bit more work on it if I have time before deadline)
 
@@ -29,8 +29,8 @@ Resulting scripts of reverse-engineering efforts on *Armada Tanks*'s seemingly o
 ### [Model](Scratch)
 Collection of hand-crafted models.
 
-- Converted: Converted DTM model resource - not uploaded due to potential copyright issue.
-- [FromScratch](Model/FromScratch): Models made from scratch in blender. Refer README.md in each respective models.
+- [CustomResources/Images](CustomResources/Images): Images made from scratch in paint.net or with blender. Refer README.md for details.
+- [CustomResources/Models](CustomResources/Models): Models made from scratch in blender. Refer README.md for details.
 
 
 # Why there's no game?
@@ -81,13 +81,13 @@ Game - despite it's simplistic looks - was VERY complex in design,
 that we couldn't find a single right thing about it back then.
 
 Therefore, at least a working stuff resembling even tiny bit of it had to be done under about 72 remaining hours.
-[Those models]() was Just-In-Time(quite literally) model for use in impending doom called 'Deadline'.
+Those models used there were Just-In-Time(quite literally) model for use in impending doom called 'Deadline'.
 
-Quality therefore, is quite miserable.
+Quality therefore, was quite miserable.
 
 ## Version 2
 
-After failing our original Graduation project, we started working on Armada Tanks again, but from stratch.
+After failing our original Graduation project, we started working on Armada Tanks again, but from scratch.
 
 We thought we could reuse all the thing we did in Unity, and pushed on researching about how we could utilize
 *Armada Tanks* resources.
@@ -95,5 +95,8 @@ We thought we could reuse all the thing we did in Unity, and pushed on researchi
 We surely can't simply read x86 ASM as this game seemingly uses DirectX 8.0 directly, however if we could utilize
 original resources, our project could be run like one of my favourite *OpenRCT* - by just designating resource path.
 
-Obviously this (and so many much more black magic *Armada Tanks* implements) was almost impossible in Unity.
+Obviously this (and so many much more black magic *Armada Tanks* implements) was seemingly almost impossible in Unity.
+So, we nailed down for using godot instead of unity. Not to mention unity's self-destruction with their TOS changes!
 
+During a bit short of a month's hardship, project finally is starting to (at least) run.
+Follow-up progress video will be linked here within 23, November.  
