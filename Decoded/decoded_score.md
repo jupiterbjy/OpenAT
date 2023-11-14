@@ -1,13 +1,16 @@
 
 ## Game Objects
 
-빨간 별 1개째 획득시 10점, 2개째 획득시 20점, 3개째 획득시 30점, 4개이상 획득시 40점
+The number of red stars makes a difference in the magnification of points
 
-빨간 별 1개 획득시 모든(탱크 부술때 내지는 아이템 획득시 전부) 점수 2배
+If player have 1 red star, get points 2x.
 
-빨간 별 2개 획득시 모든 점수 3배
+If player have 2 red stars, get points 3x.
 
-빨간 별 3개 획득시 모든 점수 4배(3개이상 빨간 별 획득시 최대 획득점수 배율은 4배로 고정)
+If player have 3 or More red stars, get points 4x.
+
+
+
 
 | code | image                                                                                           | default point     |
 |------|-------------------------------------------------------------------------------------------------|-------------------|
@@ -29,13 +32,11 @@
 
 ## Tank
 
-S(빨간색) : 2배
+With Code S : health 2x, points 2x (Except Boss)
 
-L(하늘색) : 3배
+With Code L : health 3x, points 3x (Except Boss)
 
-K(검정색) : 4배
-
-보스급은(SB, LB, KB) 위의 색깔에 따른 점수 배율 제외
+With Code K : health 4x, points 4x (Except Boss)
 
 | code | image                                                                                          | default point           |
 |------|------------------------------------------------------------------------------------------------|-------------------------|
