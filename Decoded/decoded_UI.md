@@ -28,16 +28,18 @@ In Map RUIN-2 (1-2)
 
 
 
-Case 1: Help 3 X M S 
+- Case 1: Help 3 X M S 
 
 
-![1-2](https://github.com/jupiterbjy/OpenAT/assets/45421813/47fc86b7-ae07-4e1d-97d4-60041044fdce)
+![](https://github.com/jupiterbjy/OpenAT/assets/45421813/9ab9b830-2146-4de2-abd7-6f3ea279f943)
 
 
-Case 2: Help 2 X M 
+
+- Case 2: Help 2 X M 
 
 
-![1-2 2](https://github.com/jupiterbjy/OpenAT/assets/45421813/6a094e83-45f2-49a5-8dec-be9ca355a326)
+![](https://github.com/jupiterbjy/OpenAT/assets/45421813/2aacba2e-29c5-459a-95fd-976b8a72e3f5)
+
 
 
 ## Header Section
