@@ -14,15 +14,15 @@ But we're not sure why it sometimes spawn walls and sometimes not. I can't find 
 
 | code | code (target) | image                                                                                          | description            |
 |------|---------------|------------------------------------------------------------------------------------------------|------------------------|
-| #    | &             | ![](https://github.com/jupiterbjy/OpenAT/assets/45421813/b5db0908-622a-4e84-acab-9b7e0410ffab) | Full health brick wall |
-| 4    | 5             | ![](https://github.com/jupiterbjy/OpenAT/assets/45421813/fb42a0ba-7f6b-4bc6-be9d-605cfd1705a4) | Health 3 Wall          |
-| 2?   | 7             | ![](https://github.com/jupiterbjy/OpenAT/assets/45421813/23b5b447-c530-40b6-8dc7-d20c93aad017) | Health 2 Wall          |
-| 0?   | 9             | ![](https://github.com/jupiterbjy/OpenAT/assets/45421813/ea8615e9-2be7-4109-a605-361af4d8332a) | Health 1 Wall          |
+| #    | &             | ![](https://github.com/jupiterbjy/OpenAT/assets/45421813/2ffc2e0a-cbdd-415d-93d4-23a220e497ed) | Full health brick wall |
+| 4    | 5             | ![](https://github.com/jupiterbjy/OpenAT/assets/45421813/77416ea4-6a40-47bc-ad77-741df339a14f) | Health 3 Wall          |
+| 2?   | 7             | ![](https://github.com/jupiterbjy/OpenAT/assets/45421813/100960bf-d5f2-4b08-898d-b0d5283d6aae) | Health 2 Wall          |
+| 0?   | 9             | ![](https://github.com/jupiterbjy/OpenAT/assets/45421813/d58aec7a-6893-4c92-b9f9-333434cbccc9) | Health 1 Wall          |
 
 ### Stone walls
 
 - Contains 2 textures: TerrWall_G_O / Terr_01 - Seems like there's more dummy textures that might also is a stone wall.
 
-| char | image                                                                                                             | description |
-|------|-------------------------------------------------------------------------------------------------------------------|-------------|
-| %    | ![Stone walls % image](https://github.com/jupiterbjy/OpenAT/assets/45421813/af138505-a547-4f4a-8b8f-3e1bb239a504) | Stone Wall  |
+| char | image                                                                                         | description |
+|------|-----------------------------------------------------------------------------------------------|-------------|
+| %    | ![](https://github.com/jupiterbjy/OpenAT/assets/45421813/ddea7d39-eec3-4052-8fcb-4d8cdb44d804)| Stone Wall  |
