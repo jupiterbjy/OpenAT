@@ -44,11 +44,11 @@ Models has 4 variants, i.e. *ADDARMOR ADDARMORII ~ IIII*
 
 | Upgrade          | cost(1up) | cost(2up) | cost(3up) | cost(4up) |
 |------------------|-----------|-----------|-----------|-----------|
-| Armor            |           |           |           |           |
-| Movement speed   |           |           |           |           |
-| Reload time      |           |           |           |           |
-| Projectile Speed |           |           |           |           |
-| Damage           |           |           |           |           |
+| Armor            | 100       | 200       | 400       | 800       |
+| Movement speed   | 100       | 200       | 400       | 800       |
+| Reload time      | 100       | 200       | 400       | 800       |
+| Projectile Speed | 100       | 200       | 400       | 800       |
+| Damage           | 100       | 200       | 400       | 800       |
 
 
 # Upgrade damage effect
@@ -78,5 +78,12 @@ Models has 4 variants, i.e. *ADDARMOR ADDARMORII ~ IIII*
 
 # Upgrade speed effect
 
+| speed | speed(1up) | speed(2up) | speed(3up) | speed(FULL) |
+|-------|------------|------------|------------|-------------|
+| 83mph | 87mph      | 91mph      | 95mph      | 100mph      |
 
 # Upgrade armor effect
+
+| armor | armor(1up) | armor(2up) | armor(3up) | armor(FULL) |
+|-------|------------|------------|------------|-------------|
+| 0%    | 10%        | 20%        | 30%        | 40%         |
