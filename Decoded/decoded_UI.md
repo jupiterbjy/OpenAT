@@ -53,11 +53,11 @@ txt [Script] [Character]
 All txt files in that folder are loaded only when the game is on
 
 
-| code | image                                                                                                      | note |
-|------|------------------------------------------------------------------------------------------------------------|------|
-| 0    | ![Face_trans_0](https://github.com/jupiterbjy/OpenAT/assets/45421813/4a56b845-355e-499e-b7af-e0631571a877) |      |
-| 1    | ![Face_trans_1](https://github.com/jupiterbjy/OpenAT/assets/45421813/f2320563-4db6-41fa-8c17-3e2c385a3791) |      |
-| 2    | ![Face_trans_2](https://github.com/jupiterbjy/OpenAT/assets/45421813/7dd06209-a793-4073-8b51-93f94fc14a2a) |      |
+| code | image                                                                                                      | note                           |
+|------|------------------------------------------------------------------------------------------------------------|--------------------------------|
+| 0    | ![Face_trans_0](https://github.com/jupiterbjy/OpenAT/assets/45421813/4a56b845-355e-499e-b7af-e0631571a877) | Partner                        |
+| 1    | ![Face_trans_1](https://github.com/jupiterbjy/OpenAT/assets/45421813/f2320563-4db6-41fa-8c17-3e2c385a3791) | Enemy                          |
+| 2    | ![Face_trans_2](https://github.com/jupiterbjy/OpenAT/assets/45421813/7dd06209-a793-4073-8b51-93f94fc14a2a) | Commander                      |
 | 3    | ![Face_trans_3](https://github.com/jupiterbjy/OpenAT/assets/45421813/c4f28de0-a79a-4e46-958b-68e78ef9e126) | When loads, It crush UI Screen |
 
 
