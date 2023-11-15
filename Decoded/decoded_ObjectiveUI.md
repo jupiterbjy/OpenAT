@@ -42,7 +42,7 @@ help [help ID] [item breifing]  [dummy data if any]
 
 ## Game Objectives
 
-aka gametypes
+In map file, it names gametype
 
 | code | image                                                                                           | eng                 | note                        |
 |------|-------------------------------------------------------------------------------------------------|---------------------|-----------------------------|
