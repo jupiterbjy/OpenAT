@@ -70,6 +70,7 @@ With Code K : health 4x, points 4x (Except Boss)
 | (WhiteSpace) | NONE                                                                                           | 1 sec wait  |
 | P            | NONE                                                                                           | 5 sec wait  |
 | D            | NONE                                                                                           | 30 sec wait |
+| DDD          | NONE                                                                                           | 2 min wait  |
 | H            |                                                                                                | ?           |
 | T            |                                                                                                | ?           |
 | C            |                                                                                                | ?           | 
