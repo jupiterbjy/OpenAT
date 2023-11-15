@@ -35,21 +35,21 @@ tank [tank count]
 
 
 
-| code | image                                                                                          | default health | Code S(Red) | Code L(Sky) | Code K(Black) | note |
-|------|------------------------------------------------------------------------------------------------|----------------|-------------|-------------|---------------|-------------------------|
-| 0    | ![](https://github.com/jupiterbjy/OpenAT/assets/45421813/65894c31-59a1-4b7f-9678-6bcafbe616e2) |                |             |             |               | Random upgrade & weapon |
-| 1    | ![](https://github.com/jupiterbjy/OpenAT/assets/45421813/87a13735-3753-4137-8cf9-e078517c63e4) | 20             | 4           | 6           | 8             |                         |
-| 2    | ![](https://github.com/jupiterbjy/OpenAT/assets/45421813/8a1c9219-a9f8-4095-9fd1-5549a36d408c) | 30             | 6           | 9           | 12            |                         |
-| 3    | ![](https://github.com/jupiterbjy/OpenAT/assets/45421813/1870fb17-5b7a-4932-9101-3b7812c08972) | 40             | 8           | 12          | 16            |                         |
-| 4    | ![](https://github.com/jupiterbjy/OpenAT/assets/45421813/7937a46e-c465-4ef9-b4d4-03dbfca90874) | 40             | 8           | 12          | 16            |                         |
-| 5    | ![](https://github.com/jupiterbjy/OpenAT/assets/45421813/86a583ed-5ae8-40be-8d14-d012527599fb) | 50             | 6           | 9           | 12            |                         |
-| 6    | ![](https://github.com/jupiterbjy/OpenAT/assets/45421813/34c952c4-86bc-47ea-b76d-59dc5fbfd863) | 30             | 16          | 24          | 32            |                         |
-| 7    | ![](https://github.com/jupiterbjy/OpenAT/assets/45421813/03d551c2-a491-4e1c-aa4e-d5272c36ffb9) | 30             | 6           | 9           | 12            | Dummy Data              |
-| 8    | ![](https://github.com/jupiterbjy/OpenAT/assets/45421813/135cd1cd-3a82-49be-a98a-8a9b51d93758) | 40             | 16          | 24          | 32            |                         |
-| 9    | ![](https://github.com/jupiterbjy/OpenAT/assets/45421813/07779d3b-cfe9-4258-a831-39afcc2c31e0) | 40             | 16          | 24          | 32            |                         |
-| SB   | ![](https://github.com/jupiterbjy/OpenAT/assets/45421813/eea5c4da-afea-40b5-b1d9-e38f1755a586) | 1500           | None        | None        | None          | Boss                    |
-| LB   | ![](https://github.com/jupiterbjy/OpenAT/assets/45421813/d86a7840-97a1-4273-b800-2c002d2e169f) | 2000           | None        | None        | None          | Boss                    |
-| KB   | ![](https://github.com/jupiterbjy/OpenAT/assets/45421813/e1da3596-a607-475c-a681-069ae002cfc6) | 500            | None        | None        | None          | Boss                    |
+| code | image                                                                                            | default health | Code S(Red) | Code L(Sky) | Code K(Black) | note                    |
+|------|--------------------------------------------------------------------------------------------------|----------------|-------------|-------------|---------------|-------------------------|
+| 0    | ![0](https://github.com/jupiterbjy/OpenAT/assets/45421813/54048e45-9f29-4c6d-bbbf-03d16bd88b23)  |                |             |             |               | Random upgrade & weapon |
+| 1    | ![1](https://github.com/jupiterbjy/OpenAT/assets/45421813/842c9f02-6b39-43e4-b87e-40416abec7a8)  | 20             | 4           | 6           | 8             |                         |
+| 2    | ![2](https://github.com/jupiterbjy/OpenAT/assets/45421813/3bf1de98-4ea6-488a-8352-b754171382e4)  | 30             | 6           | 9           | 12            |                         |
+| 3    | ![3](https://github.com/jupiterbjy/OpenAT/assets/45421813/52f5f127-65dd-4f32-938e-269aacf4eeaa)  | 40             | 8           | 12          | 16            |                         |
+| 4    | ![4](https://github.com/jupiterbjy/OpenAT/assets/45421813/cae3af19-80c4-49fb-8660-ffc051c0b36a)  | 40             | 8           | 12          | 16            |                         |
+| 5    | ![5](https://github.com/jupiterbjy/OpenAT/assets/45421813/09a4d842-cad4-4b91-b93c-6b640213a862)  | 50             | 6           | 9           | 12            |                         |
+| 6    | ![6](https://github.com/jupiterbjy/OpenAT/assets/45421813/b900c2f3-49fe-42c0-a983-c3db8def67d9)  | 30             | 16          | 24          | 32            |                         |
+| 7    | ![7](https://github.com/jupiterbjy/OpenAT/assets/45421813/cd6eb1ad-9aad-42cc-b87e-7161a992cbe9)  | 30             | 6           | 9           | 12            | Dummy Data              |
+| 8    | ![8](https://github.com/jupiterbjy/OpenAT/assets/45421813/61a6935f-4c7b-4ad4-b6fd-74ee517f9e1e)  | 40             | 16          | 24          | 32            |                         |
+| 9    | ![9](https://github.com/jupiterbjy/OpenAT/assets/45421813/b6e5798f-ae68-4505-8687-bb862b94f8a0)  | 40             | 16          | 24          | 32            |                         |
+| SB   | ![SB](https://github.com/jupiterbjy/OpenAT/assets/45421813/e0f1c082-e37f-410e-b6b0-3b1cf83e6323) | 1500           | None        | None        | None          | Boss                    |
+| LB   | ![LB](https://github.com/jupiterbjy/OpenAT/assets/45421813/018961e2-9ca2-429a-bd3b-ba5ae47d7529) | 2000           | None        | None        | None          | Boss                    |
+| KB   | ![KB](https://github.com/jupiterbjy/OpenAT/assets/45421813/119eec7f-6e30-45a4-86ad-851ecf1f55b0) | 500            | None        | None        | None          | Boss                    |
 
 With Code S : health 2x, points 2x (Except Boss)
 
@@ -59,19 +59,19 @@ With Code K : health 4x, points 4x (Except Boss)
 
 ## attributes
 
-| code         | image                                                                                          | description |
-|--------------|------------------------------------------------------------------------------------------------|-------------|
-| B            | ![](https://github.com/jupiterbjy/OpenAT/assets/45421813/9fe1739e-ab7b-4022-94a4-193e36833497) | Red (Skin)  |
-| S            | ![](https://github.com/jupiterbjy/OpenAT/assets/45421813/9fe1739e-ab7b-4022-94a4-193e36833497) | Red         |
-| L            | ![](https://github.com/jupiterbjy/OpenAT/assets/45421813/0d07b150-6d34-4fb1-ad5b-6f675b108ab3) | Blue        |
-| K            | ![](https://github.com/jupiterbjy/OpenAT/assets/45421813/17308f7d-59e4-41c6-9853-d1a0942c7e6e) | Black       |
-| I            | ![](https://github.com/jupiterbjy/OpenAT/assets/45421813/3af3344f-556e-44b3-8a95-75cb4814a71f) | Transparent |
-| UNKNOWN      | ![](https://github.com/jupiterbjy/OpenAT/assets/45421813/2dd95927-4e0d-4ca1-874a-2a932481365a) | Item?       |
-| (WhiteSpace) | NONE                                                                                           | 1 sec wait  |
-| P            | NONE                                                                                           | 5 sec wait  |
-| D            | NONE                                                                                           | 30 sec wait |
-| DDD          | NONE                                                                                           | 2 min wait  |
-| H            |                                                                                                | ?           |
-| T            |                                                                                                | ?           |
-| C            |                                                                                                | ?           | 
+| code         | image                                                                                           | description |
+|--------------|-------------------------------------------------------------------------------------------------|-------------|
+| B            | ![B](https://github.com/jupiterbjy/OpenAT/assets/45421813/ee5047be-9788-425b-8962-8af6be69b388) | Red (Skin)  |
+| S            | ![S](https://github.com/jupiterbjy/OpenAT/assets/45421813/a516b7c7-83f2-4bec-ab43-bbd4837f2b6f) | Red         |
+| L            | ![L](https://github.com/jupiterbjy/OpenAT/assets/45421813/2c19b2ce-f939-409b-9a71-c4ad884398e8) | Blue        |
+| K            | ![K](https://github.com/jupiterbjy/OpenAT/assets/45421813/4e53c421-6437-45c0-83ee-06fde827486d) | Black       |
+| I            | ![I](https://github.com/jupiterbjy/OpenAT/assets/45421813/5803639b-4743-4d1d-a736-7e8af8b6c175) | Transparent |
+| UNKNOWN      | ![](https://github.com/jupiterbjy/OpenAT/assets/45421813/b3d517b3-b539-4e86-95ae-be01d5a68679)  | Item?       |
+| (WhiteSpace) | NONE                                                                                            | 1 sec wait  |
+| P            | NONE                                                                                            | 5 sec wait  |
+| D            | NONE                                                                                            | 30 sec wait |
+| DDD          | NONE                                                                                            | 2 min wait  |
+| H            |                                                                                                 | ?           |
+| T            |                                                                                                 | ?           |
+| C            |                                                                                                 | ?           | 
 
