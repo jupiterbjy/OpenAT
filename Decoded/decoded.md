@@ -1,20 +1,5 @@
 Collection of decoded information that doesn't have its own Markdown document.
 
----
-
-## Game Objectives
-
-aka gametypes
-
-| code | image                                                                                           | eng                 | note                        |
-|------|-------------------------------------------------------------------------------------------------|---------------------|-----------------------------|
-| B    | ![B](https://github.com/jupiterbjy/OpenAT/assets/45421813/513d4ec3-4d07-4582-853d-bc61c5f5d86b) | Destroy all enemies |                             |
-| F    | ![F](https://github.com/jupiterbjy/OpenAT/assets/45421813/870d1cec-3143-4881-9868-a19bea3c9a24) | Defend your base    |                             |
-| H    | ![H](https://github.com/jupiterbjy/OpenAT/assets/45421813/7d27022c-c8c4-4dbd-8654-f55b5fc38985) | Pick up all boxes   | actually no need to pick up |
-| T    | ![T](https://github.com/jupiterbjy/OpenAT/assets/45421813/8dbbc73f-2042-4552-adbd-718ecaf5c726) | Destroy all bunkers |                             |
-
----
-
 ## Game Objects
 
 | code | image                                                                                           | description                                                          |
