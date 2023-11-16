@@ -31,6 +31,7 @@ tank [tank count]
 ```
 
 
+
 ## type code
 
 
@@ -56,6 +57,28 @@ With Code S : health 2x, points 2x (Except Boss)
 With Code L : health 3x, points 3x (Except Boss)
 
 With Code K : health 4x, points 4x (Except Boss)
+
+
+---
+
+## Tank Damage
+
+| code  | damage |
+|-------|--------|
+| 1     | 25     |
+| 2     | 25     |
+| 3     | 25     |
+| 4     | complex     |
+| 5     | 40     |
+| 6     | 80     |
+| 7     | 25     |
+| 8     | 17     |
+| 9     | 20     |
+| KB    | 30     |
+| LB    | 13     |
+| SB    | 30     |
+
+
 
 ## attributes
 
