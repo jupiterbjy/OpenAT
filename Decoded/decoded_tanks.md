@@ -68,7 +68,7 @@ With Code K : health 4x, points 4x (Except Boss)
 | 1     | 25     |
 | 2     | 25     |
 | 3     | 25     |
-| 4     | complex     |
+| 4     | complex|
 | 5     | 40     |
 | 6     | 80     |
 | 7     | 25     |
@@ -90,11 +90,11 @@ With Code K : health 4x, points 4x (Except Boss)
 | K            | ![K](https://github.com/jupiterbjy/OpenAT/assets/45421813/4e53c421-6437-45c0-83ee-06fde827486d) | Black       |
 | I            | ![I](https://github.com/jupiterbjy/OpenAT/assets/45421813/5803639b-4743-4d1d-a736-7e8af8b6c175) | Transparent |
 | UNKNOWN      | ![](https://github.com/jupiterbjy/OpenAT/assets/45421813/b3d517b3-b539-4e86-95ae-be01d5a68679)  | Item?       |
-| (WhiteSpace) | NONE                                                                                            | 1 sec wait  |
-| P            | NONE                                                                                            | 5 sec wait  |
-| D            | NONE                                                                                            | 30 sec wait |
-| DDD          | NONE                                                                                            | 2 min wait  |
-| H            |                                                                                                 | ?           |
-| T            |                                                                                                 | ?           |
-| C            |                                                                                                 | ?           | 
+| (WhiteSpace) | NONE        | 1 sec wait  |
+| P            | NONE        | 5 sec wait  |
+| D            | NONE        | 30 sec wait |
+| DDD          | NONE        | 2 min wait  |
+| H            |             | ?           |
+| T            |             | ?           |
+| C            |             | ?           | 
 
