@@ -40,6 +40,16 @@ Actual wall connection system/model test vs original
 ![](https://github.com/jupiterbjy/OpenAT/assets/26041217/c179e185-5f89-4304-a7df-5d5455231e3c)
 
 
+# logo_terrain
+
+Mesh to mimic what's in Armada Tank's logo. Used to implement 3D logo in-game.
+
+![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/5964c727-ef84-42a8-9149-ce6a60adc070)
+
+![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/cdc6b597-3435-4692-936f-63f5c925d0e5)
+
+
+
 # terrain Version 2 (OpenAT)
 
 Initial prototype for OpenAT before succeeding in decoding possibly in-house `*.dtm` model files.
