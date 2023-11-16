@@ -38,15 +38,15 @@ tank [tank count]
 | code | image                                                                                            | default health | Code S(Red) | Code L(Sky) | Code K(Black) | note                    |
 |------|--------------------------------------------------------------------------------------------------|----------------|-------------|-------------|---------------|-------------------------|
 | 0    | ![0](https://github.com/jupiterbjy/OpenAT/assets/45421813/54048e45-9f29-4c6d-bbbf-03d16bd88b23)  |                |             |             |               | Random upgrade & weapon |
-| 1    | ![1](https://github.com/jupiterbjy/OpenAT/assets/45421813/842c9f02-6b39-43e4-b87e-40416abec7a8)  | 20             | 4           | 6           | 8             |                         |
-| 2    | ![2](https://github.com/jupiterbjy/OpenAT/assets/45421813/3bf1de98-4ea6-488a-8352-b754171382e4)  | 30             | 6           | 9           | 12            |                         |
-| 3    | ![3](https://github.com/jupiterbjy/OpenAT/assets/45421813/52f5f127-65dd-4f32-938e-269aacf4eeaa)  | 40             | 8           | 12          | 16            |                         |
-| 4    | ![4](https://github.com/jupiterbjy/OpenAT/assets/45421813/cae3af19-80c4-49fb-8660-ffc051c0b36a)  | 40             | 8           | 12          | 16            |                         |
-| 5    | ![5](https://github.com/jupiterbjy/OpenAT/assets/45421813/09a4d842-cad4-4b91-b93c-6b640213a862)  | 50             | 6           | 9           | 12            |                         |
-| 6    | ![6](https://github.com/jupiterbjy/OpenAT/assets/45421813/b900c2f3-49fe-42c0-a983-c3db8def67d9)  | 30             | 16          | 24          | 32            |                         |
-| 7    | ![7](https://github.com/jupiterbjy/OpenAT/assets/45421813/cd6eb1ad-9aad-42cc-b87e-7161a992cbe9)  | 30             | 6           | 9           | 12            | Dummy Data              |
-| 8    | ![8](https://github.com/jupiterbjy/OpenAT/assets/45421813/61a6935f-4c7b-4ad4-b6fd-74ee517f9e1e)  | 40             | 16          | 24          | 32            |                         |
-| 9    | ![9](https://github.com/jupiterbjy/OpenAT/assets/45421813/b6e5798f-ae68-4505-8687-bb862b94f8a0)  | 40             | 16          | 24          | 32            |                         |
+| 1    | ![1](https://github.com/jupiterbjy/OpenAT/assets/45421813/842c9f02-6b39-43e4-b87e-40416abec7a8)  | 20             | 40           | 60           | 80             |                         |
+| 2    | ![2](https://github.com/jupiterbjy/OpenAT/assets/45421813/3bf1de98-4ea6-488a-8352-b754171382e4)  | 30             | 60           | 90           | 120            |                         |
+| 3    | ![3](https://github.com/jupiterbjy/OpenAT/assets/45421813/52f5f127-65dd-4f32-938e-269aacf4eeaa)  | 40             | 80           | 120          | 160            |                         |
+| 4    | ![4](https://github.com/jupiterbjy/OpenAT/assets/45421813/cae3af19-80c4-49fb-8660-ffc051c0b36a)  | 40             | 80           | 120          | 160            |                         |
+| 5    | ![5](https://github.com/jupiterbjy/OpenAT/assets/45421813/09a4d842-cad4-4b91-b93c-6b640213a862)  | 50             | 100          | 150           | 200            |                         |
+| 6    | ![6](https://github.com/jupiterbjy/OpenAT/assets/45421813/b900c2f3-49fe-42c0-a983-c3db8def67d9)  | 30             | 60          | 90          | 120           |                         |
+| 7    | ![7](https://github.com/jupiterbjy/OpenAT/assets/45421813/cd6eb1ad-9aad-42cc-b87e-7161a992cbe9)  | 30             | 60           | 90           | 120            | Dummy Data              |
+| 8    | ![8](https://github.com/jupiterbjy/OpenAT/assets/45421813/61a6935f-4c7b-4ad4-b6fd-74ee517f9e1e)  | 40             | 80          | 120          | 160            |                         |
+| 9    | ![9](https://github.com/jupiterbjy/OpenAT/assets/45421813/b6e5798f-ae68-4505-8687-bb862b94f8a0)  | 40             | 80          | 120          | 160            |                         |
 | SB   | ![SB](https://github.com/jupiterbjy/OpenAT/assets/45421813/e0f1c082-e37f-410e-b6b0-3b1cf83e6323) | 1500           | None        | None        | None          | Boss                    |
 | LB   | ![LB](https://github.com/jupiterbjy/OpenAT/assets/45421813/018961e2-9ca2-429a-bd3b-ba5ae47d7529) | 2000           | None        | None        | None          | Boss                    |
 | KB   | ![KB](https://github.com/jupiterbjy/OpenAT/assets/45421813/119eec7f-6e30-45a4-86ad-851ecf1f55b0) | 500            | None        | None        | None          | Boss                    |
