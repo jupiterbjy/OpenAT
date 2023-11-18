@@ -1,6 +1,6 @@
 ![](/CustomResources/Images/logo/logo.png)
 
-(Logo is incomplete, might see a bit more work on it if I have time before deadline)
+![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/7c195f37-2fff-4a2f-86be-29d644a1d232)
 
 
 # Introduction
