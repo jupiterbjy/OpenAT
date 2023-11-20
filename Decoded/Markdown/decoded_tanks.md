@@ -89,11 +89,12 @@ With Code K : health 4x, points 4x (Except Boss)
 | L            | ![L](https://github.com/jupiterbjy/OpenAT/assets/45421813/2c19b2ce-f939-409b-9a71-c4ad884398e8) | Blue        |
 | K            | ![K](https://github.com/jupiterbjy/OpenAT/assets/45421813/4e53c421-6437-45c0-83ee-06fde827486d) | Black       |
 | I            | ![I](https://github.com/jupiterbjy/OpenAT/assets/45421813/5803639b-4743-4d1d-a736-7e8af8b6c175) | Transparent |
-| H            | ![](https://github.com/jupiterbjy/OpenAT/assets/45421813/b3d517b3-b539-4e86-95ae-be01d5a68679)  | After this comes out, after the 3rd one Get Highlight |
+| NONE         | ![](https://github.com/jupiterbjy/OpenAT/assets/45421813/b3d517b3-b539-4e86-95ae-be01d5a68679)  | It comes out every 4th time |
 | (WhiteSpace) | NONE        | 1 sec wait  |
 | P            | NONE        | 5 sec wait  |
 | D            | NONE        | 30 sec wait |
 | DDD          | NONE        | 2 min wait  |
+| H            |             | ?           | 
 | T            |             | ?           |
 | C            |             | ?           | 
 
