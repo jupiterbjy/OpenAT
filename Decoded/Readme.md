@@ -1,4 +1,4 @@
-Collection of decoded information that doesn't have its own Markdown document.
+# Decoded Structure
 
 - [ObjectiveUI](Markdown/decoded_ObjectiveUI.md): Describes the components of the Stage Start Screen Description window.
 
@@ -28,7 +28,7 @@ Collection of Data or python Codes
 
 - [search_map](Code/search_map.py): Map Search Algorithm
 
-- [terrain_info](Code/terrain_info.csv): 
+- [terrain_info](Code/terrain_info.csv): Set of Modeling
 
 - [terrain_collision](Code/terrain_collision.json): Collection of collision area coordinates for each modeling
 
