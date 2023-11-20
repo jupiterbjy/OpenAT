@@ -51,7 +51,7 @@ In map file, it names gametype
 | H    | ![H](https://github.com/jupiterbjy/OpenAT/assets/45421813/7d27022c-c8c4-4dbd-8654-f55b5fc38985) | Pick up all boxes   | actually no need to pick up |
 | T    | ![T](https://github.com/jupiterbjy/OpenAT/assets/45421813/8dbbc73f-2042-4552-adbd-718ecaf5c726) | Destroy all bunkers |                             |
 
-- Even if you don't write code B, it's applied automatically.
+
 
 ---
 
