@@ -1,3 +1,5 @@
+[Return to previous page](README.md#decoded)
+
 # Decoded Structure
 
 - [ObjectiveUI](Markdown/decoded_ObjectiveUI.md): Describes the components of the Stage Start Screen Description window.
