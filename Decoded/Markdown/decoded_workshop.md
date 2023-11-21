@@ -1,5 +1,4 @@
-
-
+[Return to previous page](/Decoded/README.md#decoded-structure)
 
 # Weapon Icons
 
