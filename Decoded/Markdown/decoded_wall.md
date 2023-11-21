@@ -1,3 +1,5 @@
+[Return to previous page](/Decoded/README.md#decoded-structure)
+
 ## Wall Notations
 
 ### Note regarding & sign
