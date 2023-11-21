@@ -1,3 +1,5 @@
+[Return to previous page](/Decoded/README.md#decoded-structure)
+
 ## Structure
 
 Describes what's current tile's model alias(terrtype) & model configuration is.  
