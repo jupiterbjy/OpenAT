@@ -1,3 +1,5 @@
+[Return to previous page](/Decoded/README.md#decoded-structure)
+
 # Bullet data
 
 | name            | Model.scr Entry  | texture             | texture entry | usage                                      |
