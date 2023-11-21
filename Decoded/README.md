@@ -1,4 +1,4 @@
-[Return to previous page](README.md#decoded)
+[Return to previous page](/README.md#decoded)
 
 # Decoded Structure
 
