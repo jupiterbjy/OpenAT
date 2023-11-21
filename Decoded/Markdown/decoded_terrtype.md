@@ -1,3 +1,5 @@
+[Return to previous page](/Decoded/README.md#decoded-structure)
+
 ## Structure
 
 Acts as alias lookup table converting 0~111 model ID to name in `model.scr`.
