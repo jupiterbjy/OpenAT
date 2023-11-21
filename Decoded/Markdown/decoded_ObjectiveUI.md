@@ -1,4 +1,4 @@
-[Return to previuos page](/Decoded/Readme.md)
+[Return to previous page](/Decoded/Readme.md#decoded-structure)
 
 ## ObjectiveUI Structure
 
