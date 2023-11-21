@@ -26,7 +26,7 @@
 
 ---
 
-Collection of Data or python Codes
+# Collection of Data or python Codes
 
 - [search_map](Code/search_map.py): Map Search Algorithm
 
