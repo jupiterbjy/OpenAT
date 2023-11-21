@@ -1,37 +1,55 @@
-![](/CustomResources/Images/logo/logo.png)
+# OpenAT - Open source Reverse-Engineering project for Armada Tanks
 
-![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/7c195f37-2fff-4a2f-86be-29d644a1d232)
+A 50-days-long project made by *jupiterbjy* and *ruminex*, as part of *Hongik-University Graduation Project*.
 
+![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/cf9d34c0-dd60-46c7-b0e7-30aeac4288a5)
+
+![1700538000_merged_4](https://github.com/jupiterbjy/OpenAT/assets/26041217/cee7b4c8-a0a0-4c72-8e7d-cac9e159cac2)
+
+<br>
 
 # Introduction
 
-An Open source Godot recreation project of Armada Tanks, a great arcade game by:
+An Open source reverse-engineering project of Armada Tanks, a great arcade game by:
 
 - Denis Kotov: Game Design, Programmer, Level design, Art & Graphics
 - Pasha Oliynyk: Art & Graphics
 - Yaroslav Yanovsky: Producer
-- Message(??): Music Composition, Sound Design 
+- Message: Music Composition, Sound Design
+
+With recent drama with Unity, to truely achive open-source nature, we've used *Godot 4.1.3*  Game engine for this project.
+
+<br>
 
 # Repo Structure
 
 ### [Decoded](Decoded)
-Contains Markdown documents produced from our reverse-engineering efforts & few helper scripts.
-Majority of project's efforts went into this decoding part.
+
+&nbsp;&nbsp;Contains Markdown documents produced from our reverse-engineering efforts & few helper scripts.  
+&nbsp;&nbsp;Majority of project's efforts went into this decoding part.
+
+<br>
 
 ### [ConversionScripts](ConversionScripts)
-Resulting scripts of reverse-engineering efforts on *Armada Tanks*'s seemingly own in-house format.
+
+&nbsp;&nbsp;Resulting scripts of reverse-engineering efforts on *Armada Tanks*'s seemingly own in-house format.
 
 - [ImageFontSplitter](ConversionScripts/ImageFontSplitter): Old script for splitting each letters from font image. No longer used.
 - [DF2FNT](ConversionScripts/DF2FNT): `*.df` font format conversion script. Converts fonts into AngelCode's *BMFont* format.
 - [DTM2Blender](ConversionScripts/DTM2Blender): DTM model reconstruction & model definition reconstruction script. Uses black magic trickery to allow Blender's GLTF exporter export mesh, UV and vertex animations properly.
 - [Tex2JSON](ConversionScripts/Tex2JSON): `texture*.scr` texture definition scripts reconstruction script. Also translates DX8 Blending specifiers.  
 
+<br>
+
 ### CustomResources
-Collection of hand-crafted models.
+
+&nbsp;&nbsp;Collection of hand-crafted models.
 
 - [CustomResources/Images](CustomResources/Images): Images made from scratch in paint.net or with blender. Refer README.md for details.
 - [CustomResources/Models](CustomResources/Models): Models made from scratch in blender. Refer README.md for details.
 
+
+<br>
 
 # Why there's no game?
 
@@ -65,8 +83,9 @@ After game implementation is complete, we will start migrating hard dependency o
 Then dependencies can be supplied by users manually, albeit it might require users installing blender and running few scripts!
 
 
-# Ramble: A Bit of history
+<br>
 
+# Ramble: A Bit of history
 
 ## Version 0: Open Armada
 
@@ -84,6 +103,8 @@ Therefore, at least a working stuff resembling even tiny bit of it had to be don
 Those models used there were Just-In-Time(quite literally) model for use in impending doom called 'Deadline'.
 
 Quality therefore, was quite miserable.
+
+<br>
 
 ## Version 1: OpenAT
 
