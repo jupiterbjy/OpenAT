@@ -40,6 +40,14 @@ Actual wall connection system/model test vs original
 ![](https://github.com/jupiterbjy/OpenAT/assets/26041217/c179e185-5f89-4304-a7df-5d5455231e3c)
 
 
+# logo_text
+
+Handcrafted letter model, as I couldn't figure out how to make like a civilized person.
+
+![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/2faea83a-73a7-42e4-b987-ba452b18e95a)
+
+
+
 # logo_terrain
 
 Mesh to mimic what's in Armada Tank's logo. Used to implement 3D logo in-game.
