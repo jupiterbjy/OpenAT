@@ -1,6 +1,6 @@
 [Return to previous page](/Decoded/README.md#decoded-structure)
 
-## ObjectiveUI Structure
+## Objective Structure
 
 ```text
 gametype  BF HT
