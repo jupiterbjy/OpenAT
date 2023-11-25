@@ -6,6 +6,10 @@ A 50-days-long project made by *jupiterbjy* and *ruminex*, as part of *Hongik-Un
 
 ![1700538000_merged_4](https://github.com/jupiterbjy/OpenAT/assets/26041217/cee7b4c8-a0a0-4c72-8e7d-cac9e159cac2)
 
+[Announcement-ish video](https://youtu.be/5v0qzULyCdM)
+
+[Gameplay Demo](https://youtu.be/yI4WvkttvIA)
+
 <br>
 
 # Introduction
