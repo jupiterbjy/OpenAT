@@ -1,0 +1,62 @@
+[gd_scene load_steps=4 format=3 uid="uid://bd8qr3dkw02bk"]
+
+[ext_resource type="Script" path="res://UI/Elements/HUD/score_hud.gd" id="1_sqh44"]
+[ext_resource type="Texture2D" uid="uid://xwfyi6ura4l6" path="res://Textures/Raw/InfoPanel.png" id="2_twhsb"]
+[ext_resource type="PackedScene" uid="uid://bfmgl3n0an6k7" path="res://UI/Elements/HUD/score_pannel.tscn" id="3_lkly2"]
+
+[node name="score_hud" type="Control"]
+custom_minimum_size = Vector2(320, 40)
+layout_mode = 3
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+grow_horizontal = 2
+script = ExtResource("1_sqh44")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+custom_minimum_size = Vector2(320, 40)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -160.0
+offset_right = 160.0
+offset_bottom = 40.0
+grow_horizontal = 2
+alignment = 1
+
+[node name="Control" type="Control" parent="HBoxContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Sprite2D" type="Sprite2D" parent="HBoxContainer/Control"]
+position = Vector2(16, 16)
+texture = ExtResource("2_twhsb")
+region_enabled = true
+region_rect = Rect2(224, 192, 32, 32)
+
+[node name="score_digit" parent="HBoxContainer" instance=ExtResource("3_lkly2")]
+layout_mode = 2
+
+[node name="score_digit2" parent="HBoxContainer" instance=ExtResource("3_lkly2")]
+layout_mode = 2
+
+[node name="score_digit3" parent="HBoxContainer" instance=ExtResource("3_lkly2")]
+layout_mode = 2
+
+[node name="score_digit4" parent="HBoxContainer" instance=ExtResource("3_lkly2")]
+layout_mode = 2
+
+[node name="score_digit5" parent="HBoxContainer" instance=ExtResource("3_lkly2")]
+layout_mode = 2
+
+[node name="score_digit6" parent="HBoxContainer" instance=ExtResource("3_lkly2")]
+layout_mode = 2
+
+[node name="score_digit7" parent="HBoxContainer" instance=ExtResource("3_lkly2")]
+layout_mode = 2
+
+[node name="score_digit8" parent="HBoxContainer" instance=ExtResource("3_lkly2")]
+layout_mode = 2

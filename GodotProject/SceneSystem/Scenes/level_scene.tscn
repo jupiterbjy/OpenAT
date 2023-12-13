@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dl80ffgcrf7rn"]
+
+[ext_resource type="PackedScene" uid="uid://btrbbw0okrrv6" path="res://MapSystem/level.tscn" id="1_05k4u"]
+
+[node name="level_scene" type="Node3D"]
+
+[node name="level" parent="." instance=ExtResource("1_05k4u")]

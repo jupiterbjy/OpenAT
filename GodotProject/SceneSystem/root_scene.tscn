@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://bn4y20upyel84"]
+
+[ext_resource type="PackedScene" uid="uid://dc6ll721g38c6" path="res://UI/ui_manager.tscn" id="1_rnoun"]
+[ext_resource type="PackedScene" uid="uid://blbo5yopg5rd2" path="res://CamSystem/cam_manager.tscn" id="2_102ln"]
+[ext_resource type="PackedScene" uid="uid://borr5rnedemw8" path="res://SceneSystem/scene_manager.tscn" id="3_a5ict"]
+[ext_resource type="Environment" uid="uid://dbwewenn5qu4l" path="res://SceneSystem/WorldEnvironment/main_env.tres" id="4_hckos"]
+
+[node name="root_scene" type="Node"]
+process_mode = 3
+
+[node name="ui_manager" parent="." instance=ExtResource("1_rnoun")]
+
+[node name="cam_manager" parent="." instance=ExtResource("2_102ln")]
+
+[node name="scene_manager" parent="." instance=ExtResource("3_a5ict")]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = ExtResource("4_hckos")

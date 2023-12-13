@@ -1,0 +1,26 @@
+[gd_scene load_steps=6 format=3 uid="uid://bo5uhmmduc4t7"]
+
+[ext_resource type="PackedScene" uid="uid://bxhh21jekj12" path="res://TankSystem/base/tank_base.tscn" id="1_ga66p"]
+[ext_resource type="Script" path="res://TankSystem/tanks/tank_player.gd" id="2_daffe"]
+[ext_resource type="Script" path="res://TankSystem/tanks/player_movement_subsystem.gd" id="3_w1r1x"]
+[ext_resource type="Script" path="res://TankSystem/tanks/player_weapon_subsystem.gd" id="4_bkncc"]
+[ext_resource type="Script" path="res://TankSystem/tanks/player_item_subsystem.gd" id="5_mg5fy"]
+
+[node name="player_tank" groups=["allie"] instance=ExtResource("1_ga66p")]
+script = ExtResource("2_daffe")
+tank_type = 0
+base_health = 200
+autonomous = false
+
+[node name="movement_subsystem" parent="." index="1"]
+script = ExtResource("3_w1r1x")
+
+[node name="hitbox" parent="." index="2" groups=["allie"]]
+
+[node name="weapon_subsystem" parent="." index="4"]
+script = ExtResource("4_bkncc")
+
+[node name="item_subsystem" parent="." index="5"]
+script = ExtResource("5_mg5fy")
+
+[connection signal="hit" from="health_bar" to="." method="_on_health_bar_hit"]

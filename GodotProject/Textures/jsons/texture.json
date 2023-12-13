@@ -1,0 +1,398 @@
+{
+  "TERR": {
+    "idx": 0,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Terr_Forest_Pac.JPG"
+  },
+  "TERR2": {
+    "idx": 2,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Terr_Sand_Pac_Obj.JPG"
+  },
+  "TANKENEMY": {
+    "idx": 4,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Tank_Enemy512.JPG"
+  },
+  "WALLSTONE": {
+    "idx": 6,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Terr_01.JPG"
+  },
+  "WALLBRDM": {
+    "idx": 7,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Terr_01.JPG"
+  },
+  "FIRE": {
+    "idx": 8,
+    "alpha": false,
+    "blend_add": true,
+    "file": "Fire.JPG"
+  },
+  "TANKENEMYRED": {
+    "idx": 9,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Tank_Enemy512_red.jpg"
+  },
+  "TANKENEMYDARK": {
+    "idx": 10,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Tank_Enemy512_DARK.jpg"
+  },
+  "EXPLOSION": {
+    "idx": 11,
+    "alpha": true,
+    "blend_add": false,
+    "file": "Explosion-256.png"
+  },
+  "TRACK": {
+    "idx": 12,
+    "alpha": false,
+    "blend_add": true,
+    "file": "Track.bmp"
+  },
+  "SCRPART": {
+    "idx": 13,
+    "alpha": true,
+    "blend_add": false,
+    "file": "ScreenPart.png"
+  },
+  "TANKENEMYBLUE": {
+    "idx": 14,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Tank_Enemy512_Blue.jpg"
+  },
+  "TANKPL1": {
+    "idx": 16,
+    "alpha": false,
+    "blend_add": false,
+    "file": "T_NPlayer.JPG"
+  },
+  "TANKPL2": {
+    "idx": 17,
+    "alpha": false,
+    "blend_add": false,
+    "file": "T_NPlayer2.JPG"
+  },
+  "EFFECTS": {
+    "idx": 18,
+    "alpha": false,
+    "blend_add": true,
+    "file": "Effects.JPG"
+  },
+  "ITEMS": {
+    "idx": 19,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Items.JPG"
+  },
+  "ITEMLIGHT": {
+    "idx": 20,
+    "alpha": false,
+    "blend_add": true,
+    "file": "ItemLight.JPG"
+  },
+  "SNOW": {
+    "idx": 23,
+    "alpha": false,
+    "blend_add": true,
+    "file": "Snow.JPG"
+  },
+  "RAIN": {
+    "idx": 24,
+    "alpha": false,
+    "blend_add": true,
+    "file": "Rain.JPG"
+  },
+  "WINADV": {
+    "idx": 26,
+    "alpha": true,
+    "blend_add": false,
+    "file": "WinAdv.png"
+  },
+  "SAND": {
+    "idx": 28,
+    "alpha": false,
+    "blend_add": true,
+    "file": "Sand.JPG"
+  },
+  "FACE": {
+    "idx": 30,
+    "alpha": true,
+    "blend_add": false,
+    "file": "Face_trans.png"
+  },
+  "FACESHARP": {
+    "idx": 31,
+    "alpha": false,
+    "blend_add": true,
+    "file": "FaceSharp.JPG"
+  },
+  "LOGO": {
+    "idx": 32,
+    "alpha": true,
+    "blend_add": false,
+    "file": "logo3a.png"
+  },
+  "BOX": {
+    "idx": 41,
+    "alpha": false,
+    "blend_add": true,
+    "file": "Box.JPG"
+  },
+  "TANKENEMYINV": {
+    "idx": 42,
+    "alpha": false,
+    "blend_add": true,
+    "file": "Tank_Enemy512_INV.jpg"
+  },
+  "ITEMSSC": {
+    "idx": 45,
+    "alpha": false,
+    "blend_add": false,
+    "file": "ItemsSc.JPG"
+  },
+  "FLYSHIP": {
+    "idx": 51,
+    "alpha": false,
+    "blend_add": false,
+    "file": "FlyShip.JPG"
+  },
+  "INFOPAN": {
+    "idx": 52,
+    "alpha": true,
+    "blend_add": false,
+    "file": "InfoPanel.png"
+  },
+  "EVOBJECT": {
+    "idx": 54,
+    "alpha": false,
+    "blend_add": false,
+    "file": "EventObject.JPG"
+  },
+  "BOSS": {
+    "idx": 55,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Boss.JPG"
+  },
+  "MENUADDON": {
+    "idx": 56,
+    "alpha": true,
+    "blend_add": false,
+    "file": "menuAddon.png"
+  },
+  "FLASH": {
+    "idx": 57,
+    "alpha": false,
+    "blend_add": true,
+    "file": "Flash.JPG"
+  },
+  "PL2HEAD": {
+    "idx": 58,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Tank_Head_Green_p2.JPG"
+  },
+  "PLHEAD": {
+    "idx": 59,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Tank_Head_Green.JPG"
+  },
+  "WALLB0": {
+    "idx": 60,
+    "alpha": false,
+    "blend_add": false,
+    "file": "TerrWall_R_0.JPG"
+  },
+  "WALLB1": {
+    "idx": 61,
+    "alpha": false,
+    "blend_add": false,
+    "file": "TerrWall_R_1.JPG"
+  },
+  "WALLB2": {
+    "idx": 62,
+    "alpha": false,
+    "blend_add": false,
+    "file": "TerrWall_R_2.JPG"
+  },
+  "WALLB3": {
+    "idx": 63,
+    "alpha": false,
+    "blend_add": false,
+    "file": "TerrWall_R_3.JPG"
+  },
+  "BULLET": {
+    "idx": 64,
+    "alpha": false,
+    "blend_add": true,
+    "file": "Bullet.JPG"
+  },
+  "BLIGHT": {
+    "idx": 68,
+    "alpha": false,
+    "blend_add": true,
+    "file": "Light.JPG"
+  },
+  "SHOP": {
+    "idx": 71,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Shop.JPG"
+  },
+  "MSICE": {
+    "idx": 73,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Terr_Ice.JPG"
+  },
+  "BUTTON": {
+    "idx": 74,
+    "alpha": true,
+    "blend_add": false,
+    "file": "Button.png"
+  },
+  "MSTUND": {
+    "idx": 75,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Terr_Tundra.JPG"
+  },
+  "MSEGYPT": {
+    "idx": 76,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Terr_Egypt_Obj.JPG"
+  },
+  "MSFOREST": {
+    "idx": 77,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Terr_Forest_Pac_Obj.JPG"
+  },
+  "MSSKY": {
+    "idx": 78,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Sky.JPG"
+  },
+  "MAPPREV": {
+    "idx": 79,
+    "alpha": false,
+    "blend_add": false,
+    "file": "MapPrev.jpg"
+  },
+  "FLAG123": {
+    "idx": 80,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Flag_123.JPG"
+  },
+  "MAPPREVS": {
+    "idx": 83,
+    "alpha": false,
+    "blend_add": false,
+    "file": "MapPrevS.JPG"
+  },
+  "MSSNOW": {
+    "idx": 84,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Terr_Snow.JPG"
+  },
+  "MAPPREVT": {
+    "idx": 86,
+    "alpha": false,
+    "blend_add": false,
+    "file": "MapPrevT.JPG"
+  },
+  "LOGOENKORD": {
+    "idx": 87,
+    "alpha": false,
+    "blend_add": false,
+    "file": "logo_enkord.png"
+  },
+  "LOGOLIST": {
+    "idx": 88,
+    "alpha": true,
+    "blend_add": false,
+    "file": "logo_enkord.png"
+  },
+  "LASTWIN": {
+    "idx": 89,
+    "alpha": false,
+    "blend_add": false,
+    "file": "WinScreen.jpg"
+  },
+  "FONTFD": {
+    "idx": 90,
+    "alpha": true,
+    "blend_add": false,
+    "file": "FontAdv_FD.png"
+  },
+  "FONTFDB": {
+    "idx": 91,
+    "alpha": true,
+    "blend_add": false,
+    "file": "FontAdv_FD_B.png"
+  },
+  "FONTFD224": {
+    "idx": 92,
+    "alpha": true,
+    "blend_add": false,
+    "file": "FontAdv_FD_224.png"
+  },
+  "FONTFD224B": {
+    "idx": 93,
+    "alpha": true,
+    "blend_add": false,
+    "file": "FontAdv_FD_224_B.png"
+  },
+  "FONTFD224R": {
+    "idx": 94,
+    "alpha": true,
+    "blend_add": false,
+    "file": "FontAdv_FD_224_R.png"
+  },
+  "FONTFDR": {
+    "idx": 95,
+    "alpha": true,
+    "blend_add": false,
+    "file": "FontAdv_FD_R.png"
+  },
+  "FONTFD224Y": {
+    "idx": 96,
+    "alpha": true,
+    "blend_add": false,
+    "file": "FontAdv_FD_224_Y.png"
+  },
+  "FONTFD128": {
+    "idx": 97,
+    "alpha": true,
+    "blend_add": false,
+    "file": "FontAdv_FD_128.png"
+  },
+  "BUTTONLIGHT": {
+    "idx": 98,
+    "alpha": true,
+    "blend_add": true,
+    "file": "Button_Light.jpg"
+  },
+  "MAPT": {
+    "idx": 105,
+    "alpha": false,
+    "blend_add": false,
+    "file": "_Map_T.JPG"
+  }
+}

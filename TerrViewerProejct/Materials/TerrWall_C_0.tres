@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dvtdagof766u"]
+
+[ext_resource type="Texture2D" uid="uid://bvnik7o5yq0b3" path="res://Textures/Raw/TerrWall_C_0.JPG" id="1_0h47m"]
+
+[resource]
+shading_mode = 0
+albedo_texture = ExtResource("1_0h47m")

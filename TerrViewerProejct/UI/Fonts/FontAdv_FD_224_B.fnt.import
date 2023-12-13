@@ -1,0 +1,16 @@
+[remap]
+
+importer="font_data_bmfont"
+type="FontFile"
+uid="uid://cajh22w8vlvat"
+path="res://.godot/imported/FontAdv_FD_224_B.fnt-7b333c276eda511dc02352cc7c208c03.fontdata"
+
+[deps]
+
+source_file="res://UI/Fonts/FontAdv_FD_224_B.fnt"
+dest_files=["res://.godot/imported/FontAdv_FD_224_B.fnt-7b333c276eda511dc02352cc7c208c03.fontdata"]
+
+[params]
+
+fallbacks=[]
+compress=true

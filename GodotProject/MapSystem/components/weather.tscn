@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://c12c2844afldh"]
+
+[ext_resource type="Script" path="res://MapSystem/components/weather.gd" id="1_bfdnr"]
+[ext_resource type="PackedScene" uid="uid://c0yl6pxay2qhe" path="res://Commons/DebugGizmos/weather_gizmo.tscn" id="2_2nlny"]
+
+[node name="weather" type="Node3D"]
+script = ExtResource("1_bfdnr")
+
+[node name="root" type="Node3D" parent="."]
+
+[node name="weather_gizmo" parent="root" instance=ExtResource("2_2nlny")]

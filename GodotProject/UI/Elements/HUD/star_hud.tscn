@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=3 uid="uid://bgn778yycmnaf"]
+
+[ext_resource type="Script" path="res://UI/Elements/HUD/star_hud.gd" id="1_qynoh"]
+[ext_resource type="PackedScene" uid="uid://t5lmfcxpco8h" path="res://UI/Elements/HUD/star.tscn" id="2_xqno4"]
+
+[node name="star_hud" type="Control"]
+custom_minimum_size = Vector2(104, 32)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 104.0
+offset_bottom = 32.0
+mouse_filter = 2
+mouse_default_cursor_shape = 3
+script = ExtResource("1_qynoh")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+custom_minimum_size = Vector2(104, 32)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -52.0
+offset_top = -16.0
+offset_right = 52.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="star" parent="HBoxContainer" instance=ExtResource("2_xqno4")]
+layout_mode = 2
+
+[node name="star2" parent="HBoxContainer" instance=ExtResource("2_xqno4")]
+layout_mode = 2
+
+[node name="star3" parent="HBoxContainer" instance=ExtResource("2_xqno4")]
+layout_mode = 2

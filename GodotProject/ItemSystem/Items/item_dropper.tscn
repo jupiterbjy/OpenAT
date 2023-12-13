@@ -1,0 +1,45 @@
+[gd_scene load_steps=4 format=3 uid="uid://bpdm6hll74psd"]
+
+[ext_resource type="Script" path="res://ItemSystem/Items/item_dropper.gd" id="1_ckhai"]
+
+[sub_resource type="Animation" id="Animation_ol84w"]
+resource_name = "drop"
+length = 2.4
+tracks/0/type = "position_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("model_root")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0, 15, 0, 2.4, 1, 0, 1.4, 0)
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("model_root:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.8, 1.2, 1.6, 2, 2.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 0, 0.349066), Vector3(0, 0, 0), Vector3(0, 0, -0.349066), Vector3(0, 0, 0), Vector3(0, 0, 0.349066), Vector3(0, 0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_33r2q"]
+_data = {
+"drop": SubResource("Animation_ol84w")
+}
+
+[node name="item_dropper" type="Node3D"]
+script = ExtResource("1_ckhai")
+
+[node name="animation_player" type="AnimationPlayer" parent="."]
+process_mode = 1
+libraries = {
+"": SubResource("AnimationLibrary_33r2q")
+}
+
+[node name="model_root" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4, 0)
+
+[connection signal="animation_finished" from="animation_player" to="." method="_on_animation_player_animation_finished"]

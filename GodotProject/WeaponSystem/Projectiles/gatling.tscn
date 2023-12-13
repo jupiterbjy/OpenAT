@@ -1,0 +1,12 @@
+[gd_scene load_steps=5 format=3 uid="uid://bh55qwqqal8wm"]
+
+[ext_resource type="PackedScene" uid="uid://jshjo18wr5k2" path="res://WeaponSystem/Projectiles/projectile_base.tscn" id="1_p1mtr"]
+[ext_resource type="Script" path="res://WeaponSystem/Projectiles/gatling.gd" id="2_xd1je"]
+[ext_resource type="PackedScene" uid="uid://347nlwvipmeg" path="res://EffectSystem/bullet_hit.tscn" id="3_vpqbx"]
+[ext_resource type="PackedScene" uid="uid://b8yftdt0v5x7e" path="res://EffectSystem/bullet_trail.tscn" id="4_8d8l0"]
+
+[node name="gatling" instance=ExtResource("1_p1mtr")]
+script = ExtResource("2_xd1je")
+type = 1
+hit_particle = ExtResource("3_vpqbx")
+trail_particle = ExtResource("4_8d8l0")

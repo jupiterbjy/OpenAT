@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://bbp3jipopdnia"]
+
+[ext_resource type="PackedScene" uid="uid://bxhh21jekj12" path="res://TankSystem/base/tank_base.tscn" id="1_5ymwg"]
+[ext_resource type="Script" path="res://TankSystem/tanks/tank_player2.gd" id="2_h2r1h"]
+[ext_resource type="Script" path="res://TankSystem/tanks/player_movement_subsystem.gd" id="3_xbsyf"]
+[ext_resource type="Script" path="res://TankSystem/tanks/player_weapon_subsystem.gd" id="4_m8t80"]
+
+[node name="player2_tank" groups=["allie"] instance=ExtResource("1_5ymwg")]
+script = ExtResource("2_h2r1h")
+tank_type = 0
+base_health = 200
+
+[node name="movement_subsystem" parent="." index="1"]
+script = ExtResource("3_xbsyf")
+
+[node name="hitbox" parent="." index="2" groups=["allie"]]
+
+[node name="weapon_subsystem" parent="." index="4"]
+script = ExtResource("4_m8t80")

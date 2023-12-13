@@ -1,0 +1,89 @@
+[gd_scene load_steps=7 format=3 uid="uid://bev5dxkpk0sga"]
+
+[ext_resource type="Script" path="res://SoundSystem/music_manager.gd" id="1_jjbfa"]
+[ext_resource type="AudioStream" uid="uid://hllj4uptas2w" path="res://SoundSystem/Sounds/menu.ogg" id="2_esrbu"]
+[ext_resource type="AudioStream" uid="uid://danf7qy1uhd8k" path="res://SoundSystem/Sounds/game.ogg" id="3_lmswh"]
+
+[sub_resource type="Animation" id="Animation_422pe"]
+resource_name = "FadeTo1"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("audio_player_1:volume_db")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 2),
+"transitions": PackedFloat32Array(1, 2, 1),
+"update": 0,
+"values": [-40.0, -10.0, 0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("audio_player_2:volume_db")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.5, 2),
+"transitions": PackedFloat32Array(1, 0.5, 1),
+"update": 0,
+"values": [0.0, -10.0, -40.0]
+}
+
+[sub_resource type="Animation" id="Animation_q7cj8"]
+resource_name = "FadeTo2"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("audio_player_1:volume_db")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -10.0, -40.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("audio_player_2:volume_db")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-40.0, -10.0, 0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_sbv71"]
+_data = {
+"FadeTo1": SubResource("Animation_422pe"),
+"FadeTo2": SubResource("Animation_q7cj8")
+}
+
+[node name="music_manager" type="Node"]
+script = ExtResource("1_jjbfa")
+
+[node name="audio_player_1" type="AudioStreamPlayer" parent="."]
+process_mode = 3
+stream = ExtResource("2_esrbu")
+volume_db = -40.0
+bus = &"Music"
+
+[node name="audio_player_2" type="AudioStreamPlayer" parent="."]
+process_mode = 3
+stream = ExtResource("3_lmswh")
+bus = &"Music"
+
+[node name="crossfade_audio" type="AnimationPlayer" parent="."]
+process_mode = 3
+libraries = {
+"": SubResource("AnimationLibrary_sbv71")
+}
+
+[connection signal="animation_finished" from="crossfade_audio" to="." method="_on_crossfade_audio_animation_finished"]

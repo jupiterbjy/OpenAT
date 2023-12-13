@@ -1,0 +1,48 @@
+[gd_scene load_steps=7 format=3 uid="uid://bstrlwfy1spny"]
+
+[ext_resource type="Texture2D" uid="uid://h21ai0jv7wdj" path="res://Textures/Raw/Fire.JPG" id="1_imqdf"]
+
+[sub_resource type="Gradient" id="Gradient_l4t75"]
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_vj3ji"]
+gradient = SubResource("Gradient_l4t75")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_iel80"]
+spread = 180.0
+flatness = 0.9
+gravity = Vector3(0, 30, 0)
+initial_velocity_min = 10.0
+initial_velocity_max = 10.0
+damping_min = 0.2
+damping_max = 0.2
+scale_max = 2.0
+color_ramp = SubResource("GradientTexture1D_vj3ji")
+anim_offset_min = 0.0959
+anim_offset_max = 0.0959
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0qm6v"]
+transparency = 1
+blend_mode = 1
+shading_mode = 0
+vertex_color_use_as_albedo = true
+albedo_color = Color(1, 1, 1, 0.227451)
+albedo_texture = ExtResource("1_imqdf")
+billboard_mode = 3
+particles_anim_h_frames = 4
+particles_anim_v_frames = 4
+particles_anim_loop = false
+
+[sub_resource type="QuadMesh" id="QuadMesh_7h6v7"]
+material = SubResource("StandardMaterial3D_0qm6v")
+
+[node name="electro_eff" type="GPUParticles3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+emitting = false
+amount = 4
+lifetime = 0.3
+one_shot = true
+explosiveness = 1.0
+randomness = 1.0
+process_material = SubResource("ParticleProcessMaterial_iel80")
+draw_pass_1 = SubResource("QuadMesh_7h6v7")

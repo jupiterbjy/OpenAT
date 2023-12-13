@@ -1,0 +1,110 @@
+[gd_scene load_steps=5 format=3 uid="uid://bcsmkkj6gk50p"]
+
+[ext_resource type="Script" path="res://UI/Elements/HUD/life_bar_hud.gd" id="1_myag5"]
+[ext_resource type="Texture2D" uid="uid://xwfyi6ura4l6" path="res://Textures/Raw/InfoPanel.png" id="2_lvqs0"]
+
+[sub_resource type="Animation" id="Animation_q0efm"]
+resource_name = "health"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("HBoxContainer/bar_control/bar:region_rect")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Rect2(0, 144, 0, 8), Rect2(0, 144, 80, 8)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("HBoxContainer/bar_control/bar:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(10, 8), Vector2(50, 8)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_gawu2"]
+_data = {
+"health": SubResource("Animation_q0efm")
+}
+
+[node name="life_bar_hud" type="Control"]
+custom_minimum_size = Vector2(152, 48)
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -50.0
+offset_top = -8.0
+offset_right = 50.0
+offset_bottom = 8.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_myag5")
+
+[node name="player" type="AnimationPlayer" parent="."]
+speed_scale = 0.0
+libraries = {
+"": SubResource("AnimationLibrary_gawu2")
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+custom_minimum_size = Vector2(152, 48)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Control" type="Control" parent="HBoxContainer"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Sprite2D" type="Sprite2D" parent="HBoxContainer/Control"]
+position = Vector2(24, 24)
+texture = ExtResource("2_lvqs0")
+region_enabled = true
+region_rect = Rect2(112, 0, 48, 48)
+
+[node name="bar_control" type="Control" parent="HBoxContainer"]
+custom_minimum_size = Vector2(100, 16)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Sprite2D2" type="Sprite2D" parent="HBoxContainer/bar_control"]
+texture_filter = 1
+position = Vector2(9, 8)
+texture = ExtResource("2_lvqs0")
+region_enabled = true
+region_rect = Rect2(0, 112, 16, 16)
+
+[node name="Sprite2D3" type="Sprite2D" parent="HBoxContainer/bar_control"]
+texture_filter = 1
+position = Vector2(50.5, 8)
+scale = Vector2(4.1875, 1)
+texture = ExtResource("2_lvqs0")
+region_enabled = true
+region_rect = Rect2(0, 96, 16, 16)
+
+[node name="Sprite2D4" type="Sprite2D" parent="HBoxContainer/bar_control"]
+texture_filter = 1
+position = Vector2(92, 8)
+texture = ExtResource("2_lvqs0")
+region_enabled = true
+region_rect = Rect2(0, 128, 16, 16)
+
+[node name="bar" type="Sprite2D" parent="HBoxContainer/bar_control"]
+position = Vector2(10, 8)
+texture = ExtResource("2_lvqs0")
+region_enabled = true
+region_rect = Rect2(0, 144, 0, 8)

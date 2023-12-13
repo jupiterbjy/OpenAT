@@ -1,0 +1,40 @@
+[gd_scene load_steps=5 format=3 uid="uid://ch0nmh8kp3qeg"]
+
+[ext_resource type="PackedScene" uid="uid://k3us51iu4hiy" path="res://UI/Elements/blue_box_titled.tscn" id="1_7p8cl"]
+[ext_resource type="Script" path="res://UI/UI Scenes/ingame/ui_objectives.gd" id="1_ngmnl"]
+[ext_resource type="PackedScene" uid="uid://b4dauo25ng15x" path="res://UI/Elements/objective_panel.tscn" id="2_k63vy"]
+[ext_resource type="PackedScene" uid="uid://n653ro3f33ss" path="res://UI/Elements/ok_button.tscn" id="3_00xwj"]
+
+[node name="ui_objectives" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ngmnl")
+
+[node name="blue_box_titled" parent="." instance=ExtResource("1_7p8cl")]
+layout_mode = 1
+offset_left = -276.5
+offset_top = -250.5
+offset_right = 276.5
+offset_bottom = 250.5
+title = "Objectives"
+
+[node name="objective_panel" parent="blue_box_titled" instance=ExtResource("2_k63vy")]
+layout_mode = 1
+offset_top = 160.0
+offset_bottom = 344.0
+
+[node name="ok_button" parent="blue_box_titled" instance=ExtResource("3_00xwj")]
+layout_mode = 1
+anchors_preset = 7
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -104.0
+offset_bottom = -64.0
+grow_vertical = 0
+text = "OK"
+
+[connection signal="button_clicked" from="blue_box_titled/ok_button" to="." method="_on_ok_button_button_clicked"]

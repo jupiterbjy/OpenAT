@@ -1,0 +1,84 @@
+[gd_scene load_steps=12 format=3 uid="uid://crgpof5tvxw7a"]
+
+[ext_resource type="PackedScene" uid="uid://jshjo18wr5k2" path="res://WeaponSystem/Projectiles/projectile_base.tscn" id="1_kr531"]
+[ext_resource type="Script" path="res://WeaponSystem/Projectiles/electro.gd" id="2_moq4a"]
+[ext_resource type="Script" path="res://WeaponSystem/Projectiles/elect_model_root.gd" id="3_k3lnu"]
+[ext_resource type="AudioStream" uid="uid://s2spkswmq5ks" path="res://SoundSystem/Sounds/an_light-3.wav" id="3_movu5"]
+[ext_resource type="Material" uid="uid://b7uyucrs6lr3n" path="res://WeaponSystem/lightning.tres" id="4_36ofs"]
+[ext_resource type="Script" path="res://WeaponSystem/Projectiles/electro_secondary_area.gd" id="5_s8lyt"]
+[ext_resource type="PackedScene" uid="uid://kb02hksvp33r" path="res://Commons/DebugGizmos/electro_gizmo.tscn" id="5_tc1ll"]
+[ext_resource type="Texture2D" uid="uid://igydlhpvi0ib" path="res://Textures/Raw/Light.JPG" id="5_u4qbh"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qplue"]
+resource_local_to_scene = true
+size = Vector3(1, 0.5, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_aq3p2"]
+transparency = 1
+shading_mode = 0
+albedo_color = Color(0.517647, 0.254902, 0, 0.301961)
+
+[sub_resource type="BoxMesh" id="BoxMesh_iw0uq"]
+resource_local_to_scene = true
+material = SubResource("StandardMaterial3D_aq3p2")
+
+[node name="electro" instance=ExtResource("1_kr531")]
+monitoring = false
+monitorable = false
+script = ExtResource("2_moq4a")
+type = 3
+
+[node name="audio_player" parent="." index="1"]
+stream = ExtResource("3_movu5")
+
+[node name="elect_model_root" type="Node3D" parent="." index="2"]
+transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, 0, 0, 0)
+script = ExtResource("3_k3lnu")
+
+[node name="model_change_timer" type="Timer" parent="elect_model_root" index="0"]
+one_shot = true
+
+[node name="extension" type="Node3D" parent="elect_model_root" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -87.599)
+
+[node name="Timer" type="Timer" parent="elect_model_root" index="2"]
+one_shot = true
+
+[node name="secondary_area" type="Area3D" parent="." index="3" groups=["projectile"]]
+collision_layer = 256
+collision_mask = 272
+monitoring = false
+monitorable = false
+script = ExtResource("5_s8lyt")
+
+[node name="CollisionShape" type="CollisionShape3D" parent="secondary_area" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
+shape = SubResource("BoxShape3D_qplue")
+
+[node name="electro_gizmo" parent="secondary_area" index="1" instance=ExtResource("5_tc1ll")]
+mesh = SubResource("BoxMesh_iw0uq")
+
+[node name="Sprite3D" type="Sprite3D" parent="." index="4"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, -2.235)
+visible = false
+material_override = ExtResource("4_36ofs")
+texture = ExtResource("5_u4qbh")
+hframes = 5
+frame = 1
+region_enabled = true
+region_rect = Rect2(0, 0, 512, 512)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="5"]
+
+[node name="disable_timer" type="Timer" parent="." index="7"]
+wait_time = 0.1
+one_shot = true
+
+[node name="wait_effect_timer" type="Timer" parent="." index="8"]
+
+[connection signal="animation_done" from="elect_model_root" to="." method="_on_elect_model_root_animation_done"]
+[connection signal="timeout" from="elect_model_root/model_change_timer" to="elect_model_root" method="_on_model_change_timer_timeout"]
+[connection signal="timeout" from="elect_model_root/Timer" to="elect_model_root" method="_on_timer_timeout"]
+[connection signal="area_entered" from="secondary_area" to="." method="_on_secondary_area_area_entered"]
+[connection signal="timeout" from="disable_timer" to="." method="_on_disable_timer_timeout"]
+[connection signal="timeout" from="wait_effect_timer" to="." method="_on_wait_effect_timer_timeout"]

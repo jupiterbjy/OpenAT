@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://byc8nevrvbi2a"]
+
+[ext_resource type="PackedScene" uid="uid://cla2gxgi10mft" path="res://ItemSystem/Items/item_base.tscn" id="1_2bcgu"]
+[ext_resource type="Script" path="res://ItemSystem/Items/item_c.gd" id="2_b507v"]
+
+[node name="item_c" instance=ExtResource("1_2bcgu")]
+script = ExtResource("2_b507v")
+item_code = "C"

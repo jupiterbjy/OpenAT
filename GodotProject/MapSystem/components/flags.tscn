@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://cwm1lorixa2ge"]
+
+[ext_resource type="Script" path="res://MapSystem/components/flags.gd" id="1_jpmaq"]
+[ext_resource type="PackedScene" uid="uid://djbe8bf6ptj0c" path="res://MapSystem/base_tiles/flag_tile.tscn" id="2_p3yia"]
+
+[node name="flags" type="Node3D"]
+script = ExtResource("1_jpmaq")
+
+[node name="flag_tile" parent="." instance=ExtResource("2_p3yia")]

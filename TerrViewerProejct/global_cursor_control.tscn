@@ -1,0 +1,22 @@
+[gd_scene load_steps=6 format=3 uid="uid://bayqx8rnbh08g"]
+
+[ext_resource type="Script" path="res://global_cursor_control.gd" id="1_aqumg"]
+[ext_resource type="Texture2D" uid="uid://02ac22yvsaep" path="res://UI/Resources/cursor_main.png" id="2_s1a83"]
+[ext_resource type="Texture2D" uid="uid://cvklv5wsb8b8c" path="res://UI/Resources/cursor_hover.png" id="3_1lfbg"]
+[ext_resource type="AudioStream" uid="uid://bb5dc6ptdb55o" path="res://UI/Sound/a_mouseover.wav" id="5_21474"]
+[ext_resource type="AudioStream" uid="uid://cfrqyxalcvjf0" path="res://UI/Sound/a_mouseclick.wav" id="6_us5j3"]
+
+[node name="global_cursor_control" type="Node"]
+script = ExtResource("1_aqumg")
+default_cursor = ExtResource("2_s1a83")
+default_hotspot = Vector2(16, 16)
+hover_cursor = ExtResource("3_1lfbg")
+hover_hotspot = Vector2(16, 16)
+
+[node name="mouse_hover_sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_21474")
+bus = &"Sound"
+
+[node name="mouse_click_sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_us5j3")
+bus = &"Sound"

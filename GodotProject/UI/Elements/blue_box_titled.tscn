@@ -1,0 +1,41 @@
+[gd_scene load_steps=4 format=3 uid="uid://k3us51iu4hiy"]
+
+[ext_resource type="Texture2D" uid="uid://x5ue2slveguh" path="res://UI/Resources/blue_box_1.png" id="1_m5gb7"]
+[ext_resource type="Script" path="res://UI/Elements/titled.gd" id="2_50j5d"]
+[ext_resource type="FontFile" uid="uid://dg8idnhjxgdk8" path="res://UI/Fonts/FontAdv_FD.fnt" id="3_7c4yq"]
+
+[node name="blue_box_titled" type="NinePatchRect"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -255.0
+offset_top = -232.5
+offset_right = 255.0
+offset_bottom = 232.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_m5gb7")
+region_rect = Rect2(2, 0, 187, 191)
+patch_margin_left = 104
+patch_margin_top = 129
+patch_margin_right = 53
+patch_margin_bottom = 48
+script = ExtResource("2_50j5d")
+
+[node name="title" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_top = 76.0
+offset_right = 20.0
+offset_bottom = 108.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("3_7c4yq")
+theme_override_font_sizes/font_size = 32
+text = "Sample Text"
+horizontal_alignment = 1
+vertical_alignment = 1

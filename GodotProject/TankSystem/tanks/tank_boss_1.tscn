@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c2ya6n7qtntu0"]
+
+[ext_resource type="PackedScene" uid="uid://d1a8upwy7uais" path="res://TankSystem/base/tank_enemy_base.tscn" id="1_j44i0"]
+
+[node name="tank_boss_1" instance=ExtResource("1_j44i0")]
+tank_type = 2

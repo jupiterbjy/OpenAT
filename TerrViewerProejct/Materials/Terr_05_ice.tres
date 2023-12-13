@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://iyn461qrumuw"]
+
+[ext_resource type="Texture2D" uid="uid://bqilo1yfq1mhs" path="res://Textures/Raw/Terr_05_ice.JPG" id="1_rakaq"]
+
+[resource]
+shading_mode = 0
+albedo_texture = ExtResource("1_rakaq")

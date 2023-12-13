@@ -1,0 +1,16 @@
+[remap]
+
+importer="font_data_bmfont"
+type="FontFile"
+uid="uid://wp1gar4mv6d6"
+path="res://.godot/imported/FontAdv_FD_224.fnt-6e0724d0e666829eacd1f729d8ec3978.fontdata"
+
+[deps]
+
+source_file="res://UI/Fonts/FontAdv_FD_224.fnt"
+dest_files=["res://.godot/imported/FontAdv_FD_224.fnt-6e0724d0e666829eacd1f729d8ec3978.fontdata"]
+
+[params]
+
+fallbacks=[]
+compress=true

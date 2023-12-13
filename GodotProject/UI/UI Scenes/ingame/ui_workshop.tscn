@@ -1,0 +1,267 @@
+[gd_scene load_steps=14 format=3 uid="uid://cmufppuvw6qf4"]
+
+[ext_resource type="Script" path="res://UI/UI Scenes/ingame/ui_workshop.gd" id="1_d4tc6"]
+[ext_resource type="PackedScene" uid="uid://k3us51iu4hiy" path="res://UI/Elements/blue_box_titled.tscn" id="1_q5kyh"]
+[ext_resource type="PackedScene" uid="uid://n653ro3f33ss" path="res://UI/Elements/ok_button.tscn" id="2_2am1k"]
+[ext_resource type="PackedScene" uid="uid://bu88whepfdna4" path="res://UI/Elements/WorkshopSubviewport/workshop_view.tscn" id="3_0lc8l"]
+[ext_resource type="PackedScene" uid="uid://c5euh253xgm8f" path="res://UI/Elements/white_box.tscn" id="3_jf3qh"]
+[ext_resource type="PackedScene" uid="uid://dli38hxia2m3d" path="res://UI/Elements/WorkshopElements/upgrade_panel.tscn" id="4_7mwt3"]
+[ext_resource type="FontFile" uid="uid://dg8idnhjxgdk8" path="res://UI/Fonts/FontAdv_FD.fnt" id="4_affq8"]
+[ext_resource type="PackedScene" uid="uid://bsyw1707pwt6d" path="res://UI/Elements/dark_blue_box.tscn" id="5_bpqhc"]
+[ext_resource type="FontFile" uid="uid://h8rhgl0terod" path="res://UI/Fonts/FontAdv_FD_128.fnt" id="5_jswu4"]
+[ext_resource type="PackedScene" uid="uid://bw7nvw3ce5gsg" path="res://UI/Elements/WorkshopElements/weapon_panel.tscn" id="9_gukeh"]
+[ext_resource type="PackedScene" uid="uid://1lujfgpoi218" path="res://UI/Elements/yellow_box_titled.tscn" id="11_2kp56"]
+[ext_resource type="FontFile" uid="uid://b08pa0gvv5r17" path="res://UI/Fonts/FontAdv_FD_B.fnt" id="12_m78ty"]
+[ext_resource type="PackedScene" uid="uid://cfdtvarord05o" path="res://UI/Elements/no_button.tscn" id="13_q6jha"]
+
+[node name="ui_workshop" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_d4tc6")
+
+[node name="blue_box_titled" parent="." instance=ExtResource("1_q5kyh")]
+layout_mode = 1
+offset_left = -485.0
+offset_top = -349.0
+offset_right = 485.0
+offset_bottom = 349.0
+title = "Workshop"
+
+[node name="hbox" type="HBoxContainer" parent="blue_box_titled"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -433.0
+offset_top = -201.0
+offset_right = 433.0
+offset_bottom = 303.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 28
+
+[node name="left_panel" parent="blue_box_titled/hbox" instance=ExtResource("5_bpqhc")]
+custom_minimum_size = Vector2(270, 504)
+layout_mode = 2
+
+[node name="upgrade_panel" parent="blue_box_titled/hbox/left_panel" instance=ExtResource("4_7mwt3")]
+layout_mode = 1
+offset_left = -114.0
+offset_top = -200.0
+offset_right = 114.0
+offset_bottom = 200.0
+
+[node name="vbox" type="VBoxContainer" parent="blue_box_titled/hbox"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="money_label" type="Label" parent="blue_box_titled/hbox/vbox"]
+custom_minimum_size = Vector2(270, 40)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_affq8")
+theme_override_font_sizes/font_size = 28
+text = "Money 0219"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="spec_panel" parent="blue_box_titled/hbox/vbox" instance=ExtResource("5_bpqhc")]
+custom_minimum_size = Vector2(270, 117)
+layout_mode = 2
+
+[node name="spec_label" type="Label" parent="blue_box_titled/hbox/vbox/spec_panel"]
+custom_minimum_size = Vector2(270, 117)
+layout_mode = 0
+theme_override_constants/line_spacing = 8
+theme_override_fonts/font = ExtResource("5_jswu4")
+theme_override_font_sizes/font_size = 17
+text = "Tank speed: nn mph
+Defensive armor: 0 %
+weapon damage power: 20
+Reload time: 0.75 sec"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="white_box" parent="blue_box_titled/hbox/vbox" instance=ExtResource("3_jf3qh")]
+custom_minimum_size = Vector2(270, 249)
+layout_mode = 2
+
+[node name="subview_container" type="SubViewportContainer" parent="blue_box_titled/hbox/vbox/white_box"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -172.0
+offset_top = -158.0
+offset_right = 340.0
+offset_bottom = 354.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.675, 0.675)
+mouse_filter = 2
+
+[node name="subview" type="SubViewport" parent="blue_box_titled/hbox/vbox/white_box/subview_container"]
+own_world_3d = true
+transparent_bg = true
+handle_input_locally = false
+msaa_3d = 1
+render_target_update_mode = 4
+
+[node name="workshop_view" parent="blue_box_titled/hbox/vbox/white_box/subview_container/subview" instance=ExtResource("3_0lc8l")]
+
+[node name="right_panel" parent="blue_box_titled/hbox" instance=ExtResource("5_bpqhc")]
+custom_minimum_size = Vector2(270, 504)
+layout_mode = 2
+
+[node name="weapon_panel" parent="blue_box_titled/hbox/right_panel" instance=ExtResource("9_gukeh")]
+layout_mode = 1
+offset_top = -230.0
+offset_bottom = 230.0
+
+[node name="ok_button" parent="blue_box_titled" instance=ExtResource("2_2am1k")]
+layout_mode = 1
+offset_left = -83.5
+offset_top = 252.0
+offset_right = 116.5
+offset_bottom = 292.0
+text = "OK"
+
+[node name="confirm_weapon" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="yellow_box_titled" parent="confirm_weapon" instance=ExtResource("11_2kp56")]
+z_index = 1
+layout_mode = 1
+offset_left = -372.5
+offset_top = -189.0
+offset_right = 372.5
+offset_bottom = 189.0
+title = "Purchase Confirmation"
+
+[node name="text" type="Label" parent="confirm_weapon/yellow_box_titled"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -167.0
+offset_top = -33.0
+offset_right = 167.0
+offset_bottom = 33.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/line_spacing = 13
+theme_override_fonts/font = ExtResource("12_m78ty")
+text = "Are you sure you want to buy:
+I_LOVE_HINA ?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="confirm_weapon/yellow_box_titled"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -153.0
+offset_top = -120.0
+offset_right = 153.0
+offset_bottom = -80.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 306
+alignment = 1
+
+[node name="weapon_ok_button" parent="confirm_weapon/yellow_box_titled/HBoxContainer" instance=ExtResource("2_2am1k")]
+layout_mode = 2
+text = "Yes"
+
+[node name="weapon_no_button" parent="confirm_weapon/yellow_box_titled/HBoxContainer" instance=ExtResource("13_q6jha")]
+layout_mode = 2
+text = "No"
+
+[node name="confirm_upgrade" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="yellow_box_titled" parent="confirm_upgrade" instance=ExtResource("11_2kp56")]
+z_index = 1
+layout_mode = 1
+offset_left = -372.5
+offset_top = -189.0
+offset_right = 372.5
+offset_bottom = 189.0
+title = "Purchase Confirmation"
+
+[node name="text" type="Label" parent="confirm_upgrade/yellow_box_titled"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -167.0
+offset_top = -33.0
+offset_right = 167.0
+offset_bottom = 33.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/line_spacing = 13
+theme_override_fonts/font = ExtResource("12_m78ty")
+text = "Are you sure you want to buy:
+I_LOVE_HINA ?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="confirm_upgrade/yellow_box_titled"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -153.0
+offset_top = -120.0
+offset_right = 153.0
+offset_bottom = -80.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 306
+alignment = 1
+
+[node name="upgrade_ok_button" parent="confirm_upgrade/yellow_box_titled/HBoxContainer" instance=ExtResource("2_2am1k")]
+layout_mode = 2
+text = "Yes"
+
+[node name="upgrade_no_button" parent="confirm_upgrade/yellow_box_titled/HBoxContainer" instance=ExtResource("13_q6jha")]
+layout_mode = 2
+text = "No"
+
+[connection signal="purchase_requested" from="blue_box_titled/hbox/left_panel/upgrade_panel" to="." method="_on_upgrade_panel_purchase_requested"]
+[connection signal="purchase_requested" from="blue_box_titled/hbox/right_panel/weapon_panel" to="." method="_on_weapon_panel_purchase_requested"]
+[connection signal="select_requested" from="blue_box_titled/hbox/right_panel/weapon_panel" to="." method="_on_weapon_panel_select_requested"]
+[connection signal="button_clicked" from="blue_box_titled/ok_button" to="." method="_on_ok_button_button_clicked"]
+[connection signal="button_clicked" from="confirm_weapon/yellow_box_titled/HBoxContainer/weapon_ok_button" to="." method="_on_weapon_ok_button_button_clicked"]
+[connection signal="button_clicked" from="confirm_weapon/yellow_box_titled/HBoxContainer/weapon_no_button" to="." method="_on_weapon_no_button_button_clicked"]
+[connection signal="button_clicked" from="confirm_upgrade/yellow_box_titled/HBoxContainer/upgrade_ok_button" to="." method="_on_upgrade_ok_button_button_clicked"]
+[connection signal="button_clicked" from="confirm_upgrade/yellow_box_titled/HBoxContainer/upgrade_no_button" to="." method="_on_upgrade_no_button_button_clicked"]

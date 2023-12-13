@@ -1,0 +1,61 @@
+[gd_scene load_steps=8 format=3 uid="uid://b3qfviphdhm1a"]
+
+[ext_resource type="Texture2D" uid="uid://1sapwm51nbbl" path="res://Textures/Raw/Explosion-256.png" id="1_f28bd"]
+[ext_resource type="Script" path="res://EffectSystem/explosion_paticle.gd" id="2_gumhi"]
+
+[sub_resource type="Gradient" id="Gradient_cw61j"]
+offsets = PackedFloat32Array(0, 0.411765, 1)
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0.882353, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_bno6f"]
+gradient = SubResource("Gradient_cw61j")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_v7ft2"]
+spread = 180.0
+flatness = 0.5
+gravity = Vector3(0, 0, 0)
+initial_velocity_min = 1.0
+initial_velocity_max = 1.5
+damping_min = 1.5
+damping_max = 1.5
+scale_min = 2.0
+scale_max = 2.0
+color_ramp = SubResource("GradientTexture1D_bno6f")
+anim_speed_min = 0.1
+anim_speed_max = 0.1
+anim_offset_min = 0.0528
+anim_offset_max = 0.147
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_svilt"]
+transparency = 1
+shading_mode = 0
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_f28bd")
+billboard_mode = 3
+particles_anim_h_frames = 8
+particles_anim_v_frames = 8
+particles_anim_loop = true
+
+[sub_resource type="QuadMesh" id="QuadMesh_sjeq0"]
+material = SubResource("StandardMaterial3D_svilt")
+
+[node name="explosion_paticle" type="GPUParticles3D"]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0)
+gi_mode = 0
+emitting = false
+amount = 128
+one_shot = true
+speed_scale = 1.2
+explosiveness = 1.0
+randomness = 1.0
+fixed_fps = 60
+fract_delta = false
+trail_lifetime = 1.0
+process_material = SubResource("ParticleProcessMaterial_v7ft2")
+draw_pass_1 = SubResource("QuadMesh_sjeq0")
+script = ExtResource("2_gumhi")
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

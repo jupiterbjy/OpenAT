@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://de5lvlfk8b115"]
+
+[ext_resource type="Texture2D" uid="uid://dteinjnowjqaa" path="res://Textures/Raw/FaceSharp.JPG" id="1_safqe"]
+[ext_resource type="Script" path="res://UI/Elements/Dialogues/noise_effect.gd" id="2_venah"]
+[ext_resource type="AudioStream" uid="uid://bmdn8t5k5djwd" path="res://UI/Sound/Radio-0.wav" id="3_cljpk"]
+[ext_resource type="AudioStream" uid="uid://cvmuggtivhbr6" path="res://UI/Sound/Radio-1.wav" id="4_hwm2r"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_pqhjn"]
+blend_mode = 2
+
+[node name="noise_effect" type="Sprite2D"]
+material = SubResource("CanvasItemMaterial_pqhjn")
+position = Vector2(64, 64)
+texture = ExtResource("1_safqe")
+hframes = 2
+vframes = 2
+script = ExtResource("2_venah")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.1
+autostart = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_cljpk")
+autoplay = true
+bus = &"IngameSound"
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_hwm2r")
+autoplay = true
+bus = &"IngameSound"
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

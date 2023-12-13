@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://dx03yaw0w4nlx"]
+
+[ext_resource type="Script" path="res://UI/Elements/HUD/enemy_pannel.gd" id="1_hdgiv"]
+[ext_resource type="Texture2D" uid="uid://xwfyi6ura4l6" path="res://Textures/Raw/InfoPanel.png" id="2_r85pa"]
+
+[node name="enemy_pannel" type="Control"]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -8.0
+offset_top = -8.0
+offset_right = 8.0
+offset_bottom = 8.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+script = ExtResource("1_hdgiv")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(8, 8)
+texture = ExtResource("2_r85pa")
+region_enabled = true
+region_rect = Rect2(0, 240, 16, 16)

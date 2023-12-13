@@ -1,0 +1,40 @@
+[gd_scene load_steps=7 format=3 uid="uid://c54tbu3qd86uy"]
+
+[ext_resource type="Texture2D" uid="uid://clc5a2hbvxrav" path="res://Textures/Raw/ScreenPart.png" id="1_5bm56"]
+[ext_resource type="Script" path="res://EffectSystem/firework_main.gd" id="1_qk08e"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_fwvng"]
+particles_animation = true
+particles_anim_h_frames = 16
+particles_anim_v_frames = 16
+particles_anim_loop = false
+
+[sub_resource type="Gradient" id="Gradient_o32ty"]
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_netd0"]
+gradient = SubResource("Gradient_o32ty")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_4a3yd"]
+particle_flag_disable_z = true
+gravity = Vector3(0, 0, 0)
+orbit_velocity_min = 0.0
+orbit_velocity_max = 0.0
+color_ramp = SubResource("GradientTexture1D_netd0")
+anim_offset_min = 0.3882
+anim_offset_max = 0.3947
+
+[node name="firework_main" type="GPUParticles2D"]
+material = SubResource("CanvasItemMaterial_fwvng")
+position = Vector2(295, 305)
+amount = 16
+process_material = SubResource("ParticleProcessMaterial_4a3yd")
+texture = ExtResource("1_5bm56")
+script = ExtResource("1_qk08e")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

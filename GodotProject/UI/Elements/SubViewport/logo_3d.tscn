@@ -1,0 +1,66 @@
+[gd_scene load_steps=11 format=3 uid="uid://c4seo8i0i12kn"]
+
+[ext_resource type="PackedScene" uid="uid://cgfmkmvd04wq8" path="res://Models/Custom/logo_terrain.glb" id="1_st5s5"]
+[ext_resource type="Script" path="res://UI/Elements/SubViewport/logo_3d.gd" id="1_tf5x0"]
+[ext_resource type="PackedScene" uid="uid://dgmc6ec474gqt" path="res://Models/Raw/Terr_17.glb" id="2_6slc2"]
+[ext_resource type="PackedScene" uid="uid://csrmemvu27yy0" path="res://Models/Raw/Terr_14.glb" id="3_u7peg"]
+[ext_resource type="PackedScene" uid="uid://doxhv87qxcphl" path="res://Models/Raw/Terr_16.glb" id="4_dsv8t"]
+[ext_resource type="PackedScene" uid="uid://co3n5kpsbl54" path="res://Models/Raw/Tank_Player.glb" id="5_fqb2x"]
+[ext_resource type="PackedScene" uid="uid://d03bbo3bmg6r" path="res://Models/Raw/terr_59.glb" id="6_qiqdh"]
+[ext_resource type="PackedScene" uid="uid://rg7ksv4c3l5j" path="res://Models/Raw/Terr_87.glb" id="7_1aif7"]
+[ext_resource type="PackedScene" uid="uid://c43qt073nrc4t" path="res://Models/Raw/Terr_85.glb" id="8_ismsf"]
+[ext_resource type="Script" path="res://UI/Elements/SubViewport/player_model_load.gd" id="10_huiy8"]
+
+[node name="logo_3d" type="Node3D"]
+script = ExtResource("1_tf5x0")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.960779, 0.277315, 0, -0.277315, 0.960779, 0, 2.47361, 7.61143)
+fov = 40.0
+
+[node name="turntable" type="Node3D" parent="."]
+
+[node name="logo_terrain" parent="turntable" instance=ExtResource("1_st5s5")]
+
+[node name="Terr_17" parent="turntable" instance=ExtResource("2_6slc2")]
+transform = Transform3D(-0.0443558, 0, 0.0230774, 0, 0.05, 0, -0.0230774, 0, -0.0443558, 1.06418, -0.448634, -1.12779)
+
+[node name="Terr_14" parent="turntable" instance=ExtResource("3_u7peg")]
+transform = Transform3D(-0.0103811, 0, 0.0386294, 0, 0.04, 0, -0.0386294, 0, -0.0103811, 1.64464, -0.0392849, 0.158914)
+
+[node name="Terr_14_2" parent="turntable" instance=ExtResource("3_u7peg")]
+transform = Transform3D(-0.0229594, 0, 0.0193097, 0, 0.03, 0, -0.0193097, 0, -0.0229594, -1.59224, -0.0392849, 0.243418)
+
+[node name="Terr_14_3" parent="turntable" instance=ExtResource("3_u7peg")]
+transform = Transform3D(0.00786504, 0, 0.00617585, 0, 0.01, 0, -0.00617585, 0, 0.00786504, -0.70401, -0.0392848, 1.78505)
+
+[node name="Terr_14_4" parent="turntable" instance=ExtResource("3_u7peg")]
+transform = Transform3D(-0.00237961, 0, -0.01481, 0, 0.015, 0, 0.01481, 0, -0.00237961, -0.784386, -0.0392848, 1.49557)
+
+[node name="Terr_14_5" parent="turntable" instance=ExtResource("3_u7peg")]
+transform = Transform3D(-0.0139713, 0, 0.0143109, 0, 0.02, 0, -0.0143109, 0, -0.0139713, 1.30796, -0.0392848, 0.910557)
+
+[node name="Terr_16" parent="turntable" instance=ExtResource("4_dsv8t")]
+transform = Transform3D(0.0241763, 0, -0.0437665, 0, 0.05, 0, 0.0437665, 0, 0.0241763, -1.17268, -0.0262954, -0.59841)
+
+[node name="Tank_Player" parent="turntable" instance=ExtResource("5_fqb2x")]
+transform = Transform3D(0.0859004, 0, -0.0268537, 0, 0.09, 0, 0.0268537, 0, 0.0859004, 0.0873515, 0, 0.289734)
+visible = false
+
+[node name="terr_59" parent="turntable" instance=ExtResource("6_qiqdh")]
+transform = Transform3D(-0.0167093, 0, 0.0249158, 0, 0.03, 0, -0.0249158, 0, -0.0167093, -0.196868, -0.336482, 1.83881)
+
+[node name="Terr_87" parent="turntable" instance=ExtResource("7_1aif7")]
+transform = Transform3D(-0.0384978, 0, -0.010859, 0, 0.04, 0, 0.010859, 0, -0.0384978, -0.909325, -2.38419e-07, -1.39507)
+
+[node name="Terr_85" parent="turntable" instance=ExtResource("8_ismsf")]
+transform = Transform3D(-0.0150735, 0, 0.0370512, 0, 0.04, 0, -0.0370512, 0, -0.0150735, 0.156177, -0.216364, -1.82481)
+
+[node name="player_root" type="Node3D" parent="turntable"]
+transform = Transform3D(1.62221, 0, -0.50837, 0, 1.7, 0, 0.50837, 0, 1.62221, 0, 0, 0)
+script = ExtResource("10_huiy8")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+offset_right = 40.0
+offset_bottom = 40.0

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://du65giptykhs3"]
+
+[ext_resource type="Script" path="res://Commons/health_bar.gd" id="1_ke14g"]
+
+[node name="health_bar" type="Node3D"]
+script = ExtResource("1_ke14g")

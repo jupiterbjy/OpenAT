@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://1f63iohgw2nk"]
+
+[ext_resource type="Texture2D" uid="uid://b0vyu87s2osfg" path="res://Textures/Raw/Box.JPG" id="1_h3sto"]
+
+[resource]
+blend_mode = 1
+no_depth_test = true
+shading_mode = 0
+disable_ambient_light = true
+albedo_texture = ExtResource("1_h3sto")

@@ -1,0 +1,88 @@
+[gd_scene load_steps=6 format=3 uid="uid://c8o6mfx2lwmbp"]
+
+[ext_resource type="Script" path="res://UI/UI Scenes/ui_options.gd" id="1_qh3ku"]
+[ext_resource type="PackedScene" uid="uid://k3us51iu4hiy" path="res://UI/Elements/blue_box_titled.tscn" id="2_lp7k1"]
+[ext_resource type="PackedScene" uid="uid://8bc1koppip8k" path="res://UI/Elements/volume_adjust.tscn" id="3_p0vef"]
+[ext_resource type="PackedScene" uid="uid://n653ro3f33ss" path="res://UI/Elements/ok_button.tscn" id="3_shsai"]
+[ext_resource type="FontFile" uid="uid://dg8idnhjxgdk8" path="res://UI/Fonts/FontAdv_FD.fnt" id="5_2vs5s"]
+
+[node name="ui_options" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qh3ku")
+
+[node name="blue_box_titled" parent="." instance=ExtResource("2_lp7k1")]
+layout_mode = 1
+offset_left = -398.0
+offset_top = -274.0
+offset_right = 398.0
+offset_bottom = 274.0
+title = "Options"
+
+[node name="ok_button" parent="blue_box_titled" instance=ExtResource("3_shsai")]
+layout_mode = 1
+anchors_preset = 7
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -119.0
+offset_bottom = -79.0
+grow_vertical = 0
+text = "OK"
+
+[node name="music_vol_slider" parent="blue_box_titled" instance=ExtResource("3_p0vef")]
+layout_mode = 1
+offset_left = 96.0
+offset_top = -64.0
+offset_right = 96.0
+offset_bottom = -64.0
+bus_idx = 1
+
+[node name="sound_vol_slider" parent="blue_box_titled" instance=ExtResource("3_p0vef")]
+layout_mode = 1
+offset_left = 96.0
+offset_right = 96.0
+bus_idx = 2
+
+[node name="Label" type="Label" parent="blue_box_titled"]
+custom_minimum_size = Vector2(160, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -308.0
+offset_top = -81.5
+offset_right = -174.0
+offset_bottom = -46.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("5_2vs5s")
+theme_override_font_sizes/font_size = 30
+text = "Music volume"
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="blue_box_titled"]
+custom_minimum_size = Vector2(160, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -308.0
+offset_top = -17.5
+offset_right = -174.0
+offset_bottom = 17.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("5_2vs5s")
+theme_override_font_sizes/font_size = 30
+text = "Sound volume"
+vertical_alignment = 1
+
+[connection signal="button_clicked" from="blue_box_titled/ok_button" to="." method="_on_ok_button_button_clicked"]

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cnhl55v5rc5hn"]
+
+[sub_resource type="PointMesh" id="PointMesh_q1h5j"]
+
+[node name="line_gizmo" type="MeshInstance3D"]
+mesh = SubResource("PointMesh_q1h5j")

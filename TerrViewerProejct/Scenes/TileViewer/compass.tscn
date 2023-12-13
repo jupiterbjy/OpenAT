@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=3 uid="uid://dgvtuwsicd4lm"]
+
+[ext_resource type="Script" path="res://Scenes/TileViewer/compass.gd" id="1_qsqec"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iv8av"]
+shading_mode = 0
+
+[sub_resource type="TorusMesh" id="TorusMesh_724oy"]
+material = SubResource("StandardMaterial3D_iv8av")
+inner_radius = 0.76
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gi6dd"]
+shading_mode = 0
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="PrismMesh" id="PrismMesh_c4gsq"]
+material = SubResource("StandardMaterial3D_gi6dd")
+size = Vector3(0.7, 0.7, 0.1)
+
+[node name="compass" type="Node3D"]
+script = ExtResource("1_qsqec")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.798635, 0.601815, 0, -0.601815, 0.798635, 0, 2.924, 4.15)
+fov = 26.6
+
+[node name="pointer" type="MeshInstance3D" parent="."]
+mesh = SubResource("TorusMesh_724oy")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="pointer"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, -1.13866)
+mesh = SubResource("PrismMesh_c4gsq")

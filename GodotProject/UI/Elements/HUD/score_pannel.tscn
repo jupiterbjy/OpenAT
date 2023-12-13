@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://bfmgl3n0an6k7"]
+
+[ext_resource type="Script" path="res://UI/Elements/HUD/score_pannel.gd" id="1_7vuo8"]
+[ext_resource type="Texture2D" uid="uid://xwfyi6ura4l6" path="res://Textures/Raw/InfoPanel.png" id="2_aff4e"]
+
+[node name="score_digit" type="Control"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+script = ExtResource("1_7vuo8")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(16, 16)
+texture = ExtResource("2_aff4e")
+region_enabled = true
+region_rect = Rect2(0, 160, 32, 32)

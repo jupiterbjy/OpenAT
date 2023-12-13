@@ -1,0 +1,2154 @@
+{
+  "TERR0": {
+	"idx": 0,
+	"file": [
+	  "Terr_0"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR1": {
+	"idx": 1,
+	"file": [
+	  "Terr_1"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR2": {
+	"idx": 2,
+	"file": [
+	  "Terr_2"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR3": {
+	"idx": 3,
+	"file": [
+	  "Terr_3"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR4": {
+	"idx": 4,
+	"file": [
+	  "Terr_4"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR5": {
+	"idx": 5,
+	"file": [
+	  "Terr_5"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR6": {
+	"idx": 6,
+	"file": [
+	  "Terr_6"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR7": {
+	"idx": 7,
+	"file": [
+	  "Terr_7"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR8": {
+	"idx": 8,
+	"file": [
+	  "Terr_8"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR9": {
+	"idx": 9,
+	"file": [
+	  "Terr_9"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR10": {
+	"idx": 10,
+	"file": [
+	  "Terr_10"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "BULLET1": {
+	"idx": 11,
+	"file": [
+	  "Bullet_1"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR_ZERO": {
+	"idx": 12,
+	"file": [
+	  "Terr_Zero"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR_ZERO2": {
+	"idx": 13,
+	"file": [
+	  "Terr_Zero"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "OBJMINA": {
+	"idx": 14,
+	"file": [
+	  "Mina"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "MINA": {
+	"idx": 15,
+	"file": [
+	  "Item_Mina"
+	],
+	"scale": [
+	  0.04
+	]
+  },
+  "BUCKET": {
+	"idx": 16,
+	"file": [
+	  "Item_Bucket"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TANKBUCKET": {
+	"idx": 17,
+	"file": [
+	  "Bucket"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "ITEMEFFECT": {
+	"idx": 18,
+	"file": [
+	  "Item_Effect"
+	],
+	"scale": [
+	  0.025
+	]
+  },
+  "TANKEXPL": {
+	"idx": 19,
+	"file": [
+	  "Tank_Expl"
+	],
+	"scale": [
+	  0.06
+	]
+  },
+  "TERR42": {
+	"idx": 20,
+	"file": [
+	  "Terr_42"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR43": {
+	"idx": 21,
+	"file": [
+	  "Terr_43"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR55": {
+	"idx": 22,
+	"file": [
+	  "Terr_55"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "AIRBOMB": {
+	"idx": 23,
+	"file": [
+	  "item_airBomb"
+	],
+	"scale": [
+	  0.04
+	]
+  },
+  "OBJAIRBOMB": {
+	"idx": 24,
+	"file": [
+	  "AirBomb"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "SCKEY": {
+	"idx": 25,
+	"file": [
+	  "item_key"
+	],
+	"scale": [
+	  0.03,
+	  5.0
+	]
+  },
+  "TERR51": {
+	"idx": 26,
+	"file": [
+	  "Terr_51"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "SCNUT": {
+	"idx": 27,
+	"file": [
+	  "item_nut"
+	],
+	"scale": [
+	  0.04
+	]
+  },
+  "BULLET": {
+	"idx": 28,
+	"file": [
+	  "bullet"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "FLAG": {
+	"idx": 29,
+	"file": [
+	  "flag"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "CRASH": {
+	"idx": 30,
+	"file": [
+	  "WallCrash"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR11": {
+	"idx": 31,
+	"file": [
+	  "Terr_11"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TANKEASY": {
+	"idx": 32,
+	"file": [
+	  "Tank_Easy"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TANKNORMAL": {
+	"idx": 33,
+	"file": [
+	  "Tank_Normal"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TANKHARD": {
+	"idx": 34,
+	"file": [
+	  "Tank_Hard"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TANKNUCLEAN": {
+	"idx": 35,
+	"file": [
+	  "Tank_Nuc"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TANKPLAYER": {
+	"idx": 36,
+	"file": [
+	  "Tank_Player"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR27": {
+	"idx": 37,
+	"file": [
+	  "Terr_27"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR28": {
+	"idx": 38,
+	"file": [
+	  "Terr_28"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR30": {
+	"idx": 39,
+	"file": [
+	  "Terr_30"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR31": {
+	"idx": 40,
+	"file": [
+	  "Terr_31"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR32": {
+	"idx": 41,
+	"file": [
+	  "Terr_32"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR29": {
+	"idx": 42,
+	"file": [
+	  "Terr_29"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "SCOREEFFECT": {
+	"idx": 43,
+	"file": [
+	  "Item_ScEffect"
+	],
+	"scale": [
+	  0.03
+	]
+  },
+  "EFFLIGHT": {
+	"idx": 44,
+	"file": [
+	  "effect_light"
+	],
+	"scale": [
+	  0.03
+	]
+  },
+  "EFFBOMB": {
+	"idx": 45,
+	"file": [
+	  "effect_bomb"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "PARA": {
+	"idx": 46,
+	"file": [
+	  "item_para"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR52": {
+	"idx": 47,
+	"file": [
+	  "Terr_52"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR62": {
+	"idx": 48,
+	"file": [
+	  "terr_62"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR49": {
+	"idx": 49,
+	"file": [
+	  "terr_49"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR21": {
+	"idx": 50,
+	"file": [
+	  "Terr_21"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR33": {
+	"idx": 51,
+	"file": [
+	  "Terr_33"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "BULLET2": {
+	"idx": 52,
+	"file": [
+	  "Bullet_2"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "FIELD": {
+	"idx": 53,
+	"file": [
+	  "Field"
+	],
+	"scale": [
+	  0.06
+	]
+  },
+  "TERR44": {
+	"idx": 54,
+	"file": [
+	  "Terr_44"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "BOMB": {
+	"idx": 55,
+	"file": [
+	  "item_bomb"
+	],
+	"scale": [
+	  0.04
+	]
+  },
+  "BOX": {
+	"idx": 56,
+	"file": [
+	  "item_box"
+	],
+	"scale": [
+	  0.04
+	]
+  },
+  "SHIELD": {
+	"idx": 57,
+	"file": [
+	  "item_shield"
+	],
+	"scale": [
+	  0.04
+	]
+  },
+  "EXPLIGHT": {
+	"idx": 58,
+	"file": [
+	  "Exp_Light"
+	],
+	"scale": [
+	  0.07
+	]
+  },
+  "TERR12": {
+	"idx": 59,
+	"file": [
+	  "Terr_12"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR13": {
+	"idx": 60,
+	"file": [
+	  "Terr_13"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR14": {
+	"idx": 61,
+	"file": [
+	  "Terr_14"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR15": {
+	"idx": 62,
+	"file": [
+	  "Terr_15"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "CLOCK": {
+	"idx": 63,
+	"file": [
+	  "item_clock"
+	],
+	"scale": [
+	  0.04
+	]
+  },
+  "LOPATA": {
+	"idx": 64,
+	"file": [
+	  "item_lopata"
+	],
+	"scale": [
+	  0.04
+	]
+  },
+  "METKA": {
+	"idx": 65,
+	"file": [
+	  "Metka"
+	],
+	"scale": [
+	  0.03
+	]
+  },
+  "EXPWALL": {
+	"idx": 66,
+	"file": [
+	  "Exp_Wall"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "SNOW": {
+	"idx": 67,
+	"file": [
+	  "Snow"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "STAR": {
+	"idx": 68,
+	"file": [
+	  "Item_Star"
+	],
+	"scale": [
+	  0.04
+	]
+  },
+  "TERR36": {
+	"idx": 69,
+	"file": [
+	  "terr_36"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "RAIN": {
+	"idx": 70,
+	"file": [
+	  "Rain"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "BOSS1": {
+	"idx": 71,
+	"file": [
+	  "Boss1"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "BOSS2": {
+	"idx": 72,
+	"file": [
+	  "Boss2"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR94": {
+	"idx": 73,
+	"file": [
+	  "terr_94"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "EVDZOTA": {
+	"idx": 74,
+	"file": [
+	  "Event_Dzot_A"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "METKABLUE": {
+	"idx": 75,
+	"file": [
+	  "MetkaBlue"
+	],
+	"scale": [
+	  0.03
+	]
+  },
+  "TANKPB": {
+	"idx": 76,
+	"file": [
+	  "TankP_B"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TANKPH": {
+	"idx": 77,
+	"file": [
+	  "TankP_H"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "BULLETFIRE": {
+	"idx": 78,
+	"file": [
+	  "Bullet_Fire"
+	],
+	"scale": [
+	  0.015
+	]
+  },
+  "TANKRAKET": {
+	"idx": 79,
+	"file": [
+	  "Tank_Raket"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "LOGO": {
+	"idx": 80,
+	"file": [
+	  "Logo"
+	],
+	"scale": [
+	  1.0
+	]
+  },
+  "TERR16": {
+	"idx": 81,
+	"file": [
+	  "Terr_16"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR17": {
+	"idx": 82,
+	"file": [
+	  "Terr_17"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR18": {
+	"idx": 83,
+	"file": [
+	  "Terr_18"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "FLAGDEST": {
+	"idx": 84,
+	"file": [
+	  "flagDest"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "LEVELI": {
+	"idx": 85,
+	"file": [
+	  "Level_I"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "LEVELII": {
+	"idx": 86,
+	"file": [
+	  "Level_II"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "LEVELIII": {
+	"idx": 87,
+	"file": [
+	  "Level_III"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR22": {
+	"idx": 88,
+	"file": [
+	  "terr_22"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "MEDIC": {
+	"idx": 89,
+	"file": [
+	  "item_Medic"
+	],
+	"scale": [
+	  0.04
+	]
+  },
+  "PART0": {
+	"idx": 90,
+	"file": [
+	  "parts_B",
+	  "0"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "PART1": {
+	"idx": 91,
+	"file": [
+	  "parts_B",
+	  "0"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR23": {
+	"idx": 92,
+	"file": [
+	  "terr_23"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR25": {
+	"idx": 93,
+	"file": [
+	  "terr_25"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR24": {
+	"idx": 94,
+	"file": [
+	  "terr_24"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR26": {
+	"idx": 95,
+	"file": [
+	  "terr_26"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR34": {
+	"idx": 96,
+	"file": [
+	  "terr_34"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR35": {
+	"idx": 97,
+	"file": [
+	  "terr_35"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR37": {
+	"idx": 98,
+	"file": [
+	  "terr_37"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR20": {
+	"idx": 99,
+	"file": [
+	  "terr_20"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR19": {
+	"idx": 100,
+	"file": [
+	  "terr_19"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR38": {
+	"idx": 101,
+	"file": [
+	  "terr_38"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "BACKGR": {
+	"idx": 102,
+	"file": [
+	  "BackGr"
+	],
+	"scale": [
+	  0.25
+	]
+  },
+  "TERR45": {
+	"idx": 103,
+	"file": [
+	  "terr_45"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR46": {
+	"idx": 104,
+	"file": [
+	  "terr_46"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR47": {
+	"idx": 105,
+	"file": [
+	  "terr_47"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR48": {
+	"idx": 106,
+	"file": [
+	  "terr_48"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "EDITBOX": {
+	"idx": 107,
+	"file": [
+	  "EditBox"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "ZAMOK": {
+	"idx": 108,
+	"file": [
+	  "item_zamok"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "AMMO": {
+	"idx": 109,
+	"file": [
+	  "item_ammo"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR50": {
+	"idx": 110,
+	"file": [
+	  "terr_50"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR56": {
+	"idx": 111,
+	"file": [
+	  "terr_56"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR57": {
+	"idx": 112,
+	"file": [
+	  "terr_57"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR58": {
+	"idx": 113,
+	"file": [
+	  "terr_58"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TANKDEFENCE": {
+	"idx": 114,
+	"file": [
+	  "Defence"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "DEFENCE": {
+	"idx": 115,
+	"file": [
+	  "Item_Defence"
+	],
+	"scale": [
+	  0.04
+	]
+  },
+  "ABATIS": {
+	"idx": 116,
+	"file": [
+	  "Abatis"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR41": {
+	"idx": 117,
+	"file": [
+	  "terr_41"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR63": {
+	"idx": 118,
+	"file": [
+	  "terr_63"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR59": {
+	"idx": 119,
+	"file": [
+	  "terr_59"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR54": {
+	"idx": 120,
+	"file": [
+	  "Terr_54"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR53": {
+	"idx": 121,
+	"file": [
+	  "Terr_53"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR61": {
+	"idx": 122,
+	"file": [
+	  "Terr_61"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR64": {
+	"idx": 123,
+	"file": [
+	  "Terr_64"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR65": {
+	"idx": 124,
+	"file": [
+	  "Terr_65"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR66": {
+	"idx": 125,
+	"file": [
+	  "Terr_66"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR67": {
+	"idx": 126,
+	"file": [
+	  "Terr_67"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR68": {
+	"idx": 127,
+	"file": [
+	  "Terr_68"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR69": {
+	"idx": 128,
+	"file": [
+	  "Terr_69"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR70": {
+	"idx": 129,
+	"file": [
+	  "Terr_70"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR71": {
+	"idx": 130,
+	"file": [
+	  "Terr_71"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR76": {
+	"idx": 131,
+	"file": [
+	  "terr_76"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR77": {
+	"idx": 132,
+	"file": [
+	  "terr_77"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR78": {
+	"idx": 133,
+	"file": [
+	  "terr_78"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR79": {
+	"idx": 134,
+	"file": [
+	  "terr_79"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "FLYSHIP": {
+	"idx": 135,
+	"file": [
+	  "FlyShip"
+	],
+	"scale": [
+	  0.06
+	]
+  },
+  "TERR75": {
+	"idx": 136,
+	"file": [
+	  "terr_75"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "EVMIRROR": {
+	"idx": 137,
+	"file": [
+	  "EventObj_Mirror"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "EVPD": {
+	"idx": 138,
+	"file": [
+	  "Event_P_Down"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "EVPU": {
+	"idx": 139,
+	"file": [
+	  "Event_P_Up"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "EVDZOT": {
+	"idx": 140,
+	"file": [
+	  "Event_Dzot"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "EVBOMB": {
+	"idx": 141,
+	"file": [
+	  "Event_Bomb"
+	],
+	"scale": [
+	  0.04
+	]
+  },
+  "EVHOST": {
+	"idx": 142,
+	"file": [
+	  "Event_Host"
+	],
+	"scale": [
+	  0.03
+	]
+  },
+  "TERR90": {
+	"idx": 143,
+	"file": [
+	  "terr_90"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR91": {
+	"idx": 144,
+	"file": [
+	  "terr_91"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR92": {
+	"idx": 145,
+	"file": [
+	  "terr_92"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR93": {
+	"idx": 146,
+	"file": [
+	  "terr_93"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "EVDZOTD": {
+	"idx": 147,
+	"file": [
+	  "Event_Dzot_D"
+	],
+	"scale": [
+	  0.04
+	]
+  },
+  "BULLET3": {
+	"idx": 148,
+	"file": [
+	  "Bullet_Electro",
+	  "Bullet_3"
+	],
+	"scale": [
+	  0.04
+	]
+  },
+  "ELECTRO": {
+	"idx": 149,
+	"file": [
+	  "item_Electro"
+	],
+	"scale": [
+	  0.035
+	]
+  },
+  "TERR81": {
+	"idx": 150,
+	"file": [
+	  "Terr_81"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR82": {
+	"idx": 151,
+	"file": [
+	  "Terr_82"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR83": {
+	"idx": 152,
+	"file": [
+	  "Terr_83"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "EVREEC": {
+	"idx": 153,
+	"file": [
+	  "Event_Rec"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "BOXLIGHT": {
+	"idx": 154,
+	"file": [
+	  "effect_boxlgt"
+	],
+	"scale": [
+	  0.025
+	]
+  },
+  "ARMGUN": {
+	"idx": 155,
+	"file": [
+	  "Head_Gun"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "ARMKULEMET": {
+	"idx": 156,
+	"file": [
+	  "Head_RotateGun"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "ARMRAKET": {
+	"idx": 157,
+	"file": [
+	  "Head_Raket"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "ARMELECTRO": {
+	"idx": 158,
+	"file": [
+	  "Head_Electro"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "ARMFIRE": {
+	"idx": 159,
+	"file": [
+	  "Head_Fire"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "ADDARMOR": {
+	"idx": 160,
+	"file": [
+	  "Add_ARMOR"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "ADDARMORII": {
+	"idx": 161,
+	"file": [
+	  "Add_ARMOR_II"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "ADDARMORIII": {
+	"idx": 162,
+	"file": [
+	  "Add_ARMOR_III"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "ADDSPB": {
+	"idx": 163,
+	"file": [
+	  "Add_SP_B"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "ADDSPBII": {
+	"idx": 164,
+	"file": [
+	  "Add_SP_B_II"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "ADDSPBIII": {
+	"idx": 165,
+	"file": [
+	  "Add_SP_B_III"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "BULLETRAKETA": {
+	"idx": 166,
+	"file": [
+	  "Bullet_Raketa"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "BULLETSHOCK": {
+	"idx": 167,
+	"file": [
+	  "Bullet_Shock"
+	],
+	"scale": [
+	  0.07
+	]
+  },
+  "BULLETSHSC": {
+	"idx": 168,
+	"file": [
+	  "Bullet_Shock_Sc"
+	],
+	"scale": [
+	  0.07
+	]
+  },
+  "ADDSPF": {
+	"idx": 169,
+	"file": [
+	  "Add_SP_F"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "ADDSPFII": {
+	"idx": 170,
+	"file": [
+	  "Add_SP_F_II"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "ADDSPFIII": {
+	"idx": 171,
+	"file": [
+	  "Add_SP_F_III"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "ADDSPM": {
+	"idx": 172,
+	"file": [
+	  "Add_SP_M"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "ADDSPMII": {
+	"idx": 173,
+	"file": [
+	  "Add_SP_M_II"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "ADDSPMIII": {
+	"idx": 174,
+	"file": [
+	  "Add_SP_M_III"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "ADDUN": {
+	"idx": 176,
+	"file": [
+	  "Add_UN"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "ADDUNII": {
+	"idx": 177,
+	"file": [
+	  "Add_UN_II"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "ADDUNIII": {
+	"idx": 178,
+	"file": [
+	  "Add_UN_III"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "ARMSHOCK": {
+	"idx": 179,
+	"file": [
+	  "Head_Shock"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "EVNUCTANK": {
+	"idx": 180,
+	"file": [
+	  "EventObj_NucTank"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "MSEGY": {
+	"idx": 181,
+	"file": [
+	  "MapShow_Egypt"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "MSFOR": {
+	"idx": 182,
+	"file": [
+	  "MapShow_Forest"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "MSFORP": {
+	"idx": 183,
+	"file": [
+	  "MapShow_ForestP"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "MSICE": {
+	"idx": 184,
+	"file": [
+	  "ms_ice",
+	  "MapShow_Ice"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "SKY": {
+	"idx": 185,
+	"file": [
+	  "Sky"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TANKBRON": {
+	"idx": 186,
+	"file": [
+	  "Tank_Bron"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TANKELECTRO": {
+	"idx": 187,
+	"file": [
+	  "Tank_Electro"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TL90": {
+	"idx": 188,
+	"file": [
+	  "TankLive_90"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TL70": {
+	"idx": 189,
+	"file": [
+	  "TankLive_70"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TL50": {
+	"idx": 190,
+	"file": [
+	  "TankLive_50"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TL30": {
+	"idx": 191,
+	"file": [
+	  "TankLive_30"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TL10": {
+	"idx": 192,
+	"file": [
+	  "TankLive_10"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "MSTREE": {
+	"idx": 193,
+	"file": [
+	  "ms_tree",
+	  "MapShow_3D_Tree1"
+	],
+	"scale": [
+	  0.05,
+	  0.6
+	]
+  },
+  "MSTUND": {
+	"idx": 194,
+	"file": [
+	  "ms_Tund",
+	  "MapShow_3D_Tree2"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "MSEGYPT": {
+	"idx": 195,
+	"file": [
+	  "ms_egypt",
+	  "MapShow_3D_Tree3"
+	],
+	"scale": [
+	  0.05,
+	  0.6
+	]
+  },
+  "MSFOREST": {
+	"idx": 196,
+	"file": [
+	  "ms_forest",
+	  "MapShow_3D_Forest"
+	],
+	"scale": [
+	  0.05,
+	  0.6
+	]
+  },
+  "MSSNOW": {
+	"idx": 197,
+	"file": [
+	  "ms_snow",
+	  "MapShow_3D_Snow"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "MSWATER": {
+	"idx": 198,
+	"file": [
+	  "ms_water",
+	  "MapShow_3D_Water"
+	],
+	"scale": [
+	  0.05,
+	  0.6
+	]
+  },
+  "MSSKY": {
+	"idx": 200,
+	"file": [
+	  "ms_sky",
+	  "MapShow_3D_Sky"
+	],
+	"scale": [
+	  0.05,
+	  0.66,
+	  0.6
+	]
+  },
+  "LINE": {
+	"idx": 201,
+	"file": [
+	  "Line"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "BLMPSH": {
+	"idx": 202,
+	"file": [
+	  "Bullet_MapShow"
+	],
+	"scale": [
+	  0.006
+	]
+  },
+  "BIGCRASH": {
+	"idx": 203,
+	"file": [
+	  "Crash"
+	],
+	"scale": [
+	  0.029,
+	  0.025
+	]
+  },
+  "TERR95": {
+	"idx": 204,
+	"file": [
+	  "Terr_95"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TANKFIRE": {
+	"idx": 205,
+	"file": [
+	  "Tank_Fire"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TANKROTGUN": {
+	"idx": 206,
+	"file": [
+	  "Tank_RotGun"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "ADDARMORIIII": {
+	"idx": 207,
+	"file": [
+	  "Add_ARMOR_IIII"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "ADDSPBIIII": {
+	"idx": 208,
+	"file": [
+	  "Add_SP_B_IIII"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "ADDSPFIIII": {
+	"idx": 209,
+	"file": [
+	  "Add_SP_F_IIII"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "ADDSPMIIII": {
+	"idx": 210,
+	"file": [
+	  "Add_SP_M_IIII"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "FLAGI": {
+	"idx": 211,
+	"file": [
+	  "Flag_I"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "FLAGII": {
+	"idx": 212,
+	"file": [
+	  "Flag_II"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "FLAGIII": {
+	"idx": 213,
+	"file": [
+	  "Flag_III"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "ADDUNIIII": {
+	"idx": 214,
+	"file": [
+	  "Add_UN_IIII"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR85": {
+	"idx": 215,
+	"file": [
+	  "Terr_85"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR86": {
+	"idx": 216,
+	"file": [
+	  "Terr_86"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR87": {
+	"idx": 217,
+	"file": [
+	  "Terr_87"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR88": {
+	"idx": 218,
+	"file": [
+	  "Terr_88"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR84": {
+	"idx": 220,
+	"file": [
+	  "Terr_84"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR100": {
+	"idx": 221,
+	"file": [
+	  "Terr_100"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR101": {
+	"idx": 222,
+	"file": [
+	  "Terr_101"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR102": {
+	"idx": 223,
+	"file": [
+	  "Terr_102"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR103": {
+	"idx": 224,
+	"file": [
+	  "Terr_103"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR74": {
+	"idx": 225,
+	"file": [
+	  "Terr_74"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "ITEMLIGHT": {
+	"idx": 226,
+	"file": [
+	  "ItemLight"
+	],
+	"scale": [
+	  0.037
+	]
+  },
+  "TERR106": {
+	"idx": 227,
+	"file": [
+	  "Terr_106"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR107": {
+	"idx": 228,
+	"file": [
+	  "Terr_107"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR108": {
+	"idx": 229,
+	"file": [
+	  "Terr_108"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR109": {
+	"idx": 230,
+	"file": [
+	  "Terr_109"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR110": {
+	"idx": 231,
+	"file": [
+	  "Terr_110"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR98": {
+	"idx": 232,
+	"file": [
+	  "Terr_98"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR99": {
+	"idx": 233,
+	"file": [
+	  "Terr_99"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR104": {
+	"idx": 234,
+	"file": [
+	  "Terr_104"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR105": {
+	"idx": 235,
+	"file": [
+	  "Terr_105"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR96": {
+	"idx": 236,
+	"file": [
+	  "Terr_96"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "TERR97": {
+	"idx": 237,
+	"file": [
+	  "Terr_97"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "EVSHIP": {
+	"idx": 238,
+	"file": [
+	  "Event_Ship"
+	],
+	"scale": [
+	  0.05
+	]
+  },
+  "BOSS3": {
+	"idx": 239,
+	"file": [
+	  "Tank_DarkBoss"
+	],
+	"scale": [
+	  0.05
+	]
+  }
+}

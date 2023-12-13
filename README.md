@@ -55,37 +55,32 @@ With recent drama with Unity, to truely achive open-source nature, we've used *G
 
 <br>
 
-# Why there's no game?
+# Where's the game? How can I play?
 
-Currently, we couldn't solve the hard-dependency to Armada Tanks game resources, thus uploading godot project right now will violate the copyright.
+### Test Builds
 
-We are planning to provide something similar to *OpenRCT2*'s approach, and indeed tested that it's possible.
+Considering that original game *Armada Tanks* is officially free -
+I decided to distribute current build. But since this being open source repo, I can't simply put that as release here,
+as it clearly contain ENKORD's textures or audios that can't be open sourced - so will be hosting it separately on
+Google Drive.
 
-But since that will make debugging and testing process much harder, we designed such runtime loader structures yet
-still pointing it to in-project(aka `res://`) path.
+By downloading [OpenAT Builds](https://drive.google.com/drive/folders/1BH4gQ538MWcWU4JmLSv4vDZ8O78YH99e?usp=drive_link),
+*YOU ARE AGREEING TO ALSO [DOWNLOAD THE ORIGINAL GAME](https://www.enkord.com/game/armada-tanks/info/).*
 
+Currently game is built for:
+- Windows
+- Linux/X11
+- Android (Main game requires keyboard and mouse for now)
 
-```gdscript
-## Actual usage of such loaders
+### Building yourself
 
-    # setup model & check if null, if so return false
-    _model = ModelLoader.load_name(model_name)
-    
-    ...
-    
-    # setup texture
-    TextureLoader.set_mat(_model, tex_name, override)
+Since this being open-source repository, all the game's source codes are open, however you'll need to follow few more
+steps to fill in the missing files.
 
-    ...
-
-    # setup collision
-    _setup_collisions(CollisionLoader.get_area(model_name), collision_layer)
-```
-
-
-After game implementation is complete, we will start migrating hard dependency outside game so we can upload the project file.
-Then dependencies can be supplied by users manually, albeit it might require users installing blender and running few scripts!
-
+1. Download & install original *Armada Tanks* game from [Official site](https://www.enkord.com/game/armada-tanks/info/).
+2. Follow [instruction](GodotProject/README.md).
+3. Open `GodotProject/project.godot` in Godot Editor
+4. Play or download build templates and build yourself!
 
 <br>
 

@@ -1,0 +1,50 @@
+[gd_scene load_steps=5 format=3 uid="uid://dg3e0idjde6ru"]
+
+[ext_resource type="PackedScene" uid="uid://k3us51iu4hiy" path="res://UI/Elements/blue_box_titled.tscn" id="1_20xso"]
+[ext_resource type="Script" path="res://UI/UI Scenes/ui_new_user.gd" id="1_ff3jg"]
+[ext_resource type="PackedScene" uid="uid://n653ro3f33ss" path="res://UI/Elements/ok_button.tscn" id="2_x20pw"]
+[ext_resource type="PackedScene" uid="uid://b0jgw0cxivvx7" path="res://UI/Elements/type_box.tscn" id="3_h4alv"]
+
+[node name="ui_new_user" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ff3jg")
+
+[node name="blue_box_titled" parent="." instance=ExtResource("1_20xso")]
+layout_mode = 1
+offset_left = -318.0
+offset_top = -177.0
+offset_right = 318.0
+offset_bottom = 177.0
+title = "Please enter your name."
+
+[node name="ok_button" parent="blue_box_titled" instance=ExtResource("2_x20pw")]
+layout_mode = 1
+offset_top = 68.0
+offset_bottom = 108.0
+text = "OK"
+
+[node name="MarginContainer" type="MarginContainer" parent="blue_box_titled"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -216.5
+offset_top = -20.0
+offset_right = 216.5
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="type_box" parent="blue_box_titled/MarginContainer" instance=ExtResource("3_h4alv")]
+layout_mode = 2
+max_length = 30
+
+[connection signal="button_clicked" from="blue_box_titled/ok_button" to="." method="_on_ok_button_button_clicked"]
+[connection signal="text_submitted" from="blue_box_titled/MarginContainer/type_box" to="." method="_on_type_box_text_submitted"]

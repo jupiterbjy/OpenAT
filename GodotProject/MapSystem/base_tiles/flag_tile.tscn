@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://djbe8bf6ptj0c"]
+
+[ext_resource type="PackedScene" uid="uid://dhyq0uo1kpciy" path="res://MapSystem/base_tiles/base_healthed_tile.tscn" id="1_qqpvl"]
+[ext_resource type="Script" path="res://MapSystem/base_tiles/flag_tile.gd" id="2_nhny4"]
+[ext_resource type="PackedScene" uid="uid://brf8xv4jhxe4b" path="res://Commons/DebugGizmos/flag_gizmo.tscn" id="3_8dqd6"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3em3y"]
+size = Vector3(1, 0.5, 1)
+
+[node name="flag_tile" instance=ExtResource("1_qqpvl")]
+script = ExtResource("2_nhny4")
+
+[node name="hitbox" type="Area3D" parent="." index="1" groups=["allie", "flag", "surface_hard"]]
+collision_layer = 8272
+collision_mask = 0
+monitoring = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="hitbox" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
+shape = SubResource("BoxShape3D_3em3y")
+
+[node name="flag_gizmo" parent="hitbox" index="1" instance=ExtResource("3_8dqd6")]
+
+[connection signal="destroyed" from="health_bar" to="." method="_on_health_bar_destroyed"]

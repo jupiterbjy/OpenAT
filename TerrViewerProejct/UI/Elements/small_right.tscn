@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://ly3jbk00pl2n"]
+
+[ext_resource type="Texture2D" uid="uid://cdjpymv3sungn" path="res://UI/Resources/button_right.png" id="1_1iugy"]
+[ext_resource type="Texture2D" uid="uid://ly0dkkxm8q71" path="res://UI/Resources/button_right_highlight.png" id="2_4xxj1"]
+[ext_resource type="Script" path="res://UI/Elements/button.gd" id="3_ohuvf"]
+
+[node name="right" type="TextureButton"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("1_1iugy")
+texture_hover = ExtResource("2_4xxj1")
+script = ExtResource("3_ohuvf")
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="pressed" from="." to="." method="_on_pressed"]

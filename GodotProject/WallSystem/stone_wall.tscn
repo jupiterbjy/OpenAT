@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://l2qut1p5h8p6"]
+
+[ext_resource type="PackedScene" uid="uid://c52w8mwfqty3b" path="res://WallSystem/wall.tscn" id="1_qf7v3"]
+[ext_resource type="Script" path="res://WallSystem/stone_wall.gd" id="2_nynpr"]
+
+[node name="stone_wall" instance=ExtResource("1_qf7v3")]
+script = ExtResource("2_nynpr")
+
+[node name="collision" parent="." index="0" groups=["surface_hard", "wall"]]
+collision_layer = 2048
+collision_mask = 0

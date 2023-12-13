@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://blbo5yopg5rd2"]
+
+[ext_resource type="Script" path="res://CamSystem/cam_manager.gd" id="1_8cb7x"]
+[ext_resource type="PackedScene" uid="uid://bvxg6ikeqqydc" path="res://CamSystem/orbit_view_cam.tscn" id="2_x8l8w"]
+[ext_resource type="PackedScene" uid="uid://dppc4ifkcreav" path="res://CamSystem/follow_cam.tscn" id="3_oar8o"]
+[ext_resource type="PackedScene" uid="uid://eoqw5rvjb7dk" path="res://CamSystem/ingame_cam.tscn" id="4_vhaj2"]
+
+[node name="cam_manager" type="Node3D"]
+process_mode = 3
+script = ExtResource("1_8cb7x")
+
+[node name="orbit_view_cam" parent="." instance=ExtResource("2_x8l8w")]
+visible = false
+
+[node name="follow_cam" parent="." instance=ExtResource("3_oar8o")]
+visible = false
+
+[node name="ingame_cam" parent="." instance=ExtResource("4_vhaj2")]
+visible = false

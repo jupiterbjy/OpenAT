@@ -1,0 +1,95 @@
+[gd_scene load_steps=9 format=3 uid="uid://b8636ech50rtc"]
+
+[ext_resource type="Script" path="res://UI/UI Scenes/ui_main_menu.gd" id="1_vhlo3"]
+[ext_resource type="PackedScene" uid="uid://5bixdvxtw5v1" path="res://UI/Elements/blue_box.tscn" id="2_ww66c"]
+[ext_resource type="PackedScene" uid="uid://n653ro3f33ss" path="res://UI/Elements/ok_button.tscn" id="3_ah1yq"]
+[ext_resource type="PackedScene" uid="uid://dnn0cr17e734f" path="res://UI/Elements/normal_button.tscn" id="4_088d5"]
+[ext_resource type="PackedScene" uid="uid://cfdtvarord05o" path="res://UI/Elements/no_button.tscn" id="5_agygr"]
+[ext_resource type="PackedScene" uid="uid://b2bxlotnrm6xk" path="res://UI/Elements/Logo/logo.tscn" id="7_gmvcw"]
+[ext_resource type="PackedScene" uid="uid://bto4wt5sko52r" path="res://UI/Elements/player_change.tscn" id="9_j8sk7"]
+[ext_resource type="FontFile" uid="uid://h8rhgl0terod" path="res://UI/Fonts/FontAdv_FD_128.fnt" id="10_gpjeo"]
+
+[node name="ui_main_menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_vhlo3")
+
+[node name="main_menu_box" parent="." instance=ExtResource("2_ww66c")]
+layout_mode = 1
+offset_left = -215.0
+offset_top = -79.0
+offset_right = 215.0
+offset_bottom = 364.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="main_menu_box"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -160.0
+offset_right = 100.0
+offset_bottom = 160.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 27
+alignment = 1
+
+[node name="play_button" parent="main_menu_box/VBoxContainer" instance=ExtResource("3_ah1yq")]
+layout_mode = 2
+text = "PLAY"
+
+[node name="option_button" parent="main_menu_box/VBoxContainer" instance=ExtResource("4_088d5")]
+layout_mode = 2
+text = "Options"
+
+[node name="highscore_button" parent="main_menu_box/VBoxContainer" instance=ExtResource("4_088d5")]
+layout_mode = 2
+text = "Hiscore"
+
+[node name="credits_button" parent="main_menu_box/VBoxContainer" instance=ExtResource("4_088d5")]
+layout_mode = 2
+text = "Credits"
+
+[node name="exit_button" parent="main_menu_box/VBoxContainer" instance=ExtResource("5_agygr")]
+layout_mode = 2
+text = "Exit"
+
+[node name="logo" parent="." instance=ExtResource("7_gmvcw")]
+layout_mode = 1
+offset_top = 24.0
+offset_bottom = 24.0
+
+[node name="version" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -37.0
+offset_top = -23.0
+offset_right = 37.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("10_gpjeo")
+theme_override_font_sizes/font_size = 14
+text = "Version 0.1a"
+horizontal_alignment = 1
+
+[node name="player_change" parent="." instance=ExtResource("9_j8sk7")]
+layout_mode = 1
+
+[connection signal="button_clicked" from="main_menu_box/VBoxContainer/play_button" to="." method="_on_play_button_button_clicked"]
+[connection signal="button_clicked" from="main_menu_box/VBoxContainer/option_button" to="." method="_on_option_button_button_clicked"]
+[connection signal="button_clicked" from="main_menu_box/VBoxContainer/highscore_button" to="." method="_on_stage_editor_button_button_clicked"]
+[connection signal="button_clicked" from="main_menu_box/VBoxContainer/credits_button" to="." method="_on_credits_button_button_clicked"]
+[connection signal="button_clicked" from="main_menu_box/VBoxContainer/exit_button" to="." method="_on_exit_button_button_clicked"]

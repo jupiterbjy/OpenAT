@@ -1,0 +1,150 @@
+[gd_scene load_steps=9 format=3 uid="uid://mismq8nshjo2"]
+
+[ext_resource type="Script" path="res://UI/Elements/WorkshopElements/weapon_item.gd" id="1_vkqp8"]
+[ext_resource type="Texture2D" uid="uid://rmwllp0iqyf2" path="res://Textures/Raw/Button.png" id="2_848d0"]
+[ext_resource type="Texture2D" uid="uid://bnaffre3vdplm" path="res://Textures/Raw/Shop.JPG" id="3_pamwp"]
+[ext_resource type="FontFile" uid="uid://h8rhgl0terod" path="res://UI/Fonts/FontAdv_FD_128.fnt" id="4_kt5pm"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_23wlo"]
+resource_local_to_scene = true
+atlas = ExtResource("2_848d0")
+region = Rect2(0, 384, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2hyvv"]
+resource_local_to_scene = true
+atlas = ExtResource("3_pamwp")
+region = Rect2(0, 320, 64, 64)
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_al3rt"]
+blend_mode = 3
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8cea7"]
+resource_local_to_scene = true
+atlas = ExtResource("2_848d0")
+region = Rect2(384, 0, 64, 56)
+
+[node name="weapon_item" type="HBoxContainer"]
+custom_minimum_size = Vector2(191, 64)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -119.0
+offset_top = -44.5
+offset_right = 119.0
+offset_bottom = 19.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+script = ExtResource("1_vkqp8")
+weapon_name = "Cannon"
+price = 100
+
+[node name="selected_bg" type="Control" parent="."]
+layout_mode = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="selected_bg"]
+position = Vector2(88.5, 32)
+scale = Vector2(1.14113, 1.02083)
+texture = ExtResource("2_848d0")
+region_enabled = true
+region_rect = Rect2(264, 288, 248, 96)
+
+[node name="spacer2" type="Control" parent="."]
+custom_minimum_size = Vector2(15, 0)
+layout_mode = 2
+
+[node name="available_icon" type="Control" parent="."]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+
+[node name="up_arrow" type="Sprite2D" parent="available_icon"]
+z_index = 1
+position = Vector2(0, 21)
+scale = Vector2(0.5, 0.5)
+texture = SubResource("AtlasTexture_23wlo")
+region_rect = Rect2(0, 384, 64, 64)
+
+[node name="icon" type="Control" parent="."]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+
+[node name="icon_bg" type="ColorRect" parent="icon"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 0
+offset_right = 64.0
+offset_bottom = 64.0
+
+[node name="icon_button" type="TextureButton" parent="icon"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+offset_right = 64.0
+offset_bottom = 64.0
+mouse_default_cursor_shape = 2
+texture_normal = SubResource("AtlasTexture_2hyvv")
+
+[node name="icon_blocked" type="Control" parent="icon"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -32.0
+offset_top = -32.0
+offset_right = 32.0
+offset_bottom = 32.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="blocked_sprite" type="Sprite2D" parent="icon/icon_blocked"]
+material = SubResource("CanvasItemMaterial_al3rt")
+position = Vector2(32, 32)
+texture = ExtResource("3_pamwp")
+region_enabled = true
+region_rect = Rect2(0, 256, 64, 64)
+
+[node name="purchased_icon" type="Control" parent="."]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="purchased" type="Sprite2D" parent="purchased_icon"]
+z_index = 1
+position = Vector2(-17, 38)
+texture = SubResource("AtlasTexture_8cea7")
+
+[node name="spacer" type="Control" parent="."]
+custom_minimum_size = Vector2(15, 0)
+layout_mode = 2
+
+[node name="texts" type="VBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="name_label" type="Label" parent="texts"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_kt5pm")
+theme_override_font_sizes/font_size = 18
+text = "Armor"
+
+[node name="price_label" type="Label" parent="texts"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_kt5pm")
+theme_override_font_sizes/font_size = 18
+text = "Price 100
+"
+
+[node name="state_label" type="Label" parent="texts"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.341176, 0.364706, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("4_kt5pm")
+theme_override_font_sizes/font_size = 18
+text = "not enough money"
+
+[connection signal="mouse_entered" from="icon/icon_button" to="." method="_on_icon_button_mouse_entered"]
+[connection signal="mouse_exited" from="icon/icon_button" to="." method="_on_icon_button_mouse_exited"]
+[connection signal="pressed" from="icon/icon_button" to="." method="_on_icon_button_pressed"]

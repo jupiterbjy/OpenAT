@@ -1,0 +1,99 @@
+[gd_scene load_steps=9 format=3 uid="uid://dgegpc5c3mr02"]
+
+[ext_resource type="Script" path="res://Scenes/TileViewer/terr_viewer.gd" id="1_ghfxt"]
+[ext_resource type="PackedScene" uid="uid://5bixdvxtw5v1" path="res://UI/Elements/blue_box.tscn" id="1_vrjso"]
+[ext_resource type="PackedScene" uid="uid://clt4152mf1f65" path="res://UI/Elements/small_left.tscn" id="2_ecoos"]
+[ext_resource type="FontFile" uid="uid://dg8idnhjxgdk8" path="res://UI/Fonts/FontAdv_FD.fnt" id="3_ryrpn"]
+[ext_resource type="PackedScene" uid="uid://ly3jbk00pl2n" path="res://UI/Elements/small_right.tscn" id="4_k1fy2"]
+[ext_resource type="PackedScene" uid="uid://dgvtuwsicd4lm" path="res://Scenes/TileViewer/compass.tscn" id="5_xucee"]
+[ext_resource type="PackedScene" uid="uid://dnn0cr17e734f" path="res://UI/Elements/normal_button.tscn" id="7_038k4"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_ntmx3"]
+
+[node name="terr_viewer" type="Node3D"]
+script = ExtResource("1_ghfxt")
+rotate_speed = null
+
+[node name="cam" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.926009, 0.377501, 0, -0.377501, 0.926009, 4.76837e-07, 64.6576, 108.618)
+fov = 35.0
+
+[node name="turntable" type="Node3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="turntable"]
+mesh = SubResource("BoxMesh_ntmx3")
+
+[node name="blue_box" parent="." instance=ExtResource("1_vrjso")]
+anchors_preset = 2
+anchor_left = 0.0
+anchor_top = 1.0
+anchor_right = 0.0
+anchor_bottom = 1.0
+offset_left = 0.0
+offset_top = -95.0
+offset_right = 265.0
+offset_bottom = 0.0
+grow_horizontal = 1
+grow_vertical = 0
+patch_margin_top = 47
+
+[node name="HBoxContainer" type="HBoxContainer" parent="blue_box"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -90.5
+offset_top = -17.5
+offset_right = 90.5
+offset_bottom = 17.5
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="left" parent="blue_box/HBoxContainer" instance=ExtResource("2_ecoos")]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="blue_box/HBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_ryrpn")
+text = "Template"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="right" parent="blue_box/HBoxContainer" instance=ExtResource("4_k1fy2")]
+layout_mode = 2
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+offset_right = 256.0
+offset_bottom = 256.0
+grow_vertical = 0
+scale = Vector2(0.55, 0.55)
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
+own_world_3d = true
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(256, 256)
+render_target_update_mode = 4
+
+[node name="compass" parent="SubViewportContainer/SubViewport" instance=ExtResource("5_xucee")]
+
+[node name="screenshot_button" parent="." instance=ExtResource("7_038k4")]
+anchors_preset = 2
+anchor_left = 0.0
+anchor_top = 1.0
+anchor_right = 0.0
+anchor_bottom = 1.0
+offset_left = 32.0
+offset_top = -130.0
+offset_right = 232.0
+offset_bottom = -90.0
+grow_horizontal = 1
+grow_vertical = 0
+text = "Take Screenshot"
+
+[connection signal="pressed" from="blue_box/HBoxContainer/left" to="." method="_on_left_pressed"]
+[connection signal="pressed" from="blue_box/HBoxContainer/right" to="." method="_on_right_pressed"]
+[connection signal="button_clicked" from="screenshot_button" to="." method="_on_screenshot_button_button_clicked"]

@@ -1,0 +1,101 @@
+[gd_scene load_steps=14 format=3 uid="uid://br31m0xsaulm5"]
+
+[ext_resource type="Texture2D" uid="uid://clc5a2hbvxrav" path="res://Textures/Raw/ScreenPart.png" id="1_le5qa"]
+[ext_resource type="Script" path="res://EffectSystem/score_particle.gd" id="2_t1ket"]
+[ext_resource type="AudioStream" uid="uid://b2aoih6unqxmb" path="res://UI/Sound/score_add.wav" id="3_f3aha"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_uub5v"]
+particles_animation = true
+particles_anim_h_frames = 8
+particles_anim_v_frames = 8
+particles_anim_loop = true
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_qcyk8"]
+particle_flag_disable_z = true
+direction = Vector3(0, 1, 0)
+spread = 180.0
+gravity = Vector3(0, 0, 0)
+initial_velocity_min = 100.0
+initial_velocity_max = 200.0
+orbit_velocity_min = 0.0
+orbit_velocity_max = 0.0
+damping_min = 100.0
+damping_max = 100.0
+scale_min = 0.5
+anim_offset_min = 0.1289
+anim_offset_max = 0.26
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_ae4qn"]
+blend_mode = 1
+particles_animation = true
+particles_anim_h_frames = 4
+particles_anim_v_frames = 4
+particles_anim_loop = false
+
+[sub_resource type="Gradient" id="Gradient_5r3vd"]
+offsets = PackedFloat32Array(0, 0.486339, 1)
+colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_wr028"]
+gradient = SubResource("Gradient_5r3vd")
+
+[sub_resource type="Gradient" id="Gradient_65k43"]
+offsets = PackedFloat32Array(0, 0.491803, 1)
+colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_p2q1w"]
+gradient = SubResource("Gradient_65k43")
+
+[sub_resource type="Curve" id="Curve_dkpuy"]
+max_value = 3.0
+_data = [Vector2(0, 0), 0.0, 1.6778, 0, 0, Vector2(0.986784, 2.08185), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_22xut"]
+curve = SubResource("Curve_dkpuy")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_jc8gk"]
+lifetime_randomness = 0.5
+emission_shape = 1
+emission_sphere_radius = 64.0
+particle_flag_disable_z = true
+spread = 180.0
+gravity = Vector3(0, 0, 0)
+orbit_velocity_min = 0.0
+orbit_velocity_max = 0.0
+scale_curve = SubResource("CurveTexture_22xut")
+color_ramp = SubResource("GradientTexture1D_p2q1w")
+color_initial_ramp = SubResource("GradientTexture1D_wr028")
+anim_offset_min = 0.7551
+anim_offset_max = 0.7551
+
+[node name="score_particle" type="GPUParticles2D"]
+process_mode = 3
+z_index = 1
+material = SubResource("CanvasItemMaterial_uub5v")
+emitting = false
+amount = 2
+process_material = SubResource("ParticleProcessMaterial_qcyk8")
+texture = ExtResource("1_le5qa")
+one_shot = true
+script = ExtResource("2_t1ket")
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+material = SubResource("CanvasItemMaterial_ae4qn")
+position = Vector2(1, 0)
+emitting = false
+amount = 1
+process_material = SubResource("ParticleProcessMaterial_jc8gk")
+texture = ExtResource("1_le5qa")
+one_shot = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_f3aha")
+autoplay = true
+bus = &"UISound"
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

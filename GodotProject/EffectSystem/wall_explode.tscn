@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://drejfi186kdtc"]
+
+[ext_resource type="Script" path="res://EffectSystem/wall_explode.gd" id="1_8bwwv"]
+[ext_resource type="AudioStream" uid="uid://nwygyugy6po0" path="res://SoundSystem/Sounds/CrashWall.wav" id="2_njclv"]
+
+[node name="wall_explode" type="Node3D"]
+script = ExtResource("1_8bwwv")
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+autostart = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_njclv")
+autoplay = true
+bus = &"IngameSound"
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

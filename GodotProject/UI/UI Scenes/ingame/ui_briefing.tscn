@@ -1,0 +1,49 @@
+[gd_scene load_steps=6 format=3 uid="uid://5w8k180p4k2t"]
+
+[ext_resource type="PackedScene" uid="uid://k3us51iu4hiy" path="res://UI/Elements/blue_box_titled.tscn" id="1_hskpg"]
+[ext_resource type="Script" path="res://UI/UI Scenes/ingame/ui_briefing.gd" id="1_u8p2l"]
+[ext_resource type="PackedScene" uid="uid://dnn0cr17e734f" path="res://UI/Elements/normal_button.tscn" id="2_8vjmm"]
+[ext_resource type="PackedScene" uid="uid://n653ro3f33ss" path="res://UI/Elements/ok_button.tscn" id="3_im7gj"]
+[ext_resource type="PackedScene" uid="uid://b4dauo25ng15x" path="res://UI/Elements/objective_panel.tscn" id="5_6lm0o"]
+
+[node name="ui_briefing" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_u8p2l")
+
+[node name="blue_box_titled" parent="." instance=ExtResource("1_hskpg")]
+layout_mode = 1
+anchors_preset = 7
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = -288.0
+offset_top = -540.0
+offset_right = 288.0
+offset_bottom = -8.0
+grow_vertical = 0
+region_rect = Rect2(0, 0, 187, 191)
+title = "Objectives"
+
+[node name="workshop_button" parent="blue_box_titled" instance=ExtResource("2_8vjmm")]
+layout_mode = 1
+offset_top = 101.0
+offset_bottom = 141.0
+text = "Workshop"
+
+[node name="start_button" parent="blue_box_titled" instance=ExtResource("3_im7gj")]
+layout_mode = 1
+offset_top = 167.0
+offset_bottom = 207.0
+text = "Start"
+
+[node name="objective_panel" parent="blue_box_titled" instance=ExtResource("5_6lm0o")]
+layout_mode = 1
+offset_top = 152.0
+offset_bottom = 336.0
+
+[connection signal="button_clicked" from="blue_box_titled/workshop_button" to="." method="_on_workshop_button_button_clicked"]
+[connection signal="button_clicked" from="blue_box_titled/start_button" to="." method="_on_start_button_button_clicked"]

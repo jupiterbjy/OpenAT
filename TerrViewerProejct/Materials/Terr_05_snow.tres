@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://8j21mbinx4nv"]
+
+[ext_resource type="Texture2D" uid="uid://bi1xgeo8iy2cn" path="res://Textures/Raw/Terr_05_snow.JPG" id="1_ft26x"]
+
+[resource]
+shading_mode = 0
+albedo_texture = ExtResource("1_ft26x")

@@ -1,0 +1,55 @@
+[gd_scene load_steps=4 format=3 uid="uid://ci4b6xxu8tiqd"]
+
+[ext_resource type="Texture2D" uid="uid://cngp2tm4umdox" path="res://Textures/Raw/Face_trans.png" id="1_xfs8r"]
+[ext_resource type="FontFile" uid="uid://de378pv4wvph7" path="res://UI/Fonts/FontAdv_FD_224_Y.fnt" id="2_jue0t"]
+[ext_resource type="PackedScene" uid="uid://de5lvlfk8b115" path="res://UI/Elements/Dialogues/noise_effect.tscn" id="2_yqsn8"]
+
+[node name="dialogue_base" type="HBoxContainer"]
+offset_right = 132.0
+offset_bottom = 64.0
+
+[node name="Control" type="Control" parent="."]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="Control"]
+position = Vector2(64, 64)
+texture = ExtResource("1_xfs8r")
+hframes = 2
+vframes = 2
+frame = 2
+
+[node name="noise_effect" parent="Control" instance=ExtResource("2_yqsn8")]
+
+[node name="Control2" type="Control" parent="."]
+layout_mode = 2
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Control2"]
+custom_minimum_size = Vector2(500, 112)
+layout_mode = 2
+offset_right = 400.0
+offset_bottom = 112.0
+texture = ExtResource("1_xfs8r")
+region_rect = Rect2(128, 128, 112, 112)
+patch_margin_left = 16
+patch_margin_top = 16
+patch_margin_right = 16
+patch_margin_bottom = 16
+
+[node name="Label" type="Label" parent="Control2/NinePatchRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -198.0
+offset_top = -29.0
+offset_right = 198.0
+offset_bottom = 29.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_jue0t")
+theme_override_font_sizes/font_size = 24
+text = "Congratulations! You've won the battle!"
+vertical_alignment = 1

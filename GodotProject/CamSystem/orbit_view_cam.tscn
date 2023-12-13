@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bvxg6ikeqqydc"]
+
+[ext_resource type="Script" path="res://CamSystem/cam_rotate_axis_view_only.gd" id="1_ls7i6"]
+[ext_resource type="PackedScene" uid="uid://d0twgbmyye825" path="res://Commons/DebugGizmos/cam_gizmo.tscn" id="2_3jpd0"]
+
+[node name="orbit_view_cam" type="Node3D"]
+script = ExtResource("1_ls7i6")
+
+[node name="cam_x_rot_axis" type="Node3D" parent="."]
+transform = Transform3D(0.998112, 0, -0.0614144, 0, 1, 0, 0.0614144, 0, 0.998112, 0, 0, 0)
+
+[node name="orbit_cam" type="Camera3D" parent="cam_x_rot_axis"]
+transform = Transform3D(0.999985, -0.0053312, -0.00133512, 0.00549035, 0.958211, 0.286008, -0.000245441, -0.286011, 0.958227, -0.180163, 3.718, 16.2891)
+current = true
+fov = 40.0
+
+[node name="cam_gizmo" parent="." instance=ExtResource("2_3jpd0")]

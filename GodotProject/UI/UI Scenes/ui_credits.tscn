@@ -1,0 +1,303 @@
+[gd_scene load_steps=8 format=3 uid="uid://ckxse7q45n08j"]
+
+[ext_resource type="Script" path="res://UI/UI Scenes/ui_credits.gd" id="1_a47er"]
+[ext_resource type="PackedScene" uid="uid://k3us51iu4hiy" path="res://UI/Elements/blue_box_titled.tscn" id="2_8m1u2"]
+[ext_resource type="FontFile" uid="uid://wp1gar4mv6d6" path="res://UI/Fonts/FontAdv_FD_224.fnt" id="3_iweyw"]
+[ext_resource type="FontFile" uid="uid://de378pv4wvph7" path="res://UI/Fonts/FontAdv_FD_224_Y.fnt" id="4_qosff"]
+[ext_resource type="PackedScene" uid="uid://n653ro3f33ss" path="res://UI/Elements/ok_button.tscn" id="4_v6xo5"]
+[ext_resource type="FontFile" uid="uid://dfqapmhpqqv61" path="res://UI/Fonts/FontAdv_FD_224_R.fnt" id="6_8mvdg"]
+[ext_resource type="FontFile" uid="uid://h8rhgl0terod" path="res://UI/Fonts/FontAdv_FD_128.fnt" id="7_bty48"]
+
+[node name="ui_credits" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_a47er")
+
+[node name="blue_box_titled" parent="." instance=ExtResource("2_8m1u2")]
+layout_mode = 1
+offset_left = -339.5
+offset_top = -337.0
+offset_right = 339.5
+offset_bottom = 337.0
+title = "Credits"
+
+[node name="ok_button" parent="blue_box_titled" instance=ExtResource("4_v6xo5")]
+layout_mode = 1
+anchors_preset = 7
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -96.0
+offset_bottom = -56.0
+grow_vertical = 0
+text = "OK"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="blue_box_titled"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -108.0
+offset_top = -179.5
+offset_right = -68.0
+offset_bottom = 195.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 30
+
+[node name="middle_anchor" type="Control" parent="blue_box_titled/VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="name" type="Label" parent="blue_box_titled/VBoxContainer/middle_anchor"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -115.0
+offset_top = -29.0
+offset_bottom = 29.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_iweyw")
+theme_override_font_sizes/font_size = 26
+text = "Denis Kotov
+ "
+horizontal_alignment = 2
+
+[node name="description" type="Label" parent="blue_box_titled/VBoxContainer/middle_anchor"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -29.0
+offset_right = 298.0
+offset_bottom = 29.0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("4_qosff")
+theme_override_font_sizes/font_size = 26
+text = "    Game design, programmer,
+    Level design, Art & Graphics"
+
+[node name="middle_anchor2" type="Control" parent="blue_box_titled/VBoxContainer"]
+custom_minimum_size = Vector2(0, 25)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="name" type="Label" parent="blue_box_titled/VBoxContainer/middle_anchor2"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -135.0
+offset_top = -14.5
+offset_bottom = 14.5
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_iweyw")
+theme_override_font_sizes/font_size = 26
+text = "Pasha Oliynyk"
+horizontal_alignment = 2
+
+[node name="description" type="Label" parent="blue_box_titled/VBoxContainer/middle_anchor2"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -14.5
+offset_right = 200.0
+offset_bottom = 14.5
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("4_qosff")
+theme_override_font_sizes/font_size = 26
+text = "    Art & Graphics"
+
+[node name="middle_anchor3" type="Control" parent="blue_box_titled/VBoxContainer"]
+custom_minimum_size = Vector2(0, 25)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="name" type="Label" parent="blue_box_titled/VBoxContainer/middle_anchor3"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -187.0
+offset_top = -14.5
+offset_bottom = 14.5
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_iweyw")
+theme_override_font_sizes/font_size = 26
+text = "Yaroslav Yanovsky"
+horizontal_alignment = 2
+
+[node name="description" type="Label" parent="blue_box_titled/VBoxContainer/middle_anchor3"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -14.5
+offset_right = 136.0
+offset_bottom = 14.5
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("4_qosff")
+theme_override_font_sizes/font_size = 26
+text = "    Producer"
+
+[node name="middle_anchor4" type="Control" parent="blue_box_titled/VBoxContainer"]
+custom_minimum_size = Vector2(0, 25)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="name" type="Label" parent="blue_box_titled/VBoxContainer/middle_anchor4"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -115.0
+offset_top = -14.5
+offset_bottom = 14.5
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_iweyw")
+theme_override_font_sizes/font_size = 26
+text = "Message"
+horizontal_alignment = 2
+
+[node name="description" type="Label" parent="blue_box_titled/VBoxContainer/middle_anchor4"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -14.5
+offset_right = 366.0
+offset_bottom = 14.5
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("4_qosff")
+theme_override_font_sizes/font_size = 26
+text = "    Music Composition, Sound Design"
+
+[node name="middle_anchor5" type="Control" parent="blue_box_titled/VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="name" type="Label" parent="blue_box_titled/VBoxContainer/middle_anchor5"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -115.0
+offset_top = -29.0
+offset_bottom = 29.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_iweyw")
+theme_override_font_sizes/font_size = 26
+text = "jupiterbjy
+(Fan recreator)"
+horizontal_alignment = 2
+
+[node name="description" type="Label" parent="blue_box_titled/VBoxContainer/middle_anchor5"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -29.0
+offset_right = 298.0
+offset_bottom = 29.0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("6_8mvdg")
+theme_override_font_sizes/font_size = 26
+text = "    Godot Recreation
+    Font / Model / UI rebuild"
+
+[node name="middle_anchor6" type="Control" parent="blue_box_titled/VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="name" type="Label" parent="blue_box_titled/VBoxContainer/middle_anchor6"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -115.0
+offset_top = -29.0
+offset_bottom = 29.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_iweyw")
+theme_override_font_sizes/font_size = 26
+text = "ruminex
+(Fan recreator)"
+horizontal_alignment = 2
+
+[node name="description" type="Label" parent="blue_box_titled/VBoxContainer/middle_anchor6"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -29.0
+offset_right = 298.0
+offset_bottom = 29.0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("6_8mvdg")
+theme_override_font_sizes/font_size = 26
+text = "    Map Decipher / Recreation
+    Playtesting"
+
+[node name="notice" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -199.5
+offset_top = -49.0
+offset_right = 199.5
+offset_bottom = -32.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("7_bty48")
+theme_override_font_sizes/font_size = 14
+text = "OpenAT is fan recreation of Enkord Ltd.'s game Armada Tanks"
+
+[node name="version" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -37.0
+offset_top = -25.0
+offset_right = 37.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("7_bty48")
+theme_override_font_sizes/font_size = 14
+text = "Version 0.1a"
+
+[connection signal="button_clicked" from="blue_box_titled/ok_button" to="." method="_on_ok_button_button_clicked"]

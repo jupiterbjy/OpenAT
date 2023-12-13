@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://donvcaq57kwbm"]
+
+[ext_resource type="PackedScene" uid="uid://d1a8upwy7uais" path="res://TankSystem/base/tank_enemy_base.tscn" id="1_hsqmw"]
+
+[node name="tank_gatling" instance=ExtResource("1_hsqmw")]
+weapon_type = 1

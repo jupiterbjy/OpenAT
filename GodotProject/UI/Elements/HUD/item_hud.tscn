@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://i4w7ui865ic3"]
+
+[node name="item_hud" type="VBoxContainer"]
+custom_minimum_size = Vector2(152, 144)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -76.0
+offset_top = -24.0
+offset_right = 76.0
+offset_bottom = 24.0
+grow_horizontal = 2
+grow_vertical = 2

@@ -1,0 +1,243 @@
+[gd_scene load_steps=10 format=3 uid="uid://eoqw5rvjb7dk"]
+
+[ext_resource type="Script" path="res://CamSystem/ingame_cam.gd" id="1_lopbe"]
+[ext_resource type="PackedScene" uid="uid://d0twgbmyye825" path="res://Commons/DebugGizmos/cam_gizmo.tscn" id="2_1v25t"]
+
+[sub_resource type="Environment" id="Environment_4b1kk"]
+fog_density = 0.0
+
+[sub_resource type="Animation" id="Animation_imd05"]
+resource_name = "def_to_pause"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("cam:fov")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(0.329877, 1),
+"update": 0,
+"values": [30.3, 44.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("cam:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(0.329877, 1),
+"update": 0,
+"values": [Vector3(0, 17, 16.1), Vector3(-2.7, 5, 10.6)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("cam:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(0.329877, 1),
+"update": 0,
+"values": [Vector3(-0.846485, 0, 0), Vector3(-0.610865, -0.1309, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_amlap"]
+resource_name = "def_to_top"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("cam:fov")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.5),
+"transitions": PackedFloat32Array(-2, 2, 1, 1, 1, 1, 1, 1, 2),
+"update": 0,
+"values": [30.0, 30.0, 28.2, 23.9, 19.0, 14.9, 12.3, 10.9, 10.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("cam:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.7, 1.5),
+"transitions": PackedFloat32Array(-2, -2, 2),
+"update": 0,
+"values": [Vector3(0, 17, 16.1), Vector3(0, 25, 0), Vector3(0, 80, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("cam:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.7, 1.5),
+"transitions": PackedFloat32Array(-2, -2, 1),
+"update": 0,
+"values": [Vector3(-0.846485, 0, 0), Vector3(-1.5708, 0, 0), Vector3(-1.5708, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_vippe"]
+resource_name = "pause_to_def"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("cam:fov")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(0.5, 1),
+"update": 0,
+"values": [44.0, 30.3]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("cam:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(0.5, 1),
+"update": 0,
+"values": [Vector3(-2.7, 5, 10.6), Vector3(0, 17, 16.1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("cam:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(0.5, 1),
+"update": 0,
+"values": [Vector3(-0.610865, -0.1309, 0), Vector3(-0.846485, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_fnpol"]
+resource_name = "pause_to_top"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("cam:fov")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 3),
+"transitions": PackedFloat32Array(-3.605, 2, 2, 1, 1, 1, 1, 1, 1, 2),
+"update": 0,
+"values": [44.0, 30.0, 30.0, 28.2, 23.9, 19.0, 14.9, 12.3, 10.9, 10.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("cam:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 2.1, 2.2, 3),
+"transitions": PackedFloat32Array(-3.605, -2, -2, 2),
+"update": 0,
+"values": [Vector3(-2.7, 5, 10.6), Vector3(0, 25, 0), Vector3(0, 25, 0), Vector3(0, 80, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("cam:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 2.1, 2.2, 3),
+"transitions": PackedFloat32Array(-3.605, -2, -2, 1),
+"update": 0,
+"values": [Vector3(-0.610865, -0.1309, 0), Vector3(-1.5708, 0, 0), Vector3(-1.5708, 0, 0), Vector3(-1.5708, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_mpkk6"]
+resource_name = "top_to_pause"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("cam:fov")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [10.0, 44.0, 44.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("cam:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5, 1.5),
+"transitions": PackedFloat32Array(0.406126, 0.5, 1),
+"update": 0,
+"values": [Vector3(0, 80, 0), Vector3(0, 15, 0), Vector3(-2.7, 5, 10.6)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("cam:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.5, 1.5),
+"transitions": PackedFloat32Array(4.75683, 1, 1),
+"update": 0,
+"values": [Vector3(-1.5708, 0, 0), Vector3(-1.5708, 0, 0), Vector3(-0.610865, -0.1309, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_uj2wv"]
+_data = {
+"def_to_pause": SubResource("Animation_imd05"),
+"def_to_top": SubResource("Animation_amlap"),
+"pause_to_def": SubResource("Animation_vippe"),
+"pause_to_top": SubResource("Animation_fnpol"),
+"top_to_pause": SubResource("Animation_mpkk6")
+}
+
+[node name="ingame_cam" type="Node3D"]
+script = ExtResource("1_lopbe")
+
+[node name="cam" type="Camera3D" parent="."]
+transform = Transform3D(0.991445, 0.0748669, -0.106921, 0, 0.819152, 0.573576, 0.130526, -0.568669, 0.812144, -2.7, 5, 10.6)
+environment = SubResource("Environment_4b1kk")
+fov = 44.0
+
+[node name="cam_gizmo_floor" parent="." instance=ExtResource("2_1v25t")]
+transform = Transform3D(21, 0, 0, 0, 0.1, 0, 0, 0, 21, 0, -0.6, 0)
+visible = true
+
+[node name="cam_gizmo_pause" parent="." instance=ExtResource("2_1v25t")]
+transform = Transform3D(0.991445, 0.0748668, -0.106921, 0, 0.819152, 0.573576, 0.130526, -0.568669, 0.812144, -2.7, 5, 10.6)
+visible = true
+
+[node name="cam_gizmo_default" parent="." instance=ExtResource("2_1v25t")]
+transform = Transform3D(1, 0, 0, 0, 0.660002, 0.751264, 0, -0.751264, 0.660002, 0, 17, 16.1)
+visible = true
+
+[node name="cam_gizmo_top" parent="." instance=ExtResource("2_1v25t")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 80, 0)
+visible = true
+
+[node name="player" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_uj2wv")
+}

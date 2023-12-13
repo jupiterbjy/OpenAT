@@ -1,0 +1,99 @@
+[gd_scene load_steps=11 format=3 uid="uid://bxhh21jekj12"]
+
+[ext_resource type="Script" path="res://TankSystem/base/tank_base.gd" id="1_rst0d"]
+[ext_resource type="Script" path="res://TankSystem/base/model_root.gd" id="2_ys7c2"]
+[ext_resource type="PackedScene" uid="uid://dwlfxihj5nmee" path="res://Commons/DebugGizmos/fire_root_gizmo.tscn" id="3_6w5gh"]
+[ext_resource type="Script" path="res://TankSystem/base/movement_subsystem.gd" id="3_lixtx"]
+[ext_resource type="Script" path="res://TankSystem/base/pathfinding_subsystem.gd" id="4_7wlnx"]
+[ext_resource type="PackedScene" uid="uid://du65giptykhs3" path="res://Commons/health_bar.tscn" id="5_fjwb3"]
+[ext_resource type="PackedScene" uid="uid://dtqdhu51irpqy" path="res://Commons/DebugGizmos/debug_tank_hitbox.tscn" id="5_vr0xm"]
+[ext_resource type="Script" path="res://TankSystem/base/weapon_subsystem.gd" id="7_8oxjt"]
+[ext_resource type="Script" path="res://TankSystem/base/item_subsystem.gd" id="9_l18t3"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_w2ujo"]
+height = 0.5
+
+[node name="tank_base" type="Node3D"]
+script = ExtResource("1_rst0d")
+tank_type = 1
+
+[node name="model_root" type="Node3D" parent="."]
+script = ExtResource("2_ys7c2")
+
+[node name="head_root" type="Node3D" parent="model_root"]
+
+[node name="fire_root" type="Node3D" parent="model_root/head_root"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.55)
+
+[node name="fire_root_gizmo" parent="model_root/head_root/fire_root" instance=ExtResource("3_6w5gh")]
+skeleton = NodePath("../..")
+
+[node name="movement_subsystem" type="Node" parent="."]
+script = ExtResource("3_lixtx")
+
+[node name="move_cooltime" type="Timer" parent="movement_subsystem"]
+one_shot = true
+
+[node name="pathfinding_subsystem" type="Node" parent="movement_subsystem"]
+script = ExtResource("4_7wlnx")
+
+[node name="bfs_cooltime" type="Timer" parent="movement_subsystem"]
+one_shot = true
+
+[node name="hitbox" type="Area3D" parent="." groups=["tank"]]
+collision_layer = 16
+collision_mask = 0
+monitoring = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="hitbox"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
+shape = SubResource("CylinderShape3D_w2ujo")
+
+[node name="debug_box" parent="hitbox" instance=ExtResource("5_vr0xm")]
+
+[node name="health_bar" parent="." instance=ExtResource("5_fjwb3")]
+
+[node name="weapon_subsystem" type="Node" parent="."]
+script = ExtResource("7_8oxjt")
+
+[node name="fire_cooltime" type="Timer" parent="weapon_subsystem"]
+one_shot = true
+
+[node name="item_subsystem" type="Node3D" parent="."]
+script = ExtResource("9_l18t3")
+
+[node name="lockdown_timer" type="Timer" parent="item_subsystem"]
+wait_time = 10.0
+one_shot = true
+
+[node name="the_world_timer" type="Timer" parent="item_subsystem"]
+wait_time = 10.0
+one_shot = true
+
+[node name="invincibility_timer" type="Timer" parent="item_subsystem"]
+wait_time = 10.0
+one_shot = true
+
+[node name="fire_rate_timer" type="Timer" parent="item_subsystem"]
+wait_time = 10.0
+one_shot = true
+
+[node name="star_heal_timer" type="Timer" parent="item_subsystem"]
+wait_time = 10.0
+
+[node name="ring_turntable" type="Node3D" parent="item_subsystem"]
+
+[node name="ring_flip_timer" type="Timer" parent="item_subsystem"]
+wait_time = 0.05
+autostart = true
+
+[connection signal="timeout" from="movement_subsystem/move_cooltime" to="movement_subsystem" method="_on_move_cooltime_timeout"]
+[connection signal="timeout" from="movement_subsystem/bfs_cooltime" to="movement_subsystem" method="_on_bfs_cooltime_timeout"]
+[connection signal="destroyed" from="health_bar" to="." method="_on_health_bar_destroyed"]
+[connection signal="timeout" from="weapon_subsystem/fire_cooltime" to="weapon_subsystem" method="_on_fire_cooltime_timeout"]
+[connection signal="timeout" from="item_subsystem/lockdown_timer" to="item_subsystem" method="_on_lockdown_timer_timeout"]
+[connection signal="timeout" from="item_subsystem/the_world_timer" to="item_subsystem" method="_on_the_world_timer_timeout"]
+[connection signal="timeout" from="item_subsystem/invincibility_timer" to="item_subsystem" method="_on_invincibility_timer_timeout"]
+[connection signal="timeout" from="item_subsystem/fire_rate_timer" to="item_subsystem" method="_on_fire_rate_timer_timeout"]
+[connection signal="timeout" from="item_subsystem/star_heal_timer" to="item_subsystem" method="_on_star_heal_timer_timeout"]
+[connection signal="timeout" from="item_subsystem/ring_flip_timer" to="item_subsystem" method="_on_ring_flip_timer_timeout"]

@@ -1,0 +1,82 @@
+[gd_scene load_steps=9 format=3 uid="uid://c7jwrjj0fvoeh"]
+
+[ext_resource type="PackedScene" uid="uid://i4w7ui865ic3" path="res://UI/Elements/HUD/item_hud.tscn" id="1_q5qvn"]
+[ext_resource type="Script" path="res://UI/UI Scenes/ingame/ui_hud.gd" id="1_ru1v0"]
+[ext_resource type="PackedScene" uid="uid://bgn778yycmnaf" path="res://UI/Elements/HUD/star_hud.tscn" id="2_xw5l7"]
+[ext_resource type="PackedScene" uid="uid://drbtv7ga2h61l" path="res://UI/Elements/HUD/life_hud.tscn" id="3_ymn3k"]
+[ext_resource type="PackedScene" uid="uid://bcsmkkj6gk50p" path="res://UI/Elements/HUD/life_bar_hud.tscn" id="4_ca8a1"]
+[ext_resource type="PackedScene" uid="uid://cf42s2xbgl2si" path="res://UI/Elements/HUD/weapon_type_hud.tscn" id="5_md73e"]
+[ext_resource type="PackedScene" uid="uid://bd8qr3dkw02bk" path="res://UI/Elements/HUD/score_hud.tscn" id="6_mf4nt"]
+[ext_resource type="PackedScene" uid="uid://562lmn2pydjv" path="res://UI/Elements/HUD/enemy_hud.tscn" id="7_sibmg"]
+
+[node name="ui_hud" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 3
+script = ExtResource("1_ru1v0")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -505.0
+offset_right = -353.0
+offset_bottom = 336.0
+grow_horizontal = 2
+mouse_filter = 2
+mouse_default_cursor_shape = 3
+
+[node name="item_hud" parent="VBoxContainer" instance=ExtResource("1_q5qvn")]
+layout_mode = 2
+mouse_default_cursor_shape = 3
+
+[node name="star_hud" parent="VBoxContainer" instance=ExtResource("2_xw5l7")]
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="life_hud" parent="VBoxContainer" instance=ExtResource("3_ymn3k")]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="life_bar_hud" parent="VBoxContainer" instance=ExtResource("4_ca8a1")]
+layout_mode = 2
+mouse_filter = 2
+mouse_default_cursor_shape = 3
+
+[node name="weapon_type_hud" parent="VBoxContainer" instance=ExtResource("5_md73e")]
+layout_mode = 2
+mouse_filter = 2
+mouse_default_cursor_shape = 3
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 188.0
+offset_top = 3.0
+offset_right = 508.0
+offset_bottom = 95.0
+grow_horizontal = 2
+mouse_filter = 2
+mouse_default_cursor_shape = 3
+
+[node name="score_hud" parent="VBoxContainer2" instance=ExtResource("6_mf4nt")]
+layout_mode = 2
+mouse_filter = 2
+mouse_default_cursor_shape = 3
+
+[node name="MarginContainer" type="HBoxContainer" parent="VBoxContainer2"]
+layout_mode = 2
+mouse_filter = 2
+alignment = 2
+
+[node name="enemy_hud" parent="VBoxContainer2/MarginContainer" instance=ExtResource("7_sibmg")]
+layout_mode = 2
+mouse_filter = 2
+mouse_default_cursor_shape = 3

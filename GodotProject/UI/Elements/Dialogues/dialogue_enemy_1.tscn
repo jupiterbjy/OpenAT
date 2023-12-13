@@ -1,0 +1,56 @@
+[gd_scene load_steps=5 format=3 uid="uid://cmvbbipsksygk"]
+
+[ext_resource type="Texture2D" uid="uid://cngp2tm4umdox" path="res://Textures/Raw/Face_trans.png" id="1_g5p6x"]
+[ext_resource type="Texture2D" uid="uid://cmk4jnmylpvtg" path="res://Textures/Raw/WinAdv.png" id="2_01wx2"]
+[ext_resource type="PackedScene" uid="uid://de5lvlfk8b115" path="res://UI/Elements/Dialogues/noise_effect.tscn" id="2_t0wym"]
+[ext_resource type="FontFile" uid="uid://dfqapmhpqqv61" path="res://UI/Fonts/FontAdv_FD_224_R.fnt" id="3_ghsj5"]
+
+[node name="dialogue_base" type="HBoxContainer"]
+offset_right = 132.0
+offset_bottom = 64.0
+
+[node name="Control" type="Control" parent="."]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="Control"]
+position = Vector2(64, 64)
+texture = ExtResource("1_g5p6x")
+hframes = 2
+vframes = 2
+frame = 1
+
+[node name="noise_effect" parent="Control" instance=ExtResource("2_t0wym")]
+
+[node name="Control2" type="Control" parent="."]
+layout_mode = 2
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Control2"]
+custom_minimum_size = Vector2(500, 112)
+layout_mode = 2
+offset_right = 400.0
+offset_bottom = 112.0
+texture = ExtResource("2_01wx2")
+region_rect = Rect2(384, 352, 96, 96)
+patch_margin_left = 16
+patch_margin_top = 16
+patch_margin_right = 16
+patch_margin_bottom = 16
+
+[node name="Label" type="Label" parent="Control2/NinePatchRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -198.0
+offset_top = -29.0
+offset_right = 198.0
+offset_bottom = 29.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_ghsj5")
+theme_override_font_sizes/font_size = 24
+text = "Ha-Ha-Ha!!! We are going to win!!!"
+vertical_alignment = 1

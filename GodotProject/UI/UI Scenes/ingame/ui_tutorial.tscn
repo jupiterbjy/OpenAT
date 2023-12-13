@@ -1,0 +1,156 @@
+[gd_scene load_steps=7 format=3 uid="uid://ds4bkmyrno1uv"]
+
+[ext_resource type="Script" path="res://UI/UI Scenes/ingame/ui_tutorial.gd" id="1_ry7ts"]
+[ext_resource type="PackedScene" uid="uid://5bixdvxtw5v1" path="res://UI/Elements/blue_box.tscn" id="2_5dmpw"]
+[ext_resource type="PackedScene" uid="uid://bsyw1707pwt6d" path="res://UI/Elements/dark_blue_box.tscn" id="3_3c4j1"]
+[ext_resource type="Texture2D" uid="uid://kptwp81o3y1q" path="res://Textures/Raw/menuAddon.png" id="4_8bmw2"]
+[ext_resource type="FontFile" uid="uid://wp1gar4mv6d6" path="res://UI/Fonts/FontAdv_FD_224.fnt" id="5_fe7te"]
+[ext_resource type="PackedScene" uid="uid://n653ro3f33ss" path="res://UI/Elements/ok_button.tscn" id="6_nom3v"]
+
+[node name="ui_tutorial" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ry7ts")
+
+[node name="blue_box" parent="." instance=ExtResource("2_5dmpw")]
+layout_mode = 1
+offset_left = -483.5
+offset_top = -215.5
+offset_right = 483.5
+offset_bottom = 215.5
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="blue_box"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -445.0
+offset_top = -180.0
+offset_right = 441.0
+offset_bottom = 184.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="blue_box/VBoxContainer2"]
+layout_mode = 2
+
+[node name="dark_blue_box" parent="blue_box/VBoxContainer2/HBoxContainer" instance=ExtResource("3_3c4j1")]
+custom_minimum_size = Vector2(300, 260)
+layout_mode = 2
+
+[node name="visual" type="Control" parent="blue_box/VBoxContainer2/HBoxContainer/dark_blue_box"]
+custom_minimum_size = Vector2(250, 200)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -125.0
+offset_top = -100.0
+offset_right = 125.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sprite2D2" type="Sprite2D" parent="blue_box/VBoxContainer2/HBoxContainer/dark_blue_box/visual"]
+position = Vector2(127, 124)
+texture = ExtResource("4_8bmw2")
+region_enabled = true
+region_rect = Rect2(248, 368, 264, 144)
+
+[node name="Sprite2D3" type="Sprite2D" parent="blue_box/VBoxContainer2/HBoxContainer/dark_blue_box/visual/Sprite2D2"]
+position = Vector2(80, -40.5)
+texture = ExtResource("4_8bmw2")
+region_enabled = true
+region_rect = Rect2(408, 288, 104, 224)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="blue_box/VBoxContainer2/HBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="dark_blue_box" parent="blue_box/VBoxContainer2/HBoxContainer/VBoxContainer" instance=ExtResource("3_3c4j1")]
+custom_minimum_size = Vector2(582, 128)
+layout_mode = 2
+
+[node name="Control" type="Control" parent="blue_box/VBoxContainer2/HBoxContainer/VBoxContainer/dark_blue_box"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 58.0
+offset_right = 58.0
+grow_vertical = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="blue_box/VBoxContainer2/HBoxContainer/VBoxContainer/dark_blue_box/Control"]
+texture = ExtResource("4_8bmw2")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(0, 320, 64, 64)
+
+[node name="Label" type="Label" parent="blue_box/VBoxContainer2/HBoxContainer/VBoxContainer/dark_blue_box"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -446.0
+offset_top = -29.0
+offset_right = -40.0
+offset_bottom = 29.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("5_fe7te")
+text = "LEFT MOUSE BUTTON - use it to shoot.
+Hold it to repeatedly fire your weapon"
+
+[node name="dark_blue_box2" parent="blue_box/VBoxContainer2/HBoxContainer/VBoxContainer" instance=ExtResource("3_3c4j1")]
+custom_minimum_size = Vector2(582, 128)
+layout_mode = 2
+
+[node name="Control" type="Control" parent="blue_box/VBoxContainer2/HBoxContainer/VBoxContainer/dark_blue_box2"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 58.0
+offset_right = 58.0
+grow_vertical = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="blue_box/VBoxContainer2/HBoxContainer/VBoxContainer/dark_blue_box2/Control"]
+scale = Vector2(0.815, 0.815)
+texture = ExtResource("4_8bmw2")
+region_enabled = true
+region_rect = Rect2(0, 384, 96, 128)
+
+[node name="Label" type="Label" parent="blue_box/VBoxContainer2/HBoxContainer/VBoxContainer/dark_blue_box2"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -446.0
+offset_top = -29.0
+offset_right = -40.0
+offset_bottom = 29.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("5_fe7te")
+text = "The ARROW KEYS or WASD KEYS
+can be used to control
+your tank's movements"
+
+[node name="ok_button" parent="blue_box/VBoxContainer2" instance=ExtResource("6_nom3v")]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+text = "OK"
+
+[connection signal="button_clicked" from="blue_box/VBoxContainer2/ok_button" to="." method="_on_ok_button_button_clicked"]

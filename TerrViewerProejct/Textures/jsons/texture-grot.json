@@ -1,0 +1,44 @@
+{
+  "TERR": {
+    "idx": 0,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Terr_Grot.jpg"
+  },
+  "TERR2": {
+    "idx": 2,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Terr_Grot.jpg"
+  },
+  "WALLSTONE": {
+    "idx": 6,
+    "alpha": false,
+    "blend_add": false,
+    "file": "TerrWall_G_0.jpg"
+  },
+  "WALLB0": {
+    "idx": 60,
+    "alpha": false,
+    "blend_add": false,
+    "file": "TerrWall_C_0.jpg"
+  },
+  "WALLB1": {
+    "idx": 61,
+    "alpha": false,
+    "blend_add": false,
+    "file": "TerrWall_C_0.jpg"
+  },
+  "WALLB2": {
+    "idx": 62,
+    "alpha": false,
+    "blend_add": false,
+    "file": "TerrWall_C_2.jpg"
+  },
+  "WALLB3": {
+    "idx": 63,
+    "alpha": false,
+    "blend_add": false,
+    "file": "TerrWall_C_3.jpg"
+  }
+}

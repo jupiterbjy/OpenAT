@@ -1,0 +1,74 @@
+[gd_scene load_steps=4 format=3 uid="uid://c5u8snsktlbjx"]
+
+[ext_resource type="PackedScene" uid="uid://dqnahvfny1x57" path="res://UI/Elements/item_light.tscn" id="1_jrolf"]
+[ext_resource type="Texture2D" uid="uid://bwc24u20ip4i" path="res://Textures/Raw/Button_Light.jpg" id="2_ya2lw"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_i0wn8"]
+blend_mode = 1
+
+[node name="ok_shine" type="Control"]
+custom_minimum_size = Vector2(200, 40)
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -20.0
+offset_right = 100.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_right = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 50
+alignment = 1
+
+[node name="light_eff_anchor" type="Control" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="item_light" parent="HBoxContainer/light_eff_anchor" instance=ExtResource("1_jrolf")]
+rad_speed = -3.0
+
+[node name="light_eff_anchor2" type="Control" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="item_light" parent="HBoxContainer/light_eff_anchor2" instance=ExtResource("1_jrolf")]
+rad_speed = 3.0
+
+[node name="light_eff_anchor3" type="Control" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="item_light" parent="HBoxContainer/light_eff_anchor3" instance=ExtResource("1_jrolf")]
+rad_speed = -3.0
+
+[node name="light_eff_anchor4" type="Control" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="item_light" parent="HBoxContainer/light_eff_anchor4" instance=ExtResource("1_jrolf")]
+rad_speed = 3.0
+
+[node name="light_eff_anchor5" type="Control" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="item_light" parent="HBoxContainer/light_eff_anchor5" instance=ExtResource("1_jrolf")]
+rad_speed = -3.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.662745)
+material = SubResource("CanvasItemMaterial_i0wn8")
+position = Vector2(74, 20)
+texture = ExtResource("2_ya2lw")
+region_enabled = true
+region_rect = Rect2(0, 0, 296, 96)

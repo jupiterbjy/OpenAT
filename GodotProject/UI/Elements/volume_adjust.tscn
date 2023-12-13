@@ -1,0 +1,176 @@
+[gd_scene load_steps=5 format=3 uid="uid://8bc1koppip8k"]
+
+[ext_resource type="Script" path="res://UI/Elements/volume_adjust.gd" id="1_2k3mh"]
+[ext_resource type="PackedScene" uid="uid://clt4152mf1f65" path="res://UI/Elements/small_left.tscn" id="2_acve7"]
+[ext_resource type="Texture2D" uid="uid://rmwllp0iqyf2" path="res://Textures/Raw/Button.png" id="3_2acwe"]
+[ext_resource type="PackedScene" uid="uid://ly3jbk00pl2n" path="res://UI/Elements/small_right.tscn" id="5_1jycp"]
+
+[node name="volume_adjust" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_2k3mh")
+
+[node name="hbox" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -215.0
+offset_top = -17.5
+offset_right = 215.0
+offset_bottom = 17.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="left" parent="hbox" instance=ExtResource("2_acve7")]
+layout_mode = 2
+
+[node name="bar_root" type="Control" parent="hbox"]
+custom_minimum_size = Vector2(352, 32)
+layout_mode = 2
+
+[node name="bar" type="HBoxContainer" parent="hbox/bar_root"]
+custom_minimum_size = Vector2(352, 32)
+layout_mode = 2
+offset_right = 352.0
+offset_bottom = 32.0
+theme_override_constants/separation = 0
+alignment = 1
+
+[node name="start" type="Control" parent="hbox/bar_root/bar"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+
+[node name="start" type="Sprite2D" parent="hbox/bar_root/bar/start"]
+position = Vector2(16, 16)
+texture = ExtResource("3_2acwe")
+region_enabled = true
+region_rect = Rect2(0, 352, 32, 32)
+
+[node name="mid" type="Control" parent="hbox/bar_root/bar"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+
+[node name="mid" type="Sprite2D" parent="hbox/bar_root/bar/mid"]
+position = Vector2(16, 16)
+texture = ExtResource("3_2acwe")
+region_enabled = true
+region_rect = Rect2(32, 352, 32, 32)
+
+[node name="mid2" type="Control" parent="hbox/bar_root/bar"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+
+[node name="mid" type="Sprite2D" parent="hbox/bar_root/bar/mid2"]
+position = Vector2(16, 16)
+texture = ExtResource("3_2acwe")
+region_enabled = true
+region_rect = Rect2(32, 352, 32, 32)
+
+[node name="mid3" type="Control" parent="hbox/bar_root/bar"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+
+[node name="mid" type="Sprite2D" parent="hbox/bar_root/bar/mid3"]
+position = Vector2(16, 16)
+texture = ExtResource("3_2acwe")
+region_enabled = true
+region_rect = Rect2(32, 352, 32, 32)
+
+[node name="mid4" type="Control" parent="hbox/bar_root/bar"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+
+[node name="mid" type="Sprite2D" parent="hbox/bar_root/bar/mid4"]
+position = Vector2(16, 16)
+texture = ExtResource("3_2acwe")
+region_enabled = true
+region_rect = Rect2(32, 352, 32, 32)
+
+[node name="mid5" type="Control" parent="hbox/bar_root/bar"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+
+[node name="mid" type="Sprite2D" parent="hbox/bar_root/bar/mid5"]
+position = Vector2(16, 16)
+texture = ExtResource("3_2acwe")
+region_enabled = true
+region_rect = Rect2(32, 352, 32, 32)
+
+[node name="mid6" type="Control" parent="hbox/bar_root/bar"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+
+[node name="mid" type="Sprite2D" parent="hbox/bar_root/bar/mid6"]
+position = Vector2(16, 16)
+texture = ExtResource("3_2acwe")
+region_enabled = true
+region_rect = Rect2(32, 352, 32, 32)
+
+[node name="mid7" type="Control" parent="hbox/bar_root/bar"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+
+[node name="mid" type="Sprite2D" parent="hbox/bar_root/bar/mid7"]
+position = Vector2(16, 16)
+texture = ExtResource("3_2acwe")
+region_enabled = true
+region_rect = Rect2(32, 352, 32, 32)
+
+[node name="mid8" type="Control" parent="hbox/bar_root/bar"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+
+[node name="mid" type="Sprite2D" parent="hbox/bar_root/bar/mid8"]
+position = Vector2(16, 16)
+texture = ExtResource("3_2acwe")
+region_enabled = true
+region_rect = Rect2(32, 352, 32, 32)
+
+[node name="mid9" type="Control" parent="hbox/bar_root/bar"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+
+[node name="mid" type="Sprite2D" parent="hbox/bar_root/bar/mid9"]
+position = Vector2(16, 16)
+texture = ExtResource("3_2acwe")
+region_enabled = true
+region_rect = Rect2(32, 352, 32, 32)
+
+[node name="end" type="Control" parent="hbox/bar_root/bar"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+
+[node name="mid2" type="Sprite2D" parent="hbox/bar_root/bar/end"]
+position = Vector2(16, 16)
+texture = ExtResource("3_2acwe")
+region_enabled = true
+region_rect = Rect2(64, 352, 32, 32)
+
+[node name="position_marker" type="Control" parent="hbox/bar_root"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+anchors_preset = 0
+offset_left = 160.0
+offset_right = 192.0
+offset_bottom = 32.0
+
+[node name="marker" type="Sprite2D" parent="hbox/bar_root/position_marker"]
+position = Vector2(16, 16)
+texture = ExtResource("3_2acwe")
+region_enabled = true
+region_rect = Rect2(96, 352, 32, 32)
+
+[node name="right" parent="hbox" instance=ExtResource("5_1jycp")]
+layout_mode = 2
+
+[connection signal="pressed" from="hbox/left" to="." method="_on_left_pressed"]
+[connection signal="pressed" from="hbox/right" to="." method="_on_right_pressed"]

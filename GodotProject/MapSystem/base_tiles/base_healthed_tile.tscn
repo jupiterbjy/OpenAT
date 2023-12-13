@@ -1,0 +1,10 @@
+[gd_scene load_steps=4 format=3 uid="uid://dhyq0uo1kpciy"]
+
+[ext_resource type="PackedScene" uid="uid://d24cq7k88she8" path="res://MapSystem/base_tiles/base_tile.tscn" id="1_02rwg"]
+[ext_resource type="Script" path="res://MapSystem/base_tiles/base_healthed_tile.gd" id="2_18q2a"]
+[ext_resource type="PackedScene" uid="uid://du65giptykhs3" path="res://Commons/health_bar.tscn" id="3_lm5nh"]
+
+[node name="base_healthed_tile" instance=ExtResource("1_02rwg")]
+script = ExtResource("2_18q2a")
+
+[node name="health_bar" parent="." index="0" instance=ExtResource("3_lm5nh")]

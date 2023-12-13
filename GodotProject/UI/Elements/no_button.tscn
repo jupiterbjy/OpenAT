@@ -1,0 +1,65 @@
+[gd_scene load_steps=4 format=3 uid="uid://cfdtvarord05o"]
+
+[ext_resource type="Script" path="res://UI/Elements/titled_button.gd" id="2_b6hir"]
+[ext_resource type="Texture2D" uid="uid://rmwllp0iqyf2" path="res://Textures/Raw/Button.png" id="2_hktyp"]
+[ext_resource type="FontFile" uid="uid://dg8idnhjxgdk8" path="res://UI/Fonts/FontAdv_FD.fnt" id="3_p0w84"]
+
+[node name="no_button" type="Control"]
+custom_minimum_size = Vector2(200, 40)
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -20.0
+offset_right = 100.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+script = ExtResource("2_b6hir")
+
+[node name="TextureRect" type="Sprite2D" parent="."]
+position = Vector2(100, 20)
+texture = ExtResource("2_hktyp")
+region_enabled = true
+region_rect = Rect2(0, 200, 352, 80)
+
+[node name="title" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -65.5
+offset_top = -17.5
+offset_right = 65.5
+offset_bottom = 17.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_p0w84")
+theme_override_font_sizes/font_size = 28
+text = "Sample Text"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="button" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -108.0
+offset_top = -20.0
+offset_right = 151.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+
+[connection signal="mouse_entered" from="button" to="." method="_on_button_mouse_entered"]
+[connection signal="pressed" from="button" to="." method="_on_button_pressed"]

@@ -1,0 +1,29 @@
+[gd_scene load_steps=6 format=3 uid="uid://d0sa51jsolo56"]
+
+[ext_resource type="PackedScene" uid="uid://jshjo18wr5k2" path="res://WeaponSystem/Projectiles/projectile_base.tscn" id="1_7vxvq"]
+[ext_resource type="Script" path="res://WeaponSystem/Projectiles/rocket.gd" id="2_1ieec"]
+[ext_resource type="PackedScene" uid="uid://cfi3x4e7omkww" path="res://EffectSystem/rocket_trail.tscn" id="3_jbe2g"]
+[ext_resource type="PackedScene" uid="uid://b3qfviphdhm1a" path="res://EffectSystem/explosion_paticle.tscn" id="3_mwgy8"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_pmn46"]
+radius = 0.7
+
+[node name="rocket" instance=ExtResource("1_7vxvq")]
+script = ExtResource("2_1ieec")
+type = 2
+hit_particle = ExtResource("3_mwgy8")
+trail_particle = ExtResource("3_jbe2g")
+
+[node name="secondary_collision" type="Area3D" parent="." index="3" groups=["projectile", "surface_hard"]]
+collision_layer = 256
+collision_mask = 16
+monitoring = false
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="secondary_collision" index="0"]
+shape = SubResource("SphereShape3D_pmn46")
+
+[node name="disable_timer" type="Timer" parent="." index="4"]
+
+[connection signal="area_entered" from="secondary_collision" to="." method="_on_secondary_collision_area_entered"]
+[connection signal="timeout" from="disable_timer" to="." method="_on_disable_timer_timeout"]

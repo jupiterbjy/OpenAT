@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://dtl8d5crekm6y"]
+
+[sub_resource type="GDScript" id="GDScript_jx37a"]
+script/source = "class_name MapHeader
+extends Node
+
+
+
+func parse_json():
+	# nothing to parse here!
+	_dict = dict
+
+
+func items():
+	return 
+"
+
+[node name="header" type="Node"]
+script = SubResource("GDScript_jx37a")

@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://b8eofe44mm503"]
+
+[ext_resource type="Script" path="res://MapSystem/base_tiles/base_collider.gd" id="1_mdd6u"]
+[ext_resource type="PackedScene" uid="uid://cwlxa4cdfwjj0" path="res://Commons/DebugGizmos/terrain_gizmo.tscn" id="2_norc8"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_u7mpc"]
+size = Vector3(1, 0.5, 1)
+
+[node name="base_collider" type="Area3D" groups=["surface_hard"]]
+collision_layer = 128
+collision_mask = 0
+script = ExtResource("1_mdd6u")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
+shape = SubResource("BoxShape3D_u7mpc")
+
+[node name="terrain_gizmo" parent="." instance=ExtResource("2_norc8")]

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dt1ms4kvo4y15"]
+
+[ext_resource type="PackedScene" uid="uid://d1a8upwy7uais" path="res://TankSystem/base/tank_enemy_base.tscn" id="1_yqtyg"]
+
+[node name="tank_hard" instance=ExtResource("1_yqtyg")]
+autonomous = true

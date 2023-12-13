@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bmwx57qrgw0jy"]
+
+[ext_resource type="Script" path="res://MapSystem/components/walls.gd" id="1_l35q0"]
+
+[node name="walls" type="Node3D"]
+script = ExtResource("1_l35q0")

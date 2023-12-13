@@ -1,0 +1,59 @@
+[gd_scene load_steps=3 format=3 uid="uid://bw7nvw3ce5gsg"]
+
+[ext_resource type="Script" path="res://UI/Elements/WorkshopElements/weapon_panel.gd" id="1_bteo3"]
+[ext_resource type="PackedScene" uid="uid://mismq8nshjo2" path="res://UI/Elements/WorkshopElements/weapon_item.tscn" id="2_dprc3"]
+
+[node name="weapon_panel" type="ScrollContainer"]
+clip_contents = false
+custom_minimum_size = Vector2(220, 460)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -114.0
+offset_top = -200.0
+offset_right = 114.0
+offset_bottom = 260.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_scroll_mode = 0
+script = ExtResource("1_bteo3")
+
+[node name="vbox" type="VBoxContainer" parent="."]
+custom_minimum_size = Vector2(220, 460)
+layout_mode = 2
+theme_override_constants/separation = 15
+alignment = 1
+
+[node name="weapon_item1" parent="vbox" instance=ExtResource("2_dprc3")]
+layout_mode = 2
+
+[node name="weapon_item2" parent="vbox" instance=ExtResource("2_dprc3")]
+layout_mode = 2
+type = 1
+weapon_name = "Minigun"
+
+[node name="weapon_item3" parent="vbox" instance=ExtResource("2_dprc3")]
+layout_mode = 2
+type = 2
+weapon_name = "Rocket"
+price = 400
+
+[node name="weapon_item4" parent="vbox" instance=ExtResource("2_dprc3")]
+layout_mode = 2
+type = 3
+weapon_name = "Lightning"
+price = 500
+
+[node name="weapon_item5" parent="vbox" instance=ExtResource("2_dprc3")]
+layout_mode = 2
+type = 4
+weapon_name = "Flamethrower"
+price = 600
+
+[node name="weapon_item6" parent="vbox" instance=ExtResource("2_dprc3")]
+layout_mode = 2
+type = 5
+weapon_name = "Shock Gun"
+price = 700

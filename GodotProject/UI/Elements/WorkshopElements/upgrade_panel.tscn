@@ -1,0 +1,49 @@
+[gd_scene load_steps=3 format=3 uid="uid://dli38hxia2m3d"]
+
+[ext_resource type="Script" path="res://UI/Elements/WorkshopElements/upgrade_panel.gd" id="1_7ajge"]
+[ext_resource type="PackedScene" uid="uid://d0y113vt7xagl" path="res://UI/Elements/WorkshopElements/upgrade_item.tscn" id="1_ac2tt"]
+
+[node name="upgrade_panel" type="ScrollContainer"]
+custom_minimum_size = Vector2(220, 400)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -110.0
+offset_top = -4.0
+offset_right = 110.0
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_scroll_mode = 0
+script = ExtResource("1_7ajge")
+
+[node name="vbox" type="VBoxContainer" parent="."]
+custom_minimum_size = Vector2(220, 400)
+layout_mode = 2
+theme_override_constants/separation = 15
+alignment = 1
+
+[node name="upgrade_item1" parent="vbox" instance=ExtResource("1_ac2tt")]
+layout_mode = 2
+
+[node name="upgrade_item2" parent="vbox" instance=ExtResource("1_ac2tt")]
+layout_mode = 2
+type = 1
+upgrade_name = "Movement speed"
+
+[node name="upgrade_item3" parent="vbox" instance=ExtResource("1_ac2tt")]
+layout_mode = 2
+type = 2
+upgrade_name = "Reload time"
+
+[node name="upgrade_item4" parent="vbox" instance=ExtResource("1_ac2tt")]
+layout_mode = 2
+type = 3
+upgrade_name = "Projectile speed"
+
+[node name="upgrade_item5" parent="vbox" instance=ExtResource("1_ac2tt")]
+layout_mode = 2
+type = 4
+upgrade_name = "Damage"

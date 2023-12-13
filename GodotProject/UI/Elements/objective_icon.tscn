@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://pyku3xf5up8o"]
+
+[ext_resource type="Script" path="res://UI/Elements/objective_icon.gd" id="1_l12t0"]
+[ext_resource type="Texture2D" uid="uid://kptwp81o3y1q" path="res://Textures/Raw/menuAddon.png" id="2_2qs6k"]
+
+[node name="objective_icon" type="Control"]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_l12t0")
+
+[node name="icon" type="Sprite2D" parent="."]
+position = Vector2(20, 20)
+texture = ExtResource("2_2qs6k")
+region_enabled = true
+region_rect = Rect2(8, 264, 48, 48)

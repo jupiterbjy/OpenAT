@@ -1,0 +1,9 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://dkithkhupen0u"]
+
+[ext_resource type="Shader" path="res://EffectSystem/particle_mat.gdshader" id="1_jqrck"]
+[ext_resource type="CompressedTexture2DArray" uid="uid://1sapwm51nbbl" path="res://Textures/Raw/Explosion-256.png" id="2_peeib"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_jqrck")
+shader_parameter/particle_texture = ExtResource("2_peeib")

@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dm3y2pl2tw2i6"]
+
+[ext_resource type="Script" path="res://MapSystem/components/trails.gd" id="1_06kc4"]
+
+[node name="trails" type="Node3D"]
+process_mode = 1
+script = ExtResource("1_06kc4")

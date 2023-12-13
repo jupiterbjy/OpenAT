@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://dwuc20re0aq7q"]
+
+[ext_resource type="Texture2D" uid="uid://cmk4jnmylpvtg" path="res://Textures/Raw/WinAdv.png" id="1_3dede"]
+
+[node name="dialogue_box_enemy" type="NinePatchRect"]
+offset_right = 510.0
+offset_bottom = 465.0
+texture = ExtResource("1_3dede")
+region_rect = Rect2(384, 352, 96, 96)
+patch_margin_left = 84
+patch_margin_top = 83
+patch_margin_right = 83
+patch_margin_bottom = 83

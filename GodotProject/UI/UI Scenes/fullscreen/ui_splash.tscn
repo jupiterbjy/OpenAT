@@ -1,0 +1,145 @@
+[gd_scene load_steps=9 format=3 uid="uid://uwnmcvnq5dck"]
+
+[ext_resource type="Texture2D" uid="uid://1y2k2fa3y26p" path="res://Textures/Raw/logo_enkord.png" id="1_30qsx"]
+[ext_resource type="Script" path="res://UI/UI Scenes/fullscreen/ui_splash.gd" id="1_xqfnn"]
+[ext_resource type="FontFile" uid="uid://cqv4qr5l1m2xj" path="res://UI/Fonts/NotoSans-Regular.ttf" id="2_hob4p"]
+[ext_resource type="FontFile" uid="uid://dauk5tu1n7v7s" path="res://UI/Fonts/NotoSans-ExtraBold.ttf" id="3_selfv"]
+[ext_resource type="FontFile" uid="uid://dnc2ltv8mkhxu" path="res://UI/Fonts/NotoSans-LightItalic.ttf" id="4_uht6t"]
+[ext_resource type="Texture2D" uid="uid://3k0x4p1r21gj" path="res://Textures/custom/logo.png" id="6_qf0es"]
+
+[sub_resource type="Animation" id="Animation_lknwt"]
+resource_name = "fade_in"
+length = 9.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("company_logo:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 3, 4),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("openat_logo:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 4, 5, 8, 9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_o2ilj"]
+_data = {
+"fade_in": SubResource("Animation_lknwt")
+}
+
+[node name="ui_splash" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_xqfnn")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="company_logo" type="Control" parent="."]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="LogoEnkord" type="Sprite2D" parent="company_logo"]
+position = Vector2(0, 12)
+texture = ExtResource("1_30qsx")
+region_enabled = true
+region_rect = Rect2(1, 32, 508, 109)
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="company_logo"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -238.0
+offset_top = -79.0
+offset_right = 213.0
+offset_bottom = -47.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("2_hob4p")
+theme_override_fonts/bold_font = ExtResource("3_selfv")
+theme_override_fonts/italics_font = ExtResource("4_uht6t")
+theme_override_font_sizes/normal_font_size = 23
+theme_override_font_sizes/bold_font_size = 40
+theme_override_font_sizes/italics_font_size = 40
+bbcode_enabled = true
+text = "[left][color=#d4d4d4]Originally developed by[/color][/left]"
+fit_content = true
+scroll_active = false
+
+[node name="player" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_o2ilj")
+}
+
+[node name="openat_logo" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Logo" type="Sprite2D" parent="openat_logo"]
+position = Vector2(0, -39)
+scale = Vector2(0.681893, 0.681893)
+texture = ExtResource("6_qf0es")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="openat_logo"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -213.0
+offset_top = 51.5
+offset_right = 213.0
+offset_bottom = 106.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("2_hob4p")
+theme_override_fonts/bold_font = ExtResource("3_selfv")
+theme_override_fonts/italics_font = ExtResource("4_uht6t")
+theme_override_font_sizes/normal_font_size = 34
+theme_override_font_sizes/bold_font_size = 40
+theme_override_font_sizes/italics_font_size = 40
+bbcode_enabled = true
+text = "[center][color=#00A8FF][b]Fan game[/b] made [u][i]hard![/i][/u] [/color][/center]"
+fit_content = true
+scroll_active = false
+
+[connection signal="animation_finished" from="player" to="." method="_on_player_animation_finished"]

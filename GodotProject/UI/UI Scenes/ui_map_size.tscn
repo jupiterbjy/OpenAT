@@ -1,0 +1,102 @@
+[gd_scene load_steps=7 format=3 uid="uid://c15orvg71mtct"]
+
+[ext_resource type="PackedScene" uid="uid://k3us51iu4hiy" path="res://UI/Elements/blue_box_titled.tscn" id="1_ncv2v"]
+[ext_resource type="Script" path="res://UI/UI Scenes/ui_map_size.gd" id="1_u4g1p"]
+[ext_resource type="FontFile" uid="uid://dg8idnhjxgdk8" path="res://UI/Fonts/FontAdv_FD.fnt" id="2_cfcvm"]
+[ext_resource type="PackedScene" uid="uid://clt4152mf1f65" path="res://UI/Elements/small_left.tscn" id="3_i5gqa"]
+[ext_resource type="PackedScene" uid="uid://ly3jbk00pl2n" path="res://UI/Elements/small_right.tscn" id="4_t7xna"]
+[ext_resource type="PackedScene" uid="uid://n653ro3f33ss" path="res://UI/Elements/ok_button.tscn" id="5_1drxb"]
+
+[node name="ui_map_size" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_u4g1p")
+
+[node name="blue_box_titled" parent="." instance=ExtResource("1_ncv2v")]
+layout_mode = 1
+offset_top = -194.5
+offset_bottom = 194.5
+title = "Select Map Size"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="blue_box_titled"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -85.5
+offset_top = -37.0
+offset_right = 85.5
+offset_bottom = 37.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="blue_box_titled/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="blue_box_titled/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_cfcvm")
+text = "Width
+"
+horizontal_alignment = 1
+
+[node name="width_left" parent="blue_box_titled/VBoxContainer/HBoxContainer" instance=ExtResource("3_i5gqa")]
+layout_mode = 2
+
+[node name="width_label" type="Label" parent="blue_box_titled/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_cfcvm")
+text = "21
+"
+horizontal_alignment = 1
+
+[node name="width_right" parent="blue_box_titled/VBoxContainer/HBoxContainer" instance=ExtResource("4_t7xna")]
+layout_mode = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="blue_box_titled/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="blue_box_titled/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_cfcvm")
+text = "Height"
+horizontal_alignment = 1
+
+[node name="height_left" parent="blue_box_titled/VBoxContainer/HBoxContainer2" instance=ExtResource("3_i5gqa")]
+layout_mode = 2
+
+[node name="height_label" type="Label" parent="blue_box_titled/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_cfcvm")
+text = "21
+"
+horizontal_alignment = 1
+
+[node name="height_right" parent="blue_box_titled/VBoxContainer/HBoxContainer2" instance=ExtResource("4_t7xna")]
+layout_mode = 2
+
+[node name="ok_button" parent="blue_box_titled" instance=ExtResource("5_1drxb")]
+layout_mode = 1
+anchors_preset = 7
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -96.0
+offset_bottom = -56.0
+grow_vertical = 0
+text = "OK"
+
+[connection signal="pressed" from="blue_box_titled/VBoxContainer/HBoxContainer/width_left" to="." method="_on_width_left_pressed"]
+[connection signal="pressed" from="blue_box_titled/VBoxContainer/HBoxContainer/width_right" to="." method="_on_width_right_pressed"]
+[connection signal="pressed" from="blue_box_titled/VBoxContainer/HBoxContainer2/height_left" to="." method="_on_height_left_pressed"]
+[connection signal="pressed" from="blue_box_titled/VBoxContainer/HBoxContainer2/height_right" to="." method="_on_height_right_pressed"]
+[connection signal="button_clicked" from="blue_box_titled/ok_button" to="." method="_on_ok_button_button_clicked"]

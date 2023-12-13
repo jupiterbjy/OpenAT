@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dh20mm0eivvqd"]
+
+[ext_resource type="Script" path="res://MapSystem/components/respawns.gd" id="1_2acp7"]
+[ext_resource type="Script" path="res://MapSystem/components/parser.gd" id="2_3jy5m"]
+
+[node name="respawns" type="Node3D"]
+process_mode = 1
+script = ExtResource("1_2acp7")
+
+[node name="parser" type="Node" parent="."]
+script = ExtResource("2_3jy5m")
+
+[node name="spawn_timer" type="Timer" parent="parser"]
+one_shot = true
+
+[connection signal="timeout" from="parser/spawn_timer" to="parser" method="_on_spawn_timer_timeout"]

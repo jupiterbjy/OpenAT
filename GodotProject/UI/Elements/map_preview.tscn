@@ -1,0 +1,96 @@
+[gd_scene load_steps=8 format=3 uid="uid://b55bnrrpuay6o"]
+
+[ext_resource type="Script" path="res://UI/Elements/map_preview.gd" id="2_7lagj"]
+[ext_resource type="Texture2D" uid="uid://c1di8ye688rlh" path="res://Textures/Raw/Button_Light.png" id="2_d0ey8"]
+[ext_resource type="Texture2D" uid="uid://bjathjb58ajav" path="res://Textures/custom/map_prev_placeholder.png" id="2_nkpxe"]
+[ext_resource type="Script" path="res://UI/Elements/preview_image.gd" id="5_jgdr1"]
+[ext_resource type="Texture2D" uid="uid://rmwllp0iqyf2" path="res://Textures/Raw/Button.png" id="6_oq1vd"]
+
+[sub_resource type="Animation" id="Animation_pf07v"]
+resource_name = "enlarge_preview"
+length = 0.25
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("scale_anchor_god_why_godot:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.1, 1.1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_d8x5v"]
+_data = {
+"enlarge_preview": SubResource("Animation_pf07v")
+}
+
+[node name="map_preview" type="TextureButton"]
+custom_minimum_size = Vector2(128, 128)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -64.0
+offset_top = -64.0
+offset_right = 64.0
+offset_bottom = 64.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_7lagj")
+
+[node name="selection_bg" type="Sprite2D" parent="."]
+position = Vector2(64, 64)
+texture = ExtResource("2_d0ey8")
+region_enabled = true
+region_rect = Rect2(288, 384, 128, 128)
+
+[node name="scale_anchor_god_why_godot" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="preview_image" type="Sprite2D" parent="scale_anchor_god_why_godot"]
+texture = ExtResource("2_nkpxe")
+region_enabled = true
+region_rect = Rect2(0, 0, 96, 96)
+script = ExtResource("5_jgdr1")
+
+[node name="preview_button" type="TextureButton" parent="."]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -48.0
+offset_top = -48.0
+offset_right = 48.0
+offset_bottom = 48.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+
+[node name="locked_image" type="Sprite2D" parent="preview_button"]
+position = Vector2(48, 48)
+texture = ExtResource("6_oq1vd")
+region_enabled = true
+region_rect = Rect2(416, 192, 96, 96)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_d8x5v")
+}
+
+[connection signal="mouse_entered" from="preview_button" to="." method="_on_preview_button_mouse_entered"]
+[connection signal="mouse_exited" from="preview_button" to="." method="_on_preview_button_mouse_exited"]
+[connection signal="pressed" from="preview_button" to="." method="_on_preview_button_pressed"]

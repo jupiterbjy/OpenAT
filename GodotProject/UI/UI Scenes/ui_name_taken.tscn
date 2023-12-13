@@ -1,0 +1,61 @@
+[gd_scene load_steps=5 format=3 uid="uid://bu7qaiem7xk80"]
+
+[ext_resource type="PackedScene" uid="uid://1lujfgpoi218" path="res://UI/Elements/yellow_box_titled.tscn" id="1_0c6gf"]
+[ext_resource type="Script" path="res://UI/UI Scenes/ui_name_taken.gd" id="1_xy0qm"]
+[ext_resource type="FontFile" uid="uid://b08pa0gvv5r17" path="res://UI/Fonts/FontAdv_FD_B.fnt" id="3_od5qi"]
+[ext_resource type="PackedScene" uid="uid://n653ro3f33ss" path="res://UI/Elements/ok_button.tscn" id="4_j37h4"]
+
+[node name="ui_name_taken" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_xy0qm")
+
+[node name="yellow_box_titled" parent="." instance=ExtResource("1_0c6gf")]
+layout_mode = 0
+anchors_preset = 0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 741.0
+offset_bottom = 378.0
+grow_horizontal = 1
+grow_vertical = 1
+title = "Unable to create a new player"
+
+[node name="Label" type="Label" parent="yellow_box_titled"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -189.0
+offset_top = -33.0
+offset_right = 189.0
+offset_bottom = 33.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_od5qi")
+text = "That name is already in use.
+Please enter a different name."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ok_button" parent="yellow_box_titled" instance=ExtResource("4_j37h4")]
+layout_mode = 1
+anchors_preset = 7
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -113.0
+offset_bottom = -73.0
+grow_vertical = 0
+text = "OK"
+
+[connection signal="button_clicked" from="yellow_box_titled/ok_button" to="." method="_on_ok_button_button_clicked"]

@@ -1,0 +1,44 @@
+{
+  "TERR": {
+    "idx": 0,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Terr_Snow.JPG"
+  },
+  "TERR2": {
+    "idx": 2,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Terr_Snow.JPG"
+  },
+  "WALLSTONE": {
+    "idx": 6,
+    "alpha": false,
+    "blend_add": false,
+    "file": "Terr_01.JPG"
+  },
+  "WALLB0": {
+    "idx": 60,
+    "alpha": false,
+    "blend_add": false,
+    "file": "TerrWall_R_0.JPG"
+  },
+  "WALLB1": {
+    "idx": 61,
+    "alpha": false,
+    "blend_add": false,
+    "file": "TerrWall_R_1.JPG"
+  },
+  "WALLB2": {
+    "idx": 62,
+    "alpha": false,
+    "blend_add": false,
+    "file": "TerrWall_R_2.JPG"
+  },
+  "WALLB3": {
+    "idx": 63,
+    "alpha": false,
+    "blend_add": false,
+    "file": "TerrWall_R_3.JPG"
+  }
+}

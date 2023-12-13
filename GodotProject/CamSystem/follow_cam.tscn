@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dppc4ifkcreav"]
+
+[ext_resource type="Script" path="res://CamSystem/follow_cam.gd" id="1_421t2"]
+[ext_resource type="PackedScene" uid="uid://d0twgbmyye825" path="res://Commons/DebugGizmos/cam_gizmo.tscn" id="2_2vkm7"]
+
+[node name="follow_cam" type="Node3D"]
+script = ExtResource("1_421t2")
+
+[node name="cam" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.644083, 0.764955, 0, -0.764955, 0.644083, 0, 7.1593, 5.8879)
+fov = 50.0
+
+[node name="cam_gizmo" parent="." instance=ExtResource("2_2vkm7")]

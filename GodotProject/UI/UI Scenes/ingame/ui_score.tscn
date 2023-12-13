@@ -1,0 +1,169 @@
+[gd_scene load_steps=6 format=3 uid="uid://cjoycfof540n7"]
+
+[ext_resource type="Script" path="res://UI/UI Scenes/ingame/ui_score.gd" id="1_41vvw"]
+[ext_resource type="PackedScene" uid="uid://1lujfgpoi218" path="res://UI/Elements/yellow_box_titled.tscn" id="2_jpkm8"]
+[ext_resource type="FontFile" uid="uid://b08pa0gvv5r17" path="res://UI/Fonts/FontAdv_FD_B.fnt" id="3_04nbm"]
+[ext_resource type="AudioStream" uid="uid://dwllydvrqsyqt" path="res://UI/Sound/Truba.wav" id="3_11yg0"]
+[ext_resource type="PackedScene" uid="uid://n653ro3f33ss" path="res://UI/Elements/ok_button.tscn" id="4_48env"]
+
+[node name="ui_score" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+script = ExtResource("1_41vvw")
+
+[node name="yellow_box_titled" parent="." instance=ExtResource("2_jpkm8")]
+layout_mode = 1
+offset_top = -280.0
+offset_bottom = 278.0
+mouse_filter = 1
+title = "Score"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="yellow_box_titled"]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -120.5
+offset_right = 200.0
+offset_bottom = 64.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+
+[node name="Label1" type="Label" parent="yellow_box_titled/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_04nbm")
+theme_override_font_sizes/font_size = 24
+text = "points for destroying"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="yellow_box_titled/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="yellow_box_titled/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_04nbm")
+theme_override_font_sizes/font_size = 24
+text = "    tanks"
+
+[node name="Label3" type="Label" parent="yellow_box_titled/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("3_04nbm")
+theme_override_font_sizes/font_size = 24
+text = "........ 0219"
+horizontal_alignment = 2
+
+[node name="spawn_point" type="Control" parent="yellow_box_titled/VBoxContainer/HBoxContainer/Label3"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -16.0
+offset_right = -16.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="spacer" type="Control" parent="yellow_box_titled/VBoxContainer"]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="Label3" type="Label" parent="yellow_box_titled/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_04nbm")
+theme_override_font_sizes/font_size = 24
+text = "points for picking up"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="yellow_box_titled/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label4" type="Label" parent="yellow_box_titled/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_04nbm")
+theme_override_font_sizes/font_size = 24
+text = "    powerups"
+
+[node name="Label5" type="Label" parent="yellow_box_titled/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("3_04nbm")
+theme_override_font_sizes/font_size = 24
+text = "........ 0219
+"
+horizontal_alignment = 2
+
+[node name="spawn_point2" type="Control" parent="yellow_box_titled/VBoxContainer/HBoxContainer2/Label5"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -15.0
+offset_right = -15.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="spacer2" type="Control" parent="yellow_box_titled/VBoxContainer"]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="yellow_box_titled/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label5" type="Label" parent="yellow_box_titled/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_04nbm")
+theme_override_font_sizes/font_size = 24
+text = "total points"
+
+[node name="Label6" type="Label" parent="yellow_box_titled/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("3_04nbm")
+theme_override_font_sizes/font_size = 24
+text = "........ 0219"
+horizontal_alignment = 2
+
+[node name="spawn_point3" type="Control" parent="yellow_box_titled/VBoxContainer/HBoxContainer3/Label6"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -16.0
+offset_right = -16.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="ok_button" parent="yellow_box_titled" instance=ExtResource("4_48env")]
+layout_mode = 1
+anchors_preset = 7
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -96.0
+offset_bottom = -56.0
+grow_vertical = 0
+text = "OK"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_11yg0")
+volume_db = -10.0
+autoplay = true
+bus = &"Music"
+
+[node name="score_up_timer" type="Timer" parent="."]
+
+[connection signal="button_clicked" from="yellow_box_titled/ok_button" to="." method="_on_ok_button_button_clicked"]
+[connection signal="timeout" from="score_up_timer" to="." method="_on_score_up_timer_timeout"]

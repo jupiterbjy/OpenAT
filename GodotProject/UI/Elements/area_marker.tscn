@@ -1,0 +1,92 @@
+[gd_scene load_steps=4 format=3 uid="uid://cjcyndabqym73"]
+
+[ext_resource type="PackedScene" uid="uid://dqnahvfny1x57" path="res://UI/Elements/item_light.tscn" id="1_mgn3i"]
+[ext_resource type="Script" path="res://UI/Elements/area_marker.gd" id="1_xdhym"]
+[ext_resource type="Texture2D" uid="uid://rmwllp0iqyf2" path="res://Textures/Raw/Button.png" id="5_gr2a1"]
+
+[node name="area_marker" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_xdhym")
+
+[node name="item_light" parent="." instance=ExtResource("1_mgn3i")]
+rad_speed = -0.8
+
+[node name="item_light2" parent="." instance=ExtResource("1_mgn3i")]
+
+[node name="selected_effect" type="Sprite2D" parent="."]
+position = Vector2(0, 4)
+texture = ExtResource("5_gr2a1")
+region_enabled = true
+region_rect = Rect2(424, 432, 72, 64)
+
+[node name="area_uncleared_button" type="TextureButton" parent="."]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -32.0
+offset_top = -32.0
+offset_right = 32.0
+offset_bottom = 32.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+
+[node name="normal" type="Sprite2D" parent="area_uncleared_button"]
+position = Vector2(32, 32)
+texture = ExtResource("5_gr2a1")
+region_enabled = true
+region_rect = Rect2(-8, 280, 72, 72)
+
+[node name="hover" type="Sprite2D" parent="area_uncleared_button"]
+visible = false
+position = Vector2(32, 32)
+texture = ExtResource("5_gr2a1")
+region_enabled = true
+region_rect = Rect2(56, 280, 72, 72)
+
+[node name="area_cleared_button" type="TextureButton" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -32.0
+offset_top = -32.0
+offset_right = 32.0
+offset_bottom = 32.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+
+[node name="normal" type="Sprite2D" parent="area_cleared_button"]
+position = Vector2(32, 32)
+texture = ExtResource("5_gr2a1")
+region_enabled = true
+region_rect = Rect2(120, 280, 72, 72)
+
+[node name="hover" type="Sprite2D" parent="area_cleared_button"]
+visible = false
+position = Vector2(32, 32)
+texture = ExtResource("5_gr2a1")
+region_enabled = true
+region_rect = Rect2(184, 280, 72, 72)
+
+[connection signal="mouse_entered" from="area_uncleared_button" to="." method="_on_area_uncleared_button_mouse_entered"]
+[connection signal="mouse_exited" from="area_uncleared_button" to="." method="_on_area_uncleared_button_mouse_exited"]
+[connection signal="pressed" from="area_uncleared_button" to="." method="_on_area_uncleared_button_pressed"]
+[connection signal="mouse_entered" from="area_cleared_button" to="." method="_on_area_cleared_button_mouse_entered"]
+[connection signal="mouse_exited" from="area_cleared_button" to="." method="_on_area_cleared_button_mouse_exited"]
+[connection signal="pressed" from="area_cleared_button" to="." method="_on_area_cleared_button_pressed"]

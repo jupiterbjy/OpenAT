@@ -1,0 +1,169 @@
+[gd_scene load_steps=16 format=3 uid="uid://bqappyv0tbfj8"]
+
+[ext_resource type="Script" path="res://UI/UI Scenes/ui_map_select.gd" id="1_troxi"]
+[ext_resource type="Texture2D" uid="uid://buxjytjd3xt76" path="res://UI/Resources/ui_blackbar.png" id="1_v1ias"]
+[ext_resource type="Texture2D" uid="uid://cgedcufw4il2w" path="res://UI/Resources/map.jpg" id="2_tdy5f"]
+[ext_resource type="Script" path="res://UI/UI Scenes/area_map.gd" id="3_qwteu"]
+[ext_resource type="FontFile" uid="uid://cajh22w8vlvat" path="res://UI/Fonts/FontAdv_FD_224_B.fnt" id="6_ko8f5"]
+[ext_resource type="Texture2D" uid="uid://b2hxfc7712fri" path="res://UI/Resources/arrow_left.png" id="6_ouy4k"]
+[ext_resource type="Texture2D" uid="uid://bdiupaujyndnc" path="res://UI/Resources/arrow_left_highlight.png" id="7_68qgg"]
+[ext_resource type="PackedScene" uid="uid://b55bnrrpuay6o" path="res://UI/Elements/map_preview.tscn" id="8_neujb"]
+[ext_resource type="Script" path="res://UI/UI Scenes/stage_list.gd" id="8_wsokt"]
+[ext_resource type="Texture2D" uid="uid://c7x24jhp121d3" path="res://UI/Resources/arrow_right.png" id="9_kurqf"]
+[ext_resource type="Texture2D" uid="uid://bm5l6drw7fk02" path="res://UI/Resources/arrow_right_highlight.png" id="10_g56xd"]
+[ext_resource type="PackedScene" uid="uid://cfdtvarord05o" path="res://UI/Elements/no_button.tscn" id="12_h6eoq"]
+[ext_resource type="PackedScene" uid="uid://uq5yblxndrcy" path="res://UI/Elements/difficulty_button.tscn" id="13_mxamf"]
+[ext_resource type="PackedScene" uid="uid://n653ro3f33ss" path="res://UI/Elements/ok_button.tscn" id="13_pst2v"]
+[ext_resource type="PackedScene" uid="uid://c5u8snsktlbjx" path="res://UI/Elements/ok_shine.tscn" id="14_dorvl"]
+
+[node name="ui_map_select" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_troxi")
+
+[node name="cutout" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1500.0
+offset_top = -1500.0
+offset_right = 1500.0
+offset_bottom = 1500.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_v1ias")
+expand_mode = 5
+
+[node name="area_map" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -512.0
+offset_top = -384.0
+offset_right = 512.0
+offset_bottom = 384.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_tdy5f")
+script = ExtResource("3_qwteu")
+
+[node name="stage_selector" type="VBoxContainer" parent="area_map"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -424.0
+offset_right = 424.0
+offset_bottom = 161.0
+grow_horizontal = 2
+
+[node name="stage_info" type="Label" parent="area_map/stage_selector"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_ko8f5")
+text = "placeholder"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="stage_select_list" type="HBoxContainer" parent="area_map/stage_selector"]
+layout_mode = 2
+theme_override_constants/separation = 40
+alignment = 1
+
+[node name="vertical_margin_l" type="MarginContainer" parent="area_map/stage_selector/stage_select_list"]
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="stage_left" type="TextureButton" parent="area_map/stage_selector/stage_select_list/vertical_margin_l"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("6_ouy4k")
+texture_hover = ExtResource("7_68qgg")
+
+[node name="stage_list" type="HBoxContainer" parent="area_map/stage_selector/stage_select_list"]
+layout_mode = 2
+theme_override_constants/separation = 0
+script = ExtResource("8_wsokt")
+
+[node name="map_preview1" parent="area_map/stage_selector/stage_select_list/stage_list" instance=ExtResource("8_neujb")]
+layout_mode = 2
+
+[node name="map_preview2" parent="area_map/stage_selector/stage_select_list/stage_list" instance=ExtResource("8_neujb")]
+layout_mode = 2
+
+[node name="map_preview3" parent="area_map/stage_selector/stage_select_list/stage_list" instance=ExtResource("8_neujb")]
+layout_mode = 2
+
+[node name="map_preview4" parent="area_map/stage_selector/stage_select_list/stage_list" instance=ExtResource("8_neujb")]
+layout_mode = 2
+
+[node name="map_preview5" parent="area_map/stage_selector/stage_select_list/stage_list" instance=ExtResource("8_neujb")]
+layout_mode = 2
+
+[node name="vertical_margin_r" type="MarginContainer" parent="area_map/stage_selector/stage_select_list"]
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="stage_right" type="TextureButton" parent="area_map/stage_selector/stage_select_list/vertical_margin_r"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("9_kurqf")
+texture_hover = ExtResource("10_g56xd")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="area_map"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -460.0
+offset_top = -88.0
+offset_right = 460.0
+offset_bottom = -48.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 355
+alignment = 1
+
+[node name="MarginContainer2" type="MarginContainer" parent="area_map/HBoxContainer"]
+layout_mode = 2
+
+[node name="back_button" parent="area_map/HBoxContainer/MarginContainer2" instance=ExtResource("12_h6eoq")]
+layout_mode = 2
+text = "Back"
+
+[node name="difficulty_button" parent="area_map/HBoxContainer" instance=ExtResource("13_mxamf")]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="MarginContainer" type="MarginContainer" parent="area_map/HBoxContainer"]
+layout_mode = 2
+
+[node name="ok_shine" parent="area_map/HBoxContainer/MarginContainer" instance=ExtResource("14_dorvl")]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="start_button" parent="area_map/HBoxContainer/MarginContainer/ok_shine" instance=ExtResource("13_pst2v")]
+layout_mode = 1
+text = "Start"
+
+[connection signal="level_selected" from="area_map/stage_selector/stage_select_list/stage_list" to="area_map" method="_on_stage_list_level_selected"]
+[connection signal="level_clicked" from="area_map/stage_selector/stage_select_list/stage_list/map_preview1" to="area_map/stage_selector/stage_select_list/stage_list" method="_on_map_preview_1_level_clicked"]
+[connection signal="level_clicked" from="area_map/stage_selector/stage_select_list/stage_list/map_preview2" to="area_map/stage_selector/stage_select_list/stage_list" method="_on_map_preview_2_level_clicked"]
+[connection signal="level_clicked" from="area_map/stage_selector/stage_select_list/stage_list/map_preview3" to="area_map/stage_selector/stage_select_list/stage_list" method="_on_map_preview_3_level_clicked"]
+[connection signal="level_clicked" from="area_map/stage_selector/stage_select_list/stage_list/map_preview4" to="area_map/stage_selector/stage_select_list/stage_list" method="_on_map_preview_4_level_clicked"]
+[connection signal="level_clicked" from="area_map/stage_selector/stage_select_list/stage_list/map_preview5" to="area_map/stage_selector/stage_select_list/stage_list" method="_on_map_preview_5_level_clicked"]
+[connection signal="button_clicked" from="area_map/HBoxContainer/MarginContainer2/back_button" to="." method="_on_back_button_button_clicked"]
+[connection signal="button_clicked" from="area_map/HBoxContainer/MarginContainer/ok_shine/start_button" to="." method="_on_start_button_button_clicked"]

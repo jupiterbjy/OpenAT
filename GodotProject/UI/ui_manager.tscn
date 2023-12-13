@@ -1,0 +1,56 @@
+[gd_scene load_steps=5 format=3 uid="uid://dc6ll721g38c6"]
+
+[ext_resource type="Script" path="res://UI/ui_manager.gd" id="1_ksr8w"]
+[ext_resource type="Texture2D" uid="uid://d32277y0ihjcv" path="res://Textures/custom/ui_blackbar_blur.png" id="2_43g6l"]
+[ext_resource type="Texture2D" uid="uid://bety2ob4yg7gq" path="res://Textures/custom/custom_brick.png" id="3_28of6"]
+[ext_resource type="FontFile" uid="uid://dg8idnhjxgdk8" path="res://UI/Fonts/FontAdv_FD.fnt" id="4_wuy7j"]
+
+[node name="ui_manager" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ksr8w")
+
+[node name="border" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="border"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1500.0
+offset_top = -1500.0
+offset_right = 1500.0
+offset_bottom = 1500.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_43g6l")
+
+[node name="CustomBrick" type="Sprite2D" parent="border"]
+z_index = 2
+position = Vector2(-1024, 0)
+texture = ExtResource("3_28of6")
+
+[node name="CustomBrick2" type="Sprite2D" parent="border"]
+z_index = 2
+position = Vector2(1024, 0)
+texture = ExtResource("3_28of6")
+
+[node name="Label" type="Label" parent="border"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_fonts/font = ExtResource("4_wuy7j")

@@ -1,0 +1,125 @@
+[gd_scene load_steps=9 format=3 uid="uid://g47jr3dhk6ba"]
+
+[ext_resource type="PackedScene" uid="uid://c4seo8i0i12kn" path="res://UI/Elements/SubViewport/logo_3d.tscn" id="1_4yt45"]
+[ext_resource type="Texture2D" uid="uid://bety2ob4yg7gq" path="res://Textures/custom/custom_brick.png" id="2_gqg53"]
+[ext_resource type="PackedScene" uid="uid://dwuc20re0aq7q" path="res://UI/Elements/dialogue_box_enemy.tscn" id="3_pbliy"]
+[ext_resource type="FontFile" uid="uid://dg8idnhjxgdk8" path="res://UI/Fonts/FontAdv_FD.fnt" id="4_po1nf"]
+[ext_resource type="FontFile" uid="uid://cheofvag2gy84" path="res://UI/Fonts/FontAdv_FD_R.fnt" id="5_5u0vd"]
+[ext_resource type="FontFile" uid="uid://wp1gar4mv6d6" path="res://UI/Fonts/FontAdv_FD_224.fnt" id="6_dpytj"]
+[ext_resource type="FontFile" uid="uid://de378pv4wvph7" path="res://UI/Fonts/FontAdv_FD_224_Y.fnt" id="7_l4r6l"]
+[ext_resource type="FontFile" uid="uid://dfqapmhpqqv61" path="res://UI/Fonts/FontAdv_FD_224_R.fnt" id="8_80mig"]
+
+[node name="logo_3d_credits" instance=ExtResource("1_4yt45")]
+
+[node name="Camera3D" parent="." index="0"]
+transform = Transform3D(1, 0, 0, 0, 0.960779, 0.277315, 0, -0.277315, 0.960779, -2.53617, 2.47361, 8.31633)
+
+[node name="Sprite3D" type="Sprite3D" parent="." index="3"]
+transform = Transform3D(1.49, 0, 0, 0, 1.11066, 0.320576, 0, -0.320576, 1.11066, -2.5897, 0.109791, -3.06486)
+texture = ExtResource("2_gqg53")
+
+[node name="dialogue_box_enemy" parent="." index="4" instance=ExtResource("3_pbliy")]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 32.0
+offset_top = -273.0
+offset_right = 607.0
+offset_bottom = 211.0
+grow_vertical = 2
+scale = Vector2(1.135, 1.135)
+
+[node name="Label" type="Label" parent="dialogue_box_enemy" index="0"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 25.0
+offset_right = 242.0
+offset_bottom = 58.0
+theme_override_fonts/font = ExtResource("4_po1nf")
+theme_override_font_sizes/font_size = 28
+text = "Special Thanks to:"
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="dialogue_box_enemy" index="1"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 257.0
+offset_right = 242.0
+offset_bottom = 290.0
+theme_override_fonts/font = ExtResource("4_po1nf")
+theme_override_font_sizes/font_size = 28
+text = "(Not-so) Proudly Presented by:"
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="dialogue_box_enemy" index="2"]
+layout_mode = 0
+offset_left = 256.0
+offset_top = 25.0
+offset_right = 490.0
+offset_bottom = 58.0
+theme_override_fonts/font = ExtResource("5_5u0vd")
+theme_override_font_sizes/font_size = 28
+text = "Armada Tanks Devs"
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="dialogue_box_enemy" index="3"]
+layout_mode = 0
+offset_left = 226.0
+offset_top = 80.0
+offset_right = 544.0
+offset_bottom = 225.0
+theme_override_fonts/font = ExtResource("6_dpytj")
+theme_override_font_sizes/font_size = 25
+text = "Game Design, Programmer,
+Level design, Art & Graphics
+Art & Graphics
+Producer
+Music Composition, Sound Design"
+vertical_alignment = 1
+
+[node name="Label6" type="Label" parent="dialogue_box_enemy" index="4"]
+layout_mode = 0
+offset_left = 27.0
+offset_top = 80.0
+offset_right = 220.0
+offset_bottom = 225.0
+theme_override_fonts/font = ExtResource("7_l4r6l")
+theme_override_font_sizes/font_size = 25
+text = "Denis Kotov:
+
+Pasha Oliynyk:
+Yaroslav Yanovsky:
+Message:"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Label5" type="Label" parent="dialogue_box_enemy" index="5"]
+layout_mode = 0
+offset_left = 223.0
+offset_top = 312.0
+offset_right = 553.0
+offset_bottom = 457.0
+theme_override_fonts/font = ExtResource("6_dpytj")
+theme_override_font_sizes/font_size = 25
+text = "Game implementation
+Resource Creation
+
+Reverse Engineering
+Decoding Documentations"
+vertical_alignment = 1
+
+[node name="Label7" type="Label" parent="dialogue_box_enemy" index="6"]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 312.0
+offset_right = 216.0
+offset_bottom = 457.0
+theme_override_fonts/font = ExtResource("8_80mig")
+theme_override_font_sizes/font_size = 25
+text = "jupiterbjy:
+(Jun-Young Baek) 
+
+ruminex:
+(Doo-Sung Chung) "
+horizontal_alignment = 2
+vertical_alignment = 1

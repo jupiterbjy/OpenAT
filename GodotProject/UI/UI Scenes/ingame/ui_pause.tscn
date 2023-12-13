@@ -1,0 +1,60 @@
+[gd_scene load_steps=6 format=3 uid="uid://cro74bhadmip"]
+
+[ext_resource type="Script" path="res://UI/UI Scenes/ingame/ui_pause.gd" id="1_pthbc"]
+[ext_resource type="PackedScene" uid="uid://k3us51iu4hiy" path="res://UI/Elements/blue_box_titled.tscn" id="2_jpbxb"]
+[ext_resource type="PackedScene" uid="uid://dnn0cr17e734f" path="res://UI/Elements/normal_button.tscn" id="3_kbdld"]
+[ext_resource type="PackedScene" uid="uid://cfdtvarord05o" path="res://UI/Elements/no_button.tscn" id="4_vkpg8"]
+[ext_resource type="PackedScene" uid="uid://n653ro3f33ss" path="res://UI/Elements/ok_button.tscn" id="5_uvk5h"]
+
+[node name="ui_pause" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_pthbc")
+
+[node name="blue_box_titled" parent="." instance=ExtResource("2_jpbxb")]
+layout_mode = 1
+offset_left = -229.0
+offset_top = -256.0
+offset_bottom = 262.0
+title = "Pause"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="blue_box_titled"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -62.5
+offset_right = 20.0
+offset_bottom = 162.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 35
+alignment = 1
+
+[node name="objective_button" parent="blue_box_titled/VBoxContainer" instance=ExtResource("3_kbdld")]
+layout_mode = 2
+text = "Objectives"
+
+[node name="options_button" parent="blue_box_titled/VBoxContainer" instance=ExtResource("3_kbdld")]
+layout_mode = 2
+text = "Options"
+
+[node name="no_button" parent="blue_box_titled/VBoxContainer" instance=ExtResource("4_vkpg8")]
+layout_mode = 2
+text = "Quit"
+
+[node name="ok_button" parent="blue_box_titled/VBoxContainer" instance=ExtResource("5_uvk5h")]
+layout_mode = 2
+text = "Continue"
+
+[connection signal="button_clicked" from="blue_box_titled/VBoxContainer/objective_button" to="." method="_on_objective_button_button_clicked"]
+[connection signal="button_clicked" from="blue_box_titled/VBoxContainer/options_button" to="." method="_on_options_button_button_clicked"]
+[connection signal="button_clicked" from="blue_box_titled/VBoxContainer/no_button" to="." method="_on_no_button_button_clicked"]
+[connection signal="button_clicked" from="blue_box_titled/VBoxContainer/ok_button" to="." method="_on_ok_button_button_clicked"]

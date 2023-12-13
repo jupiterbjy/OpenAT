@@ -1,0 +1,48 @@
+[gd_scene load_steps=4 format=3 uid="uid://562lmn2pydjv"]
+
+[ext_resource type="Script" path="res://UI/Elements/HUD/enemy_hud.gd" id="1_u1iex"]
+[ext_resource type="PackedScene" uid="uid://dx03yaw0w4nlx" path="res://UI/Elements/HUD/enemy_pannel.tscn" id="2_0ppuf"]
+[ext_resource type="Texture2D" uid="uid://xwfyi6ura4l6" path="res://Textures/Raw/InfoPanel.png" id="3_rqkeh"]
+
+[node name="enemy_hud" type="Control"]
+custom_minimum_size = Vector2(108, 48)
+layout_mode = 3
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -108.0
+offset_bottom = 48.0
+grow_horizontal = 0
+script = ExtResource("1_u1iex")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+custom_minimum_size = Vector2(108, 48)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -54.0
+offset_right = 54.0
+offset_bottom = 48.0
+grow_horizontal = 2
+alignment = 1
+
+[node name="enemy_pannel" parent="HBoxContainer" instance=ExtResource("2_0ppuf")]
+layout_mode = 2
+
+[node name="enemy_pannel2" parent="HBoxContainer" instance=ExtResource("2_0ppuf")]
+layout_mode = 2
+
+[node name="spacer" type="Control" parent="HBoxContainer"]
+custom_minimum_size = Vector2(16, 0)
+layout_mode = 2
+
+[node name="Control" type="Control" parent="HBoxContainer"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="HBoxContainer/Control"]
+position = Vector2(24, 24)
+texture = ExtResource("3_rqkeh")
+region_enabled = true
+region_rect = Rect2(208, 48, 48, 48)

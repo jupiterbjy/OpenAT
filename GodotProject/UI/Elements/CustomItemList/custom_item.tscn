@@ -1,0 +1,43 @@
+[gd_scene load_steps=3 format=3 uid="uid://4r1qfb41mqsx"]
+
+[ext_resource type="Script" path="res://UI/Elements/CustomItemList/custom_item.gd" id="1_eb0cf"]
+[ext_resource type="FontFile" uid="uid://cajh22w8vlvat" path="res://UI/Fonts/FontAdv_FD_224_B.fnt" id="2_64386"]
+
+[node name="custom_item" type="ColorRect"]
+custom_minimum_size = Vector2(319, 29)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+script = ExtResource("1_eb0cf")
+
+[node name="label" type="Label" parent="."]
+custom_minimum_size = Vector2(319, 29)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -159.5
+offset_top = -18.5
+offset_right = 159.5
+offset_bottom = 16.5
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+theme_override_fonts/font = ExtResource("2_64386")
+theme_override_font_sizes/font_size = 24
+text = "PLACEHOLDER TEXT CHANGE THIS"
+horizontal_alignment = 1
+vertical_alignment = 1
+text_overrun_behavior = 3
+
+[connection signal="gui_input" from="label" to="." method="_on_label_gui_input"]
+[connection signal="mouse_entered" from="label" to="." method="_on_label_mouse_entered"]

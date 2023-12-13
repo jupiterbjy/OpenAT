@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://5bixdvxtw5v1"]
+
+[ext_resource type="Texture2D" uid="uid://duyauw1hknp73" path="res://UI/Resources/blue_box_0.png" id="1_mwa8x"]
+
+[node name="blue_box" type="NinePatchRect"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -255.0
+offset_top = -232.5
+offset_right = 255.0
+offset_bottom = 232.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_mwa8x")
+region_rect = Rect2(2, 0, 187, 191)
+patch_margin_left = 51
+patch_margin_top = 129
+patch_margin_right = 53
+patch_margin_bottom = 48

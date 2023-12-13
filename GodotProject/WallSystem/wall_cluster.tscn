@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://c0rqxi3ylrdxa"]
+
+[ext_resource type="Script" path="res://WallSystem/wall_cluster.gd" id="1_7gpab"]
+[ext_resource type="PackedScene" uid="uid://wnjtq5tg84if" path="res://Commons/DebugGizmos/cluster_gizmo.tscn" id="2_7s0kd"]
+
+[node name="wall_cluster" type="Node3D"]
+script = ExtResource("1_7gpab")
+
+[node name="cluster_gizmo" parent="." instance=ExtResource("2_7s0kd")]
+
+[connection signal="wall_destroyed" from="." to="." method="_on_wall_destroyed"]

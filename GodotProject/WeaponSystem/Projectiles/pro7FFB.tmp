@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://jshjo18wr5k2"]
+
+[ext_resource type="Script" path="res://WeaponSystem/Projectiles/projectile_base.gd" id="1_oi66v"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_4sisx"]
+radius = 0.1
+
+[node name="projectile_base" type="Area3D" groups=["projectile", "surface_hard"]]
+process_mode = 1
+collision_layer = 256
+collision_mask = 2448
+script = ExtResource("1_oi66v")
+
+[node name="collision" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
+shape = SubResource("SphereShape3D_4sisx")
+
+[node name="audio_player" type="AudioStreamPlayer" parent="."]
+process_mode = 3
+bus = &"IngameSound"
+
+[node name="kill_timer" type="Timer" parent="."]
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="timeout" from="kill_timer" to="." method="_on_kill_timer_timeout"]

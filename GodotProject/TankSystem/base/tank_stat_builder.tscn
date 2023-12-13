@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://tv3s7f1ul1p7"]
+
+[ext_resource type="Script" path="res://TankSystem/base/tank_stat_builder.gd" id="1_5jsf6"]
+
+[node name="tank_stat_builder" type="Node"]
+script = ExtResource("1_5jsf6")

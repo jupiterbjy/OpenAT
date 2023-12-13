@@ -1,0 +1,65 @@
+[gd_scene load_steps=14 format=3 uid="uid://btrbbw0okrrv6"]
+
+[ext_resource type="Script" path="res://MapSystem/level.gd" id="1_4fgsf"]
+[ext_resource type="Script" path="res://MapSystem/center_offset.gd" id="2_jog06"]
+[ext_resource type="PackedScene" uid="uid://c12c2844afldh" path="res://MapSystem/components/weather.tscn" id="3_g16uu"]
+[ext_resource type="PackedScene" uid="uid://dmtosr2sgqri6" path="res://MapSystem/components/items.tscn" id="4_eqbur"]
+[ext_resource type="PackedScene" uid="uid://cwm1lorixa2ge" path="res://MapSystem/components/flags.tscn" id="5_nh3k1"]
+[ext_resource type="PackedScene" uid="uid://crljn3lm7cisa" path="res://MapSystem/components/event_objs.tscn" id="6_xvv52"]
+[ext_resource type="PackedScene" uid="uid://dh20mm0eivvqd" path="res://MapSystem/components/respawns.tscn" id="7_b52xe"]
+[ext_resource type="PackedScene" uid="uid://bmwx57qrgw0jy" path="res://MapSystem/components/walls.tscn" id="8_jrghl"]
+[ext_resource type="PackedScene" uid="uid://cc4n427sa801w" path="res://MapSystem/components/terr.tscn" id="9_c1bs1"]
+[ext_resource type="PackedScene" uid="uid://dm3y2pl2tw2i6" path="res://MapSystem/components/trails.tscn" id="10_bqww6"]
+[ext_resource type="PackedScene" uid="uid://dwaiphrd7bldu" path="res://MapSystem/components/terr2.tscn" id="10_xnbqh"]
+[ext_resource type="PackedScene" uid="uid://daerks3lk513t" path="res://Commons/DebugGizmos/aim_gizmo.tscn" id="12_w20o2"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_35x54"]
+size = Vector3(30, 0, 30)
+
+[node name="level" type="Node3D"]
+transform = Transform3D(1.1, 0, 0, 0, 1, 0, 0, 0, 1.1, 0, 0, 0)
+script = ExtResource("1_4fgsf")
+
+[node name="center_offset" type="Node3D" parent="."]
+script = ExtResource("2_jog06")
+
+[node name="items" parent="center_offset" instance=ExtResource("4_eqbur")]
+
+[node name="flags" parent="center_offset" instance=ExtResource("5_nh3k1")]
+
+[node name="event_objs" parent="center_offset" instance=ExtResource("6_xvv52")]
+
+[node name="respawns" parent="center_offset" instance=ExtResource("7_b52xe")]
+
+[node name="walls" parent="center_offset" instance=ExtResource("8_jrghl")]
+
+[node name="terr" parent="center_offset" instance=ExtResource("9_c1bs1")]
+
+[node name="terr2" parent="center_offset" instance=ExtResource("10_xnbqh")]
+
+[node name="trails" parent="center_offset" instance=ExtResource("10_bqww6")]
+
+[node name="weather" parent="." instance=ExtResource("3_g16uu")]
+
+[node name="win_timer" type="Timer" parent="."]
+one_shot = true
+
+[node name="lose_timer" type="Timer" parent="."]
+one_shot = true
+
+[node name="mouse_trans_area" type="Area3D" parent="."]
+collision_layer = 8
+collision_mask = 0
+monitoring = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="mouse_trans_area"]
+shape = SubResource("BoxShape3D_35x54")
+
+[node name="aim_gizmo" parent="." instance=ExtResource("12_w20o2")]
+
+[node name="init_delay" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="timeout" from="win_timer" to="." method="_on_win_timer_timeout"]
+[connection signal="timeout" from="lose_timer" to="." method="_on_lose_timer_timeout"]
+[connection signal="timeout" from="init_delay" to="." method="_on_init_delay_timeout"]

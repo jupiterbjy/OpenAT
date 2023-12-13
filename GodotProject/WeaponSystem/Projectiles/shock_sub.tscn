@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://c4ba7danhd3sr"]
+
+[ext_resource type="PackedScene" uid="uid://jshjo18wr5k2" path="res://WeaponSystem/Projectiles/projectile_base.tscn" id="1_owhy8"]
+[ext_resource type="Script" path="res://WeaponSystem/Projectiles/shock_sub.gd" id="2_3oi8x"]
+
+[node name="shock_sub" instance=ExtResource("1_owhy8")]
+script = ExtResource("2_3oi8x")
+type = 6

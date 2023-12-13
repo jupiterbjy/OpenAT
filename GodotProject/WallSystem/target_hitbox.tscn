@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://be5f6vulri21n"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gi00b"]
+size = Vector3(1, 0.5, 1)
+
+[node name="target_hitbox" type="Area3D"]
+collision_layer = 512
+collision_mask = 0
+monitoring = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
+shape = SubResource("BoxShape3D_gi00b")

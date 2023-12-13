@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dshpvsiuew1lg"]
+
+[ext_resource type="Texture2D" uid="uid://deasm1mlxt7cj" path="res://Textures/Raw/Terr_Egypt.JPG" id="1_ov6v8"]
+
+[resource]
+shading_mode = 0
+albedo_texture = ExtResource("1_ov6v8")

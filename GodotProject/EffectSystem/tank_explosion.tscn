@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://bpubh3m0uods0"]
+
+[ext_resource type="Script" path="res://EffectSystem/tank_explosion.gd" id="1_dkaf4"]
+[ext_resource type="PackedScene" uid="uid://b3qfviphdhm1a" path="res://EffectSystem/explosion_paticle.tscn" id="2_2u840"]
+[ext_resource type="AudioStream" uid="uid://csk4rjf8q65ui" path="res://SoundSystem/Sounds/Explosion.wav" id="3_p1mvi"]
+
+[node name="tank_explosion" type="Node3D"]
+process_mode = 3
+script = ExtResource("1_dkaf4")
+
+[node name="explosion_paticle" parent="." instance=ExtResource("2_2u840")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0.15, 0)
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+autostart = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_p1mvi")
+autoplay = true
+bus = &"IngameSound"
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

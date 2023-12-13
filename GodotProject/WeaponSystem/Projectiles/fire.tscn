@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://ctm3udkg6u75p"]
+
+[ext_resource type="PackedScene" uid="uid://jshjo18wr5k2" path="res://WeaponSystem/Projectiles/projectile_base.tscn" id="1_p1mtr"]
+[ext_resource type="Script" path="res://WeaponSystem/Projectiles/cannon.gd" id="2_fbdif"]
+[ext_resource type="PackedScene" uid="uid://347nlwvipmeg" path="res://EffectSystem/bullet_hit.tscn" id="3_6glgl"]
+[ext_resource type="PackedScene" uid="uid://b8yftdt0v5x7e" path="res://EffectSystem/bullet_trail.tscn" id="4_w4xqt"]
+
+[node name="cannon" instance=ExtResource("1_p1mtr")]
+script = ExtResource("2_fbdif")
+hit_particle = ExtResource("3_6glgl")
+trail_particle = ExtResource("4_w4xqt")
+
+[connection signal="finished" from="audio_player" to="." method="_on_audio_player_finished"]

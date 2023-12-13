@@ -1,0 +1,8 @@
+[gd_resource type="Environment" format=3 uid="uid://dpdjt6emye40j"]
+
+[resource]
+ambient_light_source = 1
+reflected_light_source = 1
+fog_enabled = true
+fog_light_color = Color(0.439216, 0.686275, 0.74902, 1)
+fog_light_energy = 0.59

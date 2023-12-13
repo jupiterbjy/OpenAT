@@ -1,0 +1,52 @@
+[gd_scene load_steps=5 format=3 uid="uid://b41bug3ot25ir"]
+
+[ext_resource type="Script" path="res://UI/UI Scenes/ingame/ui_game_over.gd" id="1_nac6b"]
+[ext_resource type="PackedScene" uid="uid://1lujfgpoi218" path="res://UI/Elements/yellow_box_titled.tscn" id="2_w7g3o"]
+[ext_resource type="FontFile" uid="uid://b08pa0gvv5r17" path="res://UI/Fonts/FontAdv_FD_B.fnt" id="3_ar6jj"]
+[ext_resource type="PackedScene" uid="uid://n653ro3f33ss" path="res://UI/Elements/ok_button.tscn" id="4_wvy60"]
+
+[node name="ui_game_over" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_nac6b")
+
+[node name="yellow_box_titled" parent="." instance=ExtResource("2_w7g3o")]
+layout_mode = 1
+offset_left = -326.0
+offset_top = -174.0
+offset_right = 326.0
+offset_bottom = 174.0
+title = "Defeat"
+
+[node name="Label" type="Label" parent="yellow_box_titled"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -179.0
+offset_top = -15.5
+offset_right = 179.0
+offset_bottom = 17.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_ar6jj")
+text = "You've lost! Please try again."
+horizontal_alignment = 1
+
+[node name="ok_button" parent="yellow_box_titled" instance=ExtResource("4_wvy60")]
+layout_mode = 1
+anchors_preset = 7
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -106.0
+offset_bottom = -66.0
+grow_vertical = 0
+text = "OK"
+
+[connection signal="button_clicked" from="yellow_box_titled/ok_button" to="." method="_on_ok_button_button_clicked"]

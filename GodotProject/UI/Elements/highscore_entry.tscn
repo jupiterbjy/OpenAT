@@ -1,0 +1,48 @@
+[gd_scene load_steps=4 format=3 uid="uid://dsjalyu0b0swa"]
+
+[ext_resource type="Script" path="res://UI/Elements/highscore_entry.gd" id="1_jul8f"]
+[ext_resource type="FontFile" uid="uid://cajh22w8vlvat" path="res://UI/Fonts/FontAdv_FD_224_B.fnt" id="2_xnlpc"]
+[ext_resource type="FontFile" uid="uid://dfqapmhpqqv61" path="res://UI/Fonts/FontAdv_FD_224_R.fnt" id="3_ohfyb"]
+
+[node name="highscore_entry" type="HBoxContainer"]
+custom_minimum_size = Vector2(400, 30)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -14.5
+offset_right = 200.0
+offset_bottom = 15.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jul8f")
+
+[node name="Label" type="Label" parent="."]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("2_xnlpc")
+theme_override_font_sizes/font_size = 28
+text = "Sorasaki Hina"
+vertical_alignment = 1
+text_overrun_behavior = 3
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("3_ohfyb")
+theme_override_font_sizes/font_size = 28
+text = ".........................."
+horizontal_alignment = 2
+vertical_alignment = 1
+clip_text = true
+
+[node name="Label3" type="Label" parent="."]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_ohfyb")
+theme_override_font_sizes/font_size = 28
+text = "219219"
+horizontal_alignment = 2
+vertical_alignment = 1

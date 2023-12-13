@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dqugntm5pr442"]
+
+[ext_resource type="Script" path="res://TankSystem/trails/trail_base.gd" id="1_2nmxw"]
+[ext_resource type="PackedScene" uid="uid://bwicjes1bf0ay" path="res://Commons/DebugGizmos/track_gizmo.tscn" id="2_m0nk1"]
+
+[node name="trail_base" type="Node3D"]
+script = ExtResource("1_2nmxw")
+
+[node name="track_gizmo" parent="." instance=ExtResource("2_m0nk1")]
+
+[node name="remove_timer" type="Timer" parent="."]
+
+[connection signal="timeout" from="remove_timer" to="." method="_on_remove_timer_timeout"]

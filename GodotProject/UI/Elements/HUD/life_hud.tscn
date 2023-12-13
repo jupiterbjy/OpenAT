@@ -1,0 +1,34 @@
+[gd_scene load_steps=3 format=3 uid="uid://drbtv7ga2h61l"]
+
+[ext_resource type="Script" path="res://UI/Elements/HUD/life_hud.gd" id="1_jdsw1"]
+[ext_resource type="PackedScene" uid="uid://dlna6b51lgs7p" path="res://UI/Elements/HUD/life.tscn" id="2_6vyin"]
+
+[node name="life_hud" type="Control"]
+custom_minimum_size = Vector2(152, 48)
+layout_mode = 3
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+grow_horizontal = 2
+mouse_default_cursor_shape = 3
+script = ExtResource("1_jdsw1")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+custom_minimum_size = Vector2(152, 48)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -76.0
+offset_right = 76.0
+offset_bottom = 48.0
+grow_horizontal = 2
+
+[node name="life" parent="HBoxContainer" instance=ExtResource("2_6vyin")]
+layout_mode = 2
+
+[node name="life2" parent="HBoxContainer" instance=ExtResource("2_6vyin")]
+layout_mode = 2
+
+[node name="life3" parent="HBoxContainer" instance=ExtResource("2_6vyin")]
+layout_mode = 2

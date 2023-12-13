@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://tt4acn8u66cr"]
+
+[ext_resource type="PackedScene" uid="uid://cla2gxgi10mft" path="res://ItemSystem/Items/item_base.tscn" id="1_cg0e6"]
+[ext_resource type="Script" path="res://ItemSystem/Items/item_m.gd" id="2_861vj"]
+
+[node name="item_m" instance=ExtResource("1_cg0e6")]
+script = ExtResource("2_861vj")
+heal_amount = 1000
+item_code = "M"

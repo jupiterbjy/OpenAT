@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://d1a8upwy7uais"]
+
+[ext_resource type="PackedScene" uid="uid://bxhh21jekj12" path="res://TankSystem/base/tank_base.tscn" id="1_bvipi"]
+[ext_resource type="Script" path="res://TankSystem/base/tank_enemy_base.gd" id="2_xhpu2"]
+
+[node name="tank_enemy_base" groups=["enemy"] instance=ExtResource("1_bvipi")]
+script = ExtResource("2_xhpu2")
+
+[node name="hitbox" parent="." index="2" groups=["enemy"]]
+
+[connection signal="hit" from="health_bar" to="." method="_on_health_bar_hit"]

@@ -1,0 +1,119 @@
+[gd_scene load_steps=18 format=3 uid="uid://damwxo35ksuv4"]
+
+[ext_resource type="Texture2D" uid="uid://clc5a2hbvxrav" path="res://Textures/Raw/ScreenPart.png" id="1_02cet"]
+[ext_resource type="AudioStream" uid="uid://7txyxhtvookk" path="res://UI/Sound/Salute.wav" id="2_bfb02"]
+[ext_resource type="Script" path="res://EffectSystem/firework_particle.gd" id="2_ivdm3"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_ifjl5"]
+particles_animation = true
+particles_anim_h_frames = 16
+particles_anim_v_frames = 16
+particles_anim_loop = false
+
+[sub_resource type="Gradient" id="Gradient_ibj5n"]
+offsets = PackedFloat32Array(0, 0.22, 0.44, 0.5, 0.528, 0.684, 0.716, 0.748, 1)
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0.526718, 1, 1, 1, 1, 1, 1, 1, 0.356309, 1, 1, 1, 0.466207, 1, 1, 1, 1, 1, 1, 1, 0.108442, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_pm5s3"]
+gradient = SubResource("Gradient_ibj5n")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_4y10o"]
+lifetime_randomness = 0.1
+particle_flag_disable_z = true
+spread = 180.0
+initial_velocity_min = 120.0
+initial_velocity_max = 200.0
+angular_velocity_min = -28.42
+angular_velocity_max = 37.89
+gravity = Vector3(0, 25, 0)
+damping_min = 150.0
+damping_max = 150.0
+scale_max = 2.0
+color_ramp = SubResource("GradientTexture1D_pm5s3")
+anim_speed_min = 0.11
+anim_speed_max = 0.11
+anim_offset_min = 0.3684
+anim_offset_max = 0.64
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_7frmy"]
+blend_mode = 1
+particles_animation = true
+particles_anim_h_frames = 4
+particles_anim_v_frames = 4
+particles_anim_loop = false
+
+[sub_resource type="Curve" id="Curve_cmr60"]
+_data = [Vector2(0, 0.968421), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_y1mb2"]
+curve = SubResource("Curve_cmr60")
+
+[sub_resource type="Curve" id="Curve_34a68"]
+min_value = 0.5
+_data = [Vector2(0, 0.5), 0.0, 0.0, 0, 0, Vector2(1, 0.5), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_2hl57"]
+curve = SubResource("Curve_34a68")
+
+[sub_resource type="Gradient" id="Gradient_75mvf"]
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_njymy"]
+gradient = SubResource("Gradient_75mvf")
+
+[sub_resource type="Curve" id="Curve_ncmff"]
+max_value = 2.0
+_data = [Vector2(0, 0.189474), 0.0, 1.81053, 0, 1, Vector2(1, 2), 1.81053, 0.0, 1, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_r6mrn"]
+curve = SubResource("Curve_ncmff")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_etsoa"]
+particle_flag_disable_z = true
+gravity = Vector3(0, 0, 0)
+scale_curve = SubResource("CurveTexture_r6mrn")
+color_ramp = SubResource("GradientTexture1D_njymy")
+anim_speed_min = 1.0
+anim_speed_max = 1.0
+anim_speed_curve = SubResource("CurveTexture_2hl57")
+anim_offset_min = 0.7566
+anim_offset_max = 0.7566
+anim_offset_curve = SubResource("CurveTexture_y1mb2")
+
+[node name="firework_particle" type="GPUParticles2D"]
+material = SubResource("CanvasItemMaterial_ifjl5")
+emitting = false
+amount = 128
+process_material = SubResource("ParticleProcessMaterial_4y10o")
+texture = ExtResource("1_02cet")
+lifetime = 1.5
+one_shot = true
+explosiveness = 1.0
+visibility_rect = Rect2(-328.054, -312.497, 655.238, 649.358)
+script = ExtResource("2_ivdm3")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_bfb02")
+autoplay = true
+bus = &"UISound"
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+autostart = true
+
+[node name="light" type="GPUParticles2D" parent="."]
+material = SubResource("CanvasItemMaterial_7frmy")
+emitting = false
+amount = 1
+process_material = SubResource("ParticleProcessMaterial_etsoa")
+texture = ExtResource("1_02cet")
+lifetime = 0.3
+one_shot = true
+fixed_fps = 60
+fract_delta = false
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

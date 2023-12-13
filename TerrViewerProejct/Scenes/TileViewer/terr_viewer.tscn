@@ -1,0 +1,368 @@
+[gd_scene load_steps=24 format=3 uid="uid://dgegpc5c3mr02"]
+
+[ext_resource type="Script" path="res://Scenes/TileViewer/terr_viewer.gd" id="1_ghfxt"]
+[ext_resource type="PackedScene" uid="uid://5bixdvxtw5v1" path="res://UI/Elements/blue_box.tscn" id="1_vrjso"]
+[ext_resource type="PackedScene" uid="uid://gt1g6hd7ityl" path="res://Models/Inherited/edit_box.tscn" id="2_beauk"]
+[ext_resource type="PackedScene" uid="uid://dplep3sakhr2e" path="res://UI/Elements/small_left.tscn" id="2_ecoos"]
+[ext_resource type="Material" uid="uid://p3h8bgtw0myu" path="res://Materials/_x.tres" id="3_a3ecs"]
+[ext_resource type="FontFile" uid="uid://dg8idnhjxgdk8" path="res://UI/Fonts/FontAdv_FD.fnt" id="3_ryrpn"]
+[ext_resource type="Material" uid="uid://wywe7mjblmn8" path="res://Materials/_xy.tres" id="4_ifha0"]
+[ext_resource type="PackedScene" uid="uid://ly3jbk00pl2n" path="res://UI/Elements/small_right.tscn" id="4_k1fy2"]
+[ext_resource type="Material" uid="uid://nrcit381c871" path="res://Materials/_y.tres" id="5_pqh0c"]
+[ext_resource type="PackedScene" uid="uid://dgvtuwsicd4lm" path="res://Scenes/TileViewer/compass.tscn" id="5_xucee"]
+[ext_resource type="PackedScene" uid="uid://dnn0cr17e734f" path="res://UI/Elements/normal_button.tscn" id="7_038k4"]
+[ext_resource type="FontFile" uid="uid://wp1gar4mv6d6" path="res://UI/Fonts/FontAdv_FD_224.fnt" id="8_jero5"]
+[ext_resource type="Texture2D" uid="uid://dpsgraixxe4l4" path="res://Textures/Raw/Terr_Forest_Pac.JPG" id="9_bf4cx"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_ntmx3"]
+
+[sub_resource type="TextMesh" id="TextMesh_60jvd"]
+material = ExtResource("3_a3ecs")
+text = "X -2"
+font_size = 127
+
+[sub_resource type="TextMesh" id="TextMesh_twwv6"]
+material = ExtResource("4_ifha0")
+text = "XY 0"
+font_size = 127
+
+[sub_resource type="TextMesh" id="TextMesh_h3mn5"]
+material = ExtResource("5_pqh0c")
+text = "Y -1"
+font_size = 127
+
+[sub_resource type="TextMesh" id="TextMesh_lwn3e"]
+material = ExtResource("5_pqh0c")
+text = "Y -2"
+font_size = 127
+
+[sub_resource type="TextMesh" id="TextMesh_j2gcg"]
+material = ExtResource("5_pqh0c")
+text = "Y +2"
+font_size = 127
+
+[sub_resource type="TextMesh" id="TextMesh_0rl1l"]
+material = ExtResource("5_pqh0c")
+text = "Y +1"
+font_size = 127
+
+[sub_resource type="TextMesh" id="TextMesh_kwrqg"]
+material = ExtResource("3_a3ecs")
+text = "X +2"
+font_size = 127
+
+[sub_resource type="TextMesh" id="TextMesh_oe0xq"]
+material = ExtResource("3_a3ecs")
+text = "X -1"
+font_size = 127
+
+[sub_resource type="TextMesh" id="TextMesh_ad8ye"]
+material = ExtResource("3_a3ecs")
+text = "X +1"
+font_size = 127
+
+[node name="terr_viewer" type="Node3D"]
+script = ExtResource("1_ghfxt")
+
+[node name="cam" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.926009, 0.377501, 0, -0.377501, 0.926009, 9.53674e-07, 2.73367, 5.22835)
+current = true
+fov = 35.0
+
+[node name="turntable" type="Node3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="turntable"]
+visible = false
+mesh = SubResource("BoxMesh_ntmx3")
+
+[node name="grid" type="Node3D" parent="turntable"]
+transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, 0, 0, 0)
+
+[node name="EditBox" parent="turntable/grid" groups=["grid"] instance=ExtResource("2_beauk")]
+transform = Transform3D(1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, 0, -10, 0)
+
+[node name="EditBox2" parent="turntable/grid" groups=["grid"] instance=ExtResource("2_beauk")]
+transform = Transform3D(1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, 20, -10, 0)
+
+[node name="EditBox3" parent="turntable/grid" groups=["grid"] instance=ExtResource("2_beauk")]
+transform = Transform3D(1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, 40, -10, 0)
+
+[node name="EditBox4" parent="turntable/grid" groups=["grid"] instance=ExtResource("2_beauk")]
+transform = Transform3D(1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, 0, -10, 20)
+
+[node name="EditBox5" parent="turntable/grid" groups=["grid"] instance=ExtResource("2_beauk")]
+transform = Transform3D(1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, -20, -10, 0)
+
+[node name="EditBox6" parent="turntable/grid" groups=["grid"] instance=ExtResource("2_beauk")]
+transform = Transform3D(1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, 0, -10, 40)
+
+[node name="EditBox7" parent="turntable/grid" groups=["grid"] instance=ExtResource("2_beauk")]
+transform = Transform3D(1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, 0, -10, -20)
+
+[node name="EditBox8" parent="turntable/grid" groups=["grid"] instance=ExtResource("2_beauk")]
+transform = Transform3D(1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, -40, -10, 0)
+
+[node name="EditBox9" parent="turntable/grid" groups=["grid"] instance=ExtResource("2_beauk")]
+transform = Transform3D(1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, 0, -10, -40)
+
+[node name="EditBox10" parent="turntable/grid" groups=["grid"] instance=ExtResource("2_beauk")]
+transform = Transform3D(1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, 20, -10, -40)
+
+[node name="EditBox11" parent="turntable/grid" groups=["grid"] instance=ExtResource("2_beauk")]
+transform = Transform3D(1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, 40, -10, -40)
+
+[node name="EditBox12" parent="turntable/grid" groups=["grid"] instance=ExtResource("2_beauk")]
+transform = Transform3D(1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, 20, -10, -20)
+
+[node name="EditBox13" parent="turntable/grid" groups=["grid"] instance=ExtResource("2_beauk")]
+transform = Transform3D(1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, 40, -10, -20)
+
+[node name="EditBox14" parent="turntable/grid" groups=["grid"] instance=ExtResource("2_beauk")]
+transform = Transform3D(1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, 20, -10, 40)
+
+[node name="EditBox15" parent="turntable/grid" groups=["grid"] instance=ExtResource("2_beauk")]
+transform = Transform3D(1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, 40, -10, 40)
+
+[node name="EditBox16" parent="turntable/grid" groups=["grid"] instance=ExtResource("2_beauk")]
+transform = Transform3D(1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, 40, -10, 20)
+
+[node name="EditBox17" parent="turntable/grid" groups=["grid"] instance=ExtResource("2_beauk")]
+transform = Transform3D(1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, 20, -10, 20)
+
+[node name="EditBox18" parent="turntable/grid" groups=["grid"] instance=ExtResource("2_beauk")]
+transform = Transform3D(1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, -40, -10, 20)
+
+[node name="EditBox19" parent="turntable/grid" groups=["grid"] instance=ExtResource("2_beauk")]
+transform = Transform3D(1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, -40, -10, 40)
+
+[node name="EditBox20" parent="turntable/grid" groups=["grid"] instance=ExtResource("2_beauk")]
+transform = Transform3D(1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, -20, -10, 40)
+
+[node name="EditBox21" parent="turntable/grid" groups=["grid"] instance=ExtResource("2_beauk")]
+transform = Transform3D(1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, -20, -10, 20)
+
+[node name="EditBox22" parent="turntable/grid" groups=["grid"] instance=ExtResource("2_beauk")]
+transform = Transform3D(1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, -20, -10, -40)
+
+[node name="EditBox23" parent="turntable/grid" groups=["grid"] instance=ExtResource("2_beauk")]
+transform = Transform3D(1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, -40, -10, -20)
+
+[node name="EditBox24" parent="turntable/grid" groups=["grid"] instance=ExtResource("2_beauk")]
+transform = Transform3D(1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, -20, -10, -20)
+
+[node name="EditBox25" parent="turntable/grid" groups=["grid"] instance=ExtResource("2_beauk")]
+transform = Transform3D(1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, -40, -10, -40)
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="turntable/grid" groups=["grid"]]
+transform = Transform3D(5, 0, 0, 0, -2.18557e-07, 5, 0, -5, -2.18557e-07, -37.4218, 0.1, -6.7064)
+mesh = SubResource("TextMesh_60jvd")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="turntable/grid" groups=["grid"]]
+transform = Transform3D(5, 0, 0, 0, -2.18557e-07, 5, 0, -5, -2.18557e-07, 2.57817, 0.1, -6.7064)
+mesh = SubResource("TextMesh_twwv6")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="turntable/grid" groups=["grid"]]
+transform = Transform3D(5, 0, 0, 0, -2.18557e-07, 5, 0, -5, -2.18557e-07, 2.57817, 0.1, 13.2583)
+mesh = SubResource("TextMesh_h3mn5")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="turntable/grid" groups=["grid"]]
+transform = Transform3D(5, 0, 0, 0, -2.18557e-07, 5, 0, -5, -2.18557e-07, 2.57817, 0.1, 33.2936)
+mesh = SubResource("TextMesh_lwn3e")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D9" type="MeshInstance3D" parent="turntable/grid" groups=["grid"]]
+transform = Transform3D(5, 0, 0, 0, -2.18557e-07, 5, 0, -5, -2.18557e-07, 2.57817, 0.1, -46.7064)
+mesh = SubResource("TextMesh_j2gcg")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D10" type="MeshInstance3D" parent="turntable/grid" groups=["grid"]]
+transform = Transform3D(5, 0, 0, 0, -2.18557e-07, 5, 0, -5, -2.18557e-07, 2.57817, 0.1, -26.7064)
+mesh = SubResource("TextMesh_0rl1l")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="turntable/grid" groups=["grid"]]
+transform = Transform3D(5, 0, 0, 0, -2.18557e-07, 5, 0, -5, -2.18557e-07, 42.5782, 0.1, -6.7064)
+mesh = SubResource("TextMesh_kwrqg")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="turntable/grid" groups=["grid"]]
+transform = Transform3D(5, 0, 0, 0, -2.18557e-07, 5, 0, -5, -2.18557e-07, -17.4218, 0.1, -6.7064)
+mesh = SubResource("TextMesh_oe0xq")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="turntable/grid" groups=["grid"]]
+transform = Transform3D(5, 0, 0, 0, -2.18557e-07, 5, 0, -5, -2.18557e-07, 22.5782, 0.1, -6.7064)
+mesh = SubResource("TextMesh_ad8ye")
+skeleton = NodePath("../..")
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+offset_left = -2.0
+offset_right = 510.0
+offset_bottom = 512.0
+scale = Vector2(0.34, 0.34)
+mouse_filter = 2
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
+own_world_3d = true
+transparent_bg = true
+handle_input_locally = false
+screen_space_aa = 1
+size = Vector2i(660, 512)
+size_2d_override_stretch = true
+render_target_update_mode = 4
+
+[node name="compass" parent="SubViewportContainer/SubViewport" instance=ExtResource("5_xucee")]
+
+[node name="blue_box2" parent="." instance=ExtResource("1_vrjso")]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -271.0
+offset_top = -230.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="blue_box2"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -90.5
+offset_top = -20.0
+offset_right = 90.5
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label2" type="Label" parent="blue_box2/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("8_jero5")
+text = "Terr_Sand_Pac_Obj"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="blue_box2/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="blue_box2/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="tex_left" parent="blue_box2/VBoxContainer/HBoxContainer2/MarginContainer" instance=ExtResource("2_ecoos")]
+layout_mode = 2
+
+[node name="texture" type="TextureRect" parent="blue_box2/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+texture = ExtResource("9_bf4cx")
+expand_mode = 3
+
+[node name="MarginContainer2" type="MarginContainer" parent="blue_box2/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="tex_right" parent="blue_box2/VBoxContainer/HBoxContainer2/MarginContainer2" instance=ExtResource("4_k1fy2")]
+layout_mode = 2
+
+[node name="SubViewportContainer2" type="SubViewportContainer" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -270.0
+offset_right = 242.0
+offset_bottom = 300.0
+grow_horizontal = 0
+scale = Vector2(0.525, 0.525)
+mouse_filter = 2
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer2"]
+handle_input_locally = false
+screen_space_aa = 1
+size = Vector2i(512, 300)
+render_target_update_mode = 4
+
+[node name="cam2" type="Camera3D" parent="SubViewportContainer2/SubViewport"]
+transform = Transform3D(-1, -3.30319e-08, 8.09422e-08, 0, 0.925871, 0.377841, -8.74228e-08, 0.377841, -0.925871, 0, 2.53953, -5.228)
+current = true
+fov = 35.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -162.0
+offset_right = 240.0
+grow_vertical = 0
+
+[node name="grid_show_button" parent="VBoxContainer" instance=ExtResource("7_038k4")]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+text = "See-Thru Grid"
+
+[node name="screenshot_button" parent="VBoxContainer" instance=ExtResource("7_038k4")]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+text = "Take Screenshot"
+
+[node name="Control" type="Control" parent="VBoxContainer"]
+custom_minimum_size = Vector2(240, 60)
+layout_mode = 2
+
+[node name="blue_box" parent="VBoxContainer/Control" instance=ExtResource("1_vrjso")]
+custom_minimum_size = Vector2(240, 0)
+layout_mode = 1
+offset_left = -120.0
+offset_top = -47.5
+offset_right = 120.0
+offset_bottom = 47.5
+patch_margin_top = 47
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/Control/blue_box"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -90.5
+offset_top = -17.5
+offset_right = 90.5
+offset_bottom = 17.5
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="left" parent="VBoxContainer/Control/blue_box/HBoxContainer" instance=ExtResource("2_ecoos")]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Control/blue_box/HBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_ryrpn")
+text = "Template"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="right" parent="VBoxContainer/Control/blue_box/HBoxContainer" instance=ExtResource("4_k1fy2")]
+layout_mode = 2
+
+[node name="spacer" type="Control" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[connection signal="pressed" from="blue_box2/VBoxContainer/HBoxContainer2/MarginContainer/tex_left" to="." method="_on_tex_left_pressed"]
+[connection signal="pressed" from="blue_box2/VBoxContainer/HBoxContainer2/MarginContainer2/tex_right" to="." method="_on_tex_right_pressed"]
+[connection signal="button_clicked" from="VBoxContainer/grid_show_button" to="." method="_on_grid_show_button_button_clicked"]
+[connection signal="button_clicked" from="VBoxContainer/screenshot_button" to="." method="_on_screenshot_button_button_clicked"]
+[connection signal="pressed" from="VBoxContainer/Control/blue_box/HBoxContainer/left" to="." method="_on_left_pressed"]
+[connection signal="pressed" from="VBoxContainer/Control/blue_box/HBoxContainer/right" to="." method="_on_right_pressed"]

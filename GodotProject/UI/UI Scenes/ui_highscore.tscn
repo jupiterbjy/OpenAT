@@ -1,0 +1,104 @@
+[gd_scene load_steps=8 format=3 uid="uid://demnbhyy3q7l4"]
+
+[ext_resource type="Script" path="res://UI/UI Scenes/ui_highscore.gd" id="1_g3oex"]
+[ext_resource type="PackedScene" uid="uid://k3us51iu4hiy" path="res://UI/Elements/blue_box_titled.tscn" id="2_lbg5a"]
+[ext_resource type="PackedScene" uid="uid://c5euh253xgm8f" path="res://UI/Elements/white_box.tscn" id="3_5vy5t"]
+[ext_resource type="PackedScene" uid="uid://n653ro3f33ss" path="res://UI/Elements/ok_button.tscn" id="3_dk7fx"]
+[ext_resource type="FontFile" uid="uid://cajh22w8vlvat" path="res://UI/Fonts/FontAdv_FD_224_B.fnt" id="4_1cgtq"]
+[ext_resource type="Script" path="res://UI/UI Scenes/button_emit_sound.gd" id="4_7iqqb"]
+[ext_resource type="PackedScene" uid="uid://dsjalyu0b0swa" path="res://UI/Elements/highscore_entry.tscn" id="4_yn5pk"]
+
+[node name="ui_highscore" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_g3oex")
+
+[node name="blue_box_titled" parent="." instance=ExtResource("2_lbg5a")]
+layout_mode = 1
+offset_left = -264.0
+offset_top = -330.0
+offset_right = 335.0
+offset_bottom = 331.0
+title = "Hiscore"
+
+[node name="white_box" parent="blue_box_titled" instance=ExtResource("3_5vy5t")]
+layout_mode = 1
+offset_left = -230.5
+offset_top = -190.0
+offset_right = 230.5
+offset_bottom = 172.0
+
+[node name="ScrollContainer" type="ScrollContainer" parent="blue_box_titled/white_box"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -210.5
+offset_top = -166.0
+offset_right = 212.5
+offset_bottom = 163.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 2
+
+[node name="vbox" type="VBoxContainer" parent="blue_box_titled/white_box/ScrollContainer"]
+layout_mode = 2
+
+[node name="highscore_entry" parent="blue_box_titled/white_box/ScrollContainer/vbox" instance=ExtResource("4_yn5pk")]
+layout_mode = 2
+
+[node name="ok_button" parent="blue_box_titled" instance=ExtResource("3_dk7fx")]
+layout_mode = 1
+anchors_preset = 7
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -99.0
+offset_bottom = -59.0
+grow_vertical = 0
+text = "OK"
+
+[node name="text_button" type="TextureButton" parent="blue_box_titled"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -110.0
+offset_top = -152.0
+offset_right = 110.0
+offset_bottom = -128.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_default_cursor_shape = 2
+script = ExtResource("4_7iqqb")
+
+[node name="Label" type="Label" parent="blue_box_titled/text_button"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -110.0
+offset_top = -10.5
+offset_right = 110.0
+offset_bottom = 18.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("4_1cgtq")
+theme_override_font_sizes/font_size = 24
+text = "(clear hiscore table)"
+horizontal_alignment = 1
+
+[connection signal="button_clicked" from="blue_box_titled/ok_button" to="." method="_on_ok_button_button_clicked"]
+[connection signal="mouse_entered" from="blue_box_titled/text_button" to="blue_box_titled/text_button" method="_on_mouse_entered"]
+[connection signal="pressed" from="blue_box_titled/text_button" to="." method="_on_text_button_pressed"]
+[connection signal="pressed" from="blue_box_titled/text_button" to="blue_box_titled/text_button" method="_on_pressed"]

@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://cla2gxgi10mft"]
+
+[ext_resource type="Script" path="res://ItemSystem/Items/item_base.gd" id="1_gylvb"]
+[ext_resource type="PackedScene" uid="uid://by17lkh6xume8" path="res://Commons/DebugGizmos/item_gizmo.tscn" id="2_rndks"]
+[ext_resource type="AudioStream" uid="uid://cii2sedlkxlf2" path="res://SoundSystem/Sounds/ItemTake.wav" id="3_xocod"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kwrxb"]
+size = Vector3(0.5, 0.5, 0.5)
+
+[node name="item_base" type="Node3D"]
+script = ExtResource("1_gylvb")
+
+[node name="item_gizmo" parent="." instance=ExtResource("2_rndks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+skeleton = NodePath("../area")
+
+[node name="area" type="Area3D" parent="." groups=["items"]]
+collision_layer = 2048
+collision_mask = 16
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="area"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
+shape = SubResource("BoxShape3D_kwrxb")
+
+[node name="turn_table" type="Node3D" parent="."]
+
+[node name="pickup_sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_xocod")
+bus = &"IngameSound"
+
+[connection signal="area_entered" from="area" to="." method="_on_area_area_entered"]
+[connection signal="finished" from="pickup_sound" to="." method="_on_pickup_sound_finished"]

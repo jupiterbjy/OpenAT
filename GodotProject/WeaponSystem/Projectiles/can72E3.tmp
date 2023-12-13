@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://cjdgxbbi66q2x"]
+
+[ext_resource type="Script" path="res://WeaponSystem/Projectiles/cannon.gd" id="1_oco3m"]
+[ext_resource type="PackedScene" uid="uid://jshjo18wr5k2" path="res://WeaponSystem/Projectiles/projectile_base.tscn" id="1_p1mtr"]
+
+[node name="projectile_base" instance=ExtResource("1_p1mtr")]
+script = ExtResource("1_oco3m")

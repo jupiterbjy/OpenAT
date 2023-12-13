@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dsx46nuyib2ax"]
+
+[ext_resource type="Texture2D" uid="uid://b06d3a50lpwl0" path="res://Models/Custom/trails/Track.png" id="1_x8wvt"]
+
+[resource]
+transparency = 1
+shading_mode = 0
+albedo_color = Color(0.12549, 0.12549, 0.12549, 0.396078)
+albedo_texture = ExtResource("1_x8wvt")

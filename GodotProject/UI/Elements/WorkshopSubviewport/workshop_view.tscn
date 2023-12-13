@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bu88whepfdna4"]
+
+[ext_resource type="Script" path="res://UI/Elements/WorkshopSubviewport/workshop_view.gd" id="1_501ro"]
+[ext_resource type="Script" path="res://UI/Elements/SubViewport/player_model_load.gd" id="1_qqnib"]
+
+[node name="workshop_view" type="Node3D"]
+script = ExtResource("1_501ro")
+
+[node name="turntable" type="Node3D" parent="."]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 0)
+script = ExtResource("1_qqnib")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.712051, 0.702128, 0, -0.702128, 0.712051, 3.57628e-07, 1.98779, 1.98106)
+fov = 40.0

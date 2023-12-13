@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dwaiphrd7bldu"]
+
+[ext_resource type="Script" path="res://MapSystem/components/terr2.gd" id="1_l7p6l"]
+
+[node name="terr2" type="Node3D"]
+script = ExtResource("1_l7p6l")

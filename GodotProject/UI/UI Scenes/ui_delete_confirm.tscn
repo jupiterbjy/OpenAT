@@ -1,0 +1,82 @@
+[gd_scene load_steps=7 format=3 uid="uid://42b3ldokfrox"]
+
+[ext_resource type="PackedScene" uid="uid://k3us51iu4hiy" path="res://UI/Elements/blue_box_titled.tscn" id="1_3gn44"]
+[ext_resource type="Script" path="res://UI/UI Scenes/ui_delete_confirm.gd" id="1_am8xb"]
+[ext_resource type="FontFile" uid="uid://dg8idnhjxgdk8" path="res://UI/Fonts/FontAdv_FD.fnt" id="2_ue6p8"]
+[ext_resource type="FontFile" uid="uid://b08pa0gvv5r17" path="res://UI/Fonts/FontAdv_FD_B.fnt" id="3_g05ek"]
+[ext_resource type="PackedScene" uid="uid://cfdtvarord05o" path="res://UI/Elements/no_button.tscn" id="4_cc2xy"]
+[ext_resource type="PackedScene" uid="uid://n653ro3f33ss" path="res://UI/Elements/ok_button.tscn" id="5_ppq60"]
+
+[node name="ui_delete_confirm" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_am8xb")
+
+[node name="blue_box_titled" parent="." instance=ExtResource("1_3gn44")]
+layout_mode = 1
+offset_left = -379.5
+offset_top = -189.5
+offset_right = 379.5
+offset_bottom = 189.5
+title = "Delete"
+
+[node name="label" type="Label" parent="blue_box_titled"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -255.0
+offset_top = -40.5
+offset_right = 255.0
+offset_bottom = -7.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_ue6p8")
+theme_override_font_sizes/font_size = 30
+text = "Are you sure want to delete this player?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="label2" type="Label" parent="blue_box_titled"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -219.0
+offset_top = -0.5
+offset_right = 219.0
+offset_bottom = 32.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_g05ek")
+theme_override_font_sizes/font_size = 30
+text = "PLAYER_NAME"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="no_button" parent="blue_box_titled" instance=ExtResource("4_cc2xy")]
+layout_mode = 1
+offset_left = 52.0
+offset_top = 76.0
+offset_right = 252.0
+offset_bottom = 116.0
+text = "Cancel"
+
+[node name="ok_button" parent="blue_box_titled" instance=ExtResource("5_ppq60")]
+layout_mode = 1
+offset_left = -252.0
+offset_top = 76.0
+offset_right = -52.0
+offset_bottom = 116.0
+text = "OK"
+
+[connection signal="button_clicked" from="blue_box_titled/no_button" to="." method="_on_no_button_button_clicked"]
+[connection signal="button_clicked" from="blue_box_titled/ok_button" to="." method="_on_ok_button_button_clicked"]

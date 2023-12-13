@@ -1,0 +1,92 @@
+[gd_scene load_steps=5 format=3 uid="uid://b2bxlotnrm6xk"]
+
+[ext_resource type="Texture2D" uid="uid://bx1eyxoh3wxn0" path="res://Textures/custom/sun.png" id="1_w2xyg"]
+[ext_resource type="PackedScene" uid="uid://c4seo8i0i12kn" path="res://UI/Elements/SubViewport/logo_3d.tscn" id="2_jby7h"]
+[ext_resource type="Script" path="res://UI/Elements/Logo/workshop_button.gd" id="4_dk01s"]
+[ext_resource type="Texture2D" uid="uid://dpxw2mhsapgd4" path="res://Textures/custom/full_logo_outline_shadow.png" id="4_gvr4m"]
+
+[node name="logo" type="Control"]
+custom_minimum_size = Vector2(400, 300)
+layout_mode = 3
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+grow_horizontal = 2
+
+[node name="scale_root" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_top = 10.0
+offset_bottom = 10.0
+grow_horizontal = 2
+scale = Vector2(0.5, 0.5)
+
+[node name="Sun" type="Sprite2D" parent="scale_root"]
+position = Vector2(0, 202)
+scale = Vector2(1.16129, 1.16129)
+texture = ExtResource("1_w2xyg")
+region_enabled = true
+region_rect = Rect2(0, 0, 448, 248)
+
+[node name="viewport_container" type="SubViewportContainer" parent="scale_root"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -347.0
+offset_right = 347.0
+offset_bottom = 586.0
+grow_horizontal = 2
+
+[node name="SubViewport" type="SubViewport" parent="scale_root/viewport_container"]
+own_world_3d = true
+transparent_bg = true
+handle_input_locally = false
+msaa_3d = 1
+screen_space_aa = 1
+size = Vector2i(694, 586)
+render_target_update_mode = 4
+
+[node name="logo_3d" parent="scale_root/viewport_container/SubViewport" instance=ExtResource("2_jby7h")]
+
+[node name="text_root" type="Control" parent="."]
+custom_minimum_size = Vector2(400, 300)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -150.0
+offset_right = 200.0
+offset_bottom = 150.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="FullLogoOutlineShadow" type="Sprite2D" parent="text_root"]
+position = Vector2(200, 167)
+scale = Vector2(0.225, 0.225)
+texture = ExtResource("4_gvr4m")
+
+[node name="workshop_button" type="TextureButton" parent="."]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -75.0
+offset_top = -61.0
+offset_right = 75.0
+offset_bottom = 89.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+script = ExtResource("4_dk01s")
+
+[connection signal="mouse_entered" from="workshop_button" to="workshop_button" method="_on_mouse_entered"]
+[connection signal="pressed" from="workshop_button" to="workshop_button" method="_on_pressed"]

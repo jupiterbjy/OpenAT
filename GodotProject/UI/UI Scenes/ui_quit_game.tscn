@@ -1,0 +1,75 @@
+[gd_scene load_steps=6 format=3 uid="uid://7hojpm25uo82"]
+
+[ext_resource type="PackedScene" uid="uid://k3us51iu4hiy" path="res://UI/Elements/blue_box_titled.tscn" id="1_3prcu"]
+[ext_resource type="Script" path="res://UI/UI Scenes/ui_quit_game.gd" id="1_o50ua"]
+[ext_resource type="PackedScene" uid="uid://cfdtvarord05o" path="res://UI/Elements/no_button.tscn" id="3_2f6vd"]
+[ext_resource type="FontFile" uid="uid://dg8idnhjxgdk8" path="res://UI/Fonts/FontAdv_FD.fnt" id="3_hvyss"]
+[ext_resource type="PackedScene" uid="uid://n653ro3f33ss" path="res://UI/Elements/ok_button.tscn" id="4_04ks4"]
+
+[node name="ui_quit" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_o50ua")
+
+[node name="blue_box_titled" parent="." instance=ExtResource("1_3prcu")]
+layout_mode = 1
+offset_left = -375.0
+offset_top = -175.5
+offset_right = 375.0
+offset_bottom = 175.5
+title = "Quit this game"
+
+[node name="Label" type="Label" parent="blue_box_titled"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -155.0
+offset_top = -17.5
+offset_right = 155.0
+offset_bottom = 17.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_hvyss")
+theme_override_font_sizes/font_size = 32
+text = "Are you sure want to quit?"
+horizontal_alignment = 1
+
+[node name="no_button" parent="blue_box_titled" instance=ExtResource("3_2f6vd")]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -332.0
+offset_top = -111.0
+offset_right = -132.0
+offset_bottom = -71.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "No"
+
+[node name="ok_button" parent="blue_box_titled" instance=ExtResource("4_04ks4")]
+layout_mode = 1
+anchors_preset = 2
+anchor_left = 0.0
+anchor_top = 1.0
+anchor_right = 0.0
+anchor_bottom = 1.0
+offset_left = 120.0
+offset_top = -111.0
+offset_right = 320.0
+offset_bottom = -71.0
+grow_horizontal = 1
+grow_vertical = 0
+text = "Yes"
+
+[connection signal="button_clicked" from="blue_box_titled/no_button" to="." method="_on_no_button_button_clicked"]
+[connection signal="button_clicked" from="blue_box_titled/ok_button" to="." method="_on_ok_button_button_clicked"]

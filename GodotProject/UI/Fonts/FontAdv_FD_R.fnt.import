@@ -1,0 +1,17 @@
+[remap]
+
+importer="font_data_bmfont"
+type="FontFile"
+uid="uid://cheofvag2gy84"
+path="res://.godot/imported/FontAdv_FD_R.fnt-ff6c72c147a8f07dd63f5b28c5ebf5cc.fontdata"
+
+[deps]
+
+source_file="res://UI/Fonts/FontAdv_FD_R.fnt"
+dest_files=["res://.godot/imported/FontAdv_FD_R.fnt-ff6c72c147a8f07dd63f5b28c5ebf5cc.fontdata"]
+
+[params]
+
+fallbacks=[]
+compress=false
+scaling_mode=2

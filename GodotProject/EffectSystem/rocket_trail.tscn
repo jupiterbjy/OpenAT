@@ -1,0 +1,50 @@
+[gd_scene load_steps=9 format=3 uid="uid://cfi3x4e7omkww"]
+
+[ext_resource type="Texture2D" uid="uid://1sapwm51nbbl" path="res://Textures/Raw/Explosion-256.png" id="1_ms1ge"]
+
+[sub_resource type="Gradient" id="Gradient_78nxu"]
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_8kxiv"]
+gradient = SubResource("Gradient_78nxu")
+
+[sub_resource type="Curve" id="Curve_mjqxh"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_r7dqn"]
+curve = SubResource("Curve_mjqxh")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_2qgei"]
+spread = 0.0
+gravity = Vector3(0, 0, 0)
+damping_min = 8.219
+damping_max = 8.219
+angle_min = -177.5
+angle_max = 59.2
+scale_curve = SubResource("CurveTexture_r7dqn")
+color_ramp = SubResource("GradientTexture1D_8kxiv")
+anim_offset_min = 0.1351
+anim_offset_max = 0.1351
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_osvwp"]
+transparency = 1
+blend_mode = 1
+shading_mode = 0
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_ms1ge")
+billboard_mode = 3
+particles_anim_h_frames = 8
+particles_anim_v_frames = 8
+particles_anim_loop = false
+
+[sub_resource type="QuadMesh" id="QuadMesh_tbpf6"]
+material = SubResource("StandardMaterial3D_osvwp")
+
+[node name="rocket_trail" type="GPUParticles3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
+amount = 16
+lifetime = 0.3
+fixed_fps = 60
+process_material = SubResource("ParticleProcessMaterial_2qgei")
+draw_pass_1 = SubResource("QuadMesh_tbpf6")

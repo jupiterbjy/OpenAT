@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://bwa3e52pyvx42"]
+
+[ext_resource type="Script" path="res://CamSystem/custom_viewport.gd" id="1_3cyqr"]
+
+[node name="custom_viewport" type="SubViewportContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3cyqr")
+
+[node name="SubViewport" type="SubViewport" parent="."]
+handle_input_locally = false
+size_2d_override_stretch = true
+render_target_update_mode = 4

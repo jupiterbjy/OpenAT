@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://o26nmdrsbp8b"]
+
+[ext_resource type="PackedScene" uid="uid://d1a8upwy7uais" path="res://TankSystem/base/tank_enemy_base.tscn" id="1_lfush"]
+
+[node name="tank_nuke" instance=ExtResource("1_lfush")]

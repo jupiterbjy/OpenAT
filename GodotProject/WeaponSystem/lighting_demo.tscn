@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://c5ynhxxgtulmg"]
+
+[ext_resource type="Material" uid="uid://b7uyucrs6lr3n" path="res://WeaponSystem/lightning.tres" id="1_75ty7"]
+[ext_resource type="Texture2D" uid="uid://igydlhpvi0ib" path="res://Textures/Raw/Light.JPG" id="2_1hiqr"]
+
+[node name="lighting_demo" type="Node3D"]
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+material_override = ExtResource("1_75ty7")
+texture = ExtResource("2_1hiqr")
+hframes = 5
+frame = 1
+region_enabled = true
+region_rect = Rect2(0, 0, 512, 512)
+
+[node name="Sprite3D2" type="Sprite3D" parent="."]
+material_override = ExtResource("1_75ty7")
+texture = ExtResource("2_1hiqr")
+hframes = 5
+frame = 1
+region_enabled = true
+region_rect = Rect2(0, 0, 512, 512)

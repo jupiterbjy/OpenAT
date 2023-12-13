@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dvag84wkhmh0"]
+
+[ext_resource type="Texture2D" uid="uid://clg65c3gfd5wt" path="res://Textures/Raw/Terr_Forest_Pac_Obj.JPG" id="1_211wh"]
+
+[resource]
+shading_mode = 0
+albedo_texture = ExtResource("1_211wh")
