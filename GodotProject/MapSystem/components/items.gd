@@ -5,6 +5,7 @@ extends Node3D
 var drop_scene: PackedScene = preload("res://ItemSystem/Items/item_dropper.tscn") 
 var item_map: Dictionary = {}
 var item_dropping: Dictionary = {}
+var max_item_count: int = 10
 
 
 func pick_random() -> Vector2:
@@ -25,6 +26,10 @@ func pick_random() -> Vector2:
 
 
 func drop_item():
+	if len(item_map) + len(item_dropping) >= 10:
+		print("[ItemManager] Max item limit reached")
+		return
+	
 	var dropper = drop_scene.instantiate()
 	var drop_pos = pick_random()
 	

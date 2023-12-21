@@ -28,6 +28,10 @@ signal update_player_loadout
 signal enter_demo
 
 
+signal hide_cursor
+signal show_cursor
+
+
 func on_start(area_id: int, level_id: int):
 	MapJsonLoader.load_level_data(area_id, level_id)
 

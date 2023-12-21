@@ -4,7 +4,7 @@ extends BaseProjectile
 @onready var secondary_area: Area3D = $secondary_collision
 
 
-func play_hit_sound(area: Area3D):
+func play_hit_sound(_area: Area3D):
 	_audio_player.stream = load("res://SoundSystem/Sounds/Dest-R.wav")
 	_audio_player.play()
 
@@ -25,8 +25,6 @@ func _on_area_entered(area: Area3D):
 	_velocity = 0
 	
 	_model.queue_free()
-	
-	var groups = area.get_groups()
 	
 	if area.is_in_group(counter_group):
 		damage_counter_group(area.get_parent())

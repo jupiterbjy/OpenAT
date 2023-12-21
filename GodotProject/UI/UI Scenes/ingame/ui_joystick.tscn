@@ -1,0 +1,37 @@
+[gd_scene load_steps=7 format=3 uid="uid://dfqer852jp41v"]
+
+[ext_resource type="Texture2D" uid="uid://hwurv1bc4gd8" path="res://Textures/custom/joystick_move.png" id="1_gu4rk"]
+[ext_resource type="Script" path="res://UI/UI Scenes/ingame/ui_joystick.gd" id="1_kmine"]
+[ext_resource type="Script" path="res://UI/UI Scenes/ingame/movement_joystick.gd" id="2_lt64b"]
+[ext_resource type="Texture2D" uid="uid://bya2l32laaqvb" path="res://Textures/custom/stick.png" id="2_o6523"]
+[ext_resource type="Texture2D" uid="uid://y2ugo6u7xep3" path="res://Textures/custom/joystick_aim.png" id="3_n866t"]
+[ext_resource type="Script" path="res://UI/UI Scenes/ingame/aim_joystick.gd" id="5_slpdy"]
+
+[node name="ui_joystick" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+script = ExtResource("1_kmine")
+
+[node name="movement_joystick" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.498039)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_gu4rk")
+script = ExtResource("2_lt64b")
+
+[node name="movement_stick" type="Sprite2D" parent="movement_joystick"]
+texture = ExtResource("2_o6523")
+
+[node name="aim_joystick" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.498039)
+position = Vector2(1024, 0)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("3_n866t")
+script = ExtResource("5_slpdy")
+
+[node name="aim_stick" type="Sprite2D" parent="aim_joystick"]
+texture = ExtResource("2_o6523")

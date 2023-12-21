@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://diamhhyqm4dtm"]
+
+[ext_resource type="Script" path="res://ControlSystem/control_system.gd" id="1_5i5x6"]
+
+[node name="ControlSystem" type="Node"]
+process_mode = 4
+script = ExtResource("1_5i5x6")
+
+[node name="switch_to_mouse_timer" type="Timer" parent="."]
+one_shot = true

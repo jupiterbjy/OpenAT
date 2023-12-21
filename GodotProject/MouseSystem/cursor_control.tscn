@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://bayqx8rnbh08g"]
+[gd_scene load_steps=8 format=3 uid="uid://bayqx8rnbh08g"]
 
 [ext_resource type="Script" path="res://MouseSystem/cursor_control.gd" id="1_aqumg"]
 [ext_resource type="Texture2D" uid="uid://02ac22yvsaep" path="res://UI/Resources/cursor_main.png" id="2_s1a83"]
 [ext_resource type="Texture2D" uid="uid://cvklv5wsb8b8c" path="res://UI/Resources/cursor_hover.png" id="3_1lfbg"]
 [ext_resource type="Texture2D" uid="uid://b8rury0k42g88" path="res://UI/Resources/cursor_aim.png" id="4_d026h"]
 [ext_resource type="AudioStream" uid="uid://bb5dc6ptdb55o" path="res://UI/Sound/a_mouseover.wav" id="5_21474"]
+[ext_resource type="Texture2D" uid="uid://cud3y5b5yecc1" path="res://UI/Resources/blank_cursor.png" id="5_i857r"]
 [ext_resource type="AudioStream" uid="uid://cfrqyxalcvjf0" path="res://UI/Sound/a_mouseclick.wav" id="6_us5j3"]
 
 [node name="cursor_control" type="Node"]
@@ -15,6 +16,8 @@ hover_cursor = ExtResource("3_1lfbg")
 hover_hotspot = Vector2(16, 16)
 aim_cursor = ExtResource("4_d026h")
 aim_hotspot = Vector2(32, 32)
+null_cursor = ExtResource("5_i857r")
+null_hotspot = Vector2(32, 32)
 
 [node name="mouse_hover_sound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_21474")

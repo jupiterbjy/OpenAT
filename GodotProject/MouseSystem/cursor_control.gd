@@ -9,14 +9,15 @@ extends Node
 @export var aim_cursor: Texture2D
 @export var aim_hotspot: Vector2
 
-@export var cursor_hover_sound: AudioStream
-@export var cursor_click_sound: AudioStream
+@export var null_cursor: Texture2D
+@export var null_hotspot: Vector2
 
-@onready var _cursors: Array[Texture2D] = [default_cursor, hover_cursor, aim_cursor]
-@onready var _hotspots: Array[Vector2] = [default_hotspot, hover_hotspot, aim_hotspot]
-var _types: Array[int] = [Input.CURSOR_ARROW, Input.CURSOR_POINTING_HAND, 3]
+@onready var _cursors: Array[Texture2D] = [default_cursor, hover_cursor, aim_cursor, null_cursor]
+@onready var _hotspots: Array[Vector2] = [default_hotspot, hover_hotspot, aim_hotspot, null_hotspot]
 
-enum {DEFAULT, HOVER, AIM}
+var _types: Array[int] = [Input.CURSOR_ARROW, Input.CURSOR_POINTING_HAND, 3, Input.CURSOR_BUSY]
+
+enum {DEFAULT, HOVER, AIM, NULL}
 
 
 @onready var _mouse_hover_player: AudioStreamPlayer = $mouse_hover_sound

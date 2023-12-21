@@ -7,7 +7,7 @@ var _fired_obj: Node3D
 
 
 # no sound to play
-func play_hit_sound(area: Area3D):
+func play_hit_sound(_area: Area3D):
 	pass
 
 

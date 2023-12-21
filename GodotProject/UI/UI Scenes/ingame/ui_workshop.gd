@@ -52,7 +52,11 @@ func _ready():
 
 func _on_ok_button_button_clicked():
 	UISignals.request_ui.emit(switching_target)
-	MapSignals.update_player_loadout.emit()
+	
+	# in main menu this should not trigger autonomous tank
+	if switching_target == UIEnum.BRIEFING:
+		MapSignals.update_player_loadout.emit()
+	
 	UserState.save_json()
 
 

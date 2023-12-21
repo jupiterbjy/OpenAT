@@ -40,6 +40,6 @@ libraries = {
 }
 
 [node name="model_root" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 15, 0)
 
 [connection signal="animation_finished" from="animation_player" to="." method="_on_animation_player_animation_finished"]

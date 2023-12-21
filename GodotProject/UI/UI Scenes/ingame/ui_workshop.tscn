@@ -184,7 +184,7 @@ offset_right = 153.0
 offset_bottom = -80.0
 grow_horizontal = 2
 grow_vertical = 0
-theme_override_constants/separation = 306
+theme_override_constants/separation = 100
 alignment = 1
 
 [node name="weapon_ok_button" parent="confirm_weapon/yellow_box_titled/HBoxContainer" instance=ExtResource("2_2am1k")]
@@ -246,7 +246,7 @@ offset_right = 153.0
 offset_bottom = -80.0
 grow_horizontal = 2
 grow_vertical = 0
-theme_override_constants/separation = 306
+theme_override_constants/separation = 100
 alignment = 1
 
 [node name="upgrade_ok_button" parent="confirm_upgrade/yellow_box_titled/HBoxContainer" instance=ExtResource("2_2am1k")]

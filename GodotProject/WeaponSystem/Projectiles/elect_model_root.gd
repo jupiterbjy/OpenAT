@@ -22,7 +22,7 @@ var effect_scene: PackedScene = preload("res://EffectSystem/electro_eff.tscn")
 
 
 func spawn_effect():
-	var offset: Node3D = SceneSignals.current_scene.get_child(0).get_child(0)
+	# var offset: Node3D = SceneSignals.current_scene.get_child(0).get_child(0)
 	
 	for n in range(_length_idx / 2):
 		var eff: GPUParticles3D = effect_scene.instantiate()

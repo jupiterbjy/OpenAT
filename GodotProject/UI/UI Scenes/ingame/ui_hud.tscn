@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://c7jwrjj0fvoeh"]
+[gd_scene load_steps=10 format=3 uid="uid://c7jwrjj0fvoeh"]
 
 [ext_resource type="PackedScene" uid="uid://i4w7ui865ic3" path="res://UI/Elements/HUD/item_hud.tscn" id="1_q5qvn"]
 [ext_resource type="Script" path="res://UI/UI Scenes/ingame/ui_hud.gd" id="1_ru1v0"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://cf42s2xbgl2si" path="res://UI/Elements/HUD/weapon_type_hud.tscn" id="5_md73e"]
 [ext_resource type="PackedScene" uid="uid://bd8qr3dkw02bk" path="res://UI/Elements/HUD/score_hud.tscn" id="6_mf4nt"]
 [ext_resource type="PackedScene" uid="uid://562lmn2pydjv" path="res://UI/Elements/HUD/enemy_hud.tscn" id="7_sibmg"]
+[ext_resource type="PackedScene" uid="uid://dfqer852jp41v" path="res://UI/UI Scenes/ingame/ui_joystick.tscn" id="9_duyy8"]
 
 [node name="ui_hud" type="Control"]
 layout_mode = 3
@@ -16,7 +17,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-mouse_default_cursor_shape = 3
+mouse_filter = 2
 script = ExtResource("1_ru1v0")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
@@ -80,3 +81,16 @@ alignment = 2
 layout_mode = 2
 mouse_filter = 2
 mouse_default_cursor_shape = 3
+
+[node name="ui_joystick" parent="." instance=ExtResource("9_duyy8")]
+layout_mode = 1
+
+[node name="cursor_overrider" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+mouse_default_cursor_shape = 5

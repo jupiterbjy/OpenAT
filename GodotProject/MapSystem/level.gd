@@ -13,6 +13,8 @@ extends Node3D
 @onready var terr: MapTerr = $center_offset/terr
 @onready var terr2: MapTerr2 = $center_offset/terr2
 
+@onready var aim_point: Sprite3D = $aim_point/aim_point
+
 # demo mode - that automatic play in background of main menu
 var is_demo: bool = false
 
@@ -97,6 +99,7 @@ func enable_demo_mode():
 		return
 	
 	is_demo = true
+	aim_point.hide()
 	
 	VolumeManager.mute_ingame_sound()
 	
@@ -113,6 +116,7 @@ func disable_demo_mode():
 		return
 		
 	is_demo = false
+	aim_point.show()
 	
 	VolumeManager.unmute_ingame_sound()
 	
@@ -210,6 +214,16 @@ func setup():
 		enable_demo_mode()
 
 
+func on_pause():
+	if not is_demo:
+		aim_point.hide()
+
+
+func on_unpause():
+	if not is_demo:
+		aim_point.show()
+
+
 # wait until player is ready
 func enter_demo_immediate():
 	$init_delay.start(1)
@@ -228,6 +242,9 @@ func _ready():
 	MapSignals.game_victory.connect(game_win)
 	MapSignals.game_over.connect(game_over)
 	MapSignals.enter_demo.connect(enter_demo_immediate)
+	
+	MapSignals.game_pause.connect(on_pause)
+	MapSignals.game_unpause.connect(on_unpause)
 
 
 func _on_init_delay_timeout():

@@ -42,7 +42,7 @@ var code: String = ""
 
 
 ## override this setup on child classes
-func post_ready_setup(codes: String, facing, start_pos):
+func post_ready_setup(_codes: String, _facing, _start_pos):
 	pass
 
 

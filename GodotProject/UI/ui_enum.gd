@@ -33,4 +33,4 @@ enum {
 }
 
 
-var version = "0.2a"
+var version = "0.3a"

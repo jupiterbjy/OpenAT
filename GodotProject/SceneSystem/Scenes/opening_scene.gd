@@ -4,8 +4,8 @@ extends Node3D
 # skybox(or cylinder) model
 var _skybox = ["MSSKY", Vector3(0, 0, 0), Vector3(0, 0, 0)]
 
-# skybox instance
-var _skybox_obj: Node3D
+# skybox root
+@onready var _skybox_root: Node3D = $skybox_root
 
 # skybox rotation speed
 var _skybox_rot_speed: float = -0.05
@@ -54,17 +54,16 @@ func _load_obj(arr: Array):
 		obj.rotate_x(arr[2].x)
 		obj.rotate_y(arr[2].y)
 		obj.rotate_z(arr[2].z)
-	
-	add_child(obj)
-	
+
 	return obj
 
 
 func _load_mapshow():
-	_skybox_obj = _load_obj(_skybox)
+	print("[opening_scene] Loading resources")
+	_skybox_root.add_child(_load_obj(_skybox))
 	
 	for arr in _mapshow_list:
-		_load_obj(arr)
+		add_child(_load_obj(arr))
 	
 	for arr in _tank_list:
 		TextureLoader.set_mat(arr[0], arr[1])
@@ -72,8 +71,8 @@ func _load_mapshow():
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	_load_mapshow()
+	_load_mapshow.call_deferred()
 
 
 func _process(delta):
-	_skybox_obj.rotate_y(delta * _skybox_rot_speed)
+	_skybox_root.rotate_y(delta * _skybox_rot_speed)

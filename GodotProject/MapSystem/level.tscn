@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://btrbbw0okrrv6"]
+[gd_scene load_steps=16 format=3 uid="uid://btrbbw0okrrv6"]
 
 [ext_resource type="Script" path="res://MapSystem/level.gd" id="1_4fgsf"]
 [ext_resource type="Script" path="res://MapSystem/center_offset.gd" id="2_jog06"]
@@ -11,7 +11,9 @@
 [ext_resource type="PackedScene" uid="uid://cc4n427sa801w" path="res://MapSystem/components/terr.tscn" id="9_c1bs1"]
 [ext_resource type="PackedScene" uid="uid://dm3y2pl2tw2i6" path="res://MapSystem/components/trails.tscn" id="10_bqww6"]
 [ext_resource type="PackedScene" uid="uid://dwaiphrd7bldu" path="res://MapSystem/components/terr2.tscn" id="10_xnbqh"]
+[ext_resource type="Script" path="res://MapSystem/aim_point.gd" id="12_l46eb"]
 [ext_resource type="PackedScene" uid="uid://daerks3lk513t" path="res://Commons/DebugGizmos/aim_gizmo.tscn" id="12_w20o2"]
+[ext_resource type="Texture2D" uid="uid://b8rury0k42g88" path="res://UI/Resources/cursor_aim.png" id="13_qpbin"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_35x54"]
 size = Vector3(30, 0, 30)
@@ -55,7 +57,19 @@ monitoring = false
 [node name="CollisionShape3D" type="CollisionShape3D" parent="mouse_trans_area"]
 shape = SubResource("BoxShape3D_35x54")
 
-[node name="aim_gizmo" parent="." instance=ExtResource("12_w20o2")]
+[node name="aim_point" type="Node3D" parent="."]
+script = ExtResource("12_l46eb")
+
+[node name="aim_gizmo" parent="aim_point" instance=ExtResource("12_w20o2")]
+skeleton = NodePath("../..")
+
+[node name="aim_point" type="Sprite3D" parent="aim_point"]
+transform = Transform3D(0.075, 0, 0, 0, 0.075, 0, 0, 0, 0.075, 0, 0, 0)
+billboard = 1
+double_sided = false
+no_depth_test = true
+fixed_size = true
+texture = ExtResource("13_qpbin")
 
 [node name="init_delay" type="Timer" parent="."]
 one_shot = true

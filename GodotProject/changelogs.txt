@@ -1,0 +1,32 @@
+0.1a
+
+- Initial version Demonstrated at Hongik Univ.
+
+---
+
+0.2a
+
+- Item addition / Various fixes & improvements overall
+
+- Added direct access to workshop from main menu
+  (click tank in logo).
+
+- First Source release
+
+---
+
+0.3a
+
+- Added Controller support for ingame tank control.
+  Whenever controller is connected, game will use it.
+  Mouse control will stay off before disconnecting.
+
+- Added Touch support for ingame tank control.
+
+- Fixed letterboxing when stretched vertically.
+
+- (Android) Fixed game closing with single back button.
+
+- Fixed workshop on main menu affecting background play.
+
+---

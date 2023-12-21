@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://bqappyv0tbfj8"]
+[gd_scene load_steps=15 format=3 uid="uid://bqappyv0tbfj8"]
 
 [ext_resource type="Script" path="res://UI/UI Scenes/ui_map_select.gd" id="1_troxi"]
 [ext_resource type="Texture2D" uid="uid://dv6rfqu2nv3yv" path="res://Textures/Raw/_Map_T.JPG" id="3_audu7"]
@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://uq5yblxndrcy" path="res://UI/Elements/difficulty_button.tscn" id="13_mxamf"]
 [ext_resource type="PackedScene" uid="uid://n653ro3f33ss" path="res://UI/Elements/ok_button.tscn" id="13_pst2v"]
 [ext_resource type="PackedScene" uid="uid://c5u8snsktlbjx" path="res://UI/Elements/ok_shine.tscn" id="14_dorvl"]
+[ext_resource type="Texture2D" uid="uid://bety2ob4yg7gq" path="res://Textures/custom/custom_brick.png" id="14_wx7f2"]
 
 [node name="ui_map_select" type="Control"]
 layout_mode = 3
@@ -39,6 +40,31 @@ offset_bottom = 384.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("3_qwteu")
+
+[node name="hide_wall" type="TextureRect" parent="area_map"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -512.0
+offset_right = 512.0
+offset_bottom = 1024.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("14_wx7f2")
+
+[node name="hide_wall2" type="TextureRect" parent="area_map"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -512.0
+offset_top = -1024.0
+offset_right = 512.0
+grow_horizontal = 2
+texture = ExtResource("14_wx7f2")
 
 [node name="map_bg" type="Sprite2D" parent="area_map"]
 position = Vector2(512, 384)
@@ -126,7 +152,6 @@ text = "back"
 
 [node name="difficulty_button" parent="area_map/HBoxContainer" instance=ExtResource("13_mxamf")]
 layout_mode = 2
-size_flags_horizontal = 4
 
 [node name="ok_shine" parent="area_map/HBoxContainer" instance=ExtResource("14_dorvl")]
 layout_mode = 2

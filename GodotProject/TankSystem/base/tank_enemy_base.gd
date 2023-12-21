@@ -108,7 +108,7 @@ func post_ready_setup(codes: String, facing, start_pos):
 		_type = _parse_arges(codes)
 	
 	var diff_multiplier = Difficulty.multiplier[Difficulty.difficulty]
-	base_health *= (1 / diff_multiplier)
+	base_health = int(base_health * (1 / diff_multiplier))
 	
 	var model = ModelLoader.load_name(_tank_models[_type])
 	

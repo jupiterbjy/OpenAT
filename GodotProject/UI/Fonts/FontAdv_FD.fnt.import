@@ -14,4 +14,4 @@ dest_files=["res://.godot/imported/FontAdv_FD.fnt-9bab07c5a2336789da7b8304eafa42
 
 fallbacks=[]
 compress=false
-scaling_mode=2
+scaling_mode=1

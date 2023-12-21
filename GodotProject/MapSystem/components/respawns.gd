@@ -118,7 +118,7 @@ func _on_tank_death(is_allie: bool, pos: Vector2, score: int):
 
 
 # this is VERY weird design choices, but I have no time to plan or anything rn
-func _on_tank_spawn(is_allie: bool, pos: Vector2):
+func _on_tank_spawn(is_allie: bool, _pos: Vector2):
 	if not is_allie:
 		enemy_alive += 1
 	else:

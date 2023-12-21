@@ -4,7 +4,6 @@ extends Node3D
 
 @onready var cam: Camera3D = $cam
 
-var _follow_speed: float = 4.0
 var _follow_target: Node3D = null
 
 
