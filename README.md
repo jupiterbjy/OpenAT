@@ -10,6 +10,8 @@ A 50-days-long project made by *jupiterbjy* and *ruminex*, as part of *Hongik-Un
 
 [Gameplay Demo](https://youtu.be/yI4WvkttvIA)
 
+[Presentation files](https://drive.google.com/drive/folders/1WQcMJA5YzZ8_gi37-i-Knj3gi0hoRehB?usp=sharing)
+
 <br>
 
 # Introduction
