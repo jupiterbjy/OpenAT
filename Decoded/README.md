@@ -26,12 +26,12 @@
 
 ---
 
-# Collection of Data or python Codes
+# ETC
 
-- [search_map](Code/search_map.py): Map Search Algorithm
+- [search_map](Code/search_map.py): A simple script for searching keyword among every map files. Used for analizing map structure.
 
-- [terrain_info](Code/terrain_info.csv): Set of Modeling
+- [terrain_info](Code/terrain_info.csv): Manually written Tile information
 
-- [terrain_collision](Code/terrain_collision.json): Collection of collision area coordinates for each modeling
+- [terrain_collision](Code/terrain_collision.json): Manually written collision area coordinates for each tile
 
-- [terrain_info_convert](Code/terrain_info_convert.py): Presence or absence of collision area and coordinates for each modeling. Summary of the size occupied by each modeling.
+<!-- - [terrain_info_convert](Code/terrain_info_convert.py):
