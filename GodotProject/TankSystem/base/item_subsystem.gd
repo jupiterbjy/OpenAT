@@ -13,6 +13,14 @@ signal trigger_bomb
 @onready var flip_timer: Timer = $ring_flip_timer
 
 
+func _ready():
+	# need to reset lock state when game's over
+	
+	for signal_: Signal in [MapSignals.game_over, MapSignals.game_victory, MapSignals.game_start]:
+		signal_.connect(_on_the_world_timer_timeout)
+		signal_.connect(_on_lockdown_timer_timeout)
+
+
 func request_drop():
 	ItemSignals.drop_requested.emit()
 
