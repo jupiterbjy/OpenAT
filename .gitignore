@@ -1,5 +1,8 @@
 *.blend1
 GodotProject/.godot/
+IntroScene/
+Analisys/
+Builds/
 
 GodotProject/Textures/Raw/*.JPG
 GodotProject/Textures/Raw/*.jpg
@@ -9,8 +12,8 @@ GodotProject/Textures/Raw/*.bmp
 GodotProject/SoundSystem/Sounds/*.wav
 GodotProject/SoundSystem/Sounds/*.ogg
 
-TerrViewerProejct/Textures/Raw/*.JPG
-TerrViewerProejct/Textures/Raw/*.jpg
-TerrViewerProejct/Textures/Raw/*.png
+TerrViewerProject/Textures/Raw/*.JPG
+TerrViewerProject/Textures/Raw/*.jpg
+TerrViewerProject/Textures/Raw/*.png
 
-TerrViewerProejct/UI/Sound/*.wav
+TerrViewerProject/UI/Sound/*.wav
