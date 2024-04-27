@@ -8,9 +8,19 @@ A 50-days-long project made by *jupiterbjy* and *ruminex*, as part of *Hongik-Un
 
 [Announcement-ish video](https://youtu.be/5v0qzULyCdM)
 
-[Gameplay Demo](https://youtu.be/yI4WvkttvIA)
-
 [Presentation files](https://drive.google.com/drive/folders/1WQcMJA5YzZ8_gi37-i-Knj3gi0hoRehB?usp=sharing)
+
+No external godot plugins or resource (other than Armada tanks's) were used - pure Godot + python + Clipstudio Paint!
+
+<br>
+
+# Gameplay Demos
+
+[Initial Gameplay Demo (Linux / Windows)](https://youtu.be/yI4WvkttvIA)
+
+[Android on-screen joystick Demo](https://youtu.be/VWyVzgaFl2g?si=NUNgKd1E5a9yEv-3)
+
+[Controller Input Demo](https://youtu.be/Ntmmz6HanP8?si=L2-dEZpAgz20-mCN)
 
 <br>
 
