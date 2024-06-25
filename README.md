@@ -1,20 +1,27 @@
-# OpenAT - Open source Reverse-Engineering project for Armada Tanks
-
-A 50-days-long project made by *jupiterbjy* and *ruminex*, as part of *Hongik-University Graduation Project*.
-
 ![image](https://github.com/jupiterbjy/OpenAT/assets/26041217/cf9d34c0-dd60-46c7-b0e7-30aeac4288a5)
 
-![1700538000_merged_4](https://github.com/jupiterbjy/OpenAT/assets/26041217/cee7b4c8-a0a0-4c72-8e7d-cac9e159cac2)
+# OpenAT - Open source Reverse-Engineering project for Armada Tanks
+
+A 50-days-long, open-source reverse engineering project made by *jupiterbjy* and *ruminex*, as part of *Hongik-University Graduation Project*.
+
+Armada Tanks are developed by these wonderful developers:
+
+- Denis Kotov: Game Design, Programmer, Level design, Art & Graphics
+- Pasha Oliynyk: Art & Graphics
+- Yaroslav Yanovsky: Producer
+- Message: Music Composition, Sound Design
+
+<br>
 
 [Announcement-ish video](https://youtu.be/5v0qzULyCdM)
 
-[Presentation files](https://drive.google.com/drive/folders/1WQcMJA5YzZ8_gi37-i-Knj3gi0hoRehB?usp=sharing)
-
-No external godot plugins or resource (other than Armada tanks's) were used - pure Godot + python + Clipstudio Paint!
+![1700538000_merged_4](https://github.com/jupiterbjy/OpenAT/assets/26041217/cee7b4c8-a0a0-4c72-8e7d-cac9e159cac2)
 
 <br>
 
 # Gameplay Demos
+
+![](/ReadmeResource/gameplay.webp)
 
 [Initial Gameplay Demo (Linux / Windows)](https://youtu.be/yI4WvkttvIA)
 
@@ -24,20 +31,22 @@ No external godot plugins or resource (other than Armada tanks's) were used - pu
 
 <br>
 
-# Introduction
+# Public Display
 
-An Open source reverse-engineering project of Armada Tanks, a great arcade game by:
+This project was awarded 2nd place in 2023 Hongik Univ. CS Graduation Project Public Display.
 
-- Denis Kotov: Game Design, Programmer, Level design, Art & Graphics
-- Pasha Oliynyk: Art & Graphics
-- Yaroslav Yanovsky: Producer
-- Message: Music Composition, Sound Design
+We didn't expect this much popularity among public display, our sincere thanks to professors, juniors, seniors, and many more
+for playing at our booth!
 
-With recent drama with Unity, to truely achive open-source nature, we've used *Godot 4.1.3*  Game engine for this project.
+[Presentation files](https://drive.google.com/drive/folders/1WQcMJA5YzZ8_gi37-i-Knj3gi0hoRehB?usp=sharing)
+
+![](/ReadmeResource/combined.png)
 
 <br>
 
 # Repo Structure
+
+No external godot plugins or resource (other than Armada tanks') were used - pure Godot + python + ClipStudio Paint.
 
 ### [Decoded](Decoded)
 
@@ -98,7 +107,7 @@ steps to fill in the missing files.
 
 # Ramble: A Bit of history
 
-## Version 0: Open Armada
+## Precursor: Open Armada
 
 Version 1 was made before OpenAT - Back then it was called *Open Armada*.
 That project was made as a homework-ish Unity project for Computer Graphics lecture in Hong-Ik University.
@@ -117,9 +126,10 @@ Quality therefore, was quite miserable.
 
 <br>
 
-## Version 1: OpenAT
+## Successor: OpenAT
 
 After failing our original Graduation project, we started working on Armada Tanks again, but from scratch.
+We only had 50 days till submission and public display.
 
 We thought we could reuse all the thing we did in Unity, and pushed on researching about how we could utilize
 *Armada Tanks* resources.
@@ -131,4 +141,3 @@ Obviously this (and so many much more black magic *Armada Tanks* implements) was
 So, we nailed down for using godot instead of unity. Not to mention unity's self-destruction with their TOS changes!
 
 During a bit short of a month's hardship, project finally is starting to (at least) run.
-Follow-up progress video will be linked here within 23, November.  
