@@ -40,7 +40,7 @@ for playing at our booth!
 
 [Presentation files](https://drive.google.com/drive/folders/1WQcMJA5YzZ8_gi37-i-Knj3gi0hoRehB?usp=sharing)
 
-![](/ReadmeResource/combined.png)
+[Some photos](/ReadmeResource/combined.png)
 
 <br>
 
